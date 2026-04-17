@@ -1,0 +1,23 @@
+# Lefthook git-hooks config — installed by `bun install` via the `prepare`
+# script in package.json. Hooks live in `.git/hooks/` (git-local, not committed).
+#
+# Why this exists: Phase B's recurring lint-pain-on-push was Biome's
+# `organizeImports` rule firing on push because `bun run lint:fix` doesn't
+# apply unsafe-fixes. Pre-commit + `--unsafe` solves it at the right layer:
+# import order is fixed before the commit lands, not after CI bounces it.
+#
+# To skip a hook for a single commit (rare; prefer fixing the issue):
+#   git commit --no-verify
+#
+# To uninstall locally:
+#   bun x lefthook uninstall
+
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      # `--staged` scopes to only files git has staged; `stage_fixed: true`
+      # re-stages any files biome auto-fixes so the commit picks them up.
+      glob: "*.{js,jsx,ts,tsx,json,jsonc}"
+      run: bun x biome check --staged --write --unsafe --no-errors-on-unmatched
+      stage_fixed: true

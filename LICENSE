@@ -1,0 +1,34 @@
+PROPRIETARY LICENSE
+
+Copyright (c) 2026 Abhi (the Architect). All rights reserved.
+
+This software, including the Dr.ABC application, the Mörbius core intelligence,
+all accompanying documentation, design assets, and architectural artifacts
+(collectively, the "Work"), is proprietary and confidential.
+
+NO LICENSE IS GRANTED, EXPRESSLY OR BY IMPLICATION, TO ANY PERSON OR ENTITY
+WITHOUT THE PRIOR WRITTEN CONSENT OF THE COPYRIGHT HOLDER.
+
+You may NOT, without explicit written permission:
+  1. Copy, modify, merge, publish, distribute, sublicense, or sell the Work
+     or any derivative thereof.
+  2. Use the Work for commercial purposes.
+  3. Reverse engineer, decompile, or disassemble the Work, except to the
+     extent expressly permitted by applicable law.
+  4. Remove or alter any proprietary notices, labels, or marks on the Work.
+
+You MAY, solely for internal evaluation and review by parties to whom
+the Architect has shared this repository:
+  1. Read the source code and documentation.
+  2. Run the software locally for evaluation purposes.
+  3. Suggest improvements via pull requests, which become the property of
+     the Architect upon merge.
+
+This Work is not certified for clinical use, diagnosis, or treatment of any
+medical condition. It is a research and reference architecture. Any clinical
+deployment requires separate regulatory clearance (FDA, CE, ISO 13485, etc.)
+and is not authorized under this license.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.

@@ -1,0 +1,44 @@
+# Force LF line endings repo-wide (overrides core.autocrlf on Windows
+# checkouts so rebases don't smudge files to CRLF and break local lint).
+* text=auto eol=lf
+
+# Source code — explicit for IDE/diff predictability
+*.ts        text eol=lf
+*.tsx       text eol=lf
+*.js        text eol=lf
+*.jsx       text eol=lf
+*.json      text eol=lf
+*.css       text eol=lf
+*.html      text eol=lf
+*.md        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.toml      text eol=lf
+*.sh        text eol=lf
+*.rs        text eol=lf
+
+# Lockfiles — text but never CRLF
+bun.lock    text eol=lf
+
+# Known binary types
+*.pdf       binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.webp      binary
+*.ico       binary
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+*.eot       binary
+*.zip       binary
+*.tar       binary
+*.gz        binary
+*.7z        binary
+*.dll       binary
+*.so        binary
+*.exe       binary
+
+# Generated docs PDF — binary, do not normalize
+docs/**/*.pdf binary

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["bun"],
+    "baseUrl": ".",
+    "paths": {
+      "@dr-abc/types": ["packages/types/src/index.ts"],
+      "@dr-abc/types/*": ["packages/types/src/*"],
+      "@dr-abc/morbius-core": ["packages/morbius-core/src/index.ts"],
+      "@dr-abc/morbius-core/*": ["packages/morbius-core/src/*"],
+      "@dr-abc/agents": ["packages/agents/src/index.ts"],
+      "@dr-abc/agents/*": ["packages/agents/src/*"],
+      "@dr-abc/ui": ["packages/ui/src/index.ts"],
+      "@dr-abc/ui/*": ["packages/ui/src/*"],
+      "@dr-abc/db": ["packages/db/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", "target", "scripts/morbius-screenshot-tour.ts"]
+}

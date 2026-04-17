@@ -1,0 +1,130 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Bun
+.bun/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.vite/
+target/
+*.tsbuildinfo
+
+# Test
+coverage/
+.nyc_output/
+
+# IDE
+.idea/
+*.swp
+*.swo
+.DS_Store
+# Office lock files (created when a .docx/.pptx/.xlsx is open)
+~$*
+
+# Env
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.simran.example
+# Architect's filled-in handoff for Simran -- gitignored, send via Signal.
+.env.simran
+.env.simran.populated
+# Backups produced by POST /dev/env-persist
+.env.bak.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun-debug.log*
+
+# Python (apps/py-svc)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+.uv/
+*.egg-info/
+
+# OS
+Thumbs.db
+
+# Tauri
+src-tauri/target/
+
+# Generated docs build artifacts
+docs/_build/
+
+# Local data — ignore the bulk corpora but TRACK the index/README
+# files inside `data/` so the data layout is in git even when the
+# pulled jsonl/images stay local-only. Git can't re-include a file
+# inside an ignored directory, so we list each subfolder explicitly.
+.local/
+data/medqa-bench/*
+data/isic-sample/*
+data/drugbank-sample/*
+data/pubmed-cache/*
+data/image-bench/*
+data/hf-bench/*
+data/kaggle/*
+data/kg/*
+# But DO track these markers + READMEs everywhere
+!data/medqa-bench/.gitkeep
+!data/isic-sample/.gitkeep
+!data/drugbank-sample/.gitkeep
+!data/pubmed-cache/.gitkeep
+!data/image-bench/.gitkeep
+!data/hf-bench/.gitkeep
+!data/kaggle/.gitkeep
+!data/**/README.md
+!data/**/manifest.json
+!data/**/.manifest.json
+# Curated harness data (committed eval datasets)
+!scripts/data/
+!scripts/data/**
+*.sqlite
+*.db
+
+# Project-private rules live outside the repo. Never commit.
+.claude/
+CLAUDE.md
+AGENTS.md.bak
+working-rules-portable/
+
+# local screenshot / Chrome profile cache (not project-related)
+.local-screens/
+
+# Vite dep-pre-bundle cache (relocated to OS tmpdir in vite.config.ts)
+**/.vite-cache/
+**/.vite/
+
+# Internal architect/AI coaching docs — kept on disk, not in public history
+docs/reports/architect-*.md
+docs/reports/project-defense-report-*.md
+docs/reports/deployment-readiness-*.md
+docs/3-day-plan.md
+docs/3-day-demo-plan.md
+docs/MASTER-PLAN-*.md
+docs/status/day-*-summary.md
+docs/status/full-system-test-*.md
+docs/status/system-audit-*.md
+docs/status/mobile-audit-*.md
+docs/project-report.md
+docs/project-submission-report.md
+docs/EVE-REPORT-*.md
+docs/PLAN-v*.md
+docs/UI-AUDIT-v*.md
+docs/MANUAL-TEST-PLAN.md
+docs/accuracy-personal-use-cases.md
+# `working-rules/` was the local-only obsidian + plans surface · v0.8 consolidated
+# everything into the tracked `docs/vault/` folder, so this rule is gone.

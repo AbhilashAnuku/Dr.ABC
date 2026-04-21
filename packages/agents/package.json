@@ -1,0 +1,20 @@
+{
+  "name": "@dr-abc/agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./knowledge-graph/io": "./src/knowledge-graph/io.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dr-abc/types": "workspace:*",
+    "@dr-abc/morbius-core": "workspace:*",
+    "@dr-abc/db": "workspace:*",
+    "@anthropic-ai/sdk": "^0.39.0"
+  }
+}

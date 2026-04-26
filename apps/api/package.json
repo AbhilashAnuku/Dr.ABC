@@ -1,0 +1,17 @@
+{
+  "name": "@dr-abc/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --env-file=../../.env --hot src/server.ts",
+    "start": "bun --env-file=../../.env src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dr-abc/types": "workspace:*",
+    "@dr-abc/morbius-core": "workspace:*",
+    "@dr-abc/agents": "workspace:*",
+    "hono": "^4.6.12"
+  }
+}

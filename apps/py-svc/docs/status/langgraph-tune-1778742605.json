@@ -1,0 +1,8 @@
+{
+  "ranAt": 1778742605.5512488,
+  "sampleCount": 1,
+  "samplePaths": [
+    "F:\\Dr.ABC Project- K-2472-2200\\Dr.Abc_V5\\data\\kg\\medqa-test\\entities.jsonl"
+  ],
+  "note": "langgraph_kg.py tune stub \u00b7 architect-approved promotion path lives in packages/agents/src/tuner.ts \u00b7 this graph just stages the corpus + writes a proposal envelope"
+}

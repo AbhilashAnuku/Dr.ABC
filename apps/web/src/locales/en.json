@@ -1,0 +1,481 @@
+{
+  "brand": {
+    "name": "Dr·ABC",
+    "tagline": "A thousand doctors. One sovereign mind.",
+    "powered": "Powered by Mörbius"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "consult": "Consult",
+    "prescription": "Prescription",
+    "videoConsult": "Video Consult",
+    "appointments": "Appointments",
+    "emergency": "Emergency",
+    "surgical": "Surgical Nav",
+    "profile": "Profile",
+    "console": "Mission Control",
+    "brain": "Neural Brain",
+    "settings": "Settings",
+    "anatomy": "3D Anatomy",
+    "diseases": "Diseases",
+    "health": "Health & Diet",
+    "research": "Research",
+    "insurance": "Insurance",
+    "signOut": "Sign out"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to continue your consultation.",
+    "signupTitle": "Create your account",
+    "signupSubtitle": "Two minutes. No card needed.",
+    "forgotTitle": "Reset your password",
+    "forgotSubtitle": "We'll send you a link to set a new one.",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full name",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithEmail": "Continue with email",
+    "or": "or",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "haveAccount": "Already have an account?",
+    "noAccount": "New here?",
+    "forgot": "Forgot password?",
+    "sendOtp": "Send one-time code",
+    "otp": "6-digit code",
+    "verify": "Verify",
+    "back": "Back",
+    "checkEmail": "Check your inbox for the reset link.",
+    "termsHint": "By continuing you agree to our Terms and Privacy Policy.",
+    "loadingSession": "Loading session…"
+  },
+  "landing": {
+    "kicker": "Industrial-grade medical AI",
+    "heroLineA": "A thousand doctors.",
+    "heroLineB": "One sovereign mind.",
+    "heroBody": "Mörbius routes your symptoms through specialist AI agents — triage, diagnosis, library, profile — with a mandatory three-stage validation gauntlet. Local-first. Quantum-augmented. Yours.",
+    "ctaPrimary": "Open the platform",
+    "ctaSecondary": "Read the architecture",
+    "trustLine": "Built for clinicians, expats, and anyone who wants a second opinion at 3am.",
+    "rolesTitle": "Four roles. One Mörbius.",
+    "rolesSubtitle": "Inside Dr·ABC, Mörbius is everything-in-one — the always-on assistant, the diagnosing clinician, the citation-backed library, and the surgical-navigation simulator. Same intelligence, different surface per task.",
+    "roles": {
+      "assistant": {
+        "title": "Assistant",
+        "body": "Always-on across every page. Voice in, voice out. Multilingual (EN · DE · HI). Camera + image upload. Talks back through a 3D animated face."
+      },
+      "doctor": {
+        "title": "Doctor",
+        "body": "Triage in under 4 ms · Bayesian differential diagnosis · imaging consult · prescription guidance — all gated by the Kill & Sorry safety protocol before any patient sees it."
+      },
+      "library": {
+        "title": "Library",
+        "body": "Citation-traceable answers from the public medical canon. Hybrid retrieval over Harrison's, Robbins, WHO ICD-10 and ClinicalTrials.gov. Every line tied to a verifiable source."
+      },
+      "imaging": {
+        "title": "Medical Imaging",
+        "body": "Drop a chest X-ray, dermatology photo, or single-slice CT. MONAI runs DenseNet + Grad-CAM on-prem and returns a structured radiology-style report with a heatmap overlay."
+      }
+    },
+    "featuresTitle": "What's inside",
+    "features": {
+      "triage": {
+        "title": "Triage in under 4ms",
+        "body": "ESI 1–5 scoring, red-flag detection, and a clear next-step recommendation — before you even finish your sentence."
+      },
+      "diagnostic": {
+        "title": "Diagnostic ensemble",
+        "body": "Bayesian differential diagnosis powered by Mörbius Core with structured tool-use. Engineered to be replaced by a Mixture-of-Experts in V1."
+      },
+      "library": {
+        "title": "Library RAG",
+        "body": "Citation-backed answers from public-domain medical canon. Every answer is traceable to a source you can verify."
+      },
+      "profile": {
+        "title": "FHIR R4 profile",
+        "body": "Your allergies, conditions, coverage — stored as a portable FHIR bundle. Export, import, share with your clinician."
+      },
+      "imaging": {
+        "title": "Imaging consult",
+        "body": "Upload an X-ray, dermatology photo, or CT slice. Vision agent annotates findings with confidence scores."
+      },
+      "gauntlet": {
+        "title": "3-stage validation gauntlet",
+        "body": "No agent issues a clinical decision unilaterally. Validator → Safety → Privacy. If any gate fails, you don't see the result."
+      }
+    },
+    "comparisonTitle": "Why quantum-augmented medical AI matters",
+    "comparisonSubtitle": "Classical computers in surgery vs. quantum + classical hybrid AI — where the line moves and what it unlocks.",
+    "comparison": {
+      "classical": {
+        "label": "Today's surgical computers",
+        "items": [
+          "Rule-based decision support — IF lab > X THEN flag",
+          "Sequential image analysis: minutes per CT volume on workstation GPUs",
+          "Drug-interaction checks against a static formulary",
+          "Robotic surgery: pre-planned trajectories, surgeon overrides on-the-fly",
+          "Pattern matching against the last decade of literature"
+        ]
+      },
+      "quantum": {
+        "label": "Quantum-augmented (this platform)",
+        "items": [
+          "Variational quantum eigensolver (VQE) for binding-affinity prediction in drug-target pairs — exponentially faster on combinatorial molecular search",
+          "Quantum annealing for radiotherapy beam-angle optimization — minutes instead of hours of plan generation",
+          "Hybrid Bayesian inference: classical priors + quantum-accelerated posterior sampling for differential diagnosis with rare diseases",
+          "QAOA for surgical scheduling under hospital-resource constraints — global optima where greedy algorithms compromise",
+          "Quantum-safe cryptography for PHI at rest — post-quantum signatures on every clinical artifact"
+        ]
+      }
+    },
+    "comparisonFootnote": "We don't run quantum hardware on every query. The Quantum Compute Agent gates by problem class and cost — VQE for a 12-atom drug pose: yes; symptom triage: classical, always.",
+    "ctaFinalTitle": "Ready when you are",
+    "ctaFinalBody": "Free to try. No card. Local-first by default — your data leaves the device only when you ask it to.",
+    "ctaFinalButton": "Get started"
+  },
+  "dashboard": {
+    "title": "Welcome back, {{name}}",
+    "subtitle": "Here's what's open across your care.",
+    "kpi": {
+      "openConsults": "Open consults",
+      "upcomingAppointments": "Upcoming appointments",
+      "alerts": "Active alerts",
+      "agentsOnline": "Agents online"
+    },
+    "quickActions": "Quick actions",
+    "actions": {
+      "newConsult": "New consult",
+      "uploadScan": "Upload scan",
+      "bookAppointment": "Book appointment",
+      "emergency": "Emergency"
+    },
+    "recentActivity": "Recent activity",
+    "noActivity": "No activity yet — start with a consult.",
+    "agentStatus": "Agent status",
+    "online": "online",
+    "offline": "offline (no API key)",
+    "tip": "Diagnostic + Imaging agents need an LLM provider API key in Settings to come online."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure each module's API provider, language, and theme.",
+    "tabs": {
+      "modules": "Modules & APIs",
+      "appearance": "Appearance",
+      "language": "Language",
+      "notifications": "Notifications",
+      "security": "Security",
+      "billing": "Billing"
+    },
+    "modules": {
+      "title": "API providers per module",
+      "subtitle": "Each agent module is swappable. Plug in your own provider key to activate.",
+      "diagnostic": "Diagnostic Agent",
+      "imaging": "Imaging Agent (vision)",
+      "library": "Library / RAG (BM25, V0)",
+      "profile": "Profile (in-memory store, V0)",
+      "voice": "Voice (Whisper + browser TTS)",
+      "anthropicKey": "LLM provider API key",
+      "anthropicModel": "Reasoning model",
+      "save": "Save changes",
+      "saved": "Saved.",
+      "redacted": "stored locally, never sent to our server"
+    },
+    "appearance": {
+      "title": "Appearance",
+      "mode": "Visual language",
+      "modeClinical": "Clinical",
+      "modeClinicalDesc": "Classic medical-journal look. Warm ivory, deep navy, hairline rules, serif headings. Reads like a hospital chart.",
+      "modeBioluminescent": "Bioluminescent",
+      "modeBioluminescentDesc": "Medical-noir cyber aesthetic. Ink backgrounds, cyan glows, animated pulses. The original Mörbius theme.",
+      "theme": "Theme",
+      "themeDark": "Dark",
+      "themeLight": "Light",
+      "themeSystem": "Match system",
+      "tapToWake": "Tap-to-wake Mörbius",
+      "tapToWakeDesc": "Pat your laptop or device to open Mörbius — uses accelerometer + microphone amplitude with a 250 ms debounce.",
+      "tapToWakeMicWarning": "Microphone is active while you are on this app — turn off above to stop"
+    },
+    "language": {
+      "title": "Language",
+      "subtitle": "Affects all UI strings. Patient-facing copy is fully translated; clinical detail (agent traces) stays in English."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "appointment": "Appointment reminders",
+      "consult": "Consult result ready",
+      "alerts": "Critical alerts (always on)",
+      "marketing": "Product updates",
+      "channelEmail": "Email",
+      "channelPush": "Browser push",
+      "channelSms": "SMS"
+    },
+    "security": {
+      "title": "Security",
+      "twoFactor": "Two-factor authentication",
+      "twoFactorEnabled": "Enabled",
+      "twoFactorDisabled": "Not enabled",
+      "manageDevices": "Manage signed-in devices",
+      "exportData": "Export my data (GDPR)",
+      "deleteAccount": "Delete account"
+    },
+    "billing": {
+      "title": "Billing",
+      "plan": "Current plan",
+      "free": "Free",
+      "upgradeBody": "Upgrade for unlimited consults, video calls with on-call clinicians, and priority queue.",
+      "upgradeCta": "Upgrade plan"
+    }
+  },
+  "profile": {
+    "title": "Your profile",
+    "subtitle": "FHIR R4 bundle. Edits land in the Profile Agent's store.",
+    "demographics": "Demographics",
+    "name": "Name",
+    "birthDate": "Birth date",
+    "gender": "Gender",
+    "language": "Preferred language",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "medicalHistory": "Medical history",
+    "allergies": "Allergies",
+    "conditions": "Conditions",
+    "medications": "Current medications",
+    "insurance": "Insurance",
+    "noEntry": "—",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "consult": {
+    "title": "Consult Mörbius",
+    "subtitle": "Describe symptoms or ask anything medical. Triage runs first; the validation gauntlet runs last.",
+    "placeholder": "Describe your symptoms, paste a scan filename, or ask anything medical…",
+    "submit": "Consult Mörbius",
+    "loading": "Reasoning",
+    "suggestions": [
+      "severe chest pain radiating to left arm",
+      "my throat feels swollen and I can't breathe",
+      "dull headache for three days",
+      "tell me about migraine treatment",
+      "my profile — list my allergy history and insurance"
+    ]
+  },
+  "prescription": {
+    "title": "Prescription consult",
+    "subtitle": "Upload a photo of your prescription, a rash, an X-ray, or a label — the Imaging agent reads it. Or describe symptoms in text. We never auto-issue prescriptions; the gauntlet always runs.",
+    "uploadCta": "Upload image",
+    "uploadHint": "JPG, PNG, or HEIC. Max 8 MB.",
+    "or": "or",
+    "describe": "Describe in text",
+    "describePlaceholder": "e.g. \"red, itchy rash on left forearm, 3 days, no fever\"",
+    "submit": "Get prescription guidance",
+    "disclaimer": "Mörbius gives prescription guidance only. A licensed clinician must issue any actual prescription. In Germany this means an e-Rezept signed by an approved Arzt — we hand off to the Telemedizin partner."
+  },
+  "videoConsult": {
+    "title": "Video consult",
+    "subtitle": "Connect with an on-call clinician. Video, audio, and live transcript flow through the agent mesh — Mörbius takes notes so the clinician can listen.",
+    "startCamera": "Start camera",
+    "stopCamera": "Stop camera",
+    "joinCall": "Join call",
+    "leaveCall": "Leave call",
+    "noClinicianTitle": "No clinician on-call",
+    "noClinicianBody": "V0 demo: this is the clinician handoff surface. In V1, hitting Join routes you to a vetted licensed clinician via the Telemedizin partner network.",
+    "permissionDenied": "Camera permission denied. Enable it in your browser settings to use video consult.",
+    "permissionPrompt": "Please allow camera access when your browser asks.",
+    "languageLabel": "Voice language",
+    "transcript": "Live transcript"
+  },
+  "appointments": {
+    "title": "Appointments",
+    "subtitle": "Book, reschedule, or cancel. Calendar sync with Google + Apple coming.",
+    "book": "Book appointment",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "noUpcoming": "No upcoming appointments. Book one above.",
+    "noPast": "No past appointments yet.",
+    "form": {
+      "type": "Appointment type",
+      "typeGp": "General practitioner",
+      "typeSpecialist": "Specialist",
+      "typeVideo": "Video consult",
+      "typeFollowUp": "Follow-up",
+      "date": "Date",
+      "time": "Time",
+      "reason": "Reason for visit",
+      "notes": "Notes for the clinician (optional)",
+      "submit": "Confirm booking",
+      "success": "Booked. Check your email for the confirmation."
+    }
+  },
+  "emergency": {
+    "title": "Emergency",
+    "subtitle": "If you or someone near you is experiencing a life-threatening emergency, call your local emergency number now. This page is not a substitute.",
+    "callNow": "Call now",
+    "deCall": "Germany: 112",
+    "euCall": "EU-wide: 112",
+    "usCall": "US/Canada: 911",
+    "ukCall": "UK: 999",
+    "inCall": "India: 112",
+    "deCallSub": "Notarzt + Feuerwehr",
+    "euCallSub": "Universal EU emergency",
+    "usCallSub": "Police, fire, EMS",
+    "ukCallSub": "All services",
+    "inCallSub": "All-in-one emergency",
+    "nearestHospital": "Nearest hospital",
+    "shareLocation": "Share location to find the nearest hospital",
+    "esiTitle": "Quick triage scale (ESI)",
+    "esi": {
+      "1": "Resuscitation — call now",
+      "2": "Emergent — go now",
+      "3": "Urgent — within hours",
+      "4": "Less urgent — same day",
+      "5": "Non-urgent — routine"
+    },
+    "redFlagsTitle": "Red-flag symptoms",
+    "redFlags": [
+      "Chest pain radiating to arm or jaw",
+      "Sudden severe headache (worst of your life)",
+      "Difficulty breathing or swelling of face/throat",
+      "Sudden weakness on one side; slurred speech",
+      "Heavy uncontrolled bleeding",
+      "Loss of consciousness"
+    ]
+  },
+  "insurance": {
+    "title": "Insurance planning",
+    "subtitle": "Compare plans, understand your coverage, and plan for what's not covered.",
+    "currentPlan": "Your current coverage",
+    "germanySectionTitle": "Germany",
+    "gkv": {
+      "title": "Gesetzliche Krankenversicherung (GKV)",
+      "body": "Statutory health insurance — mandatory for residents earning under €69,300/yr. Around 90% of Germany is covered by GKV. Premium is ~14.6% of gross salary, split between employee and employer."
+    },
+    "pkv": {
+      "title": "Private Krankenversicherung (PKV)",
+      "body": "Private insurance — for high earners (>€69,300/yr), self-employed, civil servants, students. Premiums are based on age and risk profile, not income. Often better waiting times for specialists."
+    },
+    "expatCheck": {
+      "title": "Expat checklist",
+      "items": [
+        "Confirm your visa requires statutory or private cover",
+        "Compare TK, AOK, Barmer (largest GKV providers)",
+        "If self-employed, request a PKV quote — switching back to GKV later is restricted",
+        "Ensure your plan covers Heilpraktiker (alternative practitioners) if you use them",
+        "Verify dental + vision coverage levels"
+      ]
+    }
+  },
+  "expat": {
+    "title": "Expat support — Germany",
+    "subtitle": "The first 90 days, in English. Crowd-sourced from real expat experiences, double-checked against the BAMF and federal sources.",
+    "sections": {
+      "anmeldung": {
+        "title": "Anmeldung — register your address",
+        "body": "Required within 14 days of moving in. Bring passport, Wohnungsgeberbestätigung from your landlord, and the Anmeldeformular. Most cities now offer online booking — slots are scarce in Berlin/München; book 2–4 weeks ahead."
+      },
+      "krankenversicherung": {
+        "title": "Krankenversicherung — health insurance",
+        "body": "You cannot do almost anything else (open a bank account in some cases, sign a work contract, get a residence permit) without proof of cover. If you're employed, your HR will route you to a GKV provider. If you're freelancing, you choose between GKV (Künstlersozialkasse may apply) and PKV."
+      },
+      "steuerId": {
+        "title": "Steueridentifikationsnummer",
+        "body": "Auto-mailed to your registered address ~2 weeks after Anmeldung. Required for your first salary. If your employer asks before it arrives, give them your Anmeldebestätigung and tell them the ID will follow."
+      },
+      "bankAccount": {
+        "title": "Bank account",
+        "body": "N26, Commerzbank, Deutsche Bank, ING — all accept digital onboarding for foreigners with a residence address. SEPA is the giro standard. PayPal works but isn't a substitute for a German IBAN for salary."
+      },
+      "findingDoctors": {
+        "title": "Finding English-speaking doctors",
+        "body": "Use Doctolib (filter for Sprache: English). Most large cities have expat-friendly Hausärzte; specialist waits can be 4–12 weeks via GKV, ~1–2 weeks via PKV. We can pre-book the first 3 visits for you — see Appointments."
+      },
+      "ePrescription": {
+        "title": "E-Rezept (digital prescriptions)",
+        "body": "Since 2024, GKV-covered prescriptions are issued as e-Rezepte through the Gematik app or your insurance card. Mörbius hands off to the Gematik flow when a prescription is needed — we don't try to issue them ourselves."
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "comingSoon": "Coming soon",
+    "demo": "Demo mode"
+  },
+  "recents": {
+    "kicker": "memory · continuity",
+    "title": "Resume any consult.",
+    "empty": "No consults yet. Start one from the dashboard or click any seeded case.",
+    "openConsult": "Open consult",
+    "resumable": "resumable",
+    "voiceHint": "Voice:",
+    "keyboardHint": "Keyboard:",
+    "esc": "Esc to close",
+    "topbarTitle": "Recent consults · ⌘ ; or say 'Mörbius show recents'",
+    "topbarLabel": "Recent consults"
+  },
+  "voiceCheatSheet": {
+    "kicker": "voice commands · cheat sheet",
+    "title": "Anything Mörbius can do, you can say.",
+    "groupNavigate": "Navigate",
+    "groupConsult": "Ask · consult",
+    "groupContinuity": "Continuity",
+    "groupControl": "Control",
+    "wakeWord": "Wake word:",
+    "armHint": "arm the mic (bottom-right) once, then say a phrase from any group.",
+    "drawerHint": "Recents drawer:",
+    "topbarTitle": "Voice commands cheat sheet",
+    "topbarLabel": "Voice commands"
+  },
+  "multimodal": {
+    "header": "attach · voice · lab PDF · skin photo",
+    "attached": "{{count}} attached",
+    "voiceLabel": "voice memo",
+    "voiceClear": "Clear voice transcript",
+    "voiceRecord": "record",
+    "voiceStop": "stop",
+    "voiceUnsupported": "Voice transcription not supported in this browser.",
+    "voiceErrorPrefix": "Voice error:",
+    "pdfLabel": "lab PDF",
+    "pdfHint": "click or drop PDF · in-browser parse",
+    "pdfScanned": "[scanned/image PDF · paste the relevant lab values into the message box for now]",
+    "pdfReadError": "[unable to read PDF text: {{reason}}]",
+    "imageLabel": "skin photo",
+    "imageHint": "click or drop image · ABCDE on consult",
+    "imageOversize": "{{filename}} exceeds 12 MB",
+    "removeFile": "Remove {{filename}}"
+  },
+  "security": {
+    "kickerPin": "pin · rotate",
+    "titlePin": "Rotate the dev console PIN.",
+    "blurbPin": "4-8 digits. Stored in localStorage on this browser only — no server round-trip.",
+    "newPin": "new PIN",
+    "confirmPin": "confirm",
+    "rotate": "rotate",
+    "resetDefault": "reset to default",
+    "errorMismatch": "PIN and confirmation differ.",
+    "errorFormat": "PIN must be 4-8 digits.",
+    "okRotated": "PIN rotated. Next lock will require the new PIN.",
+    "okReset": "PIN reset to default ({{pin}}).",
+    "kickerPasskey": "passkey · biometric",
+    "titlePasskey": "Unlock with Touch ID / Windows Hello.",
+    "blurbPasskeyEnrolled": "Passkey enrolled on this device — the lock screen now offers a one-tap biometric unlock.",
+    "blurbPasskeyAvailable": "Your platform supports a built-in passkey (fingerprint / Face ID / Windows Hello). Enroll once and skip the PIN going forward.",
+    "blurbPasskeyMissing": "WebAuthn platform authenticator not detected on this device. PIN remains the only unlock.",
+    "active": "active",
+    "enroll": "enroll passkey",
+    "removePasskey": "remove passkey",
+    "okEnrolled": "Passkey enrolled. Next dev-console unlock can use Touch ID / Windows Hello / fingerprint.",
+    "errEnrolled": "Passkey enrolment failed.",
+    "okRemoved": "Passkey removed. PIN remains as the unlock fallback.",
+    "scopeNote": "Passkey is scoped to this origin. Localhost vs morbius.vercel.app enroll separately — by design."
+  }
+}

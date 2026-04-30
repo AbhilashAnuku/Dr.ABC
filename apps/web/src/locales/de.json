@@ -1,0 +1,481 @@
+{
+  "brand": {
+    "name": "Dr·ABC",
+    "tagline": "Tausend Ärzte. Ein souveräner Geist.",
+    "powered": "Angetrieben von Mörbius"
+  },
+  "nav": {
+    "dashboard": "Übersicht",
+    "consult": "Beratung",
+    "prescription": "Rezept",
+    "videoConsult": "Videosprechstunde",
+    "appointments": "Termine",
+    "emergency": "Notfall",
+    "surgical": "OP-Navigation",
+    "profile": "Profil",
+    "console": "Mission Control",
+    "brain": "Neuronales Gehirn",
+    "settings": "Einstellungen",
+    "anatomy": "3D-Anatomie",
+    "diseases": "Krankheiten",
+    "health": "Gesundheit & Ernährung",
+    "research": "Forschung",
+    "insurance": "Versicherung",
+    "signOut": "Abmelden"
+  },
+  "auth": {
+    "loginTitle": "Willkommen zurück",
+    "loginSubtitle": "Melden Sie sich an, um Ihre Beratung fortzusetzen.",
+    "signupTitle": "Konto erstellen",
+    "signupSubtitle": "Zwei Minuten. Keine Karte erforderlich.",
+    "forgotTitle": "Passwort zurücksetzen",
+    "forgotSubtitle": "Wir senden Ihnen einen Link zum Festlegen eines neuen Passworts.",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "name": "Vollständiger Name",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "continueWithEmail": "Mit E-Mail fortfahren",
+    "or": "oder",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "haveAccount": "Bereits ein Konto?",
+    "noAccount": "Neu hier?",
+    "forgot": "Passwort vergessen?",
+    "sendOtp": "Einmalcode senden",
+    "otp": "6-stelliger Code",
+    "verify": "Verifizieren",
+    "back": "Zurück",
+    "checkEmail": "Prüfen Sie Ihren Posteingang auf den Reset-Link.",
+    "termsHint": "Indem Sie fortfahren, stimmen Sie unseren AGB und Datenschutzbestimmungen zu.",
+    "loadingSession": "Sitzung wird geladen…"
+  },
+  "landing": {
+    "kicker": "Industrielle medizinische KI",
+    "heroLineA": "Tausend Ärzte.",
+    "heroLineB": "Ein souveräner Geist.",
+    "heroBody": "Mörbius leitet Ihre Symptome durch spezialisierte KI-Agenten — Triage, Diagnose, Bibliothek, Profil — mit einem verpflichtenden dreistufigen Validierungs-Prüfweg. Lokal-zuerst. Quanten-erweitert. Ihres.",
+    "ctaPrimary": "Plattform öffnen",
+    "ctaSecondary": "Architektur lesen",
+    "trustLine": "Gebaut für Klinikerinnen, Expats und alle, die um 3 Uhr morgens eine zweite Meinung wollen.",
+    "rolesTitle": "Vier Rollen. Ein Mörbius.",
+    "rolesSubtitle": "In Dr·ABC ist Mörbius alles in einem — der immer verfügbare Assistent, die diagnostizierende Klinikerin, die zitierfähige Bibliothek und der Simulator für chirurgische Navigation. Dieselbe Intelligenz, unterschiedliche Oberflächen je nach Aufgabe.",
+    "roles": {
+      "assistant": {
+        "title": "Assistent",
+        "body": "Immer verfügbar auf jeder Seite. Sprache rein, Sprache raus. Mehrsprachig (EN · DE · HI). Kamera + Bild-Upload. Antwortet über ein 3D-animiertes Gesicht."
+      },
+      "doctor": {
+        "title": "Arzt",
+        "body": "Triage in unter 4 ms · Bayessche Differenzialdiagnose · Bildgebung · Rezept-Empfehlung — alles vom Kill & Sorry-Schutzprotokoll geprüft, bevor es einen Patienten erreicht."
+      },
+      "library": {
+        "title": "Bibliothek",
+        "body": "Mit Quellen belegte Antworten aus dem öffentlichen medizinischen Kanon. Hybride Suche über Harrison, Robbins, WHO ICD-10 und ClinicalTrials.gov. Jede Zeile auf eine prüfbare Quelle zurückführbar."
+      },
+      "imaging": {
+        "title": "Medizinische Bildgebung",
+        "body": "Laden Sie ein Röntgenbild der Brust, ein Hautfoto oder einen CT-Schnitt hoch. MONAI führt DenseNet + Grad-CAM lokal aus und liefert einen strukturierten radiologischen Bericht mit Heatmap-Overlay."
+      }
+    },
+    "featuresTitle": "Was drin steckt",
+    "features": {
+      "triage": {
+        "title": "Triage in unter 4 ms",
+        "body": "ESI 1–5 Bewertung, Erkennung von Warnzeichen und eine klare Empfehlung für den nächsten Schritt — bevor Sie Ihren Satz beendet haben."
+      },
+      "diagnostic": {
+        "title": "Diagnose-Ensemble",
+        "body": "Bayessche Differenzialdiagnose, angetrieben von Mörbius Core mit strukturierter Tool-Use-Schnittstelle. Konstruiert, um in V1 durch ein Mixture-of-Experts ersetzt zu werden."
+      },
+      "library": {
+        "title": "Bibliothek (RAG)",
+        "body": "Mit Quellen belegte Antworten aus dem öffentlich zugänglichen medizinischen Kanon. Jede Antwort lässt sich auf eine prüfbare Quelle zurückverfolgen."
+      },
+      "profile": {
+        "title": "FHIR R4 Profil",
+        "body": "Ihre Allergien, Diagnosen, Versicherung — als portables FHIR-Bündel gespeichert. Exportieren, importieren, mit Ihrer Klinikerin teilen."
+      },
+      "imaging": {
+        "title": "Bildgebung",
+        "body": "Laden Sie ein Röntgenbild, Hautfoto oder CT-Schnitt hoch. Der Vision-Agent annotiert Befunde mit Konfidenzwerten."
+      },
+      "gauntlet": {
+        "title": "3-stufiger Validierungs-Prüfweg",
+        "body": "Kein Agent trifft eine klinische Entscheidung allein. Validator → Sicherheit → Datenschutz. Wenn ein Tor versagt, sehen Sie das Ergebnis nicht."
+      }
+    },
+    "comparisonTitle": "Warum quanten-erweiterte Medizin-KI wichtig ist",
+    "comparisonSubtitle": "Klassische Computer in der Chirurgie vs. Quanten + Klassik-Hybrid-KI — wo die Grenze sich verschiebt und was sie freisetzt.",
+    "comparison": {
+      "classical": {
+        "label": "Heutige chirurgische Computer",
+        "items": [
+          "Regelbasierte Entscheidungsunterstützung — WENN Labor > X DANN markieren",
+          "Sequenzielle Bildanalyse: Minuten pro CT-Volumen auf Workstation-GPUs",
+          "Wechselwirkungsprüfung gegen statische Arzneimittellisten",
+          "Roboterchirurgie: vorgeplante Trajektorien, Chirurgin überschreibt im Flug",
+          "Mustererkennung gegen Literatur des letzten Jahrzehnts"
+        ]
+      },
+      "quantum": {
+        "label": "Quanten-erweitert (diese Plattform)",
+        "items": [
+          "Variational Quantum Eigensolver (VQE) für Bindungsaffinitäts-Vorhersage in Wirkstoff-Ziel-Paaren — exponentiell schneller bei kombinatorischer molekularer Suche",
+          "Quanten-Annealing für Strahlentherapie-Winkeloptimierung — Minuten statt Stunden Planerzeugung",
+          "Hybrid-Bayes-Inferenz: klassische Prioritäten + quantenbeschleunigte Posterior-Stichproben für Differenzialdiagnose seltener Krankheiten",
+          "QAOA für OP-Planung unter Klinikressourcen-Beschränkungen — globale Optima, wo gierige Algorithmen Kompromisse machen",
+          "Quantensichere Kryptographie für PHI im Ruhezustand — Post-Quanten-Signaturen auf jedem klinischen Artefakt"
+        ]
+      }
+    },
+    "comparisonFootnote": "Wir laufen nicht für jede Anfrage auf Quanten-Hardware. Der Quanten-Compute-Agent entscheidet nach Problemklasse und Kosten — VQE für eine 12-Atom-Wirkstoffstellung: ja; Symptom-Triage: klassisch, immer.",
+    "ctaFinalTitle": "Bereit, wenn Sie es sind",
+    "ctaFinalBody": "Kostenlos zu testen. Keine Karte. Lokal-zuerst standardmäßig — Ihre Daten verlassen das Gerät nur, wenn Sie es wünschen.",
+    "ctaFinalButton": "Loslegen"
+  },
+  "dashboard": {
+    "title": "Willkommen zurück, {{name}}",
+    "subtitle": "Hier ist, was über Ihre Versorgung offen ist.",
+    "kpi": {
+      "openConsults": "Offene Beratungen",
+      "upcomingAppointments": "Kommende Termine",
+      "alerts": "Aktive Warnungen",
+      "agentsOnline": "Agenten online"
+    },
+    "quickActions": "Schnellaktionen",
+    "actions": {
+      "newConsult": "Neue Beratung",
+      "uploadScan": "Scan hochladen",
+      "bookAppointment": "Termin buchen",
+      "emergency": "Notfall"
+    },
+    "recentActivity": "Letzte Aktivität",
+    "noActivity": "Noch keine Aktivität — beginnen Sie mit einer Beratung.",
+    "agentStatus": "Agentenstatus",
+    "online": "online",
+    "offline": "offline (kein API-Schlüssel)",
+    "tip": "Diagnose- + Bildgebungsagenten benötigen einen LLM-Anbieter-API-Schlüssel in den Einstellungen, um online zu kommen."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Konfigurieren Sie API-Anbieter pro Modul, Sprache und Theme.",
+    "tabs": {
+      "modules": "Module & APIs",
+      "appearance": "Erscheinungsbild",
+      "language": "Sprache",
+      "notifications": "Benachrichtigungen",
+      "security": "Sicherheit",
+      "billing": "Abrechnung"
+    },
+    "modules": {
+      "title": "API-Anbieter pro Modul",
+      "subtitle": "Jedes Agentenmodul ist austauschbar. Stecken Sie Ihren eigenen Anbieter-Schlüssel ein, um es zu aktivieren.",
+      "diagnostic": "Diagnose-Agent",
+      "imaging": "Bildgebungs-Agent (Vision)",
+      "library": "Bibliothek / RAG (BM25, V0)",
+      "profile": "Profil (In-Memory-Speicher, V0)",
+      "voice": "Stimme (Whisper + Browser-TTS)",
+      "anthropicKey": "LLM-Anbieter API-Schlüssel",
+      "anthropicModel": "Reasoning-Modell",
+      "save": "Änderungen speichern",
+      "saved": "Gespeichert.",
+      "redacted": "lokal gespeichert, nie an unseren Server gesendet"
+    },
+    "appearance": {
+      "title": "Erscheinungsbild",
+      "mode": "Visuelle Sprache",
+      "modeClinical": "Klinisch",
+      "modeClinicalDesc": "Klassischer Arztbrief-Look. Warmes Elfenbein, tiefes Marineblau, feine Linien, Serifen-Überschriften. Liest sich wie eine Patientenakte.",
+      "modeBioluminescent": "Biolumineszent",
+      "modeBioluminescentDesc": "Medizinisch-noir Cyber-Ästhetik. Tinten-Hintergründe, Cyan-Glow, animierte Pulse. Das ursprüngliche Mörbius-Theme.",
+      "theme": "Theme",
+      "themeDark": "Dunkel",
+      "themeLight": "Hell",
+      "themeSystem": "System",
+      "tapToWake": "Tippen-um-zu-wecken Mörbius",
+      "tapToWakeDesc": "Klopfe auf den Laptop, um Mörbius zu öffnen — nutzt Beschleunigungssensor + Mikrofon-Amplitude mit 250 ms Debounce.",
+      "tapToWakeMicWarning": "Mikrofon ist aktiv, solange du in dieser App bist — oben ausschalten zum Stoppen"
+    },
+    "language": {
+      "title": "Sprache",
+      "subtitle": "Betrifft alle UI-Texte. Patientennachrichten sind vollständig übersetzt; klinische Details (Agent-Traces) bleiben in Englisch."
+    },
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "appointment": "Terminerinnerungen",
+      "consult": "Beratungsergebnis bereit",
+      "alerts": "Kritische Warnungen (immer an)",
+      "marketing": "Produkt-Updates",
+      "channelEmail": "E-Mail",
+      "channelPush": "Browser-Push",
+      "channelSms": "SMS"
+    },
+    "security": {
+      "title": "Sicherheit",
+      "twoFactor": "Zwei-Faktor-Authentifizierung",
+      "twoFactorEnabled": "Aktiviert",
+      "twoFactorDisabled": "Nicht aktiviert",
+      "manageDevices": "Angemeldete Geräte verwalten",
+      "exportData": "Meine Daten exportieren (DSGVO)",
+      "deleteAccount": "Konto löschen"
+    },
+    "billing": {
+      "title": "Abrechnung",
+      "plan": "Aktueller Tarif",
+      "free": "Kostenlos",
+      "upgradeBody": "Upgraden Sie für unbegrenzte Beratungen, Videoanrufe mit Bereitschaftsärztinnen und Prioritätsschlange.",
+      "upgradeCta": "Tarif upgraden"
+    }
+  },
+  "profile": {
+    "title": "Ihr Profil",
+    "subtitle": "FHIR R4-Bündel. Bearbeitungen landen im Speicher des Profil-Agenten.",
+    "demographics": "Stammdaten",
+    "name": "Name",
+    "birthDate": "Geburtsdatum",
+    "gender": "Geschlecht",
+    "language": "Bevorzugte Sprache",
+    "contact": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "medicalHistory": "Krankengeschichte",
+    "allergies": "Allergien",
+    "conditions": "Diagnosen",
+    "medications": "Aktuelle Medikamente",
+    "insurance": "Versicherung",
+    "noEntry": "—",
+    "edit": "Bearbeiten",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
+  },
+  "consult": {
+    "title": "Mörbius befragen",
+    "subtitle": "Beschreiben Sie Symptome oder fragen Sie etwas Medizinisches. Triage zuerst; der Validierungs-Prüfweg zuletzt.",
+    "placeholder": "Beschreiben Sie Ihre Symptome, fügen Sie einen Scan-Dateinamen ein oder fragen Sie etwas Medizinisches…",
+    "submit": "Mörbius befragen",
+    "loading": "Denkt nach",
+    "suggestions": [
+      "starke Brustschmerzen, die in den linken Arm ausstrahlen",
+      "mein Hals fühlt sich geschwollen an und ich kann nicht atmen",
+      "dumpfer Kopfschmerz seit drei Tagen",
+      "erzähl mir etwas über die Migräne-Behandlung",
+      "mein Profil — liste meine Allergien und Versicherung auf"
+    ]
+  },
+  "prescription": {
+    "title": "Rezept-Beratung",
+    "subtitle": "Laden Sie ein Foto Ihres Rezepts, Ausschlags, Röntgenbilds oder Etiketts hoch — der Bildgebungs-Agent liest es. Oder beschreiben Sie Symptome im Text. Wir stellen niemals automatisch Rezepte aus; der Prüfweg läuft immer.",
+    "uploadCta": "Bild hochladen",
+    "uploadHint": "JPG, PNG oder HEIC. Max. 8 MB.",
+    "or": "oder",
+    "describe": "In Text beschreiben",
+    "describePlaceholder": "z. B. \"roter, juckender Ausschlag am linken Unterarm, 3 Tage, kein Fieber\"",
+    "submit": "Rezept-Empfehlung erhalten",
+    "disclaimer": "Mörbius gibt nur Rezeptempfehlungen. Eine zugelassene Klinikerin muss jedes tatsächliche Rezept ausstellen. In Deutschland bedeutet das ein e-Rezept, signiert von einer zugelassenen Ärztin — wir übergeben an den Telemedizin-Partner."
+  },
+  "videoConsult": {
+    "title": "Videosprechstunde",
+    "subtitle": "Verbinden Sie sich mit einer Bereitschaftsärztin. Video, Audio und Live-Transkript fließen durch das Agentennetz — Mörbius nimmt Notizen, damit die Klinikerin zuhören kann.",
+    "startCamera": "Kamera starten",
+    "stopCamera": "Kamera stoppen",
+    "joinCall": "Anruf beitreten",
+    "leaveCall": "Anruf verlassen",
+    "noClinicianTitle": "Keine Klinikerin im Dienst",
+    "noClinicianBody": "V0-Demo: dies ist die Übergabe-Oberfläche. In V1 leitet 'Beitreten' Sie an eine geprüfte zugelassene Klinikerin über das Telemedizin-Partnernetzwerk weiter.",
+    "permissionDenied": "Kameraerlaubnis verweigert. Aktivieren Sie sie in Ihren Browser-Einstellungen.",
+    "permissionPrompt": "Bitte erlauben Sie den Kamerazugriff, wenn Ihr Browser fragt.",
+    "languageLabel": "Sprache",
+    "transcript": "Live-Transkript"
+  },
+  "appointments": {
+    "title": "Termine",
+    "subtitle": "Buchen, verschieben oder absagen. Kalender-Sync mit Google + Apple kommt.",
+    "book": "Termin buchen",
+    "upcoming": "Bevorstehend",
+    "past": "Vergangen",
+    "noUpcoming": "Keine bevorstehenden Termine. Buchen Sie oben einen.",
+    "noPast": "Noch keine vergangenen Termine.",
+    "form": {
+      "type": "Termintyp",
+      "typeGp": "Hausärztin",
+      "typeSpecialist": "Fachärztin",
+      "typeVideo": "Videosprechstunde",
+      "typeFollowUp": "Nachuntersuchung",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "reason": "Grund des Besuchs",
+      "notes": "Notizen für die Klinikerin (optional)",
+      "submit": "Buchung bestätigen",
+      "success": "Gebucht. Prüfen Sie Ihre E-Mail für die Bestätigung."
+    }
+  },
+  "emergency": {
+    "title": "Notfall",
+    "subtitle": "Wenn Sie oder jemand in Ihrer Nähe einen lebensbedrohlichen Notfall erlebt, rufen Sie jetzt Ihre lokale Notrufnummer an. Diese Seite ist kein Ersatz.",
+    "callNow": "Jetzt anrufen",
+    "deCall": "Deutschland: 112",
+    "euCall": "EU-weit: 112",
+    "usCall": "USA/Kanada: 911",
+    "ukCall": "UK: 999",
+    "inCall": "Indien: 112",
+    "deCallSub": "Notarzt + Feuerwehr",
+    "euCallSub": "Universaler EU-Notruf",
+    "usCallSub": "Polizei, Feuer, Rettung",
+    "ukCallSub": "Alle Dienste",
+    "inCallSub": "All-in-One-Notruf",
+    "nearestHospital": "Nächstgelegenes Krankenhaus",
+    "shareLocation": "Standort teilen, um das nächste Krankenhaus zu finden",
+    "esiTitle": "Schnelle Triage-Skala (ESI)",
+    "esi": {
+      "1": "Reanimation — sofort anrufen",
+      "2": "Dringend — sofort gehen",
+      "3": "Eilig — innerhalb von Stunden",
+      "4": "Weniger eilig — am selben Tag",
+      "5": "Nicht eilig — Routine"
+    },
+    "redFlagsTitle": "Warnzeichen",
+    "redFlags": [
+      "Brustschmerzen, die in Arm oder Kiefer ausstrahlen",
+      "Plötzlicher starker Kopfschmerz (schlimmster Ihres Lebens)",
+      "Atemnot oder Schwellung von Gesicht/Hals",
+      "Plötzliche Schwäche auf einer Seite; verwaschene Sprache",
+      "Starke unkontrollierte Blutung",
+      "Bewusstlosigkeit"
+    ]
+  },
+  "insurance": {
+    "title": "Versicherungsplanung",
+    "subtitle": "Vergleichen Sie Tarife, verstehen Sie Ihre Deckung und planen Sie für das, was nicht abgedeckt ist.",
+    "currentPlan": "Ihre aktuelle Deckung",
+    "germanySectionTitle": "Deutschland",
+    "gkv": {
+      "title": "Gesetzliche Krankenversicherung (GKV)",
+      "body": "Pflicht für Einwohnerinnen mit unter 69.300 €/Jahr Bruttoeinkommen. Rund 90 % Deutschlands sind GKV-versichert. Beitrag ~14,6 % des Bruttogehalts, geteilt zwischen Arbeitnehmerin und Arbeitgeberin."
+    },
+    "pkv": {
+      "title": "Private Krankenversicherung (PKV)",
+      "body": "Für Gutverdienerinnen (>69.300 €/Jahr), Selbständige, Beamtinnen, Studierende. Beiträge basieren auf Alter und Risikoprofil, nicht auf Einkommen. Oft kürzere Wartezeiten bei Fachärztinnen."
+    },
+    "expatCheck": {
+      "title": "Expat-Checkliste",
+      "items": [
+        "Prüfen Sie, ob Ihr Visum gesetzliche oder private Deckung verlangt",
+        "Vergleichen Sie TK, AOK, Barmer (größte GKV-Anbieter)",
+        "Wenn selbständig, fordern Sie ein PKV-Angebot — der Wechsel zurück zur GKV ist später eingeschränkt",
+        "Stellen Sie sicher, dass Ihr Tarif Heilpraktiker abdeckt, falls Sie sie nutzen",
+        "Prüfen Sie Zahn- und Sehleistungen"
+      ]
+    }
+  },
+  "expat": {
+    "title": "Expat-Hilfe — Deutschland",
+    "subtitle": "Die ersten 90 Tage, auf Englisch. Aus echten Expat-Erfahrungen, geprüft gegen BAMF und Bundesquellen.",
+    "sections": {
+      "anmeldung": {
+        "title": "Anmeldung — Wohnsitz registrieren",
+        "body": "Erforderlich innerhalb von 14 Tagen nach dem Einzug. Bringen Sie Pass, Wohnungsgeberbestätigung und Anmeldeformular mit. Die meisten Städte bieten Online-Buchung — Slots sind in Berlin/München knapp; 2–4 Wochen vorher buchen."
+      },
+      "krankenversicherung": {
+        "title": "Krankenversicherung",
+        "body": "Sie können fast nichts anderes (Bankkonto eröffnen in manchen Fällen, Arbeitsvertrag unterzeichnen, Aufenthaltstitel bekommen) ohne Versicherungsnachweis tun. Wenn Sie angestellt sind, leitet HR Sie an einen GKV-Anbieter. Selbständig: Wahl zwischen GKV (Künstlersozialkasse kann zutreffen) und PKV."
+      },
+      "steuerId": {
+        "title": "Steueridentifikationsnummer",
+        "body": "Wird ~2 Wochen nach der Anmeldung automatisch an Ihre registrierte Adresse geschickt. Erforderlich für Ihr erstes Gehalt. Wenn Ihr Arbeitgeber davor fragt, geben Sie die Anmeldebestätigung und sagen Sie, dass die ID folgt."
+      },
+      "bankAccount": {
+        "title": "Bankkonto",
+        "body": "N26, Commerzbank, Deutsche Bank, ING — alle akzeptieren digitale Onboarding für Ausländer mit Wohnadresse. SEPA ist Standard. PayPal funktioniert, ist aber kein Ersatz für eine deutsche IBAN für Gehalt."
+      },
+      "findingDoctors": {
+        "title": "Englischsprachige Ärztinnen finden",
+        "body": "Doctolib (Filter: Sprache: English). Die meisten Großstädte haben expat-freundliche Hausärztinnen; Facharzt-Wartezeiten 4–12 Wochen über GKV, ~1–2 Wochen über PKV. Wir können die ersten 3 Termine für Sie vorbuchen — siehe Termine."
+      },
+      "ePrescription": {
+        "title": "E-Rezept",
+        "body": "Seit 2024 werden GKV-gedeckte Rezepte als e-Rezepte über die Gematik-App oder Ihre Versicherungskarte ausgestellt. Mörbius übergibt an den Gematik-Flow, wenn ein Rezept benötigt wird — wir versuchen nicht, sie selbst auszustellen."
+      }
+    }
+  },
+  "common": {
+    "loading": "Lädt…",
+    "error": "Etwas ist schiefgelaufen",
+    "retry": "Erneut versuchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "comingSoon": "Bald verfügbar",
+    "demo": "Demo-Modus"
+  },
+  "recents": {
+    "kicker": "Speicher · Kontinuität",
+    "title": "Konsultation fortsetzen.",
+    "empty": "Noch keine Konsultationen. Starte eine vom Dashboard oder klicke auf einen Beispielfall.",
+    "openConsult": "Konsultation öffnen",
+    "resumable": "fortsetzbar",
+    "voiceHint": "Sprache:",
+    "keyboardHint": "Tastatur:",
+    "esc": "Esc zum Schließen",
+    "topbarTitle": "Letzte Konsultationen · ⌘ ; oder „Mörbius show recents“",
+    "topbarLabel": "Letzte Konsultationen"
+  },
+  "voiceCheatSheet": {
+    "kicker": "Sprachbefehle · Spickzettel",
+    "title": "Alles, was Mörbius kann, kannst du sagen.",
+    "groupNavigate": "Navigation",
+    "groupConsult": "Frage · Konsultation",
+    "groupContinuity": "Kontinuität",
+    "groupControl": "Steuerung",
+    "wakeWord": "Aktivierungswort:",
+    "armHint": "aktiviere das Mikro (rechts unten) einmal, dann sage einen Satz aus einer der Gruppen.",
+    "drawerHint": "Letzte Konsultationen:",
+    "topbarTitle": "Sprachbefehle Spickzettel",
+    "topbarLabel": "Sprachbefehle"
+  },
+  "multimodal": {
+    "header": "Anhängen · Sprache · Labor-PDF · Hautfoto",
+    "attached": "{{count}} angehängt",
+    "voiceLabel": "Sprachnotiz",
+    "voiceClear": "Sprachtranskript löschen",
+    "voiceRecord": "aufnehmen",
+    "voiceStop": "stop",
+    "voiceUnsupported": "Sprachtranskription wird in diesem Browser nicht unterstützt.",
+    "voiceErrorPrefix": "Sprachfehler:",
+    "pdfLabel": "Labor-PDF",
+    "pdfHint": "klicken oder PDF ziehen · Browser-Parsing",
+    "pdfScanned": "[Gescanntes PDF · füge die relevanten Laborwerte vorerst ins Nachrichtenfeld ein]",
+    "pdfReadError": "[PDF-Text konnte nicht gelesen werden: {{reason}}]",
+    "imageLabel": "Hautfoto",
+    "imageHint": "klicken oder Bild ziehen · ABCDE bei der Konsultation",
+    "imageOversize": "{{filename}} überschreitet 12 MB",
+    "removeFile": "{{filename}} entfernen"
+  },
+  "security": {
+    "kickerPin": "PIN · rotieren",
+    "titlePin": "Dev-Console-PIN rotieren.",
+    "blurbPin": "4-8 Ziffern. Wird nur lokal in localStorage gespeichert — kein Server-Roundtrip.",
+    "newPin": "neue PIN",
+    "confirmPin": "bestätigen",
+    "rotate": "rotieren",
+    "resetDefault": "auf Standard zurücksetzen",
+    "errorMismatch": "PIN und Bestätigung unterscheiden sich.",
+    "errorFormat": "PIN muss 4-8 Ziffern lang sein.",
+    "okRotated": "PIN rotiert. Die nächste Sperre erfordert die neue PIN.",
+    "okReset": "PIN auf Standard zurückgesetzt ({{pin}}).",
+    "kickerPasskey": "Passkey · biometrisch",
+    "titlePasskey": "Mit Touch ID / Windows Hello entsperren.",
+    "blurbPasskeyEnrolled": "Passkey auf diesem Gerät registriert — der Sperrbildschirm bietet jetzt eine biometrische Ein-Tipp-Entsperrung.",
+    "blurbPasskeyAvailable": "Deine Plattform unterstützt einen integrierten Passkey (Fingerabdruck / Face ID / Windows Hello). Einmal registrieren und die PIN entfällt.",
+    "blurbPasskeyMissing": "WebAuthn-Plattform-Authenticator nicht erkannt. Die PIN bleibt die einzige Entsperrung.",
+    "active": "aktiv",
+    "enroll": "Passkey registrieren",
+    "removePasskey": "Passkey entfernen",
+    "okEnrolled": "Passkey registriert. Die nächste Dev-Console-Entsperrung kann Touch ID / Windows Hello / Fingerabdruck nutzen.",
+    "errEnrolled": "Passkey-Registrierung fehlgeschlagen.",
+    "okRemoved": "Passkey entfernt. Die PIN bleibt als Fallback.",
+    "scopeNote": "Der Passkey ist auf diesen Origin beschränkt. Localhost und morbius.vercel.app registrieren sich separat — so beabsichtigt."
+  }
+}

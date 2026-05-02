@@ -1,0 +1,1107 @@
+@import "tailwindcss";
+
+@theme {
+  /* Unified Google-style font stack. Every face resolves to Roboto Flex
+   * by default so Dr·ABC reads like a Google Workspace / Material app:
+   * neutral, friendly, classic. The display / serif / syne / grotesk
+   * names are kept so existing `font-display` / `font-serif` / etc.
+   * utility classes still compile, but they all alias to Roboto Flex
+   * now. JetBrains Mono stays for code/numeric blocks because monospace
+   * for tabular nums + ICD codes is part of the medical-grade feel. */
+  --font-sans: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+  --font-display: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+  --font-serif: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+  --font-syne: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+  --font-grotesk: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Clinical (classic-doctor) accent palette — calm navy + ink-burgundy + warm beige */
+  --color-clinical-ink: #0b1f3a;
+  --color-clinical-ink-soft: #1f2f55;
+  --color-clinical-rule: #233455;
+  --color-clinical-paper: #fafaf7;
+  --color-clinical-paper-warm: #f3eee2;
+  --color-clinical-paper-deep: #e8e1d0;
+  --color-clinical-burgundy: #7a1f2a;
+  --color-clinical-sage: #4d6b59;
+  --color-clinical-amber: #b67a1d;
+
+  /* Bioluminescent medical-noir palette — shared across themes */
+  --color-quantum-300: #7dd3fc;
+  --color-quantum-400: #38bdf8;
+  --color-quantum-500: #06b6d4;
+  --color-quantum-600: #0891b2;
+
+  --color-bio-300: #6ee7b7;
+  --color-bio-400: #34d399;
+  --color-bio-500: #10b981;
+
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+
+  /* Stage-8 palette refresh — blue · white · grey · green · purple · black.
+     The existing `quantum` family stays cyan for component compatibility,
+     but `blue` + `purple` are the new primary accent + secondary accent
+     used across the rebuilt landing page + the new theme modes. */
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+
+  --color-purple-300: #c4b5fd;
+  --color-purple-400: #a78bfa;
+  --color-purple-500: #8b5cf6;
+  --color-purple-600: #7c3aed;
+  --color-purple-700: #6d28d9;
+
+  --color-grey-100: #f1f5f9;
+  --color-grey-300: #cbd5e1;
+  --color-grey-500: #64748b;
+  --color-grey-700: #334155;
+  --color-grey-900: #0f172a;
+
+  --color-ink-900: #0a1628;
+  --color-ink-950: #050b18;
+
+  --color-abyss-50: #f0f9ff;
+  --color-abyss-500: #0ea5e9;
+  --color-abyss-600: #0284c7;
+  --color-abyss-900: #0c4a6e;
+  --color-abyss-950: #082f49;
+}
+
+/* ====================================================================
+ *  THEME TOKENS — switch via [data-theme="light"|"dark"] on <html>.
+ *  All semantic colors (surface, text, border) reference these vars
+ *  so both themes share the same component code.
+ * ==================================================================== */
+:root {
+  color-scheme: dark;
+  --bg-app: #050b18;
+  --bg-surface: rgba(10, 22, 40, 0.6);
+  --bg-surface-strong: rgba(10, 22, 40, 0.95);
+  --bg-elevated: rgba(17, 33, 57, 0.7);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(56, 189, 248, 0.25);
+  --text-primary: #f1f5f9;
+  --text-secondary: #cad5e1;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --grid-line: rgba(56, 189, 248, 0.03);
+  --bg-app-radial-1: rgba(14, 165, 233, 0.15);
+  --bg-app-radial-2: rgba(16, 185, 129, 0.1);
+  --bg-app-radial-3: rgba(56, 189, 248, 0.04);
+  --bg-app-base-1: #050b18;
+  --bg-app-base-2: #0a1628;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-strong: #ffffff;
+  --bg-elevated: rgba(241, 245, 249, 0.95);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(8, 145, 178, 0.3);
+  --text-primary: #0f172a;
+  --text-secondary: #1e293b;
+  --text-muted: #475569;
+  --text-faint: #64748b;
+  --grid-line: rgba(8, 145, 178, 0.05);
+  --bg-app-radial-1: rgba(8, 145, 178, 0.1);
+  --bg-app-radial-2: rgba(16, 185, 129, 0.08);
+  --bg-app-radial-3: rgba(56, 189, 248, 0.05);
+  --bg-app-base-1: #f8fafc;
+  --bg-app-base-2: #e0f2fe;
+}
+
+/* ====================================================================
+ *  ACCENT SCALE — quantum/cyan family applied at :root so any component
+ *  reading `var(--accent-*)` resolves cleanly. The 5-mode picker that
+ *  shipped before v0.8 (clinical / cobalt / sage / synthwave) and the
+ *  per-tint accent override (blue/green/purple) are gone — architect
+ *  collapsed the system to a single bio-luminescent theme.
+ * ==================================================================== */
+:root {
+  --accent-50: #ecfeff;
+  --accent-100: #cffafe;
+  --accent-200: #a5f3fc;
+  --accent-300: #67e8f9;
+  --accent-400: #22d3ee;
+  --accent-500: #06b6d4;
+  --accent-600: #0891b2;
+  --accent-700: #0e7490;
+  --accent-800: #155e75;
+  --accent-900: #164e63;
+  /* WCAG-friendly focus ring — 3px, current accent at 55% alpha. */
+  --focus-ring: rgba(34, 211, 238, 0.55);
+}
+
+/* Real focus ring utility — components already using `focus:border-*`
+   get an OUTSET ring instead of just changing the border. v0.7 audit
+   fix #2: visible focus ring required for AA keyboard nav. Apply via
+   the `focus-ring` utility class or the @apply mixin on inputs. */
+.focus-ring:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ====================================================================
+ *  AURORA MODE — bioluminescent medical-noir. Cyan + bio-green neon,
+ *  Playfair display, deep ink base with animated grid overlay. This is
+ *  the default first-time experience; existing users with the legacy
+ *  `bioluminescent` value still hit this rule via the alias selector.
+ * ==================================================================== */
+[data-mode="aurora"],
+[data-mode="bioluminescent"] {
+  /* KISS pass · 2026-05-12 — every theme now inherits the Roboto Flex
+   * display face set in the global @theme block. The per-theme display
+   * overrides (Playfair / Cormorant / Syne) made the surface feel like
+   * five different apps stitched together; the unified Roboto stack
+   * reads like one Google-Workspace-quality product. */
+  --font-display: "Roboto Flex", "Roboto", "Inter", system-ui, sans-serif;
+}
+
+/* Aurora dark — bioluminescent neon · cyan + bio-green over deep ink.
+ * v1.0.18 contrast lift (2026-05-10): the Records / Apple-Health card
+ * body text was sitting on a translucent card with a brand tint, and
+ * --text-muted at #94b8d4 dropped below 3:1 against the visible blend.
+ * Lifted muted and faint by ~25 % luminance so cards stay readable
+ * even with /10 overlays stacked on the surface. */
+[data-mode="aurora"][data-theme="dark"],
+[data-mode="aurora"]:not([data-theme="light"]),
+[data-mode="bioluminescent"][data-theme="dark"],
+[data-mode="bioluminescent"]:not([data-theme="light"]) {
+  color-scheme: dark;
+  --bg-app: #050b18;
+  --bg-surface: rgba(15, 23, 42, 0.6);
+  --bg-surface-strong: rgba(8, 15, 30, 0.85);
+  --bg-elevated: rgba(20, 30, 50, 0.7);
+  --border-subtle: rgba(34, 211, 238, 0.18);
+  --border-strong: rgba(34, 211, 238, 0.55);
+  --text-primary: #ecfeff;
+  --text-secondary: #d5ecff;
+  --text-muted: #b8d4e8;
+  --text-faint: #8aa5c0;
+  --grid-line: rgba(34, 211, 238, 0.06);
+  --bg-app-radial-1: rgba(34, 211, 238, 0.18);
+  --bg-app-radial-2: rgba(16, 185, 129, 0.14);
+  --bg-app-radial-3: rgba(56, 189, 248, 0.08);
+  --bg-app-base-1: #050b18;
+  --bg-app-base-2: #0a1628;
+}
+
+/* Aurora light — soft pastel bio · cyan/bio accents on near-white,
+ * the only mode that translates the bioluminescent language to
+ * paper without losing the brand colour family. Architect's v0.8
+ * ask: "check all themes from scratch" — Aurora previously had no
+ * explicit light tokens and fell through to a generic light theme. */
+[data-mode="aurora"][data-theme="light"],
+[data-mode="bioluminescent"][data-theme="light"] {
+  color-scheme: light;
+  /* Shining white canvas · no neon. Light theme is a clinical sheet of
+   * paper with high-contrast slate ink, not a bioluminescent glow on
+   * white. Radials are barely-there slate cools so the page reads as
+   * solid white with depth, not as a hazy gradient. */
+  --bg-app: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.96);
+  --bg-surface-strong: #ffffff;
+  --bg-elevated: #f8fafc;
+  --border-subtle: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.28);
+  --text-primary: #020617;
+  --text-secondary: #0f172a;
+  --text-muted: #1e293b;
+  --text-faint: #475569;
+  --grid-line: rgba(15, 23, 42, 0.04);
+  /* Radials muted to slate-cools at <6% alpha. Effectively invisible
+   * but adds 1 px of dimension; no cyan/bio/purple neon bleed-through. */
+  --bg-app-radial-1: rgba(148, 163, 184, 0.05);
+  --bg-app-radial-2: rgba(203, 213, 225, 0.04);
+  --bg-app-radial-3: rgba(241, 245, 249, 0.04);
+  --bg-app-base-1: #ffffff;
+  --bg-app-base-2: #f8fafc;
+}
+
+/* Aurora surfaces — soft glass blur in dark, hairline rule in light */
+[data-mode="aurora"] .surface,
+[data-mode="aurora"] .surface-strong,
+[data-mode="aurora"] .surface-elevated,
+[data-mode="bioluminescent"] .surface,
+[data-mode="bioluminescent"] .surface-strong,
+[data-mode="bioluminescent"] .surface-elevated {
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+[data-mode="aurora"][data-theme="light"] .surface,
+[data-mode="aurora"][data-theme="light"] .surface-strong,
+[data-mode="aurora"][data-theme="light"] .surface-elevated,
+[data-mode="bioluminescent"][data-theme="light"] .surface,
+[data-mode="bioluminescent"][data-theme="light"] .surface-strong,
+[data-mode="bioluminescent"][data-theme="light"] .surface-elevated {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: 0 1px 2px rgba(8, 145, 178, 0.06), 0 4px 16px rgba(8, 145, 178, 0.04);
+}
+
+/* ====================================================================
+ *  (Cobalt / sage / synthwave palette blocks lived here pre-v0.8 — gone.)
+ * ==================================================================== */
+
+/* ====================================================================
+ *  LIGHT-MODE GLOBAL CONTRAST FIX
+ *
+ *  Architect's v0.8 ask (2026-05-06): "light theme errors." Most cards
+ *  in the codebase use `bg-white/N` (designed as a subtle lift on a
+ *  dark canvas). On a light canvas, white-on-white collapses to
+ *  invisible. 168 occurrences — too many to refactor one by one. This
+ *  block flips every `bg-white/N` to a small black tint when the
+ *  active theme is light, and rewrites `text-white` to the per-theme
+ *  primary text colour. Components don't need to change.
+ * ==================================================================== */
+:where(html[data-theme="light"]) .bg-white\/2,
+:where(html[data-theme="light"]) .bg-white\/\[0\.02\] {
+  background-color: rgba(15, 23, 42, 0.025);
+}
+:where(html[data-theme="light"]) .bg-white\/3,
+:where(html[data-theme="light"]) .bg-white\/\[0\.03\] {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+:where(html[data-theme="light"]) .bg-white\/5,
+:where(html[data-theme="light"]) .bg-white\/\[0\.04\],
+:where(html[data-theme="light"]) .bg-white\/\[0\.05\] {
+  background-color: rgba(15, 23, 42, 0.05);
+}
+:where(html[data-theme="light"]) .bg-white\/8,
+:where(html[data-theme="light"]) .bg-white\/\[0\.08\] {
+  background-color: rgba(15, 23, 42, 0.06);
+}
+:where(html[data-theme="light"]) .bg-white\/10,
+:where(html[data-theme="light"]) .bg-white\/\[0\.10\] {
+  background-color: rgba(15, 23, 42, 0.07);
+}
+:where(html[data-theme="light"]) .bg-white\/15,
+:where(html[data-theme="light"]) .bg-white\/\[0\.15\] {
+  background-color: rgba(15, 23, 42, 0.09);
+}
+:where(html[data-theme="light"]) .bg-white\/20,
+:where(html[data-theme="light"]) .bg-white\/\[0\.20\] {
+  background-color: rgba(15, 23, 42, 0.11);
+}
+:where(html[data-theme="light"]) .bg-black\/30,
+:where(html[data-theme="light"]) .bg-black\/40,
+:where(html[data-theme="light"]) .bg-black\/60,
+:where(html[data-theme="light"]) .bg-black\/70 {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+:where(html[data-theme="light"]) .bg-ink-950 {
+  background-color: var(--bg-surface-strong);
+}
+
+/* `hover:bg-white/N` mirrors the same logic so hover lifts also work
+ * on light canvases. */
+:where(html[data-theme="light"]) .hover\:bg-white\/5:hover,
+:where(html[data-theme="light"]) .hover\:bg-white\/8:hover,
+:where(html[data-theme="light"]) .hover\:bg-white\/10:hover {
+  background-color: rgba(15, 23, 42, 0.07);
+}
+
+/* `text-white` is the worst offender for legibility — flips to the
+ *  active theme's primary ink. */
+:where(html[data-theme="light"]) .text-white {
+  color: var(--text-primary);
+}
+
+/* Cobalt + Sage + Aurora light all share these inputs — also fix
+ *  the `bg-black/30` placeholder backgrounds used inside cards. */
+:where(html[data-theme="light"]) input.bg-black\/30,
+:where(html[data-theme="light"]) textarea.bg-black\/30,
+:where(html[data-theme="light"]) input.bg-black\/40,
+:where(html[data-theme="light"]) textarea.bg-black\/40 {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--text-primary);
+}
+
+/* ====================================================================
+ *  PER-MODE BRAND-TOKEN OVERRIDES
+ *
+ *  Tailwind v4 generates `text-quantum-400`, `bg-bio-500/15`, etc. as
+ *  utilities that resolve to `var(--color-quantum-400)` / `var(--color-bio-500)`.
+ *  By overriding those vars under each `[data-mode="…"]` selector, we
+ *  re-skin every brand accent across the entire app without touching a
+ *  single component class. The architect's complaint that themes only
+ *  Aurora is the only mode now — the default :root values (cyan +
+ *  bio-green + purple + rose) carry the entire visual language.
+ * ==================================================================== */
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+.font-syne {
+  font-family: var(--font-syne);
+  letter-spacing: 0;
+}
+.font-grotesk {
+  font-family: var(--font-grotesk);
+}
+
+/* Agency-style helpers for the landing page and feature headers. */
+.text-mega {
+  font-size: 2.7rem;
+  line-height: 1.03;
+  letter-spacing: 0;
+}
+.text-display-xl {
+  font-size: 2rem;
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+@media (min-width: 640px) {
+  .text-mega {
+    font-size: 4.2rem;
+  }
+  .text-display-xl {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .text-mega {
+    font-size: 5.9rem;
+  }
+  .text-display-xl {
+    font-size: 4.2rem;
+  }
+}
+
+/* Marquee — used by the trusted-by row on the landing page. */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+/* Animated dashed flow on pipeline edges — shared by the dev-console
+   pipeline graph + the neural brain map. */
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+.animate-dash-flow {
+  stroke-dasharray: 6 6;
+  animation: dash-flow 1.4s linear infinite;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background: radial-gradient(ellipse at 15% 5%, var(--bg-app-radial-1) 0%, transparent 60%),
+    radial-gradient(ellipse at 90% 95%, var(--bg-app-radial-2) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 50%, var(--bg-app-radial-3) 0%, transparent 70%),
+    linear-gradient(
+      180deg,
+      var(--bg-app-base-1) 0%,
+      var(--bg-app-base-2) 50%,
+      var(--bg-app-base-1) 100%
+    );
+  background-attachment: fixed;
+  color: var(--text-primary);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.2);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.4);
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: var(--text-primary);
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+}
+.pulse-glow {
+  animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+.caret {
+  animation: blink 1s steps(2) infinite;
+}
+
+/* Surface utility classes — semantic, theme-aware */
+.surface {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+}
+.surface-strong {
+  background-color: var(--bg-surface-strong);
+  border: 1px solid var(--border-subtle);
+}
+.surface-elevated {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+}
+.text-app-primary {
+  color: var(--text-primary);
+}
+.text-app-secondary {
+  color: var(--text-secondary);
+}
+.text-app-muted {
+  color: var(--text-muted);
+}
+.text-app-faint {
+  color: var(--text-faint);
+}
+.border-app-subtle {
+  border-color: var(--border-subtle);
+}
+.border-app-strong {
+  border-color: var(--border-strong);
+}
+
+/* Narrator spotlight — pulses the sidebar item the tour is currently
+   describing. Only the active step gets the ring. */
+[data-narrator-active="true"] {
+  position: relative;
+  outline: 2px solid #38bdf8;
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+  animation: narrator-pulse 1.6s ease-in-out infinite;
+  z-index: 50;
+}
+@keyframes narrator-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+}
+
+@keyframes narrator-jump {
+  0%,
+  78%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  84% {
+    transform: translateY(-10px) scale(1.015);
+  }
+  90% {
+    transform: translateY(0) scale(1);
+  }
+  94% {
+    transform: translateY(-4px) scale(1.006);
+  }
+}
+.animate-narrator-jump {
+  animation: narrator-jump 4.8s ease-in-out infinite;
+}
+
+/* ====================================================================
+ *  PER-MODE VISUAL SIGNATURE — corner radius · hover · ornament · ring
+ *
+ *  The architect's note: "themes are just a color, that's not theme."
+ *  Fix: every mode now ships its own SHAPE LANGUAGE (radius, border,
+ *  hover transform), HEADLINE ORNAMENT (decorative bar under H1s),
+ *  and FOCUS / SELECTION look — so a theme switch isn't only a colour
+ *  change, the whole UI re-shapes itself.
+ *
+ *  Read order: mode-default first, then per-mode overrides cascade.
+ * ==================================================================== */
+
+/* Default — aurora · medium-rounded cards, soft cyan focus, subtle hover lift */
+:root {
+  --radius-card: 14px;
+  --radius-card-sm: 10px;
+  --card-hover-translate: -2px;
+  --card-hover-shadow: 0 12px 36px -16px rgba(56, 189, 248, 0.45);
+  --headline-ornament: linear-gradient(90deg, var(--color-quantum-400), var(--color-bio-400));
+  --headline-ornament-width: 56px;
+  --headline-ornament-height: 2px;
+  --focus-ring: 0 0 0 3px rgba(56, 189, 248, 0.32);
+  --button-radius: 12px;
+}
+
+/* Apply the radius + hover to every Card. The base .surface class is
+   used by the @dr-abc/ui Card component. */
+.surface,
+.surface-strong,
+.surface-elevated {
+  border-radius: var(--radius-card);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, backdrop-filter
+    220ms ease;
+}
+.surface:hover,
+.surface-strong:hover {
+  transform: translateY(var(--card-hover-translate));
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* Headline ornament — opt-in via .with-ornament so we don't litter
+   every section title with a bar. The hero's giant headline + page-
+   title h1s in App pages can add the class to surface the per-mode
+   accent ornament. */
+.with-ornament {
+  position: relative;
+}
+.with-ornament::after {
+  content: "";
+  display: block;
+  height: var(--headline-ornament-height);
+  width: var(--headline-ornament-width);
+  background: var(--headline-ornament);
+  margin-top: 10px;
+  border-radius: 999px;
+  opacity: 0.7;
+}
+/* Focus ring — every interactive element references --focus-ring. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--button-radius);
+}
+
+/* Native <option> readability fix — browser-rendered <option> elements
+ * ignore most of our CSS (the OS draws the dropdown panel), so the
+ * unstyled items read as near-invisible "dark text on white" on the
+ * dark themes. Forcing color-scheme + explicit option background +
+ * color hits the only path the browser honours. Applied globally so
+ * every <select> in the app gets a readable dropdown without
+ * per-component noise. */
+select {
+  color-scheme: dark light;
+}
+select option {
+  background-color: #0e1f36;
+  color: #e6f0ff;
+}
+[data-mode="clinical"] select,
+[data-mode="sage"] select {
+  color-scheme: light;
+}
+[data-mode="clinical"] select option,
+[data-mode="sage"] select option {
+  background-color: #ffffff;
+  color: #0b1f3a;
+}
+
+/* Aurora — cyan glow on hover, default reads as a bioluminescent pulse. */
+[data-mode="aurora"] .surface:hover,
+[data-mode="aurora"] .surface-strong:hover,
+:root:not([data-mode]) .surface:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+/* Buttons share the per-mode radius. The @dr-abc/ui Button component
+   maps to native <button> so this picks it up automatically. */
+button {
+  border-radius: var(--button-radius);
+}
+
+/* Text-mega ornament for the landing — bigger, heavier per mode. */
+.text-mega {
+  position: relative;
+}
+.text-mega::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: calc(var(--headline-ornament-width) * 1.5);
+  height: calc(var(--headline-ornament-height) * 1.5);
+  background: var(--headline-ornament);
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+/* ====================================================================
+ *  LIGHT-THEME READABILITY FIX
+ *
+ *  v0.7.2 patch — the codebase ships ~135 bg-white/X + 60 bg-black/X
+ *  occurrences across 41 files. In dark mode these are subtle highlights
+ *  / shadows. In light mode bg-white/X is on a near-white background
+ *  (invisible) and bg-black/X reads as a hard black smudge. Auditing
+ *  every file is slow; this block intercepts the rendered utility
+ *  classes when [data-theme="light"] is active and flips them to
+ *  ink-tint or paper-tint that read correctly on light surfaces.
+ *
+ *  Likewise, the very-light accent text utilities (text-quantum-200,
+ *  text-bio-200, text-purple-200, text-rose-200, text-amber-200)
+ *  are designed for dark mode chips. In light mode they need to drop
+ *  ~3 shades to maintain contrast against white.
+ * ==================================================================== */
+[data-theme="light"] .bg-white\/2,
+[data-theme="light"] .bg-white\/3 {
+  background-color: rgba(15, 23, 42, 0.025);
+}
+[data-theme="light"] .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+[data-theme="light"] .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.06);
+}
+[data-theme="light"] .bg-white\/15,
+[data-theme="light"] .bg-white\/20 {
+  background-color: rgba(15, 23, 42, 0.09);
+}
+[data-theme="light"] .hover\:bg-white\/5:hover {
+  background-color: rgba(15, 23, 42, 0.05);
+}
+[data-theme="light"] .hover\:bg-white\/10:hover {
+  background-color: rgba(15, 23, 42, 0.07);
+}
+
+/* bg-black/X in light mode reads as ink-stamp; soften the heavy ones. */
+[data-theme="light"] .bg-black\/20 {
+  background-color: rgba(15, 23, 42, 0.06);
+}
+[data-theme="light"] .bg-black\/30 {
+  background-color: rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .bg-black\/40,
+[data-theme="light"] .bg-black\/45 {
+  background-color: rgba(15, 23, 42, 0.12);
+}
+[data-theme="light"] .bg-black\/60,
+[data-theme="light"] .bg-black\/70 {
+  background-color: rgba(15, 23, 42, 0.18);
+}
+
+/* Light text accents (200-shade) shift down ~3 shades in light mode so
+ * they pass WCAG AA on near-white surfaces. The 600/700 shades read as
+ * "saturated brand-accent on paper" instead of "ghost text on white". */
+[data-theme="light"] .text-quantum-100,
+[data-theme="light"] .text-quantum-200,
+[data-theme="light"] .text-quantum-300 {
+  color: var(--color-quantum-600);
+}
+[data-theme="light"] .text-bio-100,
+[data-theme="light"] .text-bio-200,
+[data-theme="light"] .text-bio-300 {
+  color: var(--color-bio-500);
+}
+[data-theme="light"] .text-purple-100,
+[data-theme="light"] .text-purple-200,
+[data-theme="light"] .text-purple-300 {
+  color: var(--color-purple-600);
+}
+[data-theme="light"] .text-rose-100,
+[data-theme="light"] .text-rose-200,
+[data-theme="light"] .text-rose-300 {
+  color: #be123c; /* rose-700 */
+}
+[data-theme="light"] .text-amber-100,
+[data-theme="light"] .text-amber-200,
+[data-theme="light"] .text-amber-300 {
+  color: #b45309; /* amber-700 */
+}
+[data-theme="light"] .text-blue-100,
+[data-theme="light"] .text-blue-200,
+[data-theme="light"] .text-blue-300 {
+  color: var(--color-blue-700);
+}
+
+/* Code blocks + chips that sit on bg-white/X get an ink-tinted background
+ * automatically via the rules above. Make sure the inline <code> chip
+ * retains a readable inset border in light mode. */
+[data-theme="light"] code {
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+/* ====================================================================
+ *  v1.0.18 LIGHT-MODE FINAL PASS
+ *
+ *  Architect screenshot 2026-05-10 (architecture page) showed the brand-
+ *  tinted cards (`bg-{quantum,bio,amber,purple,rose}-500/10`) collapsing
+ *  to ghost-white on the light canvas — the /10 alpha is built for a
+ *  dark backdrop. Rules below thicken the tint, the border, and the icon
+ *  glyph so the same component reads correctly on either theme without
+ *  touching component code.
+ *
+ *  Specificity: this block sits LAST so it wins ties against earlier
+ *  light-mode patches and the per-mode brand-token overrides above.
+ * ==================================================================== */
+
+/* Brand-tinted card backgrounds — bump alpha so the tint is visible on
+ * a near-white canvas. Pattern: bg-{name}-500/10 → /16, /15 → /20. */
+[data-theme="light"] .bg-quantum-500\/10,
+[data-theme="light"] .bg-quantum-500\/\[0\.10\] {
+  background-color: rgba(6, 182, 212, 0.16);
+}
+[data-theme="light"] .bg-quantum-500\/15,
+[data-theme="light"] .bg-quantum-500\/\[0\.15\] {
+  background-color: rgba(6, 182, 212, 0.22);
+}
+[data-theme="light"] .bg-quantum-500\/20 {
+  background-color: rgba(6, 182, 212, 0.28);
+}
+[data-theme="light"] .bg-bio-500\/10,
+[data-theme="light"] .bg-bio-500\/\[0\.10\] {
+  background-color: rgba(16, 185, 129, 0.16);
+}
+[data-theme="light"] .bg-bio-500\/15 {
+  background-color: rgba(16, 185, 129, 0.22);
+}
+[data-theme="light"] .bg-amber-500\/10,
+[data-theme="light"] .bg-amber-500\/\[0\.10\] {
+  background-color: rgba(245, 158, 11, 0.18);
+}
+[data-theme="light"] .bg-amber-500\/15 {
+  background-color: rgba(245, 158, 11, 0.24);
+}
+[data-theme="light"] .bg-purple-500\/10,
+[data-theme="light"] .bg-purple-500\/\[0\.10\] {
+  background-color: rgba(139, 92, 246, 0.16);
+}
+[data-theme="light"] .bg-purple-500\/15 {
+  background-color: rgba(139, 92, 246, 0.22);
+}
+[data-theme="light"] .bg-rose-500\/10,
+[data-theme="light"] .bg-rose-500\/\[0\.10\] {
+  background-color: rgba(244, 63, 94, 0.16);
+}
+[data-theme="light"] .bg-rose-500\/15 {
+  background-color: rgba(244, 63, 94, 0.22);
+}
+[data-theme="light"] .bg-blue-500\/10 {
+  background-color: rgba(59, 130, 246, 0.16);
+}
+
+/* Brand-tinted borders — /40 looks ghost on white; /60 reads as a real
+ * outline. The dark-mode value is untouched (these are scoped to light). */
+[data-theme="light"] .border-quantum-400\/40 {
+  border-color: rgba(56, 189, 248, 0.6);
+}
+[data-theme="light"] .border-bio-400\/40 {
+  border-color: rgba(52, 211, 153, 0.6);
+}
+[data-theme="light"] .border-amber-400\/40 {
+  border-color: rgba(251, 191, 36, 0.6);
+}
+[data-theme="light"] .border-purple-400\/40 {
+  border-color: rgba(167, 139, 250, 0.65);
+}
+[data-theme="light"] .border-rose-400\/40 {
+  border-color: rgba(251, 113, 133, 0.6);
+}
+[data-theme="light"] .border-blue-400\/40 {
+  border-color: rgba(96, 165, 250, 0.6);
+}
+
+/* Inherited text-color trap — when a parent sets text-{brand}-100/200
+ * the child <span class="text-app-primary"> wins, but a child icon /
+ * `<motion.span class="bg-black/30 p-1.5">` has no own colour and
+ * inherits the pale brand tint. In light mode that = invisible. The
+ * 100/200/300 → 600 flip already lives at line 699; this block adds
+ * the missing 400 shade fallback so any chip using `text-{brand}-400`
+ * also drops to its 700 shade in light mode. */
+[data-theme="light"] .text-quantum-400 {
+  color: var(--color-quantum-600);
+}
+[data-theme="light"] .text-bio-400 {
+  color: #047857; /* bio-700 */
+}
+[data-theme="light"] .text-amber-400 {
+  color: #b45309; /* amber-700 */
+}
+[data-theme="light"] .text-purple-400 {
+  color: var(--color-purple-700);
+}
+[data-theme="light"] .text-rose-400 {
+  color: #be123c; /* rose-700 */
+}
+[data-theme="light"] .text-blue-400 {
+  color: var(--color-blue-700);
+}
+
+/* Surface helpers — `surface` and `surface-strong` already read
+ * --bg-surface, but components that explicitly use `bg-app-surface` /
+ * `bg-app-elevated` Tailwind-arbitrary classes need their own light
+ * fallback so the card body is visibly differentiated from the page
+ * background. */
+[data-theme="light"] .bg-app-surface {
+  background-color: var(--bg-surface);
+}
+[data-theme="light"] .bg-app-elevated {
+  background-color: var(--bg-elevated);
+}
+
+/* Card hover lift uses a dark blue cyan glow that disappears on white.
+ * Replace with a softer slate shadow that reads as "lifted paper". */
+[data-theme="light"] .surface:hover,
+[data-theme="light"] .surface-strong:hover {
+  box-shadow: 0 8px 28px -14px rgba(15, 23, 42, 0.28), 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+/* Top-bar identity strip + footer status row use text-app-faint. The
+ * old #5e7e8c shipped as borderline-AA on the page bg; the new #475569
+ * (slate-600) puts it at 4.7:1 against #f4fbfe — solidly AA. Nothing
+ * to override here, just noting the chain. */
+
+/* ====================================================================
+ *  v1.0.18 LIGHT-MODE SAFETY NET — covers landing · dashboard · scribe ·
+ *  records · imaging · settings · architecture · agents-room.
+ *
+ *  Architect's 2026-05-10 follow-up: "make sure all routes and all pages
+ *  including landing all versions." Previous patches handled the obvious
+ *  brand-tint cases; this block catches the remaining gaps surfaced by
+ *  the device-card screenshots (Apple Health / Google Fit etc.) where
+ *  card body text was washing on a low-opacity slate-900/40 background.
+ * ==================================================================== */
+
+/* Force every Card / surface to read as solid white in light mode. The
+ * default `surface` rule already does this via --bg-surface, but cards
+ * that compose extra `bg-slate-900/N` or `bg-ink-950/N` overlays land
+ * below it in the cascade and undo the readability. */
+[data-theme="light"] .bg-slate-900\/30,
+[data-theme="light"] .bg-slate-900\/40,
+[data-theme="light"] .bg-slate-900\/50,
+[data-theme="light"] .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-950\/40,
+[data-theme="light"] .bg-slate-950\/60,
+[data-theme="light"] .bg-ink-900,
+[data-theme="light"] .bg-ink-900\/40,
+[data-theme="light"] .bg-ink-900\/60,
+[data-theme="light"] .bg-ink-950\/40,
+[data-theme="light"] .bg-ink-950\/60,
+[data-theme="light"] .bg-ink-950\/80,
+[data-theme="light"] .bg-ink-950\/95 {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+/* Same for the gradients that landing + meet-mörbius use — light mode
+ * needs an opaque-paper alternative or the headline blurs into the
+ * page background. */
+[data-theme="light"] .from-ink-950,
+[data-theme="light"] .via-ink-950,
+[data-theme="light"] .to-ink-950 {
+  --tw-gradient-from: rgba(255, 255, 255, 0.95) !important;
+  --tw-gradient-via: rgba(248, 250, 252, 0.9) !important;
+  --tw-gradient-to: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* bg-linear-to-br helpers that lean on the brand families — give them
+ * a softer paper-tinted version in light mode so the gradient stays
+ * visible without being garish. */
+[data-theme="light"] .from-purple-500\/10,
+[data-theme="light"] .from-purple-500\/15,
+[data-theme="light"] .from-purple-500\/20,
+[data-theme="light"] .via-purple-500\/8,
+[data-theme="light"] .via-purple-500\/10,
+[data-theme="light"] .to-blue-500\/10,
+[data-theme="light"] .to-blue-500\/15,
+[data-theme="light"] .to-blue-500\/20 {
+  --tw-gradient-from: rgba(139, 92, 246, 0.12) !important;
+  --tw-gradient-via: rgba(96, 165, 250, 0.08) !important;
+  --tw-gradient-to: rgba(96, 165, 250, 0.12) !important;
+}
+
+/* `bg-linear-to-br from-quantum-500/8 via-bio-500/8 to-purple-500/8`
+ * shows up in the brand-card on the dashboard and the second-brain
+ * header. Force visibility in light mode. */
+[data-theme="light"] .from-quantum-500\/8,
+[data-theme="light"] .from-quantum-500\/10,
+[data-theme="light"] .via-bio-500\/8,
+[data-theme="light"] .via-bio-500\/10,
+[data-theme="light"] .to-purple-500\/8,
+[data-theme="light"] .to-purple-500\/10 {
+  --tw-gradient-from: rgba(34, 211, 238, 0.16) !important;
+  --tw-gradient-via: rgba(52, 211, 153, 0.12) !important;
+  --tw-gradient-to: rgba(167, 139, 250, 0.16) !important;
+}
+
+/* Sub-text inside cards · the most-failing class on the screenshots.
+ * When `text-app-muted` lands on a translucent card with a brand-tint
+ * overlay, the effective contrast can drop below 3:1. Inside any
+ * `.surface` parent, deepen it one more notch. */
+[data-theme="light"] .surface .text-app-muted,
+[data-theme="light"] .surface-strong .text-app-muted,
+[data-theme="light"] .surface-elevated .text-app-muted {
+  color: #1e293b; /* slate-800 — locked above 7:1 on any tinted card */
+}
+[data-theme="light"] .surface .text-app-faint,
+[data-theme="light"] .surface-strong .text-app-faint,
+[data-theme="light"] .surface-elevated .text-app-faint {
+  color: #334155; /* slate-700 */
+}
+
+/* Landing-specific overrides — the hero section uses bg-ink-950 with a
+ * gradient overlay that's invisible on white. Repaint it as a deep
+ * accent gradient on paper. */
+[data-theme="light"] .landing-hero,
+[data-theme="light"] .meet-morbius-overlay {
+  background-color: #ffffff;
+}
+
+/* The bottom landing footer + corner status pills use bg-black/{N}.
+ * Already covered above; this is a reminder that they auto-flip. */
+
+/* Chip / pill labels on the landing footer use very low alpha colours
+ * to fade in over the dark canvas. Promote them in light mode. */
+[data-theme="light"] .text-app-faint\/70,
+[data-theme="light"] .text-app-muted\/70 {
+  color: #475569 !important;
+}
+
+/* Inputs · auto-darken placeholder text in light mode so it doesn't
+ * look ghosty on the white background. */
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: rgba(71, 85, 105, 0.7); /* slate-600 alpha 70 */
+}
+
+/* Settings · light mode tile buttons use a dark heavy surface. Light
+ * mode equivalent is a soft paper with stronger border. */
+[data-theme="light"] .bg-purple-500\/5,
+[data-theme="light"] .bg-quantum-500\/5,
+[data-theme="light"] .bg-bio-500\/5,
+[data-theme="light"] .bg-rose-500\/5,
+[data-theme="light"] .bg-amber-500\/5 {
+  background-color: rgba(248, 250, 252, 0.85);
+}
+
+/* ====================================================================
+ *  Light-theme NO-NEON pass (architect's ask 2026-05-11):
+ *
+ *   "shining white and dark text · perfect glass morphism theme and
+ *    dark perfection with high contrast · no neon in light theme."
+ *
+ *  Brand-tinted card backgrounds (quantum/bio/purple/rose/amber) at
+ *  /10 alpha read as neon glow on white. Light mode collapses them to
+ *  near-neutral slate tints with a thin coloured border, so the brand
+ *  identity stays without the glow. Dark mode untouched.
+ * ==================================================================== */
+[data-theme="light"] .bg-quantum-500\/10,
+[data-theme="light"] .bg-quantum-500\/\[0\.10\],
+[data-theme="light"] .bg-quantum-500\/15,
+[data-theme="light"] .bg-quantum-500\/\[0\.15\],
+[data-theme="light"] .bg-bio-500\/10,
+[data-theme="light"] .bg-bio-500\/\[0\.10\],
+[data-theme="light"] .bg-bio-500\/15,
+[data-theme="light"] .bg-purple-500\/10,
+[data-theme="light"] .bg-purple-500\/\[0\.10\],
+[data-theme="light"] .bg-purple-500\/15,
+[data-theme="light"] .bg-rose-500\/10,
+[data-theme="light"] .bg-rose-500\/\[0\.10\],
+[data-theme="light"] .bg-rose-500\/15,
+[data-theme="light"] .bg-amber-500\/10,
+[data-theme="light"] .bg-amber-500\/\[0\.10\],
+[data-theme="light"] .bg-amber-500\/15 {
+  background-color: rgba(248, 250, 252, 0.92);
+}
+
+/* Brand-coloured drop-shadow neon glows (used on landing CTAs and
+ * hero cards) are killed in light mode — they read as a fuzzy aura
+ * on the white page. */
+[data-theme="light"] [class*="shadow-[0_0_"] {
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* ====================================================================
+ *  Light-theme typography: no clipped gradients on white.
+ *
+ *  Gradient text (bg-clip-text + text-transparent) reads as a pastel
+ *  smudge on white. In light mode, force the displayed text back to a
+ *  solid ink-primary fill — keeps brand colour available in dark mode,
+ *  drops the haze in light mode. Drop-shadows that were tuned for dark
+ *  also get neutralised so the headline isn't haloed.
+ * ==================================================================== */
+[data-theme="light"] .bg-clip-text.text-transparent {
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  background-image: none !important;
+  -webkit-text-fill-color: currentColor;
+  color: rgb(15, 23, 42); /* slate-900 — solid thick ink */
+  text-shadow: none;
+}
+[data-theme="light"] .drop-shadow-\[0_0_60px_rgba\(139\,92\,246\,0\.4\)\],
+[data-theme="light"] .drop-shadow-\[0_0_30px_rgba\(56\,189\,248\,0\.45\)\] {
+  filter: none;
+}
+
+/* ====================================================================
+ *  Glass-morphism · floating water-droplet card.
+ *
+ *  Adds `.morbius-glass` utility for surfaces that should read as a
+ *  clear shiny pane sitting above the canvas. In dark mode it's a soft
+ *  smoked glass; in light mode it's the "frosted iOS notification"
+ *  vibe — saturated blur over white with a hairline interior highlight.
+ * ==================================================================== */
+.morbius-glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  box-shadow: 0 8px 32px rgba(2, 6, 23, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="light"] .morbius-glass {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow: 0 10px 36px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@dr-abc/morbius-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mörbius core-brain MCP server — train · test · diagnose · analyse via MCP-compatible clients (the editor, Cursor, etc.)",
+  "scripts": {
+    "dev": "bun --hot src/server.ts",
+    "start": "bun src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {}
+}

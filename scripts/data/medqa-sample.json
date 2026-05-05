@@ -1,0 +1,187 @@
+[
+  {
+    "id": "q01",
+    "specialty": "cardiology",
+    "question": "A 58-year-old male presents with crushing substernal chest pain radiating to the left arm, started 30 minutes ago. He is a smoker with hypertension. Diaphoretic. ECG shows ST-elevation in leads II, III, aVF. What is the most likely diagnosis?",
+    "options": {
+      "A": "Stable angina",
+      "B": "Acute inferior STEMI",
+      "C": "Pericarditis",
+      "D": "Costochondritis"
+    },
+    "answer": "B",
+    "icd10": "I21.1"
+  },
+  {
+    "id": "q02",
+    "specialty": "neurology",
+    "question": "A 67-year-old female presents with sudden right-sided facial droop and slurred speech that began 90 minutes ago. BP 188/104. No history of trauma. Which is the most urgent next step?",
+    "options": {
+      "A": "Wait and observe",
+      "B": "Non-contrast CT head",
+      "C": "Lumbar puncture",
+      "D": "EEG"
+    },
+    "answer": "B",
+    "icd10": "I63.9"
+  },
+  {
+    "id": "q03",
+    "specialty": "endocrinology",
+    "question": "A 45-year-old female with polyuria, polydipsia, and unintentional 5-kg weight loss over 2 months. Fasting glucose 198 mg/dL. HbA1c 8.2%. Most likely diagnosis?",
+    "options": {
+      "A": "Type 1 diabetes",
+      "B": "Type 2 diabetes mellitus",
+      "C": "Diabetes insipidus",
+      "D": "Hyperthyroidism"
+    },
+    "answer": "B",
+    "icd10": "E11.9"
+  },
+  {
+    "id": "q04",
+    "specialty": "gynecology",
+    "question": "A 24-year-old female with irregular menses (every 45-60 days), facial acne, hirsutism, and BMI 31. Pelvic ultrasound shows multiple small ovarian follicles. Diagnosis?",
+    "options": {
+      "A": "PCOS",
+      "B": "Hyperprolactinemia",
+      "C": "Hypothyroidism",
+      "D": "Ovarian cancer"
+    },
+    "answer": "A",
+    "icd10": "E28.2"
+  },
+  {
+    "id": "q05",
+    "specialty": "pulmonology",
+    "question": "A 72-year-old male with a 40-pack-year smoking history presents with chronic productive cough and exertional dyspnea. FEV1/FVC ratio is 0.62 after bronchodilator. What is the diagnosis?",
+    "options": { "A": "Asthma", "B": "COPD", "C": "Pulmonary fibrosis", "D": "Bronchiectasis" },
+    "answer": "B",
+    "icd10": "J44.9"
+  },
+  {
+    "id": "q06",
+    "specialty": "infectious-disease",
+    "question": "A 28-year-old female presents with dysuria, urinary frequency, and suprapubic pain for 3 days. Urinalysis shows positive leukocyte esterase, nitrites, and many white cells. First-line empirical treatment for uncomplicated cystitis?",
+    "options": {
+      "A": "Ciprofloxacin",
+      "B": "Nitrofurantoin",
+      "C": "Doxycycline",
+      "D": "Vancomycin"
+    },
+    "answer": "B",
+    "icd10": "N39.0"
+  },
+  {
+    "id": "q07",
+    "specialty": "gastroenterology",
+    "question": "A 35-year-old female with chronic right-upper-quadrant pain worse after fatty meals. Ultrasound reveals gallbladder wall thickening and multiple echogenic foci with shadowing. Diagnosis?",
+    "options": {
+      "A": "Choledocholithiasis",
+      "B": "Acute cholecystitis",
+      "C": "Cholelithiasis",
+      "D": "Hepatitis"
+    },
+    "answer": "C",
+    "icd10": "K80.20"
+  },
+  {
+    "id": "q08",
+    "specialty": "psychiatry",
+    "question": "A 32-year-old male with persistent sadness for 4 weeks, anhedonia, insomnia, decreased appetite, fatigue, and recurrent thoughts of death. No psychotic features. Diagnosis?",
+    "options": {
+      "A": "Adjustment disorder",
+      "B": "Major depressive disorder",
+      "C": "Bipolar disorder",
+      "D": "Generalized anxiety"
+    },
+    "answer": "B",
+    "icd10": "F32.9"
+  },
+  {
+    "id": "q09",
+    "specialty": "rheumatology",
+    "question": "A 38-year-old female with bilateral symmetric MCP and PIP joint pain, morning stiffness >1 hour, fatigue for 6 months. Positive anti-CCP and elevated CRP. Diagnosis?",
+    "options": { "A": "Osteoarthritis", "B": "Rheumatoid arthritis", "C": "Lupus", "D": "Gout" },
+    "answer": "B",
+    "icd10": "M06.9"
+  },
+  {
+    "id": "q10",
+    "specialty": "pediatrics",
+    "question": "A 14-month-old with 3-day fever (39.5°C), poor feeding, irritability, and a left tympanic membrane that is bulging, erythematous, and immobile on pneumatic otoscopy. Most likely diagnosis?",
+    "options": {
+      "A": "Otitis externa",
+      "B": "Acute otitis media",
+      "C": "Cholesteatoma",
+      "D": "Mastoiditis"
+    },
+    "answer": "B",
+    "icd10": "H66.91"
+  },
+  {
+    "id": "q11",
+    "specialty": "surgery",
+    "question": "A 22-year-old male with periumbilical pain migrating to the right lower quadrant over 12 hours, fever 38.4°C, anorexia, and rebound tenderness at McBurney's point. WBC 15.2. Diagnosis?",
+    "options": {
+      "A": "Mesenteric adenitis",
+      "B": "Acute appendicitis",
+      "C": "Crohn's disease flare",
+      "D": "Cecal volvulus"
+    },
+    "answer": "B",
+    "icd10": "K35.80"
+  },
+  {
+    "id": "q12",
+    "specialty": "dermatology",
+    "question": "A 55-year-old construction worker presents with a 1.4-cm asymmetric pigmented lesion on his back with irregular borders, color variation, and recent change in size. Diagnosis to rule out?",
+    "options": {
+      "A": "Seborrheic keratosis",
+      "B": "Melanoma",
+      "C": "Dermatofibroma",
+      "D": "Basal-cell carcinoma"
+    },
+    "answer": "B",
+    "icd10": "C43.59"
+  },
+  {
+    "id": "q13",
+    "specialty": "nephrology",
+    "question": "A 60-year-old male with longstanding hypertension and diabetes presents with eGFR 38, albuminuria 450 mg/g, normal sediment. No glomerular hematuria. Most likely diagnosis?",
+    "options": {
+      "A": "IgA nephropathy",
+      "B": "Diabetic nephropathy",
+      "C": "Acute glomerulonephritis",
+      "D": "Renal artery stenosis"
+    },
+    "answer": "B",
+    "icd10": "E11.21"
+  },
+  {
+    "id": "q14",
+    "specialty": "hematology",
+    "question": "A 45-year-old female with fatigue, pallor, koilonychia, and pica. Labs: Hb 8.2, MCV 68, low ferritin, low TSAT, high RDW. Diagnosis?",
+    "options": {
+      "A": "B12 deficiency anemia",
+      "B": "Iron-deficiency anemia",
+      "C": "Anemia of chronic disease",
+      "D": "Thalassemia minor"
+    },
+    "answer": "B",
+    "icd10": "D50.9"
+  },
+  {
+    "id": "q15",
+    "specialty": "emergency",
+    "question": "A 19-year-old female brought in with sudden generalized urticaria, lip swelling, wheezing, and BP 80/45 within 10 minutes of eating peanuts. First-line treatment?",
+    "options": {
+      "A": "IV diphenhydramine",
+      "B": "IM epinephrine 0.3 mg",
+      "C": "Oral prednisone",
+      "D": "IV fluids only"
+    },
+    "answer": "B",
+    "icd10": "T78.00XA"
+  }
+]

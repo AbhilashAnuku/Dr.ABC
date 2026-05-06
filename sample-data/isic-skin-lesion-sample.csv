@@ -1,0 +1,21 @@
+image_id,image_url,diagnosis,benign_malignant,age_approx,sex,anatomic_site
+ISIC_0000000,https://isic-archive.com/api/v1/image/5436e3abbae478396759f0cf/download,nevus,benign,55,male,anterior torso
+ISIC_0000001,https://isic-archive.com/api/v1/image/5436e3acbae478396759f0d1/download,nevus,benign,30,female,anterior torso
+ISIC_0000002,https://isic-archive.com/api/v1/image/5436e3acbae478396759f0d3/download,melanoma,malignant,60,male,posterior torso
+ISIC_0000003,https://isic-archive.com/api/v1/image/5436e3acbae478396759f0d5/download,nevus,benign,30,female,lower extremity
+ISIC_0000004,https://isic-archive.com/api/v1/image/5436e3acbae478396759f0d7/download,melanoma,malignant,85,female,upper extremity
+ISIC_0000005,https://isic-archive.com/api/v1/image/5436e3adbae478396759f0d9/download,nevus,benign,45,male,upper extremity
+ISIC_0000006,https://isic-archive.com/api/v1/image/5436e3adbae478396759f0db/download,melanoma,malignant,70,female,head/neck
+ISIC_0000007,https://isic-archive.com/api/v1/image/5436e3adbae478396759f0dd/download,nevus,benign,50,female,posterior torso
+ISIC_0000008,https://isic-archive.com/api/v1/image/5436e3adbae478396759f0df/download,melanoma,malignant,55,male,anterior torso
+ISIC_0000009,https://isic-archive.com/api/v1/image/5436e3aebae478396759f0e1/download,nevus,benign,35,female,lower extremity
+ISIC_0000010,https://isic-archive.com/api/v1/image/5436e3aebae478396759f0e3/download,melanoma,malignant,70,male,upper extremity
+ISIC_0000011,https://isic-archive.com/api/v1/image/5436e3aebae478396759f0e5/download,nevus,benign,40,male,head/neck
+ISIC_0000012,https://isic-archive.com/api/v1/image/5436e3aebae478396759f0e7/download,seborrheic keratosis,benign,75,male,anterior torso
+ISIC_0000013,https://isic-archive.com/api/v1/image/5436e3afbae478396759f0e9/download,nevus,benign,25,female,upper extremity
+ISIC_0000014,https://isic-archive.com/api/v1/image/5436e3afbae478396759f0eb/download,melanoma,malignant,65,female,posterior torso
+ISIC_0000015,https://isic-archive.com/api/v1/image/5436e3afbae478396759f0ed/download,basal cell carcinoma,malignant,80,male,head/neck
+ISIC_0000016,https://isic-archive.com/api/v1/image/5436e3afbae478396759f0ef/download,nevus,benign,40,female,lower extremity
+ISIC_0000017,https://isic-archive.com/api/v1/image/5436e3afbae478396759f0f1/download,actinic keratosis,benign,75,male,head/neck
+ISIC_0000018,https://isic-archive.com/api/v1/image/5436e3b0bae478396759f0f3/download,melanoma,malignant,60,female,anterior torso
+ISIC_0000019,https://isic-archive.com/api/v1/image/5436e3b0bae478396759f0f5/download,nevus,benign,45,male,posterior torso

@@ -1,0 +1,392 @@
+[
+  {
+    "id": "MQ001",
+    "specialty": "Cardiology",
+    "question": "A 58-year-old man presents to the emergency department with crushing substernal chest pain radiating to the left arm and jaw, accompanied by diaphoresis and nausea. Pain began 45 minutes ago. Vital signs: BP 145/90, HR 110, SpO2 96%. ECG shows 3 mm ST elevation in leads V1-V4. Which of the following is the most appropriate next step?",
+    "options": {
+      "A": "Oral aspirin and observation in the ED",
+      "B": "Immediate transfer to cardiac catheterization for primary PCI",
+      "C": "Thrombolysis with streptokinase in the ED",
+      "D": "Echocardiogram first to confirm wall-motion abnormalities"
+    },
+    "answer": "B",
+    "rationale": "Anterior STEMI with door-to-balloon target of <90 min — primary PCI is class I indication."
+  },
+  {
+    "id": "MQ002",
+    "specialty": "Neurology",
+    "question": "A 28-year-old woman presents with a 6-hour history of unilateral throbbing headache, photophobia, phonophobia, and nausea. She has had similar episodes monthly for the past 2 years. Neurological exam is unremarkable. What is the most likely diagnosis?",
+    "options": {
+      "A": "Tension-type headache",
+      "B": "Cluster headache",
+      "C": "Migraine without aura",
+      "D": "Subarachnoid hemorrhage"
+    },
+    "answer": "C",
+    "rationale": "Recurrent unilateral throbbing pain with photophobia/phonophobia/nausea meets ICHD-3 criteria for migraine without aura."
+  },
+  {
+    "id": "MQ003",
+    "specialty": "Pediatrics",
+    "question": "An 8-year-old boy presents with 2 days of sore throat and fever 39.1°C. Examination shows tonsillar exudates, tender anterior cervical lymphadenopathy, and absence of cough. Which of the following is the most appropriate next step?",
+    "options": {
+      "A": "Empiric antibiotics with amoxicillin",
+      "B": "Rapid strep test; treat with amoxicillin if positive",
+      "C": "Symptomatic care only — most pharyngitis is viral",
+      "D": "Throat culture only; do not start antibiotics"
+    },
+    "answer": "B",
+    "rationale": "Centor score ≥3 (fever, tonsillar exudate, tender nodes, no cough) — rapid antigen detection test, treat if positive."
+  },
+  {
+    "id": "MQ004",
+    "specialty": "Internal medicine",
+    "question": "A 24-year-old sexually active woman presents with 2 days of dysuria and urinary urgency. No fever, no flank pain, no vaginal discharge. Urinalysis shows 50 WBC/hpf and positive nitrites. What is the first-line treatment?",
+    "options": {
+      "A": "Ciprofloxacin 500 mg BID × 7 days",
+      "B": "Nitrofurantoin 100 mg BID × 5 days",
+      "C": "Amoxicillin 500 mg TID × 7 days",
+      "D": "Fosfomycin 3 g single dose"
+    },
+    "answer": "B",
+    "rationale": "IDSA 2010 guidelines: nitrofurantoin or TMP-SMX first-line for uncomplicated cystitis; fluoroquinolones reserved for resistance/treatment failure."
+  },
+  {
+    "id": "MQ005",
+    "specialty": "Pulmonology",
+    "question": "A 35-year-old asthmatic presents with wheezing, dyspnea, and accessory muscle use. PEFR is 50% of personal best. After one albuterol nebulization PEFR improves to 60%. What is the next step?",
+    "options": {
+      "A": "Discharge home with oral prednisone",
+      "B": "Continue inhaled beta-2 agonist + add oral/IV systemic corticosteroid",
+      "C": "Intubate immediately for impending respiratory failure",
+      "D": "Magnesium sulfate IV before any further bronchodilator"
+    },
+    "answer": "B",
+    "rationale": "GINA 2024: moderate exacerbation with partial response — continue SABA + add systemic corticosteroid."
+  },
+  {
+    "id": "MQ006",
+    "specialty": "Endocrinology",
+    "question": "A 48-year-old man presents with polyuria, polydipsia, and 5 kg weight loss over 6 weeks. Random plasma glucose is 285 mg/dL; HbA1c 9.2%. He is overweight (BMI 31). Which initial pharmacotherapy is most appropriate?",
+    "options": {
+      "A": "Insulin glargine starting at 10 units/day",
+      "B": "Metformin 500 mg BID, titrate to 1g BID",
+      "C": "Sulfonylurea (glipizide) monotherapy",
+      "D": "Lifestyle intervention only for 3 months before any drug"
+    },
+    "answer": "B",
+    "rationale": "ADA 2024: metformin remains first-line for newly diagnosed type 2 diabetes unless contraindicated."
+  },
+  {
+    "id": "MQ007",
+    "specialty": "Cardiology",
+    "question": "A 62-year-old man with no symptoms has BP 162/98 confirmed on three separate readings 2 weeks apart. Labs and renal function are normal. What is the first-line antihypertensive?",
+    "options": {
+      "A": "Thiazide diuretic, ACE inhibitor, ARB, or calcium channel blocker",
+      "B": "Beta-blocker as first-line",
+      "C": "Alpha-blocker first-line",
+      "D": "No medication; lifestyle only — BP not high enough"
+    },
+    "answer": "A",
+    "rationale": "ACC/AHA 2017 + ESC 2018: stage 2 HTN — start one of thiazide, ACE-I, ARB, or CCB. Beta-blockers are not first-line for uncomplicated HTN."
+  },
+  {
+    "id": "MQ008",
+    "specialty": "Gastroenterology",
+    "question": "A 42-year-old man complains of burning retrosternal chest pain after meals and acid regurgitation for 4 weeks. No alarm features. What is the most appropriate initial management?",
+    "options": {
+      "A": "Empiric proton pump inhibitor for 8 weeks",
+      "B": "Upper endoscopy as first step",
+      "C": "H. pylori eradication regardless of testing",
+      "D": "Surgical fundoplication"
+    },
+    "answer": "A",
+    "rationale": "ACG GERD guideline: empiric PPI trial for typical symptoms without alarm features."
+  },
+  {
+    "id": "MQ009",
+    "specialty": "Cardiology",
+    "question": "A 71-year-old woman with HTN presents with new-onset palpitations and fatigue. Pulse is irregularly irregular at 138 bpm. ECG confirms atrial fibrillation. CHA2DS2-VASc is 4. What is most appropriate?",
+    "options": {
+      "A": "Aspirin 81 mg daily for stroke prevention",
+      "B": "Rate control with beta-blocker + DOAC for stroke prevention",
+      "C": "Immediate electrical cardioversion before anticoagulation",
+      "D": "Observation; AF often self-resolves"
+    },
+    "answer": "B",
+    "rationale": "AF + CHA2DS2-VASc ≥2: anticoagulation indicated. DOACs preferred over warfarin in non-valvular AF (ACC/AHA 2023)."
+  },
+  {
+    "id": "MQ010",
+    "specialty": "Pulmonology",
+    "question": "A 30-year-old non-smoker presents with 5 days of productive cough, low-grade fever, and mild chest discomfort. Lungs clear on exam, no tachypnea, SpO2 97%. CXR is normal. Most likely diagnosis?",
+    "options": {
+      "A": "Community-acquired bacterial pneumonia",
+      "B": "Acute viral bronchitis",
+      "C": "Pulmonary embolism",
+      "D": "Tuberculosis"
+    },
+    "answer": "B",
+    "rationale": "Self-limited bronchitis: <3 weeks productive cough, normal lung exam, normal CXR. Antibiotics not indicated."
+  },
+  {
+    "id": "MQ011",
+    "specialty": "Psychiatry",
+    "question": "A 35-year-old presents with 6 months of persistent worry about health, work, finances, and family. Sleep is disrupted. She has muscle tension and irritability. PHQ-9 is 4 (mild). What is the most likely diagnosis?",
+    "options": {
+      "A": "Major depressive disorder",
+      "B": "Generalized anxiety disorder",
+      "C": "Panic disorder",
+      "D": "Adjustment disorder"
+    },
+    "answer": "B",
+    "rationale": "DSM-5: ≥6 months of excessive worry across multiple domains + ≥3 somatic symptoms = GAD."
+  },
+  {
+    "id": "MQ012",
+    "specialty": "Endocrinology",
+    "question": "A 52-year-old woman presents with fatigue, 3 kg weight gain, cold intolerance, and constipation over 3 months. TSH 14 mU/L (high), free T4 low. What is the appropriate management?",
+    "options": {
+      "A": "Levothyroxine replacement, recheck TSH in 6-8 weeks",
+      "B": "Methimazole to suppress thyroid",
+      "C": "Radioactive iodine ablation",
+      "D": "No treatment — wait for clinical hyperthyroidism"
+    },
+    "answer": "A",
+    "rationale": "Primary hypothyroidism (high TSH, low free T4): levothyroxine replacement, retest in 6-8 weeks for dose adjustment."
+  },
+  {
+    "id": "MQ013",
+    "specialty": "Surgery",
+    "question": "A 22-year-old man presents with 18 hours of right lower quadrant pain that migrated from the periumbilical area. He has anorexia, low-grade fever 38°C, and tenderness at McBurney's point with rebound. WBC 14k. What is the next best step?",
+    "options": {
+      "A": "Outpatient antibiotics and follow-up",
+      "B": "Emergent appendectomy",
+      "C": "CT scan first; if equivocal, observe",
+      "D": "MRI before any surgical decision"
+    },
+    "answer": "B",
+    "rationale": "Classic acute appendicitis presentation in a young adult — proceed to surgery; CT not mandatory in clear cases (WSES 2020)."
+  },
+  {
+    "id": "MQ014",
+    "specialty": "Pediatrics",
+    "question": "A 4-year-old presents with 36 hours of right ear pain, fever 38.5°C, and tugging at the ear. Otoscopy shows a bulging, erythematous tympanic membrane with reduced mobility. What is the most appropriate management?",
+    "options": {
+      "A": "Watchful waiting for 48-72 hours",
+      "B": "High-dose amoxicillin 80-90 mg/kg/day for 10 days",
+      "C": "Topical antibiotic ear drops only",
+      "D": "Tympanocentesis as first step"
+    },
+    "answer": "B",
+    "rationale": "AAP 2013: severe acute otitis media in children <6 — antibiotics are first-line; watchful waiting only for non-severe ≥2 yrs."
+  },
+  {
+    "id": "MQ015",
+    "specialty": "Dermatology",
+    "question": "A 45-year-old presents with 3 days of warm, erythematous, swollen non-purulent skin on the right shin following a minor abrasion. No abscess, no systemic toxicity. What is appropriate?",
+    "options": {
+      "A": "Cephalexin 500 mg QID × 7 days",
+      "B": "Vancomycin IV — likely MRSA",
+      "C": "Topical mupirocin only",
+      "D": "Surgical debridement"
+    },
+    "answer": "A",
+    "rationale": "IDSA 2014: non-purulent cellulitis — empiric coverage for streptococci; oral cephalexin or dicloxacillin × 5-7 days."
+  },
+  {
+    "id": "MQ016",
+    "specialty": "Cardiology",
+    "question": "A 68-year-old man presents with sudden onset chest pain radiating to the back and tearing in quality, accompanied by hypertension (190/110 in right arm, 130/80 in left arm). What is the most likely diagnosis?",
+    "options": {
+      "A": "Acute STEMI",
+      "B": "Aortic dissection",
+      "C": "Pulmonary embolism",
+      "D": "Pericarditis"
+    },
+    "answer": "B",
+    "rationale": "Tearing chest pain radiating to back + BP differential between arms = aortic dissection until proven otherwise; CT angiography to confirm."
+  },
+  {
+    "id": "MQ017",
+    "specialty": "Neurology",
+    "question": "A 65-year-old woman presents with sudden left-sided weakness and slurred speech that began 90 minutes ago. NIH stroke scale 8. Non-contrast CT shows no hemorrhage. BP 175/95. What is the most appropriate next step?",
+    "options": {
+      "A": "IV thrombolysis with alteplase if no contraindication",
+      "B": "Aspirin 325 mg orally",
+      "C": "Heparin drip",
+      "D": "Observation — too early to intervene"
+    },
+    "answer": "A",
+    "rationale": "Acute ischemic stroke <4.5 h with no contraindication — IV alteplase is class I indication (AHA/ASA 2019)."
+  },
+  {
+    "id": "MQ018",
+    "specialty": "Infectious",
+    "question": "A 74-year-old presents with fever 39.5°C, hypotension (BP 84/55), tachycardia (HR 122), and altered mental status. Labs: WBC 18k, lactate 4.2 mmol/L. Source uncertain. What is the priority within the first hour?",
+    "options": {
+      "A": "Broad-spectrum IV antibiotics + IV fluid resuscitation 30 mL/kg",
+      "B": "CT scan first to find the source",
+      "C": "Wait for blood cultures before antibiotics",
+      "D": "Vasopressors first, then antibiotics"
+    },
+    "answer": "A",
+    "rationale": "Septic shock — Surviving Sepsis Campaign 1-hour bundle: cultures, broad-spectrum antibiotics, fluid resuscitation 30 mL/kg, lactate."
+  },
+  {
+    "id": "MQ019",
+    "specialty": "Endocrinology",
+    "question": "A 25-year-old type 1 diabetic is found unresponsive at home. Glucose 38 mg/dL on glucometer. He is breathing adequately. What is the most appropriate immediate intervention?",
+    "options": {
+      "A": "IV dextrose 50% (D50) 25 g IV",
+      "B": "Oral juice — patient should be able to swallow",
+      "C": "Subcutaneous insulin to correct potential hyperglycemia",
+      "D": "Glucagon 1 mg IM only after ED arrival"
+    },
+    "answer": "A",
+    "rationale": "Severe hypoglycemia with altered mental status: IV dextrose if access available; IM glucagon if no IV access."
+  },
+  {
+    "id": "MQ020",
+    "specialty": "OB/GYN",
+    "question": "A 32-year-old G2P1 at 8 weeks gestation presents with vaginal bleeding and crampy lower abdominal pain. Cervix is closed on exam. β-hCG 12,500 mIU/mL; transvaginal US shows an empty uterus. What is the most likely diagnosis?",
+    "options": {
+      "A": "Threatened miscarriage",
+      "B": "Ectopic pregnancy",
+      "C": "Complete miscarriage",
+      "D": "Normal early intrauterine pregnancy"
+    },
+    "answer": "B",
+    "rationale": "β-hCG > discriminatory zone (>1500-2000) with no IUP on TVS = high suspicion for ectopic pregnancy."
+  },
+  {
+    "id": "MQ021",
+    "specialty": "Pulmonology",
+    "question": "A 55-year-old smoker presents with chronic productive cough for 6 months, dyspnea on exertion, and wheezing. Spirometry: post-bronchodilator FEV1/FVC 0.62. FEV1 65% predicted. What is the diagnosis and stage?",
+    "options": {
+      "A": "Asthma",
+      "B": "COPD GOLD stage 1 (mild)",
+      "C": "COPD GOLD stage 2 (moderate)",
+      "D": "Bronchiectasis"
+    },
+    "answer": "C",
+    "rationale": "GOLD 2024: post-bronchodilator FEV1/FVC <0.70 confirms COPD; FEV1 50-79% predicted = GOLD stage 2."
+  },
+  {
+    "id": "MQ022",
+    "specialty": "Hematology",
+    "question": "A 60-year-old man presents with fatigue, dyspnea, and pallor. Hemoglobin 8.5 g/dL, MCV 70 fL (low), ferritin 8 ng/mL (low). Stool occult blood positive. What is the most appropriate next step?",
+    "options": {
+      "A": "Iron supplementation alone",
+      "B": "Colonoscopy and upper endoscopy to find the source",
+      "C": "Blood transfusion only",
+      "D": "Erythropoietin"
+    },
+    "answer": "B",
+    "rationale": "Iron deficiency anemia + positive FOBT in a man >50 — workup for GI malignancy; bidirectional endoscopy."
+  },
+  {
+    "id": "MQ023",
+    "specialty": "Nephrology",
+    "question": "A 45-year-old with HTN and DM has urine albumin/creatinine ratio 350 mg/g and eGFR 75 mL/min/1.73m². What is the most appropriate intervention to slow CKD progression?",
+    "options": {
+      "A": "ACE inhibitor or ARB",
+      "B": "Dual ACE-I + ARB combination",
+      "C": "Beta-blocker",
+      "D": "Loop diuretic"
+    },
+    "answer": "A",
+    "rationale": "KDIGO 2022: ACE-I or ARB monotherapy — single-agent RAAS blockade for diabetic kidney disease with albuminuria."
+  },
+  {
+    "id": "MQ024",
+    "specialty": "Cardiology",
+    "question": "A 70-year-old with prior MI and EF 30% is on aspirin, beta-blocker, ACE inhibitor, and atorvastatin. He has dyspnea on exertion (NYHA II). Which medication should be added?",
+    "options": {
+      "A": "Calcium channel blocker",
+      "B": "Mineralocorticoid receptor antagonist (spironolactone or eplerenone)",
+      "C": "Digoxin",
+      "D": "Nitrate"
+    },
+    "answer": "B",
+    "rationale": "HFrEF with EF ≤35% and NYHA II-IV: MRA reduces mortality (RALES, EMPHASIS-HF). Class I indication."
+  },
+  {
+    "id": "MQ025",
+    "specialty": "Infectious",
+    "question": "A 30-year-old with no comorbidities presents with new low-grade fever and night sweats × 3 weeks. CXR shows right upper lobe cavitation. Acid-fast bacilli smear positive. What is the most appropriate management?",
+    "options": {
+      "A": "Outpatient amoxicillin",
+      "B": "Airborne isolation + RIPE therapy (rifampin, isoniazid, pyrazinamide, ethambutol)",
+      "C": "Surgical lobectomy",
+      "D": "Observation pending culture"
+    },
+    "answer": "B",
+    "rationale": "Active pulmonary TB: airborne isolation + 4-drug RIPE for 2 months, then continuation phase."
+  },
+  {
+    "id": "MQ026",
+    "specialty": "Neurology",
+    "question": "A 70-year-old presents with progressive cognitive decline over 2 years, getting lost in familiar places, MMSE 19/30. CT shows generalized atrophy without focal lesions. What is the most likely diagnosis?",
+    "options": {
+      "A": "Vascular dementia",
+      "B": "Alzheimer's disease",
+      "C": "Frontotemporal dementia",
+      "D": "Normal pressure hydrocephalus"
+    },
+    "answer": "B",
+    "rationale": "Insidious onset, gradual progression, episodic memory loss with normal motor exam — most likely Alzheimer's."
+  },
+  {
+    "id": "MQ027",
+    "specialty": "Internal medicine",
+    "question": "A 28-year-old returning from a 2-week trip to sub-Saharan Africa presents with fever (39.1°C), chills, headache, and myalgias × 5 days. Thick blood smear shows ring-form parasites. What is the most appropriate first-line treatment?",
+    "options": {
+      "A": "Chloroquine",
+      "B": "Artesunate IV (severe) or artemisinin-based combination therapy (uncomplicated)",
+      "C": "Doxycycline alone",
+      "D": "Ceftriaxone"
+    },
+    "answer": "B",
+    "rationale": "Plasmodium falciparum from Africa is presumed chloroquine-resistant — use artemisinin-based regimen (WHO 2023)."
+  },
+  {
+    "id": "MQ028",
+    "specialty": "Rheumatology",
+    "question": "A 35-year-old woman presents with bilateral wrist and MCP joint pain with morning stiffness >1 hour for 8 weeks. Symmetric synovitis. RF positive, anti-CCP positive. What is the most likely diagnosis?",
+    "options": {
+      "A": "Osteoarthritis",
+      "B": "Rheumatoid arthritis",
+      "C": "Gout",
+      "D": "Systemic lupus erythematosus"
+    },
+    "answer": "B",
+    "rationale": "Symmetric small-joint synovitis + anti-CCP positivity + morning stiffness >1 h = RA (ACR/EULAR 2010 criteria)."
+  },
+  {
+    "id": "MQ029",
+    "specialty": "OB/GYN",
+    "question": "A 28-year-old G1P0 at 28 weeks gestation has a glucose-challenge test result of 165 mg/dL (1-hour, 50g). What is the next step?",
+    "options": {
+      "A": "Diagnose gestational diabetes",
+      "B": "Repeat in 4 weeks",
+      "C": "Perform 3-hour 100g oral glucose tolerance test",
+      "D": "Start metformin empirically"
+    },
+    "answer": "C",
+    "rationale": "ACOG 2-step screen: failed 1-hour 50-g challenge (≥140) → confirmatory 3-hour 100-g OGTT to diagnose GDM."
+  },
+  {
+    "id": "MQ030",
+    "specialty": "Cardiology",
+    "question": "A 55-year-old man on warfarin for AF presents with epistaxis. INR is 5.8 (target 2-3), no major bleeding. What is the most appropriate management?",
+    "options": {
+      "A": "Continue warfarin at usual dose",
+      "B": "Hold warfarin × 1-2 doses, recheck INR",
+      "C": "Reverse with vitamin K and FFP immediately",
+      "D": "Switch to a DOAC"
+    },
+    "answer": "B",
+    "rationale": "INR 4.5-10 with no major bleed: hold warfarin 1-2 doses + recheck INR; vitamin K only if INR ≥10 or major bleeding."
+  }
+]

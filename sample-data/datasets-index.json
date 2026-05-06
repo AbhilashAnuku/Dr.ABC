@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1.0",
+  "lastUpdated": "2026-05-02",
+  "sources": [
+    {
+      "id": "heart-disease-uci",
+      "name": "Heart Disease (UCI / Cleveland)",
+      "kind": "tabular-csv",
+      "specialty": "Cardiology",
+      "task": "binary classification — presence (1) / absence (0) of heart disease",
+      "rows": 159,
+      "columns": [
+        { "name": "age", "type": "int", "desc": "age in years" },
+        { "name": "sex", "type": "int", "desc": "1 = male, 0 = female" },
+        {
+          "name": "cp",
+          "type": "int",
+          "desc": "chest-pain type · 1=typical angina · 2=atypical · 3=non-anginal · 4=asymptomatic"
+        },
+        {
+          "name": "trestbps",
+          "type": "int",
+          "desc": "resting blood pressure (mm Hg) on admission"
+        },
+        { "name": "chol", "type": "int", "desc": "serum cholesterol (mg/dL)" },
+        {
+          "name": "fbs",
+          "type": "int",
+          "desc": "fasting blood sugar > 120 mg/dL · 1=true · 0=false"
+        },
+        { "name": "restecg", "type": "int", "desc": "resting ECG · 0=normal · 1=ST-T abn · 2=LVH" },
+        { "name": "thalach", "type": "int", "desc": "max heart rate achieved" },
+        { "name": "exang", "type": "int", "desc": "exercise-induced angina · 1=yes · 0=no" },
+        { "name": "oldpeak", "type": "float", "desc": "ST depression induced by exercise vs rest" },
+        { "name": "slope", "type": "int", "desc": "slope of peak-exercise ST segment · 1/2/3" },
+        {
+          "name": "ca",
+          "type": "int",
+          "desc": "number of major vessels (0-3) coloured by fluoroscopy"
+        },
+        { "name": "thal", "type": "int", "desc": "3=normal · 6=fixed defect · 7=reversible defect" }
+      ],
+      "target": {
+        "name": "target",
+        "values": [0, 1],
+        "meaning": "1 = heart disease present, 0 = absent"
+      },
+      "license": "Public domain (UCI ML Repository, 1988). Donated by Cleveland Clinic Foundation.",
+      "source": "UCI Machine Learning Repository · https://archive.ics.uci.edu/dataset/45/heart+disease",
+      "kaggleUrl": "https://www.kaggle.com/datasets/ronitf/heart-disease-uci",
+      "path": "sample-data/heart-disease-uci.csv",
+      "bundled": true
+    },
+    {
+      "id": "diabetes-pima",
+      "name": "Diabetes (Pima Indians)",
+      "kind": "tabular-csv",
+      "specialty": "Endocrinology",
+      "task": "binary classification — diabetes onset within 5 years",
+      "rows": 768,
+      "columns": [
+        { "name": "Pregnancies", "type": "int", "desc": "number of pregnancies" },
+        { "name": "Glucose", "type": "int", "desc": "plasma glucose · 2-h OGTT (mg/dL)" },
+        { "name": "BloodPressure", "type": "int", "desc": "diastolic BP (mm Hg)" },
+        { "name": "SkinThickness", "type": "int", "desc": "triceps skinfold thickness (mm)" },
+        { "name": "Insulin", "type": "int", "desc": "2-h serum insulin (mu U/mL)" },
+        { "name": "BMI", "type": "float", "desc": "body mass index (kg/m²)" },
+        {
+          "name": "DiabetesPedigreeFunction",
+          "type": "float",
+          "desc": "diabetes-pedigree function (family-history weight)"
+        },
+        { "name": "Age", "type": "int", "desc": "age (years)" }
+      ],
+      "target": {
+        "name": "Outcome",
+        "values": [0, 1],
+        "meaning": "1 = diabetes onset within 5 years, 0 = none"
+      },
+      "license": "Public domain (UCI / NIDDK, 1988).",
+      "source": "UCI Machine Learning Repository · https://archive.ics.uci.edu/dataset/34/diabetes",
+      "kaggleUrl": "https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database",
+      "path": "sample-data/diabetes-pima.csv",
+      "bundled": false,
+      "note": "Architect to download via `kaggle datasets download -d uciml/pima-indians-diabetes-database` and place at the path above. The harness reports `bundled: false → skipped` if the file is missing — never errors."
+    },
+    {
+      "id": "isic-skin-lesion-sample",
+      "name": "ISIC Skin Lesion · 20-row sample CSV",
+      "kind": "image-csv",
+      "specialty": "Dermatology",
+      "task": "binary classification — benign vs malignant (sample harness)",
+      "rows": 20,
+      "columns": [
+        { "name": "image_id", "type": "string", "desc": "ISIC archive ID, e.g., ISIC_0000000" },
+        { "name": "image_url", "type": "string", "desc": "direct CDN URL — fetch on-demand" },
+        { "name": "diagnosis", "type": "string", "desc": "specific dx (nevus, melanoma, BCC, …)" },
+        {
+          "name": "benign_malignant",
+          "type": "string",
+          "desc": "ground-truth tag: benign | malignant"
+        },
+        { "name": "age_approx", "type": "int", "desc": "approximate patient age" },
+        { "name": "sex", "type": "string", "desc": "male | female" },
+        { "name": "anatomic_site", "type": "string", "desc": "body location" }
+      ],
+      "target": {
+        "name": "benign_malignant",
+        "values": ["benign", "malignant"],
+        "meaning": "binary lesion classification"
+      },
+      "license": "CC-BY-NC 4.0 · ISIC Archive (research-use)",
+      "source": "https://www.isic-archive.com",
+      "kaggleUrl": "https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic",
+      "path": "sample-data/isic-skin-lesion-sample.csv",
+      "bundled": true,
+      "harness": "scripts/skin-lesion-harness.ts",
+      "runCmd": "bun run morbius:skin",
+      "note": "Sample CSV with 20 ISIC archive image URLs for the skin-lesion harness. Architect can swap in the full Kaggle dataset by downloading via `kaggle datasets download -d nodoubttome/skin-cancer9-classesisic -p data/isic --unzip` and running `bun run morbius:skin -- --local-dir data/isic/images`. The harness reports heuristic accuracy via the py-svc imaging backend until a true ISIC classifier head lands."
+    },
+    {
+      "id": "isic-skin-cancer",
+      "name": "ISIC Skin Cancer (full dermatology corpus)",
+      "kind": "image",
+      "specialty": "Dermatology",
+      "task": "binary / multi-class — benign vs malignant skin lesion",
+      "rows": 25331,
+      "columns": [],
+      "target": {
+        "name": "diagnosis",
+        "values": ["benign", "malignant"],
+        "meaning": "ISIC dermoscopy ground-truth"
+      },
+      "license": "CC-BY-NC 4.0 · ISIC Archive (research-use)",
+      "source": "https://www.isic-archive.com",
+      "kaggleUrl": "https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic",
+      "path": "data/isic/",
+      "bundled": false,
+      "note": "Image set — large (~3 GB). Wired into apps/py-svc imaging backend (MONAI DenseNet121 + Grad-CAM). Architect: `kaggle datasets download -d nodoubttome/skin-cancer9-classesisic -p data/isic --unzip` to enable. Mörbius then routes /app/imaging uploads to ISIC-trained classifier when path is present."
+    },
+    {
+      "id": "chest-xray-pneumonia",
+      "name": "Chest X-ray Pneumonia (Kermany 2018)",
+      "kind": "image",
+      "specialty": "Pulmonology",
+      "task": "binary classification — pneumonia (bacterial / viral) vs normal",
+      "rows": 5856,
+      "columns": [],
+      "target": {
+        "name": "label",
+        "values": ["NORMAL", "PNEUMONIA"],
+        "meaning": "labelled directory split"
+      },
+      "license": "CC-BY 4.0 · Kermany et al. Cell 2018",
+      "source": "https://data.mendeley.com/datasets/rscbjbr9sj/2",
+      "kaggleUrl": "https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia",
+      "path": "data/chest-xray/",
+      "bundled": false,
+      "note": "Image set — ~1.2 GB. Architect: `kaggle datasets download -d paultimothymooney/chest-xray-pneumonia -p data/chest-xray --unzip`. Loaded by apps/py-svc on startup if path exists."
+    },
+    {
+      "id": "brain-mri-tumor",
+      "name": "Brain MRI · tumor segmentation (BraTS-style)",
+      "kind": "image-3d",
+      "specialty": "Neurology / Oncology",
+      "task": "3D segmentation — glioma sub-region masks (whole tumor, enhancing core, necrosis)",
+      "rows": 3064,
+      "columns": [],
+      "target": {
+        "name": "mask",
+        "values": ["whole_tumor", "enhancing_core", "necrosis", "edema"],
+        "meaning": "voxel-level segmentation"
+      },
+      "license": "CC-BY-SA 4.0 · BraTS challenge",
+      "source": "https://www.med.upenn.edu/cbica/brats2021/",
+      "kaggleUrl": "https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation",
+      "path": "data/brats/",
+      "bundled": false,
+      "note": "Volumetric NIfTI set — ~10 GB. Wired into apps/py-svc Monai3DBackend (UNet pretrained on BraTS21). Path lookup is lazy; missing → harness skips with honest 'requires download' note."
+    },
+    {
+      "id": "covid-19-radiography",
+      "name": "COVID-19 Radiography Database",
+      "kind": "image",
+      "specialty": "Pulmonology / Infectious",
+      "task": "multi-class — COVID-19 / Lung Opacity / Normal / Viral Pneumonia",
+      "rows": 21165,
+      "columns": [],
+      "target": {
+        "name": "category",
+        "values": ["COVID", "Lung_Opacity", "Normal", "Viral_Pneumonia"],
+        "meaning": "directory split"
+      },
+      "license": "CC-BY-SA 4.0 · Chowdhury et al.",
+      "source": "https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database",
+      "kaggleUrl": "https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database",
+      "path": "data/covid-radiography/",
+      "bundled": false,
+      "note": "Image set — ~3 GB. Same wiring as chest-xray. Architect: `kaggle datasets download -d tawsifurrahman/covid19-radiography-database -p data/covid-radiography --unzip`."
+    },
+    {
+      "id": "diabetic-retinopathy",
+      "name": "Diabetic Retinopathy Detection (APTOS 2019)",
+      "kind": "image",
+      "specialty": "Ophthalmology",
+      "task": "5-class severity — 0 (No DR) → 4 (Proliferative DR)",
+      "rows": 5590,
+      "columns": [],
+      "target": { "name": "diagnosis", "values": [0, 1, 2, 3, 4], "meaning": "DR severity grade" },
+      "license": "Kaggle research-use",
+      "source": "https://www.kaggle.com/competitions/aptos2019-blindness-detection",
+      "kaggleUrl": "https://www.kaggle.com/competitions/aptos2019-blindness-detection",
+      "path": "data/aptos2019/",
+      "bundled": false,
+      "note": "Competition data — Kaggle credentials required. Architect: `kaggle competitions download -c aptos2019-blindness-detection -p data/aptos2019 --unzip`."
+    }
+  ]
+}

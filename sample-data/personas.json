@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1.0",
+  "lastUpdated": "2026-05-02",
+  "description": "Three real-world personas Mörbius is scored against. Each persona's `cases` are the questions / complaints that user would actually bring to a medical AI. Accuracy on persona-specific cases is what matters for that persona's product-market fit — a 90 % overall score that misses every case the consumer-patient persona would ever ask is a 0 % score for that persona.",
+  "personas": [
+    {
+      "id": "doctor",
+      "name": "Dr. Anuj — junior attending, late-shift ER",
+      "role": "clinician",
+      "context": "Junior attending in a tertiary-care ER, 2 years post-residency. Uses Mörbius as a second-opinion / safety-net for differential diagnosis on borderline presentations. Wants accuracy on the *first* differential because if Mörbius and his own gestalt agree, the disposition is faster.",
+      "weight_topCondition": 0.45,
+      "weight_specialty": 0.2,
+      "weight_gauntlet": 0.2,
+      "weight_drugSafety": 0.15,
+      "cases": [
+        {
+          "id": "DOC-001",
+          "complaint": "65 M, sudden onset chest pain radiating to back, BP 190/110 in right arm vs 130/80 in left arm, tearing quality. ECG no acute ST changes.",
+          "expectedDiagnosis": "Aortic dissection",
+          "expectedIcd10": "I71",
+          "expectedSpecialty": "Cardiology",
+          "rationale": "BP differential between arms + tearing radiation = type-A dissection until CT proves otherwise. STEMI mimic, must not anchor on unchanged ECG."
+        },
+        {
+          "id": "DOC-002",
+          "complaint": "28 F, 30 weeks pregnant, BP 168/108, persistent headache, epigastric pain, hyperreflexia. Labs: platelets 87k, AST 145.",
+          "expectedDiagnosis": "Severe preeclampsia / HELLP syndrome",
+          "expectedIcd10": "O14",
+          "expectedSpecialty": "OB/GYN",
+          "rationale": "BP > 160 + HELLP triad (hemolysis, elevated LFTs, low platelets) = magnesium + immediate delivery planning. Cannot defer."
+        },
+        {
+          "id": "DOC-003",
+          "complaint": "72 M with AF on warfarin, INR 4.2, presenting with sudden severe headache + vomiting. CT shows hyperdensity in left basal ganglia.",
+          "expectedDiagnosis": "Spontaneous intracerebral hemorrhage on anticoagulation",
+          "expectedIcd10": "I61",
+          "expectedSpecialty": "Neurology",
+          "rationale": "Warfarin + new SAH/ICH = reverse coagulopathy first (4-factor PCC + vitamin K) before anything else. Time-critical."
+        },
+        {
+          "id": "DOC-004",
+          "complaint": "Septic-appearing 64 M, BP 78/42, HR 118, lactate 5.4, WBC 22k, CRP 312, hot painful right knee with tense effusion.",
+          "expectedDiagnosis": "Septic arthritis with septic shock",
+          "expectedIcd10": "M00",
+          "expectedSpecialty": "Rheumatology",
+          "rationale": "Surviving Sepsis 1-h bundle + emergent joint aspiration before antibiotics if feasible. Wrong answer is treating the sepsis without the joint."
+        },
+        {
+          "id": "DOC-005",
+          "complaint": "45 M presents with sudden painless monocular vision loss, lasting 20 min, fully resolved. PMHx: HTN, HLD, smoker.",
+          "expectedDiagnosis": "Amaurosis fugax (TIA)",
+          "expectedIcd10": "G45",
+          "expectedSpecialty": "Neurology",
+          "rationale": "Carotid territory TIA — needs urgent carotid duplex + ABCD2 risk stratification. Not 'eye problem, see ophthalmology in a week'."
+        },
+        {
+          "id": "DOC-006",
+          "complaint": "28 F, 8 weeks pregnant by LMP, vaginal bleeding + crampy lower abdominal pain, β-hCG 12,500, TVS shows empty uterus, normal adnexa.",
+          "expectedDiagnosis": "Possible ectopic pregnancy",
+          "expectedIcd10": "O00",
+          "expectedSpecialty": "OB/GYN",
+          "rationale": "β-hCG above discriminatory zone (1500-2000) + no IUP = ectopic until proven otherwise. Methotrexate vs surgery decision."
+        },
+        {
+          "id": "DOC-007",
+          "complaint": "55 M, 3 months of progressive dyspnea on exertion, orthopnea, bilateral pitting edema, JVP 12 cm. Echo shows EF 25 %.",
+          "expectedDiagnosis": "Heart failure with reduced ejection fraction (HFrEF)",
+          "expectedIcd10": "I50",
+          "expectedSpecialty": "Cardiology",
+          "rationale": "GDMT: ARNI + beta-blocker + MRA + SGLT2 inhibitor — all four pillars per ACC/AHA 2022."
+        },
+        {
+          "id": "DOC-008",
+          "complaint": "30 F with SLE on hydroxychloroquine, presents with new-onset proteinuria 3.2 g/24h, cellular casts, eGFR drop from 95 to 58.",
+          "expectedDiagnosis": "Lupus nephritis",
+          "expectedIcd10": "M32",
+          "expectedSpecialty": "Nephrology",
+          "rationale": "Class III/IV likely — biopsy + immunosuppression. Anti-malarial alone is not enough."
+        }
+      ]
+    },
+    {
+      "id": "patient",
+      "name": "Riya — 32-year-old non-clinical user",
+      "role": "consumer",
+      "context": "Knowledge-worker, no medical training, uses Mörbius the way someone would Google a symptom. Cares more about: did I get a useful next step (rest? GP? ER?) than the precise ICD-10 code. Wants the warm-doctor tone, not the textbook tone.",
+      "weight_topCondition": 0.2,
+      "weight_specialty": 0.1,
+      "weight_gauntlet": 0.3,
+      "weight_drugSafety": 0.4,
+      "cases": [
+        {
+          "id": "PAT-001",
+          "complaint": "I've had a sore throat and low fever for 2 days. No cough. My neck glands feel a bit swollen. Should I see a doctor?",
+          "expectedDiagnosis": "Possible streptococcal pharyngitis · screening",
+          "expectedIcd10": "J02",
+          "expectedSpecialty": "Internal medicine",
+          "rationale": "Centor 3+ → rapid strep test recommendation; not 'just rest'."
+        },
+        {
+          "id": "PAT-002",
+          "complaint": "I'm 28 weeks pregnant and my hands and feet are really swollen this week. Is that normal?",
+          "expectedDiagnosis": "Preeclampsia screening · check BP urgently",
+          "expectedIcd10": "O14",
+          "expectedSpecialty": "OB/GYN",
+          "rationale": "Sudden swelling at 28 wks needs BP + urine protein same day. Cannot be reassured as 'normal'."
+        },
+        {
+          "id": "PAT-003",
+          "complaint": "I've been feeling tired for weeks, gained 4 kg, and my hands are always cold. Is something wrong with me?",
+          "expectedDiagnosis": "Hypothyroidism screening",
+          "expectedIcd10": "E03",
+          "expectedSpecialty": "Endocrinology",
+          "rationale": "Triad screams hypothyroid — TSH + free T4 panel."
+        },
+        {
+          "id": "PAT-004",
+          "complaint": "My dad takes warfarin every day. The dentist gave him ibuprofen 400 mg for a tooth ache. Is that safe?",
+          "expectedDiagnosis": "Drug-drug interaction · major",
+          "expectedIcd10": null,
+          "expectedSpecialty": "Pharmacy",
+          "rationale": "Warfarin × NSAID is a major-severity interaction (INR elevation + GI/intracranial bleeding). Acetaminophen is the safer choice."
+        },
+        {
+          "id": "PAT-005",
+          "complaint": "I sometimes feel my heart racing for no reason. It happens once or twice a week, lasts a few minutes, then stops on its own.",
+          "expectedDiagnosis": "Paroxysmal palpitations · workup needed",
+          "expectedIcd10": "R00",
+          "expectedSpecialty": "Cardiology",
+          "rationale": "ECG + ambulatory monitor + thyroid panel. Reassurance alone is wrong."
+        },
+        {
+          "id": "PAT-006",
+          "complaint": "I've had this nagging headache for 3 days, never had migraines before, and it's worse when I lie down. Should I worry?",
+          "expectedDiagnosis": "New persistent headache with red flags",
+          "expectedIcd10": "R51",
+          "expectedSpecialty": "Neurology",
+          "rationale": "First-onset positional headache → image (CT or MRI) before reassurance. SAH or mass-lesion red flag."
+        },
+        {
+          "id": "PAT-007",
+          "complaint": "My 8-year-old has had a fever of 39 for 2 days and now she's complaining of right ear pain.",
+          "expectedDiagnosis": "Acute otitis media",
+          "expectedIcd10": "H66",
+          "expectedSpecialty": "Pediatrics",
+          "rationale": "AAP: severe AOM in children <6 → first-line amoxicillin 80–90 mg/kg/day."
+        }
+      ]
+    },
+    {
+      "id": "student",
+      "name": "Simran — final-year medical student, USMLE Step 2 prep",
+      "role": "learner",
+      "context": "Studying for boards. Uses Mörbius like a board-prep tutor — multiple-choice questions with explanations. Cares about exact answer + a teaching paragraph that justifies it. The MedQA harness's 30 questions are this persona's case set.",
+      "weight_topCondition": 0.4,
+      "weight_specialty": 0.1,
+      "weight_gauntlet": 0.1,
+      "weight_drugSafety": 0.1,
+      "weight_explanation": 0.3,
+      "cases": [
+        {
+          "id": "STU-001",
+          "complaint": "What is the first-line antihypertensive for a 62-year-old with stage 2 HTN, normal renal function, no proteinuria?",
+          "expectedDiagnosis": "Thiazide / ACE-I / ARB / CCB any",
+          "expectedIcd10": "I10",
+          "expectedSpecialty": "Cardiology",
+          "rationale": "ACC/AHA 2017: stage 2 HTN — start one of thiazide, ACE-I, ARB, or CCB. Beta-blockers not first-line for uncomplicated HTN."
+        },
+        {
+          "id": "STU-002",
+          "complaint": "When do you start anticoagulation in new-onset AF?",
+          "expectedDiagnosis": "CHA2DS2-VASc ≥ 2 → DOAC; valvular AF → warfarin",
+          "expectedIcd10": "I48",
+          "expectedSpecialty": "Cardiology",
+          "rationale": "ACC/AHA 2023: non-valvular AF + CHA2DS2-VASc ≥ 2 = anticoagulation indicated; DOAC preferred."
+        },
+        {
+          "id": "STU-003",
+          "complaint": "Differentiate viral pharyngitis vs Group A strep — when to test, when to treat.",
+          "expectedDiagnosis": "Centor score 3+ → rapid strep, treat if positive with amoxicillin",
+          "expectedIcd10": "J02",
+          "expectedSpecialty": "Pediatrics",
+          "rationale": "IDSA: Centor ≥ 3 → RADT; treatment lowers rheumatic fever risk + transmission."
+        },
+        {
+          "id": "STU-004",
+          "complaint": "Acute appendicitis: when is CT mandatory before OR?",
+          "expectedDiagnosis": "Equivocal exam, atypical presentation, female of reproductive age",
+          "expectedIcd10": "K35",
+          "expectedSpecialty": "Surgery",
+          "rationale": "WSES 2020: classic Alvarado high score in young male — CT optional. Equivocal → CT to avoid negative laparotomy."
+        },
+        {
+          "id": "STU-005",
+          "complaint": "First-line treatment for uncomplicated cystitis in non-pregnant adult woman?",
+          "expectedDiagnosis": "Nitrofurantoin or TMP-SMX (if local resistance < 20 %)",
+          "expectedIcd10": "N39",
+          "expectedSpecialty": "Internal medicine",
+          "rationale": "IDSA 2010: nitrofurantoin × 5 d or TMP-SMX × 3 d first-line. Fluoroquinolones reserved for failure/resistance."
+        },
+        {
+          "id": "STU-006",
+          "complaint": "Type 2 diabetes initial pharmacotherapy and add-on logic — A1c 9.5 %, BMI 31, no CVD.",
+          "expectedDiagnosis": "Metformin first; add SGLT2 or GLP-1 RA based on weight/CV/renal goals",
+          "expectedIcd10": "E11",
+          "expectedSpecialty": "Endocrinology",
+          "rationale": "ADA 2024: metformin first-line; second-agent choice driven by comorbidities."
+        },
+        {
+          "id": "STU-007",
+          "complaint": "Septic shock 1-hour bundle?",
+          "expectedDiagnosis": "Cultures + broad-spectrum antibiotics + 30 mL/kg crystalloid + lactate measurement",
+          "expectedIcd10": "R65",
+          "expectedSpecialty": "Internal medicine",
+          "rationale": "Surviving Sepsis Campaign 2021 — 1-h bundle. Key: antibiotics within 1 h of recognition."
+        },
+        {
+          "id": "STU-008",
+          "complaint": "Asthma exacerbation classification by PEFR + management at each level.",
+          "expectedDiagnosis": "Mild ≥80 %, moderate 50-79, severe <50, life-threatening <33; SABA + ICS at all, systemic steroids ≥ moderate",
+          "expectedIcd10": "J45",
+          "expectedSpecialty": "Pulmonology",
+          "rationale": "GINA 2024 — escalating SABA, ICS, oral steroids, oxygen, IV magnesium, mechanical ventilation."
+        },
+        {
+          "id": "STU-009",
+          "complaint": "Stroke: alteplase eligibility window and contraindications.",
+          "expectedDiagnosis": "≤ 4.5 h from onset, no recent surgery / bleeding / uncontrolled HTN, NIHSS > 4 or disabling",
+          "expectedIcd10": "I63",
+          "expectedSpecialty": "Neurology",
+          "rationale": "AHA/ASA 2019 — extended window 3-4.5 h with stricter criteria."
+        },
+        {
+          "id": "STU-010",
+          "complaint": "Hypoglycemia management in unconscious type 1 diabetic.",
+          "expectedDiagnosis": "IV dextrose D50 25 g if access; IM glucagon 1 mg if no access",
+          "expectedIcd10": "E16",
+          "expectedSpecialty": "Endocrinology",
+          "rationale": "ADA: severe hypoglycemia with altered mental status — fast carbs unsafe; need IV/IM."
+        }
+      ]
+    }
+  ]
+}

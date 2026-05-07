@@ -1,0 +1,65 @@
+# Mörbius API · Fly.io app config
+#
+# Deploy:
+#   fly launch --no-deploy --copy-config        # one-time, creates the app
+#   fly deploy                                   # subsequent deploys
+#
+# The app is a Bun container (see Dockerfile.api). It boots the Hono SSE
+# server on :8787 with a built-in healthcheck against /health.
+#
+# Region pinned to fra (Frankfurt) — keeps latency low for the SRH
+# Stuttgart demo and matches GDPR data-residency expectations. Add
+# more regions later with `fly regions add`.
+
+app = "morbius-api"
+primary_region = "fra"
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
+[build]
+  dockerfile = "Dockerfile.api"
+
+[env]
+  PORT = "8787"
+  NODE_ENV = "production"
+  # Default backend priority — local Ollama first when available on the
+  # host, else the cloud fallbacks. Override per-deploy via `fly secrets`.
+  MORBIUS_BACKEND = ""
+
+[http_service]
+  internal_port = 8787
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/health"
+
+# Single small VM is enough for a project demo. Bump shared_cpus + memory
+# before flipping `min_machines_running = 1` for production traffic.
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "512mb"
+  size = "shared-cpu-1x"
+
+[deploy]
+  # Rolling so the SSE clients on /orchestrate get drained gracefully
+  # rather than dropped mid-stream.
+  strategy = "rolling"
+
+# Per-secret notes (set with `fly secrets set KEY=…`):
+#
+#   ANTHROPIC_API_KEY     — opt-in cloud reasoning fallback
+#   NVIDIA_API_KEY        — opt-in NIM fallback
+#   HF_TOKEN              — opt-in HuggingFace inference fallback
+#   DATABASE_URL          — postgres for activity sink (in-mem fallback)
+#   PY_SVC_URL            — MONAI / MarianMT sidecar URL
+#   MORBIUS_BACKEND       — single-pin backend (e.g. "anthropic")
+#   BACKEND_PRIORITY      — comma-list override (e.g. "anthropic,ollama")

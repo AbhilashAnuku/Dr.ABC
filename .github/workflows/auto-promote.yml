@@ -1,0 +1,103 @@
+name: Auto-promote develop -> main
+
+# Architect ask (2026-05-12):
+#   "Simran will always push to the branch so pull check and push to main."
+#
+# Flow:
+#   1. Anyone pushes to develop
+#   2. CI workflow (ci.yml) runs the gauntlet
+#   3. THIS workflow waits for that CI run to complete
+#   4. If green AND on develop, open (or update) a PR to main
+#   5. Add auto-merge label so GitHub merges once branch protection
+#      (review approval) is satisfied
+
+on:
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
+    branches: ['develop']
+
+  # Manual trigger for when the architect wants to fire it without a
+  # fresh CI run.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-or-update-pr:
+    name: Open PR develop -> main
+    runs-on: ubuntu-latest
+    # Only run when triggered by a successful CI run (or manual dispatch).
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Open or update PR to main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="develop"
+          BASE="main"
+
+          # Check if PR already exists.
+          PR_NUMBER=$(gh pr list --head "$BRANCH" --base "$BASE" --json number --jq '.[0].number // empty')
+
+          BODY=$(cat <<EOF
+          ## Auto-promotion from \`$BRANCH\` -> \`$BASE\`
+
+          This PR was opened by the auto-promote workflow after CI went green
+          on \`$BRANCH\`. Architect's ask (2026-05-12):
+
+          > "Simran will always push to the branch so pull check and push to main."
+
+          ### What is on this branch
+          - Simran two-laptop onboarding kit + zip builder
+          - Demo-pin CLI (\`bun run morbius:demo-pin\`) for the NVIDIA cascade
+          - DB persistence layer extensions: case_library + imaging_analysis + consult_analysis + seed kit
+          - Dashboard hrefs + real-data activity feed
+          - HF fine-tune bundle (data/hf-train/) for AutoTrain / Colab / Kaggle
+          - German clinicians directory + insurance plan recommender
+          - morbius:sync + morbius:sync:local for two-laptop branch absorption
+
+          ### Test plan
+          - [x] CI gauntlet green (typecheck + lint + 540+ tests + page-audit)
+          - [ ] Architect runs through demo script (docs/vault/ops/demo-script.md)
+          - [ ] Simran confirms her laptop has the latest after \`bun run morbius:sync\`
+
+          ### Auto-merge
+          Add the \`auto-merge\` label after architect review approval to let
+          GitHub auto-merge once branch protection clears.
+
+          EOF
+          )
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "Opening new PR $BRANCH -> $BASE"
+            gh pr create \
+              --base "$BASE" \
+              --head "$BRANCH" \
+              --title "feat: Simran handoff kit + demo-day fixes + HF train bundle" \
+              --body "$BODY"
+          else
+            echo "Updating existing PR #$PR_NUMBER"
+            gh pr edit "$PR_NUMBER" --body "$BODY"
+          fi
+
+      - name: Job summary
+        run: |
+          {
+            echo "# Auto-promote · develop -> main"
+            echo ""
+            echo "Triggered by: \`${{ github.event_name }}\`"
+            if [ "${{ github.event_name }}" = "workflow_run" ]; then
+              echo "CI conclusion: \`${{ github.event.workflow_run.conclusion }}\`"
+            fi
+            echo ""
+            echo "PR list: https://github.com/${{ github.repository }}/pulls?q=head%3Adevelop+base%3Amain"
+          } >> $GITHUB_STEP_SUMMARY

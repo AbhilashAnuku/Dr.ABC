@@ -1,0 +1,1029 @@
+{
+  "ranAt": "2026-05-04T09:32:00.980Z",
+  "durationMs": 1437394,
+  "apiBase": "http://localhost:8787",
+  "questionCount": 100,
+  "metrics": {
+    "accuracy": 0.46,
+    "nonErrorAccuracy": 0.46,
+    "answeredCount": 100,
+    "perSpecialty": {
+      "step1": {
+        "count": 62,
+        "correct": 29,
+        "rate": 0.46774193548387094
+      },
+      "step2&3": {
+        "count": 38,
+        "correct": 17,
+        "rate": 0.4473684210526316
+      }
+    },
+    "p50LatencyMs": 4977,
+    "p95LatencyMs": 47212,
+    "meanLatencyMs": 13727,
+    "errorCount": 0
+  },
+  "questions": [
+    {
+      "id": "medqa-1632",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of back pain, difficulty urinating, and osteoblastic lesions in the spine, along with a history of smoking, suggests a diagnosis of prostate cancer with metastasis to the bone. The osteoblastic lesions are characteristic of prostate cancer metastases. Given this diagnosis, treatment with a gonadotropin-releasing hormone (GnRH) agonist, such as leuprolide, would be effective in reducing testosterone levels, which can help slow the growth of prostate cancer cells. \n\nAnswer: A | Reasoning: The patient's presentation of back pain, difficulty urinating, and osteoblastic lesions in the spine, along with a history of smoking, suggests a diagnosis of prostate cancer with metastasis to the bone. Prostate cancer is often associated with osteoblastic metastases, and the patient's symptoms of difficulty urinating are consistent with localized prostate disease. Given this diagnosis, treatment with a gonadotropin-releasing hormone (GnRH) agonist, such as leuprolide, would be effective in reducing testosterone levels and slowing the growth of prostate cancer cells. \n\nAnswer: A",
+      "latencyMs": 31646,
+      "error": null
+    },
+    {
+      "id": "medqa-960",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Endometriosis",
+      "latencyMs": 37382,
+      "error": null
+    },
+    {
+      "id": "medqa-2139",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The clinical presentation of a rash that feels like sandpaper, fever, sore throat, and exudative pharyngitis is suggestive of Scarlet Fever, which is caused by Group A beta-hemolytic Streptococcus (GABHS). The physician's concern about a potential complication if left untreated likely refers to Acute Rheumatic Fever (ARF), a known complication of untreated streptococcal pharyngitis. ARF is believed to result from an immune response triggered by the streptococcal infection, where the immune system mistakenly attacks the host's own tissues due to molecular similarities between the streptococcal antigens and host tissues. This phenomenon is known as molecular mimicry. \n\nAnswer: C | Reasoning: The clinical presentation of a rash that feels like sandpaper, fever, sore throat, and exudative pharyngitis is suggestive of Scarlet Fever, which is caused by Group A beta-hemolytic Streptococcus (GABHS). The physician's concern about a complication later in life if left untreated likely refers to Acute Rheumatic Fever (ARF), a potential sequela of untreated streptococcal pharyngitis. The mechanism underlying the development of ARF involves an autoimmune response triggered by molecular mimicry between streptococcal antigens and host tissues, particularly in the heart. This leads to an immune-mediated inflammation that can result in rheumatic heart disease.\n\nAnswer: C",
+      "latencyMs": 3618,
+      "error": null
+    },
+    {
+      "id": "medqa-2341",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of fatigue and laboratory findings of low calcium and vitamin D levels, particularly after a total thyroidectomy, suggest a deficiency related to calcium regulation. The low vitamin D level could be contributing to the low calcium, but the recent thyroidectomy is a critical clue, as it often involves the parathyroid glands, which are responsible for regulating calcium through parathyroid hormone (PTH). The low calcium level, in this case, is more likely related to a deficiency in PTH, which is crucial for maintaining normal calcium levels. \n\nAnswer: D | Reasoning: The patient's symptoms of fatigue and laboratory findings of low calcium levels (7.8 mg/dL) and low Vitamin D3 levels (8 ng/mL) are key to determining the underlying cause. Given the patient's recent total thyroidectomy, it is likely that the parathyroid glands, which are responsible for regulating calcium levels, were inadvertently damaged or removed during the surgery. This would lead to a deficiency in parathyroid hormone (PTH), which is essential for maintaining normal calcium levels. The low Vitamin D3 level may also contribute to the low calcium level, but the primary issue is likely related to the parathyroid glands.\n\nAnswer: D",
+      "latencyMs": 4027,
+      "error": null
+    },
+    {
+      "id": "medqa-373",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of recurring fever, night sweats, weight loss, and painless lymphadenopathy are suggestive of a chronic infection or malignancy. The history of infectious mononucleosis two years ago and the presence of enlarged, fixed cervical lymph nodes on physical examination, along with the microscopic examination of a specimen obtained on biopsy of a cervical lymph node, point towards a lymphoproliferative disorder. The patient's international travel history and smoking habit are also relevant, but the key finding here is the lymph node biopsy. Given the clinical presentation and the biopsy, the most likely diagnosis is Hodgkin lymphoma, which is characterized by the presence of CD15 and CD30 positive Reed-Sternberg cells.\n\nAnswer: B",
+      "latencyMs": 15392,
+      "error": null
+    },
+    {
+      "id": "medqa-84",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 30675,
+      "error": null
+    },
+    {
+      "id": "medqa-3254",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with a 6-month history of muscle weakness, low energy, intermittent nosebleeds, weight loss, progressive hearing and vision problems, and a history of neuropathic symptoms such as pins-and-needles sensation, numbness, and pain in his feet. The laboratory studies show a low hemoglobin level, mild leukopenia, thrombocytopenia, and an elevated erythrocyte sedimentation rate. The presence of a sharp, narrow spike of monoclonal IgM immunoglobulin on serum protein electrophoresis is a key finding. This, combined with the patient's clinical presentation, is highly suggestive of Waldenstrom macroglobulinemia, a type of non-Hodgkin lymphoma characterized by the production of monoclonal IgM protein.\n\nAnswer: B",
+      "latencyMs": 8167,
+      "error": null
+    },
+    {
+      "id": "medqa-2967",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The finding described is indicative of the infant's ability to support their head while in a prone position, which is a key milestone in developmental assessment. This skill is typically acquired when the infant develops sufficient neck muscle strength. Normally, this occurs around 1-2 months of age for the prone position, but the question is about the supine to sitting position transition, which starts to be noticeable around 2 months. At this age, infants often begin to show an understanding of their surroundings and can track objects, including people, more effectively.\n\nAnswer: A",
+      "latencyMs": 5198,
+      "error": null
+    },
+    {
+      "id": "medqa-1265",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Croup",
+      "latencyMs": 39255,
+      "error": null
+    },
+    {
+      "id": "medqa-4160",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of difficulty hearing the television and others calling her name, along with the audiometry results showing high frequency sensorineural hearing loss, suggest a problem with the inner ear or the auditory nerve. Sensorineural hearing loss is typically associated with damage to the cochlea or the auditory nerve, rather than a problem with the middle ear. The absence of any middle ear abnormalities on physical examination, such as drainage or granulation tissue, further supports this conclusion. The most likely cause of sensorineural hearing loss in this patient is destruction of the cochlear hair cells, which are responsible for converting sound vibrations into electrical signals that are transmitted to the brain.\n\nAnswer: B",
+      "latencyMs": 4572,
+      "error": null
+    },
+    {
+      "id": "medqa-3667",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 243,
+      "error": null
+    },
+    {
+      "id": "medqa-4097",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 30912,
+      "error": null
+    },
+    {
+      "id": "medqa-3295",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Mallory-Weiss tear",
+      "latencyMs": 42260,
+      "error": null
+    },
+    {
+      "id": "medqa-1831",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient has been diagnosed with high-grade adenocarcinoma of the prostate, which has metastasized to the lumbar spine, as evidenced by the osteoblastic lesions. The treatment for metastatic prostate cancer often involves androgen deprivation therapy, which can be achieved through various mechanisms, including competing with androgens for interaction with testosterone receptors. The drug that competes with androgens for interaction with the testosterone receptors is a non-steroidal anti-androgen. Flutamide is a non-steroidal anti-androgen that blocks the action of androgens by binding to androgen receptors in the prostate gland, making it a likely choice for this patient.\n\nAnswer: B | Reasoning: The patient has been diagnosed with high-grade adenocarcinoma of the prostate, which has metastasized to the lumbar spine, as indicated by the osteoblastic lesions. The treatment approach for metastatic prostate cancer often involves androgen deprivation therapy, which aims to reduce testosterone levels or block its effects on prostate cancer cells. The description of the drug competing with androgens for interaction with testosterone receptors points towards an anti-androgen medication. Among the given options, Flutamide is a non-steroidal anti-androgen that competes with testosterone and other androgens for binding to the androgen receptor, making it a likely choice for this patient.\n\nAnswer: B",
+      "latencyMs": 7525,
+      "error": null
+    },
+    {
+      "id": "medqa-987",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 577,
+      "error": null
+    },
+    {
+      "id": "medqa-1520",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: Given the patient's history of estrogen- and progesterone receptor-positive invasive ductal carcinoma, the most effective treatment option would target the hormonal pathway. Since the patient is postmenopausal and has a history of breast cancer in her family, tamoxifen or an aromatase inhibitor could be considered. However, aromatase inhibitors are preferred in postmenopausal women due to their mechanism of action and side effect profile. Aromatase inhibitors work by inhibiting the peripheral conversion of androgens to estrogen, which is the primary source of estrogen in postmenopausal women. This reduction in estrogen levels helps to slow the growth of estrogen receptor-positive breast cancer cells.\n\nAnswer: C",
+      "latencyMs": 7955,
+      "error": null
+    },
+    {
+      "id": "medqa-2255",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Atrial Fibrillation with inadequate rate control",
+      "latencyMs": 43718,
+      "error": null
+    },
+    {
+      "id": "medqa-654",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's laboratory results show a low hemoglobin concentration and microcytic anemia (indicated by a mean corpuscular volume of 74 μm3), which could suggest a condition affecting red blood cell production. The presence of an epidural mass with erythroid colonies, megakaryocytes, and myeloid cells on biopsy, along with osteopenia and widened diploic spaces in the skull, points towards a marrow replacement process or an extramedullary hematopoiesis. The age of the patient and the specific combination of findings, including the low hemoglobin and microcytic anemia, make some options less likely. Beta-thalassemia major, also known as Cooley's anemia, is characterized by severe anemia, extramedullary hematopoiesis (which could explain the epidural mass and changes in the skull), and expansion of bone marrow spaces leading to osteopenia.\n\nAnswer: D | Reasoning: The patient's laboratory results show a low hemoglobin concentration and a low mean corpuscular volume, indicating microcytic anemia. The presence of an epidural mass with erythroid colonies, megakaryocytes, and myeloid cells on biopsy suggests extramedullary hematopoiesis, which is a characteristic feature of certain hematological disorders. The MRI and CT scan findings of low signal intensity in vertebral bodies and osteopenia with widening of the diploic spaces in the skull are also consistent with a disorder that affects bone marrow and leads to expansion of the bone marrow space. Given the patient's age and the combination of these findings, the most likely diagnosis is a genetic disorder that affects hemoglobin production and leads to extramedullary hematopoiesis.\n\nAnswer: D",
+      "latencyMs": 4905,
+      "error": null
+    },
+    {
+      "id": "medqa-1797",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 30864,
+      "error": null
+    },
+    {
+      "id": "medqa-3721",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient's new medication acts as a central α2-adrenergic agonist, which is likely clonidine. Clonidine stimulates α2-adrenergic receptors in the brain, decreasing sympathetic outflow and thereby lowering blood pressure. The activation of α2-adrenergic receptors is coupled to Gi proteins, which inhibit adenylate cyclase, leading to a decrease in cyclic adenosine monophosphate (cAMP) levels. \n\nAnswer: A",
+      "latencyMs": 8007,
+      "error": null
+    },
+    {
+      "id": "medqa-1138",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of loss of developmental milestones and a cherry-red macular spot, along with the absence of hepatomegaly, suggests a diagnosis of Tay-Sachs disease. The onion-skin appearance of lysosomes on microscopic exam is also characteristic of this condition. Tay-Sachs disease is a lysosomal storage disorder caused by a deficiency of the enzyme hexosaminidase A, leading to the accumulation of GM2 ganglioside. This disease is more common in individuals of Ashkenazi-Jewish descent, which further supports this diagnosis.\n\nAnswer: C",
+      "latencyMs": 8242,
+      "error": null
+    },
+    {
+      "id": "medqa-2479",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms and examination results suggest a problem with the afferent pathway of the pupillary light reflex, which involves the optic nerve. When the light is shined in the right eye, the partial constriction of both pupils indicates that the right eye is not transmitting the signal as strongly as the left eye. This is consistent with a lesion affecting the optic nerve, particularly on the right side. The fact that the pupils constrict further when the light is shined in the left eye and dilate slightly when the light is moved back to the right eye also supports this conclusion.\n\nAnswer: D",
+      "latencyMs": 18769,
+      "error": null
+    },
+    {
+      "id": "medqa-1681",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "A",
+      "correct": false,
+      "modelText": "Reasoning: The patient's laboratory results show elevated liver enzymes (AST: 95 U/L, ALT: 68 U/L), which indicate liver damage or inflammation. Given the patient's history of drinking 2 alcoholic beverages every night, this could be a contributing factor to the elevated liver enzymes. Although the patient has been seeing a specialist for another medical condition, there is no clear indication that this condition or its treatment is causing the liver enzyme elevation. The patient's lifestyle, specifically the daily alcohol consumption, is a more direct risk factor for liver damage.\n\nAnswer: A",
+      "latencyMs": 2788,
+      "error": null
+    },
+    {
+      "id": "medqa-4637",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient's history of recurring skin infections and delayed umbilical cord separation is suggestive of a primary immunodeficiency disorder, specifically Leukocyte Adhesion Deficiency (LAD). LAD is characterized by the inability of leukocytes to migrate to sites of infection due to a defect in adhesion molecules. The absence of CD18 molecule on the surface of leukocytes is a hallmark of LAD, leading to impaired leukocyte adhesion and migration. This condition is also associated with delayed separation of the umbilical cord, which is a key feature in this patient's presentation.\n\nAnswer: C",
+      "latencyMs": 10560,
+      "error": null
+    },
+    {
+      "id": "medqa-723",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 31318,
+      "error": null
+    },
+    {
+      "id": "medqa-1098",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms, including a severe headache, nausea, vomiting, and a history of head trauma, suggest a traumatic brain injury. The initial loss of consciousness followed by a lucid interval and subsequent deterioration is consistent with an epidural hematoma, which is typically caused by bleeding between the dura mater and the skull. The patient's rigidity and deviation of the eyes, which resolved with administration of lorazepam, may have been due to seizure activity, which can be a complication of epidural hematoma. The most likely cause of the patient's condition is therefore bleeding between the dura mater and the skull.\n\nAnswer: D | Reasoning: The patient's symptoms, including a severe headache, nausea, vomiting, and a lucid interval after a head injury, are suggestive of an epidural hematoma. The patient's subsequent deterioration, characterized by rigidity, eye deviation, and incontinence, followed by resolution with lorazepam administration, indicates a seizure-like activity, but the underlying cause is likely related to increased intracranial pressure due to bleeding. The history of a head injury and the initial loss of consciousness support a traumatic cause. Epidural hematomas typically result from bleeding between the dura mater and the skull, often due to a tear in the middle meningeal artery.\n\nAnswer: D",
+      "latencyMs": 6453,
+      "error": null
+    },
+    {
+      "id": "medqa-2483",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Cystic Fibrosis",
+      "latencyMs": 39677,
+      "error": null
+    },
+    {
+      "id": "medqa-1453",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of persistent vomiting, forceful retching, and subsequent chest pain and choking, along with the physical exam findings of fullness at the base of the neck and a crunching, rasping sound on auscultation of the chest, suggests a rupture of the esophagus. The upright chest X-ray showing free mediastinal air further supports this diagnosis. Boerhaave syndrome is a spontaneous rupture of the esophagus, often associated with forceful vomiting or retching, which fits the patient's clinical scenario. \n\nAnswer: C",
+      "latencyMs": 6752,
+      "error": null
+    },
+    {
+      "id": "medqa-1482",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with multiple, flaccid blisters on the skin and ulcers on mucous membranes, which suggests an autoimmune bullous disorder. The presence of blisters on the skin that separate easily when stroked (Nikolsky's sign) and the involvement of mucous membranes are characteristic features of pemphigus vulgaris. The patient's recent onset of symptoms and the distribution of lesions also support this diagnosis. While other options like lichen planus and bullous pemphigoid can present with skin lesions, the combination of skin and mucous membrane involvement along with the specific characteristics of the blisters points towards pemphigus vulgaris.\n\nAnswer: D | Reasoning: The patient presents with multiple, flaccid blisters on the skin and ulcers on the mucous membranes, which is indicative of an autoimmune bullous disorder. The presence of blisters on the skin that separate when lightly stroked (Nikolsky's sign) and the involvement of multiple mucous membranes (buccal, gingival, and vulvar) are characteristic features of pemphigus vulgaris. The patient's recent change in medication, including the start of captopril, is not typically associated with this condition. The clinical presentation and the extent of mucous membrane involvement point towards an autoimmune condition, specifically pemphigus vulgaris, rather than other dermatological conditions like lichen planus, dermatitis herpetiformis, or bullous pemphigoid.\n\nAnswer: D",
+      "latencyMs": 47212,
+      "error": null
+    },
+    {
+      "id": "medqa-4598",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The presence of a tuft of hair overlying the infant's lumbosacral region suggests a possible neural tube defect, which can be associated with certain anticonvulsant medications. Valproic acid is a known teratogen that can cause neural tube defects, particularly spina bifida, in fetuses exposed to it during pregnancy. The fact that the mother has epilepsy and likely took medication for it during pregnancy increases the likelihood of valproic acid being the culprit. Given the options, valproic acid is the most likely medication associated with the infant's condition.\n\nAnswer: D",
+      "latencyMs": 3076,
+      "error": null
+    },
+    {
+      "id": "medqa-3345",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 62195,
+      "error": null
+    },
+    {
+      "id": "medqa-1994",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with a large volume of bright red blood in his stool, which suggests a lower gastrointestinal bleed. Given his age and lack of abdominal pain, a common cause of lower GI bleed in this population is diverticular disease or an arteriovenous malformation (AVM). However, without further diagnostic testing such as colonoscopy, the exact cause cannot be determined. The patient is hemodynamically stable, but it is essential to manage the potential blood loss and prepare for further evaluation. \n\nAnswer: B",
+      "latencyMs": 2453,
+      "error": null
+    },
+    {
+      "id": "medqa-335",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 36166,
+      "error": null
+    },
+    {
+      "id": "medqa-3044",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The study design described is a randomized controlled trial, which is a strong design for evaluating the efficacy of a new treatment. However, the fact that participants from both groups were mixed together and could communicate freely introduces a potential bias. This setup allows participants to potentially figure out which treatment they are receiving, which could influence their response to the treatment. This is an example of response bias, also known as placebo effect or Hawthorne effect, where the participants' knowledge of their treatment assignment affects their outcome. \n\nAnswer: B | Reasoning: The study design described is a randomized controlled trial, which is a strong design for evaluating the efficacy of a new treatment. However, the fact that participants from both groups were mixed together and could communicate freely introduces a potential bias. Since the participants in the second group received a labeled pill, it is likely that they knew they were receiving the standard treatment, whereas the participants in the first group received a powder mixed with water, making it unclear what treatment they were receiving. This lack of blinding for participants could lead to a response bias, where participants' expectations or knowledge of their treatment assignment influence their reported outcomes. \n\nAnswer: B",
+      "latencyMs": 6966,
+      "error": null
+    },
+    {
+      "id": "medqa-3961",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with hypercalcemia (elevated serum calcium concentration of 13.8 mg/dL), anemia (low hemoglobin concentration of 9.3 g/dL), and an elevated erythrocyte sedimentation rate (65 mm/h), which are suggestive of a systemic illness. The combination of these findings, particularly the anemia and elevated erythrocyte sedimentation rate, points towards a condition involving overproduction of abnormal plasma cells, such as multiple myeloma. Multiple myeloma can lead to hypercalcemia due to the release of osteoclast-activating factors by the malignant plasma cells, resulting in bone resorption. This condition is more likely than other causes of hypercalcemia, such as primary hyperparathyroidism or ectopic production of parathyroid hormone-related protein (PTHrP), given the patient's overall clinical presentation.\n\nAnswer: A | Reasoning: The patient presents with hypercalcemia (elevated serum calcium concentration of 13.8 mg/dL), anemia (hemoglobin concentration of 9.3 g/dL), and renal impairment (elevated serum creatinine concentration of 2.1 mg/dL), along with symptoms such as nausea, anorexia, polyuria, and confusion. The combination of these findings, particularly the presence of anemia and elevated erythrocyte sedimentation rate (65 mm/h), suggests a paraproteinemia or a plasma cell dyscrasia, which is most commonly associated with multiple myeloma. Multiple myeloma can lead to hypercalcemia through the production of osteoclast-activating factors. The patient's age and the constellation of symptoms and laboratory findings point towards a diagnosis of multiple myeloma, which is characterized by the overproliferation of plasma cells. \n\nAnswer: A",
+      "latencyMs": 8461,
+      "error": null
+    },
+    {
+      "id": "medqa-229",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The scenario involves comparing the proportions of patients who reported interference with daily functioning between the combination treatment group and the standard treatment group, which can be classified as a categorical outcome (yes or no). The chi-square test is a statistical method used to compare observed proportions of categorical outcomes between two or more groups. Since the data is presented in a 2x2 contingency table (yes/no vs combination treatment/standard treatment), the chi-square test is the most appropriate method to assess the statistical significance of the difference in proportions between the two groups. \n\nAnswer: B",
+      "latencyMs": 2778,
+      "error": null
+    },
+    {
+      "id": "medqa-4115",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "Temporal Arteritis",
+      "latencyMs": 38084,
+      "error": null
+    },
+    {
+      "id": "medqa-675",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The newborn's symptoms of red eyes with mucopurulent discharge, along with the confirmation of the diagnosis via polymerase chain reaction assay of conjunctival scraping, suggest a bacterial or chlamydial etiology, given the age of the patient and the clinical presentation. Chlamydia trachomatis is a common cause of conjunctivitis in newborns, often acquired during passage through an infected birth canal. The appropriate treatment for chlamydial conjunctivitis in newborns is oral erythromycin. \n\nAnswer: D",
+      "latencyMs": 2354,
+      "error": null
+    },
+    {
+      "id": "medqa-4141",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of yellowish vaginal discharge, increased urinary frequency, and pain during urination, along with a history of multiple sexual partners, suggest a sexually transmitted infection (STI). The urine culture result confirming Chlamydia trachomatis infection points towards a specific STI that requires antibiotic treatment. Doxycycline is a commonly recommended antibiotic for the treatment of chlamydia. \n\nAnswer: B | Reasoning: The patient's symptoms of yellowish vaginal discharge, increased urinary frequency, and pain during urination, along with the urine culture result showing Chlamydia trachomatis, indicate a diagnosis of chlamydial infection. Chlamydia is a common sexually transmitted infection (STI) that can cause urethritis and cervicitis, leading to the patient's symptoms. The appropriate treatment for chlamydial infection is an antibiotic, and doxycycline is a commonly recommended first-line treatment. \n\nAnswer: B",
+      "latencyMs": 8420,
+      "error": null
+    },
+    {
+      "id": "medqa-3573",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms and ECG changes are reproduced during adenosine stress testing, which suggests that the underlying mechanism is related to coronary blood flow. Adenosine stress testing is commonly used to evaluate coronary artery disease, and the new ST depression in leads V2, V3, and V4 indicates myocardial ischemia. The most likely explanation for this ischemia is the diversion of blood flow from stenotic coronary arteries, which is a consequence of adenosine's vasodilatory effects. This diversion of blood flow can lead to a mismatch between myocardial oxygen supply and demand, resulting in ischemia.\n\nAnswer: A",
+      "latencyMs": 3282,
+      "error": null
+    },
+    {
+      "id": "medqa-3221",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 31049,
+      "error": null
+    },
+    {
+      "id": "medqa-249",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 3615,
+      "error": null
+    },
+    {
+      "id": "medqa-4044",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of agitation, combativeness, and violent behavior, along with physical examination findings of horizontal and vertical nystagmus, tachycardia, and profuse diaphoresis, suggests sympathomimetic toxicity. Among the options provided, PCP is known to cause a dissociative state characterized by agitation, aggression, and nystagmus, which aligns with the patient's symptoms. While cocaine and other substances can also cause sympathomimetic effects, the specific combination of findings, including nystagmus, points more towards PCP. GHB and LSD can cause altered mental states but do not typically cause the same level of sympathomimetic toxicity seen in this patient.\n\nAnswer: D",
+      "latencyMs": 2979,
+      "error": null
+    },
+    {
+      "id": "medqa-1405",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 30846,
+      "error": null
+    },
+    {
+      "id": "medqa-190",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of nausea, vomiting, diarrhea, fever, and abdominal cramping, combined with a recent history of eating cold noodle salads at a large gathering, suggest a diagnosis of food poisoning, likely caused by a bacterial or viral pathogen. The patient's vital signs indicate mild hypotension but no severe distress, suggesting the need for supportive care rather than immediate antibiotic therapy. Replacement of fluids and electrolytes is crucial in managing patients with gastrointestinal symptoms to prevent dehydration and maintain electrolyte balance. \n\nAnswer: B | Reasoning: The patient's symptoms of nausea, vomiting, diarrhea, fever, and abdominal cramping, combined with a recent history of eating cold noodle salads at a family picnic, suggest a diagnosis of food poisoning, likely caused by a bacterial or viral pathogen. The patient's vital signs indicate mild hypotension but are otherwise stable. Given the clinical presentation and the fact that the patient is afebrile (temperature 37.5°C or 99.6°F), the most appropriate next step would focus on managing symptoms and preventing dehydration rather than immediately treating with antibiotics, which are typically reserved for more severe cases or specific bacterial infections. \n\nAnswer: B",
+      "latencyMs": 19514,
+      "error": null
+    },
+    {
+      "id": "medqa-4749",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 32001,
+      "error": null
+    },
+    {
+      "id": "medqa-4551",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's blood pressure decreased after the addition of a selective α2 adrenergic receptor agonist. α2 adrenergic receptors are primarily located on the presynaptic terminals of sympathetic neurons, where they act as autoreceptors to inhibit the release of norepinephrine, thus decreasing sympathetic outflow. This decrease in sympathetic outflow leads to a decrease in peripheral vascular resistance, resulting in lowered blood pressure. The correct answer is related to the decrease in sympathetic outflow.\n\nAnswer: D",
+      "latencyMs": 4977,
+      "error": null
+    },
+    {
+      "id": "medqa-3325",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Marfan syndrome",
+      "latencyMs": 37087,
+      "error": null
+    },
+    {
+      "id": "medqa-3682",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient has a history of type 2 diabetes mellitus and significant dyslipidemia, with elevated LDL-cholesterol and triglycerides, and low HDL-cholesterol. Given his high cardiovascular risk, the best initial therapy would target the reduction of LDL-cholesterol. Statins are the first-line treatment for primary prevention of cardiovascular disease in patients with elevated LDL-cholesterol, and their mechanism of action involves the inhibition of cholesterol synthesis. This is achieved through the inhibition of HMG-CoA reductase, a key enzyme in the hepatic production of cholesterol.\n\nAnswer: C | Reasoning: The patient has a history of type 2 diabetes mellitus and significant dyslipidemia, with elevated LDL-cholesterol and triglycerides, and low HDL-cholesterol. Given his high cardiovascular risk, the best initial therapy would target the reduction of LDL-cholesterol. Statins are the most commonly recommended initial therapy for primary prevention of cardiovascular disease in patients with elevated LDL-cholesterol, and they work by inhibiting cholesterol synthesis. Therefore, the mechanism of action of the best initial therapy for this patient would be the inhibition of cholesterol synthesis, which is how statins exert their effect.\n\nAnswer: C",
+      "latencyMs": 13367,
+      "error": null
+    },
+    {
+      "id": "medqa-1063",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 213,
+      "error": null
+    },
+    {
+      "id": "medqa-3945",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 31820,
+      "error": null
+    },
+    {
+      "id": "medqa-1622",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's regular blood exchanges and history of bone pain suggest a condition that affects hemoglobin production, such as sickle cell disease. The fact that she has an uncle with the same condition implies an inherited disorder. Sickle cell disease is caused by a point mutation in the HBB gene, which codes for the beta-globin subunit of hemoglobin. This mutation results in the substitution of glutamic acid with valine at position 6 of the beta-globin chain, leading to the production of abnormal hemoglobin S. This is an example of an amino acid substitution, where a single nucleotide change leads to the replacement of one amino acid with another in the resulting protein.\n\nAnswer: B | Reasoning: The patient's condition is suggested to be sickle cell disease, given the regular blood exchanges, history of bone pain treated with morphine and oxygen, and the use of hydroxyurea, which is a common treatment for sickle cell disease to reduce the frequency of painful crises. Sickle cell disease is caused by a specific point mutation in the HBB gene that codes for the beta-globin subunit of hemoglobin, leading to an abnormal hemoglobin known as sickle hemoglobin (HbS). This mutation results in the substitution of valine for glutamic acid at the sixth position of the beta-globin chain. This is a classic example of an amino acid substitution, which alters the properties of hemoglobin and leads to the sickling of red blood cells under certain conditions.\n\nAnswer: B",
+      "latencyMs": 31204,
+      "error": null
+    },
+    {
+      "id": "medqa-194",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The clinical presentation of this 2-year-old boy, including the gradual loss of speech, vision, and motor skills, myoclonic seizures, and brain atrophy, suggests a neurodegenerative disorder. The histopathologic findings of globoid cell aggregation and loss of glial cells are characteristic of Krabbe disease, a rare genetic disorder caused by a deficiency of the enzyme β-Galactocerebrosidase. This enzyme is necessary for the breakdown of galactosylceramide, a component of myelin, and its deficiency leads to the accumulation of toxic substances that damage the myelin sheath and cause neurodegeneration. The combination of clinical and histopathologic features points to Krabbe disease as the most likely diagnosis.\n\nAnswer: D",
+      "latencyMs": 46111,
+      "error": null
+    },
+    {
+      "id": "medqa-4948",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 60887,
+      "error": null
+    },
+    {
+      "id": "medqa-1461",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The scientists want the new drug to have the same efficacy as ibuprofen, which means it should be able to achieve the same therapeutic effect, represented by the dashed line Y. To minimize gastrointestinal side effects, the new drug should have a higher potency, meaning it should reach the desired therapeutic effect at a lower dose. This would shift the dose-response curve to the left. Since ibuprofen is curve C, the new drug should be a curve that is shifted to the left of curve C but still reaches the same maximum efficacy.\n\nAnswer: A",
+      "latencyMs": 10822,
+      "error": null
+    },
+    {
+      "id": "medqa-1184",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of regurgitating and vomiting 10-15 minutes after feeding are consistent with gastroesophageal reflux disease (GERD), but given her age and otherwise healthy appearance, a more benign condition such as physiologic reflux is also possible. The fact that she is gaining weight appropriately and has a soft, nontender abdomen suggests that her symptoms are not causing significant harm. Before proceeding with more invasive or pharmacologic interventions, a conservative approach to manage symptoms should be considered. \n\nAnswer: D",
+      "latencyMs": 11983,
+      "error": null
+    },
+    {
+      "id": "medqa-1350",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms of dysuria (painful urination) and frequent urination, along with the urinalysis results showing positive leukocyte esterase and nitrites, are indicative of a urinary tract infection (UTI). The presence of nitrites in the urinalysis is particularly suggestive of a gram-negative bacterial infection, as these bacteria can reduce nitrate to nitrite. The negative urease test helps to rule out certain bacteria, such as Proteus mirabilis, which is known for its strong urease activity. Given these findings, the most likely causative organism is Escherichia coli (E. coli), which is a common cause of UTIs and can produce nitrites.\n\nAnswer: C | Reasoning: The patient's symptoms of severe pain during urination and frequent urination, along with the urinalysis results showing positive leukocyte esterase and nitrites, suggest a urinary tract infection (UTI). The presence of nitrites in the urine is a strong indicator of a bacterial infection, as bacteria such as Escherichia coli can reduce nitrate to nitrite. The negative urease test helps to rule out organisms like Proteus mirabilis, which is a urease-positive bacterium. Given the clinical presentation and laboratory results, the most likely causative organism is Escherichia coli, which is a common cause of UTIs, especially in young women.\n\nAnswer: C",
+      "latencyMs": 13533,
+      "error": null
+    },
+    {
+      "id": "medqa-3357",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient's sudden onset of symptoms, including right arm weakness, facial droop, and slurred speech, suggests a left hemisphere stroke. The presence of an irregularly irregular rhythm on cardiac auscultation, likely atrial fibrillation, increases the risk of cardioembolic stroke. The patient's symptoms, particularly the combination of right arm and leg weakness, as well as facial droop, are consistent with a lesion in the middle cerebral artery (MCA) territory, which supplies a large portion of the lateral surface of the brain, including the motor and sensory areas for the face and arm. \n\nAnswer: B | Reasoning: The patient's symptoms, including sudden onset of right arm weakness, slurred speech, and facial droop, suggest a left hemisphere stroke. The presence of an irregularly irregular rhythm on cardiac auscultation, likely indicating atrial fibrillation, increases the risk of embolic stroke. The patient's neurological exam findings, including 0/5 strength in the right arm and 2/5 strength in the right leg, are consistent with a middle cerebral artery (MCA) stroke, which typically affects the face and arm more than the leg. The MCA is a common site for embolic strokes, especially in the context of atrial fibrillation.\n\nAnswer: B",
+      "latencyMs": 4862,
+      "error": null
+    },
+    {
+      "id": "medqa-3669",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 63801,
+      "error": null
+    },
+    {
+      "id": "medqa-4891",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "Atypical pneumonia",
+      "latencyMs": 50609,
+      "error": null
+    },
+    {
+      "id": "medqa-301",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 34901,
+      "error": null
+    },
+    {
+      "id": "medqa-4002",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "Acute Tubular Necrosis",
+      "latencyMs": 41399,
+      "error": null
+    },
+    {
+      "id": "medqa-1320",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: In a case of aspirin overdose, the first acid-base disturbance to occur is related to the direct effect of aspirin on the respiratory system. Aspirin stimulates the respiratory center in the brain, leading to hyperventilation. This increase in ventilation will lead to a decrease in carbon dioxide levels in the blood, resulting in an acid-base disturbance characterized by a decrease in carbonic acid. \n\nAnswer: D",
+      "latencyMs": 3998,
+      "error": null
+    },
+    {
+      "id": "medqa-2746",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of bilateral joint pain and stiffness, particularly in the morning, along with the physical examination findings of mild swelling and tenderness in the proximal interphalangeal and metacarpophalangeal joints and wrists, and the presence of nontender and non-pruritic nodules near the elbows, is suggestive of rheumatoid arthritis (RA). The X-ray findings of soft tissue swelling, joint space narrowing, and bony erosions further support this diagnosis. Patients with RA are at increased risk for osteoporosis due to chronic inflammation, glucocorticoid use, and decreased mobility. \n\nAnswer: A | Reasoning: The patient's presentation of bilateral joint pain and stiffness, especially in the morning, along with the physical examination findings of mild swelling and tenderness in the proximal interphalangeal and metacarpophalangeal joints and wrists, and the presence of nontender and non-pruritic nodules near the elbows, is suggestive of rheumatoid arthritis (RA). The X-ray findings of soft tissue swelling, joint space narrowing, and bony erosions further support this diagnosis. Patients with RA are at increased risk for osteoporosis due to chronic inflammation, glucocorticoid use, and reduced mobility. \n\nAnswer: A",
+      "latencyMs": 12696,
+      "error": null
+    },
+    {
+      "id": "medqa-4029",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with symptoms of syncope and ongoing lightheadedness, with vital signs indicating bradycardia (pulse of 37/min) and hypotension (blood pressure of 92/50 mm Hg). The first step in managing symptomatic bradycardia, especially when associated with hypotension, is to attempt to increase the heart rate using medications that can stimulate the heart. Atropine is the initial drug of choice for symptomatic bradycardia because it can increase the heart rate by blocking the vagus nerve's action on the heart, thus potentially improving blood pressure and alleviating symptoms. \n\nAnswer: B",
+      "latencyMs": 2098,
+      "error": null
+    },
+    {
+      "id": "medqa-3194",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: Severe combined immunodeficiency (SCID) is a group of rare disorders caused by mutations in different genes involved in the development and function of infection-fighting immune cells. The most common form of SCID is X-linked SCID, which accounts for approximately 50% of all SCID cases. This form is caused by a mutation in the IL2RG gene, which is located on the X chromosome and encodes the common gamma chain (γc) of the receptors for several cytokines, including interleukin-2 (IL-2). As a result, X-linked SCID is more common in males, who have only one X chromosome.\n\nAnswer: A | Reasoning: Severe combined immunodeficiency (SCID) is a group of rare disorders caused by mutations in different genes involved in the development and function of infection-fighting immune cells. The most common form of SCID is X-linked SCID, which accounts for approximately 50% of all SCID cases. X-linked SCID is caused by a mutation in the IL2RG gene, which encodes the common gamma chain (γc) of the receptors for several cytokines, including interleukin-2 (IL-2). This mutation leads to impaired development and function of T cells and natural killer cells, resulting in severe immunodeficiency.\n\nAnswer: A",
+      "latencyMs": 8854,
+      "error": null
+    },
+    {
+      "id": "medqa-4220",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms, including weakness, headache, vomiting, lethargy, and respiratory depression, are consistent with tetrodotoxin poisoning, which is often associated with the ingestion of pufferfish. Tetrodotoxin is a potent neurotoxin that works by blocking voltage-gated sodium channels on the surface of nerve cells, thereby preventing the influx of sodium ions and inhibiting the generation of action potentials. This mechanism of action leads to a decrease in cell membrane permeability to sodium ions, resulting in the patient's neurological symptoms. \n\nAnswer: A",
+      "latencyMs": 1949,
+      "error": null
+    },
+    {
+      "id": "medqa-1507",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "Friedreich's ataxia",
+      "latencyMs": 29160,
+      "error": null
+    },
+    {
+      "id": "medqa-3188",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 634,
+      "error": null
+    },
+    {
+      "id": "medqa-2360",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 563,
+      "error": null
+    },
+    {
+      "id": "medqa-4798",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 611,
+      "error": null
+    },
+    {
+      "id": "medqa-14",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "Reasoning: The patient's symptoms, including a chronic productive cough, shortness of breath, and scattered wheezing and rhonchi, are indicative of a chronic respiratory condition. Her long history of smoking (1 pack per day for 40 years) is a significant risk factor for chronic obstructive pulmonary disease (COPD). The presence of wheezing and rhonchi further supports this diagnosis, as these sounds are often associated with airflow obstruction. Given these findings, the most likely underlying cause of this patient's symptoms is related to the obstruction of airflow.\n\nAnswer: C",
+      "latencyMs": 2649,
+      "error": null
+    },
+    {
+      "id": "medqa-3178",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's presentation of severe headache, agitation, and altered mental status, along with the MRI findings of bitemporal hyperintensities, suggests a diagnosis of encephalitis. The cerebrospinal fluid analysis shows a moderate pleocytosis with a lymphocytic predominance, which is consistent with viral encephalitis. The patient's recent history of camping and freshwater exposure increases the risk of certain viral infections, but the specific findings of bitemporal involvement on MRI are highly suggestive of herpes simplex virus (HSV) encephalitis. HSV is a common cause of encephalitis in immunocompetent individuals and can present with focal neurologic signs and temporal lobe involvement on imaging.\n\nAnswer: D",
+      "latencyMs": 5216,
+      "error": null
+    },
+    {
+      "id": "medqa-2106",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Reasoning: The patient's blood pressure readings over the last two visits have been elevated, with systolic readings ranging from 136 to 140 mmHg and diastolic readings from 82 to 86 mmHg, indicating stage 1 hypertension according to many clinical guidelines. His family history of hypertension and his own overweight status with a BMI of 28.7 kg/m2 are risk factors for developing hypertension. Given that his laboratory tests do not indicate any immediate need for pharmacological intervention based on other abnormalities, and considering his stage 1 hypertension, the initial approach should focus on lifestyle modifications before initiating medication. \n\nAnswer: D",
+      "latencyMs": 2939,
+      "error": null
+    },
+    {
+      "id": "medqa-3336",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "Reasoning: The patient presents with recurrent episodes of sinusitis, suggesting an underlying immunodeficiency. The laboratory findings show low levels of IgA, IgG, and IgM, indicating a deficiency in multiple immunoglobulin classes. This pattern is consistent with common variable immunodeficiency (CVID), a disorder characterized by impaired antibody production and increased susceptibility to infections. The patient's age and sex, as well as the absence of other characteristic features such as ataxia or eczema, make other options less likely.\n\nAnswer: B",
+      "latencyMs": 2988,
+      "error": null
+    },
+    {
+      "id": "medqa-4227",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 626,
+      "error": null
+    },
+    {
+      "id": "medqa-2301",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 588,
+      "error": null
+    },
+    {
+      "id": "medqa-2889",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 512,
+      "error": null
+    },
+    {
+      "id": "medqa-724",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 610,
+      "error": null
+    },
+    {
+      "id": "medqa-2569",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 554,
+      "error": null
+    },
+    {
+      "id": "medqa-1887",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 573,
+      "error": null
+    },
+    {
+      "id": "medqa-4803",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 553,
+      "error": null
+    },
+    {
+      "id": "medqa-62",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 610,
+      "error": null
+    },
+    {
+      "id": "medqa-2542",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 649,
+      "error": null
+    },
+    {
+      "id": "medqa-2662",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 654,
+      "error": null
+    },
+    {
+      "id": "medqa-2171",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 556,
+      "error": null
+    },
+    {
+      "id": "medqa-925",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 557,
+      "error": null
+    },
+    {
+      "id": "medqa-4323",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 1043,
+      "error": null
+    },
+    {
+      "id": "medqa-3740",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 568,
+      "error": null
+    },
+    {
+      "id": "medqa-2297",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 557,
+      "error": null
+    },
+    {
+      "id": "medqa-3900",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 890,
+      "error": null
+    },
+    {
+      "id": "medqa-1946",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 617,
+      "error": null
+    },
+    {
+      "id": "medqa-1004",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 1215,
+      "error": null
+    },
+    {
+      "id": "medqa-3111",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 682,
+      "error": null
+    },
+    {
+      "id": "medqa-425",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 262,
+      "error": null
+    },
+    {
+      "id": "medqa-928",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 963,
+      "error": null
+    },
+    {
+      "id": "medqa-3774",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 545,
+      "error": null
+    },
+    {
+      "id": "medqa-4741",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 2351,
+      "error": null
+    },
+    {
+      "id": "medqa-2474",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 506,
+      "error": null
+    },
+    {
+      "id": "medqa-4835",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "",
+      "latencyMs": 603,
+      "error": null
+    }
+  ]
+}

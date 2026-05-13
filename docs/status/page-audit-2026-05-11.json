@@ -1,0 +1,230 @@
+{
+  "ranAt": "2026-05-11T06:23:11.218Z",
+  "apiBase": "http://localhost:8787",
+  "webBase": "http://localhost:5173",
+  "passed": 22,
+  "failed": 0,
+  "total": 22,
+  "results": [
+    {
+      "surface": "api",
+      "name": "GET /",
+      "url": "/",
+      "status": 200,
+      "ok": true,
+      "durationMs": 32,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /agents",
+      "url": "/agents",
+      "status": 200,
+      "ok": true,
+      "durationMs": 2,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /health/full",
+      "url": "/health/full",
+      "status": 200,
+      "ok": true,
+      "durationMs": 154,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /research/snapshot",
+      "url": "/research/snapshot",
+      "status": 200,
+      "ok": true,
+      "durationMs": 14,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /personas/live",
+      "url": "/personas/live",
+      "status": 200,
+      "ok": true,
+      "durationMs": 4,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /accuracy/live",
+      "url": "/accuracy/live",
+      "status": 200,
+      "ok": true,
+      "durationMs": 18,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /datasets",
+      "url": "/datasets",
+      "status": 200,
+      "ok": true,
+      "durationMs": 6,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "landing /",
+      "url": "/",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "login /login",
+      "url": "/login",
+      "status": 200,
+      "ok": true,
+      "durationMs": 8,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "signup /signup",
+      "url": "/signup",
+      "status": 200,
+      "ok": true,
+      "durationMs": 9,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "dashboard /app",
+      "url": "/app",
+      "status": 200,
+      "ok": true,
+      "durationMs": 9,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "clinic /app/clinic",
+      "url": "/app/clinic",
+      "status": 200,
+      "ok": true,
+      "durationMs": 4,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "scribe /app/scribe",
+      "url": "/app/scribe",
+      "status": 200,
+      "ok": true,
+      "durationMs": 4,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "imaging /app/imaging",
+      "url": "/app/imaging",
+      "status": 200,
+      "ok": true,
+      "durationMs": 5,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "brain /app/brain",
+      "url": "/app/brain",
+      "status": 200,
+      "ok": true,
+      "durationMs": 4,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "dev console /app/dev-console",
+      "url": "/app/dev-console",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "profile /app/profile",
+      "url": "/app/profile",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "appointments /app/appointments",
+      "url": "/app/appointments",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "api-keys /app/api-keys",
+      "url": "/app/api-keys",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "settings /app/settings",
+      "url": "/app/settings",
+      "status": 200,
+      "ok": true,
+      "durationMs": 7,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "flow",
+      "name": "POST /orchestrate (consult flow)",
+      "url": "/orchestrate",
+      "status": 200,
+      "ok": true,
+      "durationMs": 35016,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "flow",
+      "name": "POST /mcq (multiple-choice)",
+      "url": "/mcq",
+      "status": 200,
+      "ok": true,
+      "durationMs": 351,
+      "assertion": null,
+      "error": null
+    }
+  ]
+}

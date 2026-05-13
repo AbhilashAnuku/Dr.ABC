@@ -1,0 +1,394 @@
+{
+  "ranAt": "2026-05-03T07:01:01.680Z",
+  "durationMs": 390799,
+  "apiBase": "http://localhost:8787",
+  "questionCount": 30,
+  "metrics": {
+    "accuracy": 0.8,
+    "nonErrorAccuracy": 0.8,
+    "answeredCount": 30,
+    "perSpecialty": {
+      "Cardiology": {
+        "count": 6,
+        "correct": 3,
+        "rate": 0.5
+      },
+      "Neurology": {
+        "count": 3,
+        "correct": 3,
+        "rate": 1
+      },
+      "Pediatrics": {
+        "count": 2,
+        "correct": 2,
+        "rate": 1
+      },
+      "Internal medicine": {
+        "count": 2,
+        "correct": 2,
+        "rate": 1
+      },
+      "Pulmonology": {
+        "count": 3,
+        "correct": 3,
+        "rate": 1
+      },
+      "Endocrinology": {
+        "count": 3,
+        "correct": 2,
+        "rate": 0.6666666666666666
+      },
+      "Gastroenterology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Psychiatry": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Surgery": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Dermatology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Infectious": {
+        "count": 2,
+        "correct": 1,
+        "rate": 0.5
+      },
+      "OB/GYN": {
+        "count": 2,
+        "correct": 1,
+        "rate": 0.5
+      },
+      "Hematology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Nephrology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Rheumatology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      }
+    },
+    "p50LatencyMs": 3737,
+    "p95LatencyMs": 77532,
+    "meanLatencyMs": 12434,
+    "errorCount": 0
+  },
+  "questions": [
+    {
+      "id": "MQ001",
+      "specialty": "Cardiology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 442,
+      "error": null
+    },
+    {
+      "id": "MQ002",
+      "specialty": "Neurology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 401,
+      "error": null
+    },
+    {
+      "id": "MQ003",
+      "specialty": "Pediatrics",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 10597,
+      "error": null
+    },
+    {
+      "id": "MQ004",
+      "specialty": "Internal medicine",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3737,
+      "error": null
+    },
+    {
+      "id": "MQ005",
+      "specialty": "Pulmonology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 354,
+      "error": null
+    },
+    {
+      "id": "MQ006",
+      "specialty": "Endocrinology",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 54612,
+      "error": null
+    },
+    {
+      "id": "MQ007",
+      "specialty": "Cardiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 4243,
+      "error": null
+    },
+    {
+      "id": "MQ008",
+      "specialty": "Gastroenterology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 5228,
+      "error": null
+    },
+    {
+      "id": "MQ009",
+      "specialty": "Cardiology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 396,
+      "error": null
+    },
+    {
+      "id": "MQ010",
+      "specialty": "Pulmonology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3841,
+      "error": null
+    },
+    {
+      "id": "MQ011",
+      "specialty": "Psychiatry",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 6908,
+      "error": null
+    },
+    {
+      "id": "MQ012",
+      "specialty": "Endocrinology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 16620,
+      "error": null
+    },
+    {
+      "id": "MQ013",
+      "specialty": "Surgery",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 348,
+      "error": null
+    },
+    {
+      "id": "MQ014",
+      "specialty": "Pediatrics",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 526,
+      "error": null
+    },
+    {
+      "id": "MQ015",
+      "specialty": "Dermatology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 16746,
+      "error": null
+    },
+    {
+      "id": "MQ016",
+      "specialty": "Cardiology",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 77532,
+      "error": null
+    },
+    {
+      "id": "MQ017",
+      "specialty": "Neurology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 393,
+      "error": null
+    },
+    {
+      "id": "MQ018",
+      "specialty": "Infectious",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 402,
+      "error": null
+    },
+    {
+      "id": "MQ019",
+      "specialty": "Endocrinology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 536,
+      "error": null
+    },
+    {
+      "id": "MQ020",
+      "specialty": "OB/GYN",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 89133,
+      "error": null
+    },
+    {
+      "id": "MQ021",
+      "specialty": "Pulmonology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 3539,
+      "error": null
+    },
+    {
+      "id": "MQ022",
+      "specialty": "Hematology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 383,
+      "error": null
+    },
+    {
+      "id": "MQ023",
+      "specialty": "Nephrology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 399,
+      "error": null
+    },
+    {
+      "id": "MQ024",
+      "specialty": "Cardiology",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 27916,
+      "error": null
+    },
+    {
+      "id": "MQ025",
+      "specialty": "Infectious",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 18590,
+      "error": null
+    },
+    {
+      "id": "MQ026",
+      "specialty": "Neurology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 362,
+      "error": null
+    },
+    {
+      "id": "MQ027",
+      "specialty": "Internal medicine",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 10154,
+      "error": null
+    },
+    {
+      "id": "MQ028",
+      "specialty": "Rheumatology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 334,
+      "error": null
+    },
+    {
+      "id": "MQ029",
+      "specialty": "OB/GYN",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 461,
+      "error": null
+    },
+    {
+      "id": "MQ030",
+      "specialty": "Cardiology",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 17891,
+      "error": null
+    }
+  ]
+}

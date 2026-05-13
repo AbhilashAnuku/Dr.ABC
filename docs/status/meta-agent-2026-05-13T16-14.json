@@ -1,0 +1,76 @@
+{
+  "ranAt": "2026-05-13T16:14:09.193Z",
+  "baselineTopConditionRate": 0.26666666666666666,
+  "candidates": [
+    {
+      "candidateId": "cand_general_1778688849191_4235",
+      "specialty": "general",
+      "parentSpecialty": "general",
+      "missedCaseIds": ["C001", "C003", "C004", "C005", "C006", "C010", "C012", "C014", "C015"],
+      "missedConditions": [
+        "Acute ST-elevation MI · anterior wall",
+        "Group A strep pharyngitis",
+        "Uncomplicated cystitis",
+        "Acute asthma exacerbation",
+        "Type 2 diabetes with hyperglycaemia",
+        "Acute viral bronchitis",
+        "Primary hypothyroidism",
+        "Acute otitis media",
+        "Non-purulent cellulitis"
+      ],
+      "missedIcd10s": [
+        "I21.0",
+        "J02.0",
+        "N39.0",
+        "J45.901",
+        "E11.65",
+        "J20.9",
+        "E03.9",
+        "H66.92",
+        "L03.116"
+      ],
+      "proposedPrefix": "You are the general specialist agent inside Mörbius.\nStay clinical-warm. Lead with the answer in one or two sentences before the reasoning.\nRecent presentations Mörbius was asked to evaluate but missed include: Acute ST-elevation MI · anterior wall; Group A strep pharyngitis; Uncomplicated cystitis; Acute asthma exacerbation; Type 2 diabetes with hyperglycaemia; Acute viral bronchitis.\nKeep these ICD-10 anchors in working memory for general: I21.0, J02.0, N39.0, J45.901, E11.65, J20.9.\nWhen the chief complaint matches one of these patterns, surface it as the leading differential with the matching code. Always honour red-flag pathways. Defer to triage on any acute signal.",
+      "rationale": "Mörbius observed 9 miss(es) in 'general' on the latest accuracy snapshot — anchoring the prompt to the missed ICD-10 codes (I21.0, J02.0, N39.0, J45.901, E11.65, J20.9, E03.9, H66.92, L03.116) and conditions (Acute ST-elevation MI · anterior wall, Group A strep pharyngitis, Uncomplicated cystitis…) is expected to lift recall on this specialty.",
+      "expectedAccuracyDelta": 6,
+      "generatedAt": "2026-05-13T16:14:09.192Z"
+    },
+    {
+      "candidateId": "cand_surgery_1778688849192_3594",
+      "specialty": "surgery",
+      "parentSpecialty": "surgery",
+      "missedCaseIds": ["C013"],
+      "missedConditions": ["Acute appendicitis"],
+      "missedIcd10s": ["K35.80"],
+      "proposedPrefix": "You are the surgery specialist agent inside Mörbius.\nStay clinical-warm. Lead with the answer in one or two sentences before the reasoning.\nRecent presentations Mörbius was asked to evaluate but missed include: Acute appendicitis.\nKeep these ICD-10 anchors in working memory for surgery: K35.80.\nWhen the chief complaint matches one of these patterns, surface it as the leading differential with the matching code. Always honour red-flag pathways. Defer to triage on any acute signal.",
+      "rationale": "Mörbius observed 1 miss(es) in 'surgery' on the latest accuracy snapshot — anchoring the prompt to the missed ICD-10 codes (K35.80) and conditions (Acute appendicitis) is expected to lift recall on this specialty.",
+      "expectedAccuracyDelta": 1.5,
+      "generatedAt": "2026-05-13T16:14:09.192Z"
+    }
+  ],
+  "scores": [
+    {
+      "candidateId": "cand_general_1778688849191_4235",
+      "coverage": 1,
+      "specificity": 1,
+      "safety": 1,
+      "anchors": 0.6666666666666666,
+      "expectedLift": 1,
+      "aggregate": 0.9166666666666666,
+      "verdict": "promote",
+      "reason": "aggregate 0.92 clears 0.65 threshold"
+    },
+    {
+      "candidateId": "cand_surgery_1778688849192_3594",
+      "coverage": 0.26666666666666666,
+      "specificity": 1,
+      "safety": 1,
+      "anchors": 1,
+      "expectedLift": 0.25,
+      "aggregate": 0.7416666666666667,
+      "verdict": "promote",
+      "reason": "aggregate 0.74 clears 0.65 threshold"
+    }
+  ],
+  "promotedCount": 2,
+  "retiredCount": 0
+}

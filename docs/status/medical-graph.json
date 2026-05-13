@@ -1,0 +1,1584 @@
+{
+  "updatedAt": "2026-05-15T12:42:55.663Z",
+  "version": 1,
+  "nodes": [
+    {
+      "id": "symptom:crushing-chest-pain",
+      "kind": "symptom",
+      "label": "crushing chest pain",
+      "source": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "lastSeenAt": 1777877116224,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-mi",
+      "kind": "condition",
+      "label": "Acute MI",
+      "source": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "lastSeenAt": 1777877116224,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:i21-0",
+      "kind": "icd10",
+      "label": "I21.0",
+      "source": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 2
+    },
+    {
+      "id": "specialty:cardiology",
+      "kind": "specialty",
+      "label": "Cardiology",
+      "source": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 4
+    },
+    {
+      "id": "drug:aspirin",
+      "kind": "drug",
+      "label": "Aspirin",
+      "source": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 2
+    },
+    {
+      "id": "symptom:throbbing-migraine",
+      "kind": "symptom",
+      "label": "throbbing migraine",
+      "source": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "lastSeenAt": 1777877130167,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:migraine",
+      "kind": "condition",
+      "label": "Migraine",
+      "source": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "lastSeenAt": 1777877130167,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:g43-909",
+      "kind": "icd10",
+      "label": "G43.909",
+      "source": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 2
+    },
+    {
+      "id": "specialty:neurology",
+      "kind": "specialty",
+      "label": "Neurology",
+      "source": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 2
+    },
+    {
+      "id": "drug:sumatriptan",
+      "kind": "drug",
+      "label": "Sumatriptan",
+      "source": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 2
+    },
+    {
+      "id": "symptom:sore-throat-fever",
+      "kind": "symptom",
+      "label": "sore throat fever",
+      "source": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:strep-pharyngitis",
+      "kind": "condition",
+      "label": "Strep pharyngitis",
+      "source": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:j02-0",
+      "kind": "icd10",
+      "label": "J02.0",
+      "source": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888199968,
+      "mentionCount": 2
+    },
+    {
+      "id": "specialty:pediatrics",
+      "kind": "specialty",
+      "label": "Pediatrics",
+      "source": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 3
+    },
+    {
+      "id": "drug:amoxicillin",
+      "kind": "drug",
+      "label": "Amoxicillin",
+      "source": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 3
+    },
+    {
+      "id": "symptom:dysuria-urgency",
+      "kind": "symptom",
+      "label": "dysuria urgency",
+      "source": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:cystitis",
+      "kind": "condition",
+      "label": "Cystitis",
+      "source": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:n39-0",
+      "kind": "icd10",
+      "label": "N39.0",
+      "source": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200025,
+      "mentionCount": 2
+    },
+    {
+      "id": "specialty:urology",
+      "kind": "specialty",
+      "label": "Urology",
+      "source": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:nitrofurantoin",
+      "kind": "drug",
+      "label": "Nitrofurantoin",
+      "source": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200025,
+      "mentionCount": 2
+    },
+    {
+      "id": "symptom:polyuria-polydipsia-weight-loss",
+      "kind": "symptom",
+      "label": "polyuria polydipsia weight loss",
+      "source": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:type-2-diabetes",
+      "kind": "condition",
+      "label": "Type 2 diabetes",
+      "source": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:e11-9",
+      "kind": "icd10",
+      "label": "E11.9",
+      "source": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:endocrinology",
+      "kind": "specialty",
+      "label": "Endocrinology",
+      "source": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200485,
+      "mentionCount": 3
+    },
+    {
+      "id": "drug:metformin",
+      "kind": "drug",
+      "label": "Metformin",
+      "source": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200075,
+      "mentionCount": 2
+    },
+    {
+      "id": "symptom:productive-cough-fever",
+      "kind": "symptom",
+      "label": "productive cough fever",
+      "source": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:pneumonia",
+      "kind": "condition",
+      "label": "Pneumonia",
+      "source": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:j18-9",
+      "kind": "icd10",
+      "label": "J18.9",
+      "source": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:pulmonology",
+      "kind": "specialty",
+      "label": "Pulmonology",
+      "source": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777888200450,
+      "mentionCount": 3
+    },
+    {
+      "id": "drug:azithromycin",
+      "kind": "drug",
+      "label": "Azithromycin",
+      "source": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "lastSeenAt": 1777877130168,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:crushing-substernal-chest-pain-for-30-minutes-radiating-to-left-arm-and-jaw-dia",
+      "kind": "symptom",
+      "label": "Crushing substernal chest pain for 30 minutes radiating to left arm and jaw, dia",
+      "source": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-st-elevation-mi-anterior-wall",
+      "kind": "condition",
+      "label": "Acute ST-elevation MI · anterior wall",
+      "source": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:ticagrelor",
+      "kind": "drug",
+      "label": "Ticagrelor",
+      "source": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:heparin",
+      "kind": "drug",
+      "label": "Heparin",
+      "source": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "lastSeenAt": 1777888199890,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:throbbing-left-sided-headache-for-6-hours-with-photophobia-and-nausea-no-aura",
+      "kind": "symptom",
+      "label": "Throbbing left-sided headache for 6 hours with photophobia and nausea, no aura",
+      "source": "seed_C002",
+      "firstSeenAt": 1777888199944,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:migraine-without-aura",
+      "kind": "condition",
+      "label": "Migraine without aura",
+      "source": "seed_C002",
+      "firstSeenAt": 1777888199944,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:acetaminophen",
+      "kind": "drug",
+      "label": "Acetaminophen",
+      "source": "seed_C002",
+      "firstSeenAt": 1777888199944,
+      "lastSeenAt": 1777888199944,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:8-year-old-male-with-sore-throat-for-2-days-and-fever-39",
+      "kind": "symptom",
+      "label": "8-year-old male with sore throat for 2 days and fever 39",
+      "source": "seed_C003",
+      "firstSeenAt": 1777888199968,
+      "lastSeenAt": 1777888199968,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:group-a-strep-pharyngitis",
+      "kind": "condition",
+      "label": "Group A strep pharyngitis",
+      "source": "seed_C003",
+      "firstSeenAt": 1777888199968,
+      "lastSeenAt": 1777888199968,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:dysuria-and-urinary-urgency-for-2-days-no-flank-pain-no-fever",
+      "kind": "symptom",
+      "label": "Dysuria and urinary urgency for 2 days, no flank pain, no fever",
+      "source": "seed_C004",
+      "firstSeenAt": 1777888200025,
+      "lastSeenAt": 1777888200025,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:uncomplicated-cystitis",
+      "kind": "condition",
+      "label": "Uncomplicated cystitis",
+      "source": "seed_C004",
+      "firstSeenAt": 1777888200025,
+      "lastSeenAt": 1777888200025,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:internal-medicine",
+      "kind": "specialty",
+      "label": "Internal medicine",
+      "source": "seed_C004",
+      "firstSeenAt": 1777888200025,
+      "lastSeenAt": 1777888200298,
+      "mentionCount": 2
+    },
+    {
+      "id": "symptom:wheeze-dyspnea-and-chest-tightness-for-4-hours-mildly-toxic-looking",
+      "kind": "symptom",
+      "label": "Wheeze, dyspnea and chest tightness for 4 hours, mildly toxic-looking",
+      "source": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "lastSeenAt": 1777888200046,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-asthma-exacerbation",
+      "kind": "condition",
+      "label": "Acute asthma exacerbation",
+      "source": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "lastSeenAt": 1777888200046,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:j45-901",
+      "kind": "icd10",
+      "label": "J45.901",
+      "source": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "lastSeenAt": 1777888200046,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:albuterol-mdi",
+      "kind": "drug",
+      "label": "Albuterol MDI",
+      "source": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "lastSeenAt": 1777888200046,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:prednisone",
+      "kind": "drug",
+      "label": "Prednisone",
+      "source": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "lastSeenAt": 1777888200046,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:polyuria-polydipsia-5-kg-weight-loss-over-6-weeks-blurred-vision",
+      "kind": "symptom",
+      "label": "Polyuria, polydipsia, 5 kg weight loss over 6 weeks, blurred vision",
+      "source": "seed_C006",
+      "firstSeenAt": 1777888200075,
+      "lastSeenAt": 1777888200075,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:type-2-diabetes-with-hyperglycaemia",
+      "kind": "condition",
+      "label": "Type 2 diabetes with hyperglycaemia",
+      "source": "seed_C006",
+      "firstSeenAt": 1777888200075,
+      "lastSeenAt": 1777888200075,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:e11-65",
+      "kind": "icd10",
+      "label": "E11.65",
+      "source": "seed_C006",
+      "firstSeenAt": 1777888200075,
+      "lastSeenAt": 1777888200075,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:routine-annual-physical-asymptomatic-bp-162-98-confirmed-on-3-readings",
+      "kind": "symptom",
+      "label": "Routine annual physical, asymptomatic, BP 162/98 confirmed on 3 readings",
+      "source": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "lastSeenAt": 1777888200221,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:essential-hypertension-stage-2",
+      "kind": "condition",
+      "label": "Essential hypertension stage 2",
+      "source": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "lastSeenAt": 1777888200221,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:i10",
+      "kind": "icd10",
+      "label": "I10",
+      "source": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "lastSeenAt": 1777888200221,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:lisinopril",
+      "kind": "drug",
+      "label": "Lisinopril",
+      "source": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "lastSeenAt": 1777888200221,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:burning-chest-pain-post-meals-and-acid-regurgitation-for-4-weeks-no-alarm-featu",
+      "kind": "symptom",
+      "label": "Burning chest pain post-meals and acid regurgitation for 4 weeks, no alarm featu",
+      "source": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "lastSeenAt": 1777888200298,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:gastro-oesophageal-reflux-disease",
+      "kind": "condition",
+      "label": "Gastro-oesophageal reflux disease",
+      "source": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "lastSeenAt": 1777888200298,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:k21-0",
+      "kind": "icd10",
+      "label": "K21.0",
+      "source": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "lastSeenAt": 1777888200298,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:omeprazole",
+      "kind": "drug",
+      "label": "Omeprazole",
+      "source": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "lastSeenAt": 1777888200298,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:palpitations-and-fatigue-for-12-hours-irregularly-irregular-pulse-hr-138",
+      "kind": "symptom",
+      "label": "Palpitations and fatigue for 12 hours, irregularly irregular pulse, HR 138",
+      "source": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "kind": "condition",
+      "label": "Atrial fibrillation new-onset · CHADS-VASc 4",
+      "source": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:i48-0",
+      "kind": "icd10",
+      "label": "I48.0",
+      "source": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:apixaban",
+      "kind": "drug",
+      "label": "Apixaban",
+      "source": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:metoprolol",
+      "kind": "drug",
+      "label": "Metoprolol",
+      "source": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "lastSeenAt": 1777888200300,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:productive-cough-for-5-days-with-low-grade-fever-and-mild-chest-discomfort",
+      "kind": "symptom",
+      "label": "Productive cough for 5 days with low-grade fever and mild chest discomfort",
+      "source": "seed_C010",
+      "firstSeenAt": 1777888200450,
+      "lastSeenAt": 1777888200450,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-viral-bronchitis",
+      "kind": "condition",
+      "label": "Acute viral bronchitis",
+      "source": "seed_C010",
+      "firstSeenAt": 1777888200450,
+      "lastSeenAt": 1777888200450,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:j20-9",
+      "kind": "icd10",
+      "label": "J20.9",
+      "source": "seed_C010",
+      "firstSeenAt": 1777888200450,
+      "lastSeenAt": 1777888200450,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:persistent-worry-and-sleep-disruption-for-6-months-with-intermittent-panic",
+      "kind": "symptom",
+      "label": "Persistent worry and sleep disruption for 6 months with intermittent panic",
+      "source": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "lastSeenAt": 1777888200470,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:generalized-anxiety-disorder",
+      "kind": "condition",
+      "label": "Generalized anxiety disorder",
+      "source": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "lastSeenAt": 1777888200470,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:f41-1",
+      "kind": "icd10",
+      "label": "F41.1",
+      "source": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "lastSeenAt": 1777888200470,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:psychiatry",
+      "kind": "specialty",
+      "label": "Psychiatry",
+      "source": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "lastSeenAt": 1777888200470,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:sertraline",
+      "kind": "drug",
+      "label": "Sertraline",
+      "source": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "lastSeenAt": 1777888200470,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:fatigue-3-kg-weight-gain-and-cold-intolerance-over-3-months",
+      "kind": "symptom",
+      "label": "Fatigue, 3 kg weight gain and cold intolerance over 3 months",
+      "source": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "lastSeenAt": 1777888200485,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:primary-hypothyroidism",
+      "kind": "condition",
+      "label": "Primary hypothyroidism",
+      "source": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "lastSeenAt": 1777888200485,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:e03-9",
+      "kind": "icd10",
+      "label": "E03.9",
+      "source": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "lastSeenAt": 1777888200485,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:levothyroxine",
+      "kind": "drug",
+      "label": "Levothyroxine",
+      "source": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "lastSeenAt": 1777888200485,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:rlq-abdominal-pain-migrating-from-periumbilical-anorexia-low-grade-fever-for-1",
+      "kind": "symptom",
+      "label": "RLQ abdominal pain migrating from periumbilical, anorexia, low-grade fever for 1",
+      "source": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "lastSeenAt": 1777888200522,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-appendicitis",
+      "kind": "condition",
+      "label": "Acute appendicitis",
+      "source": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "lastSeenAt": 1777888200522,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:k35-80",
+      "kind": "icd10",
+      "label": "K35.80",
+      "source": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "lastSeenAt": 1777888200522,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:surgery",
+      "kind": "specialty",
+      "label": "Surgery",
+      "source": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "lastSeenAt": 1777888200522,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:cefoxitin",
+      "kind": "drug",
+      "label": "Cefoxitin",
+      "source": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "lastSeenAt": 1777888200522,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:4-year-old-male-with-right-ear-pain-and-fever-for-36-hours-tugging-at-ear",
+      "kind": "symptom",
+      "label": "4-year-old male with right ear pain and fever for 36 hours, tugging at ear",
+      "source": "seed_C014",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:acute-otitis-media",
+      "kind": "condition",
+      "label": "Acute otitis media",
+      "source": "seed_C014",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:h66-92",
+      "kind": "icd10",
+      "label": "H66.92",
+      "source": "seed_C014",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:right-shin-redness-warmth-and-swelling-for-3-days-following-a-minor-abrasion",
+      "kind": "symptom",
+      "label": "Right shin redness, warmth and swelling for 3 days following a minor abrasion",
+      "source": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "condition:non-purulent-cellulitis",
+      "kind": "condition",
+      "label": "Non-purulent cellulitis",
+      "source": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "icd10:l03-116",
+      "kind": "icd10",
+      "label": "L03.116",
+      "source": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "specialty:dermatology",
+      "kind": "specialty",
+      "label": "Dermatology",
+      "source": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "drug:cephalexin",
+      "kind": "drug",
+      "label": "Cephalexin",
+      "source": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "lastSeenAt": 1777888200852,
+      "mentionCount": 1
+    },
+    {
+      "id": "symptom:unknown",
+      "kind": "symptom",
+      "label": "",
+      "source": "persona-doctor-",
+      "firstSeenAt": 1778562799198,
+      "lastSeenAt": 1778562799237,
+      "mentionCount": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "symptom:crushing-chest-pain",
+      "target": "condition:acute-mi",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777877116224
+    },
+    {
+      "source": "condition:acute-mi",
+      "target": "icd10:i21-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-mi",
+      "target": "specialty:cardiology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777877116224,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-mi",
+      "target": "drug:aspirin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777877116224
+    },
+    {
+      "source": "symptom:throbbing-migraine",
+      "target": "condition:migraine",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.3231918352713654,
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777877130167
+    },
+    {
+      "source": "condition:migraine",
+      "target": "icd10:g43-909",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:migraine-without-aura",
+      "target": "specialty:neurology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777877130167,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:migraine-without-aura",
+      "target": "drug:sumatriptan",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.1978776680305998,
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777877130167
+    },
+    {
+      "source": "symptom:sore-throat-fever",
+      "target": "condition:strep-pharyngitis",
+      "relation": "presents-with",
+      "confidence": "INFERRED",
+      "weight": 1.0606676986209533,
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "condition:strep-pharyngitis",
+      "target": "icd10:j02-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.3024033813659346
+    },
+    {
+      "source": "condition:group-a-strep-pharyngitis",
+      "target": "specialty:pediatrics",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.3031041850765614
+    },
+    {
+      "source": "condition:group-a-strep-pharyngitis",
+      "target": "drug:amoxicillin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.003502125105881,
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "symptom:dysuria-urgency",
+      "target": "condition:cystitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.00712518365789,
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "condition:cystitis",
+      "target": "icd10:n39-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.2865687917356858
+    },
+    {
+      "source": "condition:cystitis",
+      "target": "specialty:urology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.1601586536960482
+    },
+    {
+      "source": "condition:cystitis",
+      "target": "drug:nitrofurantoin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.9848173537266308,
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "symptom:polyuria-polydipsia-weight-loss",
+      "target": "condition:type-2-diabetes",
+      "relation": "presents-with",
+      "confidence": "INFERRED",
+      "weight": 1.016894312361779,
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "condition:type-2-diabetes",
+      "target": "icd10:e11-9",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.2275844483126004
+    },
+    {
+      "source": "condition:type-2-diabetes",
+      "target": "specialty:endocrinology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.4475906982917728
+    },
+    {
+      "source": "condition:type-2-diabetes",
+      "target": "drug:metformin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.9266992700767691,
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "symptom:productive-cough-fever",
+      "target": "condition:pneumonia",
+      "relation": "presents-with",
+      "confidence": "INFERRED",
+      "weight": 1.0670209798113166,
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "condition:pneumonia",
+      "target": "icd10:j18-9",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777877130168,
+      "weight": 1.2915568031178732
+    },
+    {
+      "source": "condition:community-acquired-pneumonia",
+      "target": "specialty:pulmonology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "condition:community-acquired-pneumonia",
+      "target": "drug:azithromycin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.7146669608602682,
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777877130168
+    },
+    {
+      "source": "symptom:crushing-substernal-chest-pain-for-30-minutes-radiating-to-left-arm-and-jaw-dia",
+      "target": "condition:acute-st-elevation-mi-anterior-wall",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890
+    },
+    {
+      "source": "condition:acute-st-elevation-mi-anterior-wall",
+      "target": "icd10:i21-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-st-elevation-mi-anterior-wall",
+      "target": "specialty:cardiology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-st-elevation-mi-anterior-wall",
+      "target": "drug:aspirin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890
+    },
+    {
+      "source": "condition:acute-st-elevation-mi-anterior-wall",
+      "target": "drug:ticagrelor",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890
+    },
+    {
+      "source": "condition:acute-st-elevation-mi-anterior-wall",
+      "target": "drug:heparin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C001",
+      "firstSeenAt": 1777888199890
+    },
+    {
+      "source": "symptom:throbbing-left-sided-headache-for-6-hours-with-photophobia-and-nausea-no-aura",
+      "target": "condition:migraine-without-aura",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.3356838326032754,
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777888199944
+    },
+    {
+      "source": "condition:migraine-without-aura",
+      "target": "icd10:g43-909",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777888199944,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:migraine-without-aura",
+      "target": "drug:acetaminophen",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.1978776680305998,
+      "extractedFrom": "seed_C002",
+      "firstSeenAt": 1777888199944
+    },
+    {
+      "source": "symptom:8-year-old-male-with-sore-throat-for-2-days-and-fever-39",
+      "target": "condition:group-a-strep-pharyngitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.1260690615749869,
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777888199968
+    },
+    {
+      "source": "condition:group-a-strep-pharyngitis",
+      "target": "icd10:j02-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C003",
+      "firstSeenAt": 1777888199968,
+      "weight": 1.3036802277057535
+    },
+    {
+      "source": "symptom:dysuria-and-urinary-urgency-for-2-days-no-flank-pain-no-fever",
+      "target": "condition:uncomplicated-cystitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4299057684442344,
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777888200025
+    },
+    {
+      "source": "condition:uncomplicated-cystitis",
+      "target": "icd10:n39-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777888200025,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:uncomplicated-cystitis",
+      "target": "specialty:internal-medicine",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777888200025,
+      "weight": 1.4975
+    },
+    {
+      "source": "condition:uncomplicated-cystitis",
+      "target": "drug:nitrofurantoin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.3075934368321886,
+      "extractedFrom": "seed_C004",
+      "firstSeenAt": 1777888200025
+    },
+    {
+      "source": "symptom:wheeze-dyspnea-and-chest-tightness-for-4-hours-mildly-toxic-looking",
+      "target": "condition:acute-asthma-exacerbation",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777888200046
+    },
+    {
+      "source": "condition:acute-asthma-exacerbation",
+      "target": "icd10:j45-901",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-asthma-exacerbation",
+      "target": "specialty:pulmonology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777888200046,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-asthma-exacerbation",
+      "target": "drug:albuterol-mdi",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777888200046
+    },
+    {
+      "source": "condition:acute-asthma-exacerbation",
+      "target": "drug:prednisone",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C005",
+      "firstSeenAt": 1777888200046
+    },
+    {
+      "source": "symptom:polyuria-polydipsia-5-kg-weight-loss-over-6-weeks-blurred-vision",
+      "target": "condition:type-2-diabetes-with-hyperglycaemia",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.1310569095654621,
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777888200075
+    },
+    {
+      "source": "condition:type-2-diabetes-with-hyperglycaemia",
+      "target": "icd10:e11-65",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777888200075,
+      "weight": 1.310450508717874
+    },
+    {
+      "source": "condition:type-2-diabetes-with-hyperglycaemia",
+      "target": "specialty:endocrinology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777888200075,
+      "weight": 1.4975
+    },
+    {
+      "source": "condition:type-2-diabetes-with-hyperglycaemia",
+      "target": "drug:metformin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.0073240530512788,
+      "extractedFrom": "seed_C006",
+      "firstSeenAt": 1777888200075
+    },
+    {
+      "source": "symptom:routine-annual-physical-asymptomatic-bp-162-98-confirmed-on-3-readings",
+      "target": "condition:essential-hypertension-stage-2",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C007",
+      "firstSeenAt": 1777888200221
+    },
+    {
+      "source": "condition:essential-hypertension-stage-2",
+      "target": "icd10:i10",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:essential-hypertension-stage-2",
+      "target": "specialty:cardiology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C007",
+      "firstSeenAt": 1777888200221,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:essential-hypertension-stage-2",
+      "target": "drug:lisinopril",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C007",
+      "firstSeenAt": 1777888200221
+    },
+    {
+      "source": "symptom:burning-chest-pain-post-meals-and-acid-regurgitation-for-4-weeks-no-alarm-featu",
+      "target": "condition:gastro-oesophageal-reflux-disease",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C008",
+      "firstSeenAt": 1777888200298
+    },
+    {
+      "source": "condition:gastro-oesophageal-reflux-disease",
+      "target": "icd10:k21-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:gastro-oesophageal-reflux-disease",
+      "target": "specialty:internal-medicine",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C008",
+      "firstSeenAt": 1777888200298,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:gastro-oesophageal-reflux-disease",
+      "target": "drug:omeprazole",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C008",
+      "firstSeenAt": 1777888200298
+    },
+    {
+      "source": "symptom:palpitations-and-fatigue-for-12-hours-irregularly-irregular-pulse-hr-138",
+      "target": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.5,
+      "extractedFrom": "seed_C009",
+      "firstSeenAt": 1777888200300
+    },
+    {
+      "source": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "target": "icd10:i48-0",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "target": "specialty:cardiology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C009",
+      "firstSeenAt": 1777888200300,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "target": "drug:apixaban",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C009",
+      "firstSeenAt": 1777888200300
+    },
+    {
+      "source": "condition:atrial-fibrillation-new-onset-chads-vasc-4",
+      "target": "drug:metoprolol",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C009",
+      "firstSeenAt": 1777888200300
+    },
+    {
+      "source": "symptom:productive-cough-for-5-days-with-low-grade-fever-and-mild-chest-discomfort",
+      "target": "condition:acute-viral-bronchitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.4975,
+      "extractedFrom": "seed_C010",
+      "firstSeenAt": 1777888200450
+    },
+    {
+      "source": "condition:acute-viral-bronchitis",
+      "target": "icd10:j20-9",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C010",
+      "firstSeenAt": 1777888200450,
+      "weight": 1.5
+    },
+    {
+      "source": "condition:acute-viral-bronchitis",
+      "target": "specialty:pulmonology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C010",
+      "firstSeenAt": 1777888200450,
+      "weight": 1.5
+    },
+    {
+      "source": "symptom:persistent-worry-and-sleep-disruption-for-6-months-with-intermittent-panic",
+      "target": "condition:generalized-anxiety-disorder",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 0.9267788216903667,
+      "extractedFrom": "seed_C011",
+      "firstSeenAt": 1777888200470
+    },
+    {
+      "source": "condition:generalized-anxiety-disorder",
+      "target": "icd10:f41-1",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "weight": 1.0985461794682825
+    },
+    {
+      "source": "condition:generalized-anxiety-disorder",
+      "target": "specialty:psychiatry",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C011",
+      "firstSeenAt": 1777888200470,
+      "weight": 1.0985461794682825
+    },
+    {
+      "source": "condition:generalized-anxiety-disorder",
+      "target": "drug:sertraline",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.805605989381737,
+      "extractedFrom": "seed_C011",
+      "firstSeenAt": 1777888200470
+    },
+    {
+      "source": "symptom:fatigue-3-kg-weight-gain-and-cold-intolerance-over-3-months",
+      "target": "condition:primary-hypothyroidism",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.3731119050419238,
+      "extractedFrom": "seed_C012",
+      "firstSeenAt": 1777888200485
+    },
+    {
+      "source": "condition:primary-hypothyroidism",
+      "target": "icd10:e03-9",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "weight": 1.4975
+    },
+    {
+      "source": "condition:primary-hypothyroidism",
+      "target": "specialty:endocrinology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C012",
+      "firstSeenAt": 1777888200485,
+      "weight": 1.4975
+    },
+    {
+      "source": "condition:primary-hypothyroidism",
+      "target": "drug:levothyroxine",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.2260686173567998,
+      "extractedFrom": "seed_C012",
+      "firstSeenAt": 1777888200485
+    },
+    {
+      "source": "symptom:rlq-abdominal-pain-migrating-from-periumbilical-anorexia-low-grade-fever-for-1",
+      "target": "condition:acute-appendicitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.1222926574161223,
+      "extractedFrom": "seed_C013",
+      "firstSeenAt": 1777888200522
+    },
+    {
+      "source": "condition:acute-appendicitis",
+      "target": "icd10:k35-80",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "weight": 1.293957510754834
+    },
+    {
+      "source": "condition:acute-appendicitis",
+      "target": "specialty:surgery",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C013",
+      "firstSeenAt": 1777888200522,
+      "weight": 1.293957510754834
+    },
+    {
+      "source": "condition:acute-appendicitis",
+      "target": "drug:cefoxitin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.9920178483550575,
+      "extractedFrom": "seed_C013",
+      "firstSeenAt": 1777888200522
+    },
+    {
+      "source": "symptom:4-year-old-male-with-right-ear-pain-and-fever-for-36-hours-tugging-at-ear",
+      "target": "condition:acute-otitis-media",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 1.1265479266607152,
+      "extractedFrom": "seed_C014",
+      "firstSeenAt": 1777888200852
+    },
+    {
+      "source": "condition:acute-otitis-media",
+      "target": "icd10:h66-92",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C014",
+      "firstSeenAt": 1777888200852,
+      "weight": 1.2979235038010144
+    },
+    {
+      "source": "condition:acute-otitis-media",
+      "target": "specialty:pediatrics",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C014",
+      "firstSeenAt": 1777888200852,
+      "weight": 1.303215720678245
+    },
+    {
+      "source": "condition:acute-otitis-media",
+      "target": "drug:amoxicillin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 1.0036136607075645,
+      "extractedFrom": "seed_C014",
+      "firstSeenAt": 1777888200852
+    },
+    {
+      "source": "symptom:right-shin-redness-warmth-and-swelling-for-3-days-following-a-minor-abrasion",
+      "target": "condition:non-purulent-cellulitis",
+      "relation": "presents-with",
+      "confidence": "EXTRACTED",
+      "weight": 0.8774478778941759,
+      "extractedFrom": "seed_C015",
+      "firstSeenAt": 1777888200852
+    },
+    {
+      "source": "condition:non-purulent-cellulitis",
+      "target": "icd10:l03-116",
+      "relation": "coded-as",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "weight": 1.0488192627093453
+    },
+    {
+      "source": "condition:non-purulent-cellulitis",
+      "target": "specialty:dermatology",
+      "relation": "routes-to",
+      "confidence": "EXTRACTED",
+      "extractedFrom": "seed_C015",
+      "firstSeenAt": 1777888200852,
+      "weight": 1.0488192627093453
+    },
+    {
+      "source": "condition:non-purulent-cellulitis",
+      "target": "drug:cephalexin",
+      "relation": "treated-with",
+      "confidence": "INFERRED",
+      "weight": 0.7597215498003609,
+      "extractedFrom": "seed_C015",
+      "firstSeenAt": 1777888200852
+    }
+  ],
+  "cache": {
+    "seed_C001": "6a2a6dc7aa97759b97c4abcf2bc5db23ec84d73bc383c6d11d37bac47044ae5c",
+    "seed_C002": "b407d89731fe852be430982979cab728188150b7c48ce05de28361ef09210348",
+    "seed_C003": "f464a1875c5229082eaa8e8708e01cbb5efc49676fcbee8dfc8eeebcd2d5657f",
+    "seed_C004": "8084f009b3e943d104ea8aa85803deee0aeef5cc1afd64fffc81f95748ad166e",
+    "seed_C005": "bea400c926b8eca975a876b0a38cb3d9c360338c694084dd5549f5bbe0ea7389",
+    "seed_C006": "3cec9744e07bbdb9c16d25898e7e933341a36120c949eb1958839554c9c251aa",
+    "seed_C007": "f01cfdb7462fa8c664d6f78ba9b908703e157000f2071cda65fc7137213a8c6b",
+    "seed_C008": "633c62053f669293c4bc7de8927ebbe3964f8c568baec415e3a94a5241545ce9",
+    "seed_C009": "d4c26651917e9b22d84beef9ccf6a97eff63493e3113ddc8e58aa946f3cdcba2",
+    "seed_C010": "686c7fb1919c9967ae339e8599a0e727005c190a41427d39fc7d640514eae054",
+    "seed_C011": "35bedf7f2298e11ecc4edc468cab9589f7805d27d202110e2e81247c9fb3de9d",
+    "seed_C012": "8969f5cd907f4edf830016274644524f95dc538d4bf2c569fb6b81e955674321",
+    "seed_C013": "87e1d2ec3955ee9e12f202ed3683616bf7c86224ac4597e9036e316fef39aa45",
+    "seed_C014": "7b6f8e5121adb8127f9ad9d2dbdc93eb1677d56329f6e222a5e62f29f72d6433",
+    "seed_C015": "ebe886658ba046d8d1d134e31c179946c4b5273576651693d52c06573c7823bf",
+    "persona-doctor-": "f4f9f58d03257f9ed9f0ee937b274441bad60cb16942d27549aa2f9184312b08",
+    "persona-patient-": "41a5aa36987120b631927443f32be66b8e9a68c8039dc628e49a2f3a4789adbb",
+    "persona-student-": "6a978483bd4c66061e7a7cdcbff14f4600dab217d2e9059e7e9f5dcf9bd6d110"
+  }
+}

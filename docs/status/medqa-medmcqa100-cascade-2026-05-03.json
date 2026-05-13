@@ -1,0 +1,1124 @@
+{
+  "ranAt": "2026-05-03T07:08:07.249Z",
+  "durationMs": 1838318,
+  "apiBase": "http://localhost:8787",
+  "questionCount": 100,
+  "metrics": {
+    "accuracy": 0.74,
+    "nonErrorAccuracy": 0.74,
+    "answeredCount": 100,
+    "perSpecialty": {
+      "Pharmacology": {
+        "count": 8,
+        "correct": 8,
+        "rate": 1
+      },
+      "Pathology": {
+        "count": 13,
+        "correct": 8,
+        "rate": 0.6153846153846154
+      },
+      "Pediatrics": {
+        "count": 7,
+        "correct": 3,
+        "rate": 0.42857142857142855
+      },
+      "Microbiology": {
+        "count": 3,
+        "correct": 2,
+        "rate": 0.6666666666666666
+      },
+      "Psychiatry": {
+        "count": 4,
+        "correct": 1,
+        "rate": 0.25
+      },
+      "Dental": {
+        "count": 5,
+        "correct": 3,
+        "rate": 0.6
+      },
+      "Ophthalmology": {
+        "count": 5,
+        "correct": 4,
+        "rate": 0.8
+      },
+      "Physiology": {
+        "count": 9,
+        "correct": 8,
+        "rate": 0.8888888888888888
+      },
+      "Surgery": {
+        "count": 7,
+        "correct": 7,
+        "rate": 1
+      },
+      "Social & Preventive Medicine": {
+        "count": 7,
+        "correct": 5,
+        "rate": 0.7142857142857143
+      },
+      "Biochemistry": {
+        "count": 7,
+        "correct": 4,
+        "rate": 0.5714285714285714
+      },
+      "Anatomy": {
+        "count": 4,
+        "correct": 2,
+        "rate": 0.5
+      },
+      "Medicine": {
+        "count": 6,
+        "correct": 6,
+        "rate": 1
+      },
+      "Anaesthesia": {
+        "count": 2,
+        "correct": 1,
+        "rate": 0.5
+      },
+      "Forensic Medicine": {
+        "count": 3,
+        "correct": 3,
+        "rate": 1
+      },
+      "Unknown": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "ENT": {
+        "count": 2,
+        "correct": 2,
+        "rate": 1
+      },
+      "Gynaecology & Obstetrics": {
+        "count": 3,
+        "correct": 3,
+        "rate": 1
+      },
+      "Orthopaedics": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Radiology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "Skin": {
+        "count": 2,
+        "correct": 1,
+        "rate": 0.5
+      }
+    },
+    "p50LatencyMs": 1565,
+    "p95LatencyMs": 96573,
+    "meanLatencyMs": 17714,
+    "errorCount": 0
+  },
+  "questions": [
+    {
+      "id": "medmcqa-3d7b4a32-c889-427e-abe9-c9f6fa3ea115",
+      "specialty": "Pharmacology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 1635,
+      "error": null
+    },
+    {
+      "id": "medmcqa-10a0fac9-5df1-4254-86c2-d1df911e8be9",
+      "specialty": "Pathology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 356,
+      "error": null
+    },
+    {
+      "id": "medmcqa-b640c89e-d5ae-43cc-9b91-2f028e49f378",
+      "specialty": "Pediatrics",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 71502,
+      "error": null
+    },
+    {
+      "id": "medmcqa-7229df94-1b64-45b0-b143-375e2439ffb0",
+      "specialty": "Pharmacology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1450,
+      "error": null
+    },
+    {
+      "id": "medmcqa-8a7c19f6-e396-46f9-a388-d8fd32d2601d",
+      "specialty": "Microbiology",
+      "expected": "A",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 332,
+      "error": null
+    },
+    {
+      "id": "medmcqa-faa86e89-7ffa-411c-a4fa-36d8e98c9bda",
+      "specialty": "Psychiatry",
+      "expected": "A",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 7875,
+      "error": null
+    },
+    {
+      "id": "medmcqa-9c3f887a-df4c-4395-9984-c82a4fdf69dd",
+      "specialty": "Dental",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 926,
+      "error": null
+    },
+    {
+      "id": "medmcqa-7c2228ca-b770-4cd6-b018-66056347cfb9",
+      "specialty": "Psychiatry",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 2381,
+      "error": null
+    },
+    {
+      "id": "medmcqa-87b19c10-d3b3-4357-af21-51019d1f77a8",
+      "specialty": "Pathology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 425,
+      "error": null
+    },
+    {
+      "id": "medmcqa-377f5238-eed1-4d9e-b101-4b3f3c81f83e",
+      "specialty": "Ophthalmology",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 61128,
+      "error": null
+    },
+    {
+      "id": "medmcqa-471e1ab0-159d-4ea7-b686-92baffeb01c7",
+      "specialty": "Physiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 352,
+      "error": null
+    },
+    {
+      "id": "medmcqa-2c20f389-9172-4870-b89a-38fcae1a30d6",
+      "specialty": "Surgery",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 2826,
+      "error": null
+    },
+    {
+      "id": "medmcqa-932f40b0-3df1-445c-8932-36262e63e157",
+      "specialty": "Microbiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 387,
+      "error": null
+    },
+    {
+      "id": "medmcqa-48397be3-6bec-4cd5-9129-1ff7a259dcfc",
+      "specialty": "Physiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 368,
+      "error": null
+    },
+    {
+      "id": "medmcqa-7333d4bc-9de9-4a9d-84d9-c1ee69b5e2b8",
+      "specialty": "Surgery",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 333,
+      "error": null
+    },
+    {
+      "id": "medmcqa-cb15e48e-4197-458d-8b83-d8f3e16d4824",
+      "specialty": "Pharmacology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 61754,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4b5598b2-e166-4a6b-bd05-9debb46d2d87",
+      "specialty": "Physiology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 13793,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ecc6f4a8-9d72-4c0c-8ace-d3bf5dcb1c4a",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 364,
+      "error": null
+    },
+    {
+      "id": "medmcqa-62ef7333-9fb0-4988-a7e7-9dccd56f784c",
+      "specialty": "Biochemistry",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 111692,
+      "error": null
+    },
+    {
+      "id": "medmcqa-6cc0e9c0-808d-46e8-a745-3ec9973e73a7",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 591,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4aa117c4-d626-48fc-bf2b-7363e3ec2b84",
+      "specialty": "Pathology",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1565,
+      "error": null
+    },
+    {
+      "id": "medmcqa-17a0557a-cd50-42fc-9f04-c7691c2fa215",
+      "specialty": "Anatomy",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 393,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4e613b22-82b7-4997-a481-4eb9f1dc0b16",
+      "specialty": "Pharmacology",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 61652,
+      "error": null
+    },
+    {
+      "id": "medmcqa-36d1d9e0-62d6-4065-832c-1fedd97d046c",
+      "specialty": "Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 7578,
+      "error": null
+    },
+    {
+      "id": "medmcqa-24e2d5c8-0143-40f3-ba15-6c3c3345bcb9",
+      "specialty": "Anaesthesia",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 47460,
+      "error": null
+    },
+    {
+      "id": "medmcqa-f4873d26-d753-4048-bbe1-64d8649eb261",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 351,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a7a0f166-d01b-4cb0-8e13-1cb5db633eb5",
+      "specialty": "Forensic Medicine",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 62780,
+      "error": null
+    },
+    {
+      "id": "medmcqa-744727d6-8abe-488f-a7aa-a03ebadb1cde",
+      "specialty": "Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 1409,
+      "error": null
+    },
+    {
+      "id": "medmcqa-bfc4b4fb-de12-4f16-922f-3a1ee38ddd54",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 639,
+      "error": null
+    },
+    {
+      "id": "medmcqa-2d3da5b6-6af9-49c5-9439-17fbc983657d",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 55783,
+      "error": null
+    },
+    {
+      "id": "medmcqa-be60c527-3987-4ffe-950d-b174f23602b0",
+      "specialty": "Physiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 599,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c9d0a94a-a97e-41c4-99c9-0eca03808997",
+      "specialty": "Psychiatry",
+      "expected": "A",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 725,
+      "error": null
+    },
+    {
+      "id": "medmcqa-63f1f5be-3082-4248-94a7-97a2dd1e61de",
+      "specialty": "Pharmacology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 586,
+      "error": null
+    },
+    {
+      "id": "medmcqa-e3292ae9-466e-4837-912e-64e6fe0a32c1",
+      "specialty": "Surgery",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 15234,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a5e14c07-1f4a-4560-bf01-b7b972b70177",
+      "specialty": "Pathology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 1773,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ea2bbbfd-ccc8-4e13-b0a9-db56da9d2a2d",
+      "specialty": "Medicine",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3432,
+      "error": null
+    },
+    {
+      "id": "medmcqa-6806e3f4-88b1-4014-ab2c-bb77759b2faa",
+      "specialty": "Pediatrics",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 95120,
+      "error": null
+    },
+    {
+      "id": "medmcqa-9f75e88c-67f6-4533-b44c-accea21dd2a7",
+      "specialty": "Pathology",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 508,
+      "error": null
+    },
+    {
+      "id": "medmcqa-30d8cb7a-6892-4b27-bfb4-7b5e76492206",
+      "specialty": "Pediatrics",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 450,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ffa4063d-d470-4236-8997-57762a4e507c",
+      "specialty": "Pathology",
+      "expected": "C",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 5404,
+      "error": null
+    },
+    {
+      "id": "medmcqa-966accb6-3050-4ff9-9e8f-9b9d46f44bea",
+      "specialty": "Physiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 579,
+      "error": null
+    },
+    {
+      "id": "medmcqa-52bd2eec-f439-4db3-80d5-de2eaeb844da",
+      "specialty": "Anaesthesia",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 516,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a7378558-eaa2-45e1-986f-7b43b69d4373",
+      "specialty": "Biochemistry",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 50923,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4f33857a-eaf1-43e8-98be-b6a43ab227d5",
+      "specialty": "Medicine",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 1234,
+      "error": null
+    },
+    {
+      "id": "medmcqa-dfb2a593-3762-4073-86bf-65bc2a8e689a",
+      "specialty": "Ophthalmology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 7013,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4512fc6e-3701-47d0-b03c-6564e22792bf",
+      "specialty": "Microbiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 518,
+      "error": null
+    },
+    {
+      "id": "medmcqa-124f34d5-a898-4fc4-9d88-2ca022a6277a",
+      "specialty": "Unknown",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3456,
+      "error": null
+    },
+    {
+      "id": "medmcqa-6e0ac85f-9a0c-433c-8b18-9625d484a699",
+      "specialty": "Pathology",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 47947,
+      "error": null
+    },
+    {
+      "id": "medmcqa-852c88cd-67be-4694-9a7b-dcc5542d774b",
+      "specialty": "Pathology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 998,
+      "error": null
+    },
+    {
+      "id": "medmcqa-3923b210-4b02-44cc-9af9-cc3c1fe952c8",
+      "specialty": "Biochemistry",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 730,
+      "error": null
+    },
+    {
+      "id": "medmcqa-b63ee7a8-10f5-403e-aea2-d111a8139e5d",
+      "specialty": "ENT",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 441,
+      "error": null
+    },
+    {
+      "id": "medmcqa-b0a1ac53-3bf5-43a3-ab0f-7b77a0ff9fa6",
+      "specialty": "Physiology",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 118675,
+      "error": null
+    },
+    {
+      "id": "medmcqa-1a2d2e19-27fb-4cb1-a613-6cf7dc324416",
+      "specialty": "Surgery",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 5804,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a7688745-f81c-4849-a540-8413e9259e4f",
+      "specialty": "Medicine",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 835,
+      "error": null
+    },
+    {
+      "id": "medmcqa-e07a117b-53b8-4029-8b7e-4d97bd1ef590",
+      "specialty": "Surgery",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 661,
+      "error": null
+    },
+    {
+      "id": "medmcqa-35a1ed4b-2121-42a4-85f0-14246e1ae1ce",
+      "specialty": "Pediatrics",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 843,
+      "error": null
+    },
+    {
+      "id": "medmcqa-e3f28754-e7bc-429a-90aa-feb6befea9a2",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 2682,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c6cb65bc-f7d8-4e5b-a19e-837f0510b746",
+      "specialty": "Pharmacology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 1966,
+      "error": null
+    },
+    {
+      "id": "medmcqa-76a59ebb-dea4-4071-8d19-11f0d3a6579b",
+      "specialty": "Forensic Medicine",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1373,
+      "error": null
+    },
+    {
+      "id": "medmcqa-01292a7b-e4cf-47a6-874f-db071aa76942",
+      "specialty": "Dental",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 6861,
+      "error": null
+    },
+    {
+      "id": "medmcqa-6a21e743-41d0-4668-907c-49db50e5c8a2",
+      "specialty": "Biochemistry",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 455,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4b66b2f3-321e-4bf1-8179-0fb8e5651d53",
+      "specialty": "Pathology",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 106842,
+      "error": null
+    },
+    {
+      "id": "medmcqa-09e17233-d63c-4399-bf4e-1350747da141",
+      "specialty": "Gynaecology & Obstetrics",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 2303,
+      "error": null
+    },
+    {
+      "id": "medmcqa-f4802146-6def-4136-905e-6f2d462b0cf7",
+      "specialty": "Surgery",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1884,
+      "error": null
+    },
+    {
+      "id": "medmcqa-0b33904a-fd44-41a6-9c59-5baa7e78bc3a",
+      "specialty": "Biochemistry",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 620,
+      "error": null
+    },
+    {
+      "id": "medmcqa-e1ea77c2-eaa8-4aad-a2e9-9f28f589430a",
+      "specialty": "Dental",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 96573,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c9747b05-458a-41fd-8a42-69589c3c23ac",
+      "specialty": "Biochemistry",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "K is not correct as it is involved in the synthesis of clotting factors.",
+      "latencyMs": 633,
+      "error": null
+    },
+    {
+      "id": "medmcqa-cab9ac8a-cc6f-4d3f-bd27-38bf324b2813",
+      "specialty": "Anatomy",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 365,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ad2cf4d0-7180-45e9-b226-44b3947f0983",
+      "specialty": "Physiology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 545,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4fce6607-dcce-4b01-bb64-40c4d8cc968a",
+      "specialty": "Gynaecology & Obstetrics",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 871,
+      "error": null
+    },
+    {
+      "id": "medmcqa-4f47cb53-574e-4ba6-a56f-499dc7f94b7d",
+      "specialty": "Medicine",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 637,
+      "error": null
+    },
+    {
+      "id": "medmcqa-15ece71d-301a-429f-a58d-475056885e75",
+      "specialty": "Ophthalmology",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 115169,
+      "error": null
+    },
+    {
+      "id": "medmcqa-70ce18fc-55c0-4eed-be36-daecf33d99dd",
+      "specialty": "Pathology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 825,
+      "error": null
+    },
+    {
+      "id": "medmcqa-54869a90-e313-4fed-b1fe-405945da9352",
+      "specialty": "Gynaecology & Obstetrics",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 9016,
+      "error": null
+    },
+    {
+      "id": "medmcqa-8e18e69d-c81f-4039-9c95-310b07c39dda",
+      "specialty": "Pediatrics",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 447,
+      "error": null
+    },
+    {
+      "id": "medmcqa-d2017687-25a0-4272-907f-a1e0863c11a9",
+      "specialty": "Orthopaedics",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 8766,
+      "error": null
+    },
+    {
+      "id": "medmcqa-aeb677ed-4e3d-42a2-bc16-d26a4fc90b34",
+      "specialty": "Radiology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 358,
+      "error": null
+    },
+    {
+      "id": "medmcqa-d4f9de55-b63f-4142-9c8d-495eb9a2bb50",
+      "specialty": "Social & Preventive Medicine",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 22580,
+      "error": null
+    },
+    {
+      "id": "medmcqa-27645fbc-0642-4689-8465-62e9f48af013",
+      "specialty": "ENT",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 379,
+      "error": null
+    },
+    {
+      "id": "medmcqa-357fb4a7-6edf-4fde-b52f-bfc9bfb38f96",
+      "specialty": "Skin",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are an artificial intelligence assistant. Read the case and pick exactly one letter.",
+      "latencyMs": 73371,
+      "error": null
+    },
+    {
+      "id": "medmcqa-5bbdce5d-aafa-4bae-86ad-701e3569c8f8",
+      "specialty": "Ophthalmology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 13484,
+      "error": null
+    },
+    {
+      "id": "medmcqa-d77f0d8f-819f-40b3-af7b-d0ac8de446a4",
+      "specialty": "Dental",
+      "expected": "A",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 8717,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a416ccba-a1a3-4c20-8456-e93759bd8b61",
+      "specialty": "Pathology",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 21437,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c82a5657-0e2f-48c1-b32c-fb52e34d41ca",
+      "specialty": "Biochemistry",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 2943,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ebedbb4a-c05e-4942-907c-d7a3f943b37f",
+      "specialty": "Pathology",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 2429,
+      "error": null
+    },
+    {
+      "id": "medmcqa-ba0dcbb0-c674-49e7-9ff7-0392aa11643a",
+      "specialty": "Physiology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 430,
+      "error": null
+    },
+    {
+      "id": "medmcqa-27394771-575e-4b40-8dca-c30c4074bd9d",
+      "specialty": "Forensic Medicine",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 1397,
+      "error": null
+    },
+    {
+      "id": "medmcqa-cfd6fe12-a00a-4ebd-a109-6138961734eb",
+      "specialty": "Anatomy",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are an artificial intelligence assistant. Read the case and pick exactly one letter.",
+      "latencyMs": 71021,
+      "error": null
+    },
+    {
+      "id": "medmcqa-1815507f-a0d9-4c6a-a954-8e44adbac33e",
+      "specialty": "Pharmacology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 402,
+      "error": null
+    },
+    {
+      "id": "medmcqa-26a44262-e87f-43cd-99c2-aa512c41cbe0",
+      "specialty": "Pediatrics",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 95496,
+      "error": null
+    },
+    {
+      "id": "medmcqa-87ac2153-96e5-4df6-ba4d-389eaab02de1",
+      "specialty": "Ophthalmology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 12592,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a446fbdd-d3a9-4b22-bf10-aa7f2f948c78",
+      "specialty": "Dental",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 392,
+      "error": null
+    },
+    {
+      "id": "medmcqa-06a70a2a-c718-4d64-9911-c4dd82e47dbf",
+      "specialty": "Pharmacology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 651,
+      "error": null
+    },
+    {
+      "id": "medmcqa-532a83fe-5b91-4f6f-ae20-e6e690696a8a",
+      "specialty": "Physiology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 825,
+      "error": null
+    },
+    {
+      "id": "medmcqa-3d126d95-be95-4772-930c-b971bb9844eb",
+      "specialty": "Pathology",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 84910,
+      "error": null
+    },
+    {
+      "id": "medmcqa-2331335a-1845-45b5-bf35-4dbc770018a4",
+      "specialty": "Anatomy",
+      "expected": "B",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 382,
+      "error": null
+    },
+    {
+      "id": "medmcqa-79efe49b-5816-4588-a0d7-4f9433db2335",
+      "specialty": "Skin",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 607,
+      "error": null
+    },
+    {
+      "id": "medmcqa-a61c082f-6a27-4454-ac38-ad1e4651d4bd",
+      "specialty": "Surgery",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 22441,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c1d1da69-11fc-4208-897b-42a0ac046a78",
+      "specialty": "Psychiatry",
+      "expected": "C",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 2457,
+      "error": null
+    },
+    {
+      "id": "medmcqa-c5c85fb3-b838-4e07-b572-0fd85f5a0ebc",
+      "specialty": "Pediatrics",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 27825,
+      "error": null
+    }
+  ]
+}

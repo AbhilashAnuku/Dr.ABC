@@ -1,0 +1,163 @@
+{
+  "ranAt": "2026-05-15T12:40:03.408Z",
+  "durationMs": 172284,
+  "running": false,
+  "stages": [
+    {
+      "name": "accuracy",
+      "ok": true,
+      "durationMs": 83469,
+      "summary": {
+        "topConditionRate": 0.5333333333333333,
+        "icdPrefixRate": 0.2,
+        "gauntletPassRate": 1,
+        "p50LatencyMs": 1624,
+        "caseCount": 15,
+        "snapshot": "accuracy-2026-05-15.json"
+      },
+      "exitCode": 0
+    },
+    {
+      "name": "medqa",
+      "ok": true,
+      "durationMs": 88461,
+      "summary": {
+        "accuracy": 0.4666666666666667,
+        "nonErrorAccuracy": 1,
+        "answeredCount": 7,
+        "questionCount": 15,
+        "snapshot": "medqa-2026-05-15.json"
+      },
+      "exitCode": 0
+    },
+    {
+      "name": "meta-agent",
+      "ok": true,
+      "durationMs": 183,
+      "summary": {
+        "candidateCount": 2,
+        "promotedCount": 2,
+        "baseline": 0.5333333333333333,
+        "snapshot": "meta-agent-2026-05-15T12-42.json"
+      },
+      "exitCode": 0
+    },
+    {
+      "name": "kg-finetune",
+      "ok": true,
+      "durationMs": 144,
+      "summary": {
+        "cycleSeq": 10,
+        "signalsConsumed": 8,
+        "edgesUpdated": 64,
+        "totalAbsoluteShift": 2.1443896326411207,
+        "redFlagsGuarded": 0,
+        "decayedEdges": 19,
+        "topStrengthened": [
+          {
+            "edgeId": "symptom:dysuria-and-urinary-urgency-for-2-days-no-flank-pain-no-fever::presents-with::condition:uncomplicated-cystitis",
+            "source": "symptom:dysuria-and-urinary-urgency-for-2-days-no-flank-pain-no-fever",
+            "target": "condition:uncomplicated-cystitis",
+            "sourceLabel": "Dysuria and urinary urgency for 2 days, no flank pain, no fever",
+            "targetLabel": "Uncomplicated cystitis",
+            "relation": "presents-with",
+            "oldWeight": 1.3177149802627623,
+            "newWeight": 1.4299057684442344,
+            "delta": 0.1121907881814721
+          },
+          {
+            "edgeId": "condition:uncomplicated-cystitis::treated-with::drug:nitrofurantoin",
+            "source": "condition:uncomplicated-cystitis",
+            "target": "drug:nitrofurantoin",
+            "sourceLabel": "Uncomplicated cystitis",
+            "targetLabel": "Nitrofurantoin",
+            "relation": "treated-with",
+            "oldWeight": 1.197714980262762,
+            "newWeight": 1.3075934368321886,
+            "delta": 0.10987845656942663
+          },
+          {
+            "edgeId": "symptom:throbbing-left-sided-headache-for-6-hours-with-photophobia-and-nausea-no-aura::presents-with::condition:migraine-without-aura",
+            "source": "symptom:throbbing-left-sided-headache-for-6-hours-with-photophobia-and-nausea-no-aura",
+            "target": "condition:migraine-without-aura",
+            "sourceLabel": "Throbbing left-sided headache for 6 hours with photophobia and nausea, no aura",
+            "targetLabel": "Migraine without aura",
+            "relation": "presents-with",
+            "oldWeight": 1.2829574194281292,
+            "newWeight": 1.3356838326032754,
+            "delta": 0.05272641317514615
+          },
+          {
+            "edgeId": "condition:acute-otitis-media::routes-to::specialty:pediatrics",
+            "source": "condition:acute-otitis-media",
+            "target": "specialty:pediatrics",
+            "sourceLabel": "Acute otitis media",
+            "targetLabel": "Pediatrics",
+            "relation": "routes-to",
+            "oldWeight": 1.2508617577696088,
+            "newWeight": 1.303215720678245,
+            "delta": 0.05235396290863625
+          },
+          {
+            "edgeId": "condition:group-a-strep-pharyngitis::routes-to::specialty:pediatrics",
+            "source": "condition:group-a-strep-pharyngitis",
+            "target": "specialty:pediatrics",
+            "sourceLabel": "Group A strep pharyngitis",
+            "targetLabel": "Pediatrics",
+            "relation": "routes-to",
+            "oldWeight": 1.250836243028892,
+            "newWeight": 1.3031041850765614,
+            "delta": 0.05226794204766949
+          }
+        ],
+        "topWeakened": [
+          {
+            "edgeId": "condition:type-2-diabetes::routes-to::specialty:endocrinology",
+            "source": "condition:type-2-diabetes",
+            "target": "specialty:endocrinology",
+            "sourceLabel": "Type 2 diabetes",
+            "targetLabel": "Endocrinology",
+            "relation": "routes-to",
+            "oldWeight": 1.5,
+            "newWeight": 1.4475906982917728,
+            "delta": -0.05240930170822722
+          },
+          {
+            "edgeId": "condition:type-2-diabetes::coded-as::icd10:e11-9",
+            "source": "condition:type-2-diabetes",
+            "target": "icd10:e11-9",
+            "sourceLabel": "Type 2 diabetes",
+            "targetLabel": "E11.9",
+            "relation": "coded-as",
+            "oldWeight": 1.2788809898343092,
+            "newWeight": 1.2275844483126004,
+            "delta": -0.051296541521708816
+          },
+          {
+            "edgeId": "symptom:polyuria-polydipsia-weight-loss::presents-with::condition:type-2-diabetes",
+            "source": "symptom:polyuria-polydipsia-weight-loss",
+            "target": "condition:type-2-diabetes",
+            "sourceLabel": "polyuria polydipsia weight loss",
+            "targetLabel": "Type 2 diabetes",
+            "relation": "presents-with",
+            "oldWeight": 1.0680761896169346,
+            "newWeight": 1.016894312361779,
+            "delta": -0.05118187725515555
+          },
+          {
+            "edgeId": "condition:type-2-diabetes::treated-with::drug:metformin",
+            "source": "condition:type-2-diabetes",
+            "target": "drug:metformin",
+            "sourceLabel": "Type 2 diabetes",
+            "targetLabel": "Metformin",
+            "relation": "treated-with",
+            "oldWeight": 0.9770417226261281,
+            "newWeight": 0.9266992700767691,
+            "delta": -0.050342452549358985
+          }
+        ]
+      },
+      "exitCode": 0
+    }
+  ]
+}

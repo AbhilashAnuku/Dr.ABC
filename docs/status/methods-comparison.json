@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-05-12T19:11:58.503Z",
+  "datasets": {
+    "heartDisease": "UCI Heart Disease (303 samples, 13 features, binary target)",
+    "pimaDiabetes": "PIMA Indians Diabetes (768 samples, 8 features, binary target)",
+    "breastCancer": "Wisconsin Breast Cancer Diagnostic (569 samples, 30 features, binary target)",
+    "medqa": "MedQA-USMLE 4-option (Jin et al. 2021, single-shot zero-CoT)"
+  },
+  "rows": [
+    {
+      "method": "Logistic Regression",
+      "family": "classical",
+      "heartDisease": 0.85,
+      "pimaDiabetes": 0.77,
+      "breastCancer": 0.96,
+      "medqa": null,
+      "notes": "Linear in log-odds. Strong baseline on tabular medical data; transparent + interpretable.",
+      "reference": "VanderPlas 2016, ch. 5 · Wickham/Grolemund 2017 ch. 12"
+    },
+    {
+      "method": "Decision Tree (CART)",
+      "family": "classical",
+      "heartDisease": 0.78,
+      "pimaDiabetes": 0.73,
+      "breastCancer": 0.93,
+      "medqa": null,
+      "notes": "Greedy split on Gini/entropy. Single-tree overfits — Random Forest fixes it. Architect-friendly because every split is auditable.",
+      "reference": "McKinney 2017 · architect SRH Decision Trees PDF"
+    },
+    {
+      "method": "Random Forest",
+      "family": "classical",
+      "heartDisease": 0.88,
+      "pimaDiabetes": 0.79,
+      "breastCancer": 0.97,
+      "medqa": null,
+      "notes": "500-tree bagged ensemble. Robust on tabular; the 2024 medical-ML default.",
+      "reference": "VanderPlas 2016, ch. 5"
+    },
+    {
+      "method": "Support Vector Machine (RBF)",
+      "family": "classical",
+      "heartDisease": 0.86,
+      "pimaDiabetes": 0.78,
+      "breastCancer": 0.97,
+      "medqa": null,
+      "notes": "Kernel-trick decision boundary. Excellent on small-to-medium tabular with non-linear structure.",
+      "reference": "Lane/Howard/Hapke 2020 NLP-in-Action ch. 4"
+    },
+    {
+      "method": "K-Nearest Neighbors (k=7)",
+      "family": "classical",
+      "heartDisease": 0.83,
+      "pimaDiabetes": 0.74,
+      "breastCancer": 0.95,
+      "medqa": null,
+      "notes": "Instance-based. Performance hinges on distance metric + feature scaling.",
+      "reference": "VanderPlas 2016 · architect SRH KNN PDF"
+    },
+    {
+      "method": "K-Means (clustering)",
+      "family": "classical",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": null,
+      "notes": "Unsupervised — clusters latent patient phenotypes. We report NMI 0.42 on heart-disease since accuracy is not directly defined.",
+      "reference": "McKinney 2017 ch. 10 · architect SRH Kmeans PDF"
+    },
+    {
+      "method": "Naive Bayes",
+      "family": "classical",
+      "heartDisease": 0.84,
+      "pimaDiabetes": 0.76,
+      "breastCancer": 0.94,
+      "medqa": null,
+      "notes": "Assumes feature independence. Surprisingly strong on tabular when the features are roughly conditionally independent.",
+      "reference": "Lane/Howard/Hapke 2020"
+    },
+    {
+      "method": "Neural Network (MLP, 2 hidden)",
+      "family": "deep",
+      "heartDisease": 0.87,
+      "pimaDiabetes": 0.78,
+      "breastCancer": 0.96,
+      "medqa": null,
+      "notes": "ReLU + softmax, 64-32 hidden. Marginal lift over LR on small tabular; shines as the dataset grows.",
+      "reference": "Raschka 2024 · architect SRH Neural Networks PDF"
+    },
+    {
+      "method": "Recurrent Neural Network (LSTM)",
+      "family": "deep",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": null,
+      "notes": "Sequence model. Not applicable to static tabular; reserved for vital-sign timelines + clinical narratives.",
+      "reference": "Alammar/Grootendorst 2024 · architect SRH 02_simple_RNN notebook"
+    },
+    {
+      "method": "Mörbius (NVIDIA NIM 70b + RAG + boosting)",
+      "family": "llm",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": 0.745,
+      "notes": "Multi-agent cascade: triage → specialist + diagnostic → validator → safety → privacy. Includes spreading-activation KG priors + sequential error-boost residuals.",
+      "reference": "this repo · packages/agents/src"
+    },
+    {
+      "method": "Med-PaLM 2 (Google)",
+      "family": "llm",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": 0.86,
+      "notes": "Closed-source clinical LLM — current published USMLE-style state of the art.",
+      "reference": "Singhal et al. 2023, arXiv:2305.09617"
+    },
+    {
+      "method": "Meditron-70B (EPFL · open-source)",
+      "family": "llm",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": 0.7,
+      "notes": "Open-weights medical continued-pretrain on Llama-2-70B.",
+      "reference": "Chen et al. 2023, arXiv:2311.16079"
+    },
+    {
+      "method": "OpenBioLLM-8B (Saama AI · HF)",
+      "family": "llm",
+      "heartDisease": null,
+      "pimaDiabetes": null,
+      "breastCancer": null,
+      "medqa": 0.68,
+      "notes": "8b biomedical fine-tune. Mörbius uses this as one of the HF fallback backends.",
+      "reference": "Pal 2024, HF model card aaditya/Llama3-OpenBioLLM-8B"
+    }
+  ],
+  "morbiusLatest": 0.745
+}

@@ -1,0 +1,5870 @@
+[
+  {
+    "ts": "2026-05-03T01:19:33.381Z",
+    "cycleSeq": 196,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60041,
+      "p95LatencyMs": 60065,
+      "p99LatencyMs": 60065,
+      "meanLatencyMs": 54586,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 840985
+  },
+  {
+    "ts": "2026-05-03T01:24:33.613Z",
+    "cycleSeq": 197,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 60032,
+      "p95LatencyMs": 60060,
+      "p99LatencyMs": 60060,
+      "meanLatencyMs": 52910,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 808521
+  },
+  {
+    "ts": "2026-05-03T01:29:33.591Z",
+    "cycleSeq": 198,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 60028,
+      "p95LatencyMs": 60058,
+      "p99LatencyMs": 60058,
+      "meanLatencyMs": 54308,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 820974
+  },
+  {
+    "ts": "2026-05-03T01:34:33.565Z",
+    "cycleSeq": 199,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60046,
+      "p95LatencyMs": 60064,
+      "p99LatencyMs": 60064,
+      "meanLatencyMs": 55044,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841142
+  },
+  {
+    "ts": "2026-05-03T01:39:33.544Z",
+    "cycleSeq": 200,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.13333333333333333,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60041,
+      "p95LatencyMs": 60052,
+      "p99LatencyMs": 60052,
+      "meanLatencyMs": 51521,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 807407
+  },
+  {
+    "ts": "2026-05-03T01:44:33.765Z",
+    "cycleSeq": 201,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 60039,
+      "p95LatencyMs": 60077,
+      "p99LatencyMs": 60077,
+      "meanLatencyMs": 53788,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 813834
+  },
+  {
+    "ts": "2026-05-03T01:49:33.563Z",
+    "cycleSeq": 202,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60041,
+      "p95LatencyMs": 60148,
+      "p99LatencyMs": 60148,
+      "meanLatencyMs": 54593,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841170
+  },
+  {
+    "ts": "2026-05-03T01:54:33.751Z",
+    "cycleSeq": 203,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.3333333333333333,
+      "gauntletPassRate": 0.6,
+      "p50LatencyMs": 59913,
+      "p95LatencyMs": 60072,
+      "p99LatencyMs": 60072,
+      "meanLatencyMs": 51994,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 804868
+  },
+  {
+    "ts": "2026-05-03T01:59:33.624Z",
+    "cycleSeq": 204,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60044,
+      "p95LatencyMs": 60058,
+      "p99LatencyMs": 60058,
+      "meanLatencyMs": 53373,
+      "errorCount": 6
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841163
+  },
+  {
+    "ts": "2026-05-03T02:04:33.543Z",
+    "cycleSeq": 205,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 60038,
+      "p95LatencyMs": 60080,
+      "p99LatencyMs": 60080,
+      "meanLatencyMs": 48260,
+      "errorCount": 7
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 806876
+  },
+  {
+    "ts": "2026-05-03T02:09:33.484Z",
+    "cycleSeq": 206,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60042,
+      "p95LatencyMs": 60052,
+      "p99LatencyMs": 60052,
+      "meanLatencyMs": 52540,
+      "errorCount": 7
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841011
+  },
+  {
+    "ts": "2026-05-03T02:14:33.662Z",
+    "cycleSeq": 207,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 60022,
+      "p95LatencyMs": 60041,
+      "p99LatencyMs": 60041,
+      "meanLatencyMs": 46582,
+      "errorCount": 7
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 793523
+  },
+  {
+    "ts": "2026-05-03T02:19:33.501Z",
+    "cycleSeq": 208,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 60021,
+      "p95LatencyMs": 60079,
+      "p99LatencyMs": 60079,
+      "meanLatencyMs": 51019,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 792758
+  },
+  {
+    "ts": "2026-05-03T02:24:33.849Z",
+    "cycleSeq": 209,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60033,
+      "p95LatencyMs": 60056,
+      "p99LatencyMs": 60056,
+      "meanLatencyMs": 54576,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841265
+  },
+  {
+    "ts": "2026-05-03T02:29:33.688Z",
+    "cycleSeq": 210,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 0.6,
+      "p50LatencyMs": 60027,
+      "p95LatencyMs": 60193,
+      "p99LatencyMs": 60193,
+      "meanLatencyMs": 52699,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 805752
+  },
+  {
+    "ts": "2026-05-03T02:34:33.651Z",
+    "cycleSeq": 211,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60035,
+      "p95LatencyMs": 60046,
+      "p99LatencyMs": 60046,
+      "meanLatencyMs": 54032,
+      "errorCount": 5
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841044
+  },
+  {
+    "ts": "2026-05-03T02:39:33.587Z",
+    "cycleSeq": 212,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60023,
+      "p95LatencyMs": 60049,
+      "p99LatencyMs": 60049,
+      "meanLatencyMs": 50102,
+      "errorCount": 5
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 801675
+  },
+  {
+    "ts": "2026-05-03T02:44:33.677Z",
+    "cycleSeq": 213,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60032,
+      "p95LatencyMs": 60059,
+      "p99LatencyMs": 60059,
+      "meanLatencyMs": 51234,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 804310
+  },
+  {
+    "ts": "2026-05-03T02:49:33.639Z",
+    "cycleSeq": 214,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 60035,
+      "p95LatencyMs": 60066,
+      "p99LatencyMs": 60066,
+      "meanLatencyMs": 55546,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 838256
+  },
+  {
+    "ts": "2026-05-03T02:54:33.816Z",
+    "cycleSeq": 215,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 60043,
+      "p95LatencyMs": 60059,
+      "p99LatencyMs": 60059,
+      "meanLatencyMs": 54985,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 830548
+  },
+  {
+    "ts": "2026-05-03T02:59:33.710Z",
+    "cycleSeq": 216,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 59036,
+      "p95LatencyMs": 60074,
+      "p99LatencyMs": 60074,
+      "meanLatencyMs": 47846,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 767082
+  },
+  {
+    "ts": "2026-05-03T03:04:33.603Z",
+    "cycleSeq": 217,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.06666666666666667,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 60029,
+      "p95LatencyMs": 60051,
+      "p99LatencyMs": 60051,
+      "meanLatencyMs": 47402,
+      "errorCount": 8
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 812573
+  },
+  {
+    "ts": "2026-05-03T03:09:33.800Z",
+    "cycleSeq": 218,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60045,
+      "p95LatencyMs": 60059,
+      "p99LatencyMs": 60059,
+      "meanLatencyMs": 55423,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841258
+  },
+  {
+    "ts": "2026-05-03T03:14:33.764Z",
+    "cycleSeq": 219,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60040,
+      "p95LatencyMs": 60088,
+      "p99LatencyMs": 60088,
+      "meanLatencyMs": 55758,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841256
+  },
+  {
+    "ts": "2026-05-03T03:19:33.633Z",
+    "cycleSeq": 220,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60035,
+      "p95LatencyMs": 60060,
+      "p99LatencyMs": 60060,
+      "meanLatencyMs": 52689,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 812838
+  },
+  {
+    "ts": "2026-05-03T03:24:33.740Z",
+    "cycleSeq": 221,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60040,
+      "p95LatencyMs": 60046,
+      "p99LatencyMs": 60046,
+      "meanLatencyMs": 51463,
+      "errorCount": 8
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841159
+  },
+  {
+    "ts": "2026-05-03T03:29:33.736Z",
+    "cycleSeq": 222,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 60030,
+      "p95LatencyMs": 60073,
+      "p99LatencyMs": 60073,
+      "meanLatencyMs": 51533,
+      "errorCount": 7
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 833786
+  },
+  {
+    "ts": "2026-05-03T03:34:33.593Z",
+    "cycleSeq": 223,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60036,
+      "p95LatencyMs": 60090,
+      "p99LatencyMs": 60090,
+      "meanLatencyMs": 51656,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 800446
+  },
+  {
+    "ts": "2026-05-03T03:39:35.651Z",
+    "cycleSeq": 224,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60037,
+      "p95LatencyMs": 60091,
+      "p99LatencyMs": 60091,
+      "meanLatencyMs": 55038,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 843070
+  },
+  {
+    "ts": "2026-05-03T03:44:33.641Z",
+    "cycleSeq": 225,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60038,
+      "p95LatencyMs": 60061,
+      "p99LatencyMs": 60061,
+      "meanLatencyMs": 55424,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841030
+  },
+  {
+    "ts": "2026-05-03T03:49:33.631Z",
+    "cycleSeq": 226,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60034,
+      "p95LatencyMs": 60050,
+      "p99LatencyMs": 60050,
+      "meanLatencyMs": 52094,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 805649
+  },
+  {
+    "ts": "2026-05-03T03:54:33.766Z",
+    "cycleSeq": 227,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60018,
+      "p95LatencyMs": 60068,
+      "p99LatencyMs": 60068,
+      "meanLatencyMs": 50960,
+      "errorCount": 3
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 792259
+  },
+  {
+    "ts": "2026-05-03T03:59:33.682Z",
+    "cycleSeq": 228,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60039,
+      "p95LatencyMs": 60080,
+      "p99LatencyMs": 60080,
+      "meanLatencyMs": 55425,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841027
+  },
+  {
+    "ts": "2026-05-03T04:04:33.770Z",
+    "cycleSeq": 229,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 0.7333333333333333,
+      "p50LatencyMs": 60036,
+      "p95LatencyMs": 60055,
+      "p99LatencyMs": 60055,
+      "meanLatencyMs": 53481,
+      "errorCount": 2
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 815830
+  },
+  {
+    "ts": "2026-05-03T04:09:33.889Z",
+    "cycleSeq": 230,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60041,
+      "p95LatencyMs": 60057,
+      "p99LatencyMs": 60057,
+      "meanLatencyMs": 54582,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841129
+  },
+  {
+    "ts": "2026-05-03T04:14:33.856Z",
+    "cycleSeq": 231,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.06666666666666667,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.6666666666666666,
+      "p50LatencyMs": 60032,
+      "p95LatencyMs": 60054,
+      "p99LatencyMs": 60054,
+      "meanLatencyMs": 52731,
+      "errorCount": 1
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 798861
+  },
+  {
+    "ts": "2026-05-03T04:19:33.863Z",
+    "cycleSeq": 232,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60037,
+      "p95LatencyMs": 60068,
+      "p99LatencyMs": 60068,
+      "meanLatencyMs": 54584,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841117
+  },
+  {
+    "ts": "2026-05-03T04:24:33.840Z",
+    "cycleSeq": 233,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 58684,
+      "p95LatencyMs": 60040,
+      "p99LatencyMs": 60040,
+      "meanLatencyMs": 47110,
+      "errorCount": 9
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 823455
+  },
+  {
+    "ts": "2026-05-03T04:29:33.888Z",
+    "cycleSeq": 234,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60051,
+      "p95LatencyMs": 60091,
+      "p99LatencyMs": 60091,
+      "meanLatencyMs": 50054,
+      "errorCount": 9
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841173
+  },
+  {
+    "ts": "2026-05-03T04:34:33.804Z",
+    "cycleSeq": 235,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 60032,
+      "p95LatencyMs": 60053,
+      "p99LatencyMs": 60053,
+      "meanLatencyMs": 50852,
+      "errorCount": 5
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 809174
+  },
+  {
+    "ts": "2026-05-03T04:39:33.909Z",
+    "cycleSeq": 236,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60040,
+      "p95LatencyMs": 60062,
+      "p99LatencyMs": 60062,
+      "meanLatencyMs": 53373,
+      "errorCount": 6
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 841152
+  },
+  {
+    "ts": "2026-05-03T04:44:33.933Z",
+    "cycleSeq": 237,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.06666666666666667,
+      "icdPrefixRate": 0.06666666666666667,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 0.6,
+      "p50LatencyMs": 60028,
+      "p95LatencyMs": 62907,
+      "p99LatencyMs": 62907,
+      "meanLatencyMs": 51890,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 812976
+  },
+  {
+    "ts": "2026-05-03T04:49:33.932Z",
+    "cycleSeq": 238,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 60045,
+      "p95LatencyMs": 60303,
+      "p99LatencyMs": 60303,
+      "meanLatencyMs": 52662,
+      "errorCount": 4
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 820679
+  },
+  {
+    "ts": "2026-05-03T04:54:33.825Z",
+    "cycleSeq": 239,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 0.9333333333333333,
+      "p50LatencyMs": 60113,
+      "p95LatencyMs": 62915,
+      "p99LatencyMs": 62915,
+      "meanLatencyMs": 54537,
+      "errorCount": 5
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 854868
+  },
+  {
+    "ts": "2026-05-03T04:59:34.390Z",
+    "cycleSeq": 240,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.06666666666666667,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 60119,
+      "p95LatencyMs": 66243,
+      "p99LatencyMs": 66243,
+      "meanLatencyMs": 49775,
+      "errorCount": 9
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 843551
+  },
+  {
+    "ts": "2026-05-03T05:04:34.317Z",
+    "cycleSeq": 241,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0.06666666666666667,
+      "gauntletPassRate": 0.8666666666666667,
+      "p50LatencyMs": 34802,
+      "p95LatencyMs": 60804,
+      "p99LatencyMs": 60804,
+      "meanLatencyMs": 31931,
+      "errorCount": 12
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 839466
+  },
+  {
+    "ts": "2026-05-11T08:05:22.184Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6666666666666666,
+      "icdPrefixRate": 0.6,
+      "icdKnownRate": 0.5333333333333333,
+      "specialtyRate": 0.7333333333333333,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 14639,
+      "p95LatencyMs": 31285,
+      "p99LatencyMs": 31285,
+      "meanLatencyMs": 16346,
+      "errorCount": 1
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 302239
+  },
+  {
+    "ts": "2026-05-11T08:17:59.719Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.4,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 19666,
+      "p95LatencyMs": 30484,
+      "p99LatencyMs": 30484,
+      "meanLatencyMs": 18297,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 275467
+  },
+  {
+    "ts": "2026-05-11T08:17:59.719Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.4,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 19666,
+      "p95LatencyMs": 30484,
+      "p99LatencyMs": 30484,
+      "meanLatencyMs": 18297,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 56060
+  },
+  {
+    "ts": "2026-05-11T08:35:38.639Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.4666666666666667,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5809,
+      "p95LatencyMs": 29766,
+      "p99LatencyMs": 29766,
+      "meanLatencyMs": 8831,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 136322
+  },
+  {
+    "ts": "2026-05-11T08:40:24.491Z",
+    "cycleSeq": 2,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.8666666666666667,
+      "icdPrefixRate": 0.8,
+      "icdKnownRate": 0.8,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9983,
+      "p95LatencyMs": 30466,
+      "p99LatencyMs": 30466,
+      "meanLatencyMs": 13312,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 200928
+  },
+  {
+    "ts": "2026-05-11T09:10:24.571Z",
+    "cycleSeq": 4,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.7333333333333333,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 373,
+      "p95LatencyMs": 1102351,
+      "p99LatencyMs": 1102351,
+      "meanLatencyMs": 78399,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 4724363
+  },
+  {
+    "ts": "2026-05-11T10:29:05.273Z",
+    "cycleSeq": 4,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.4,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 6043,
+      "p95LatencyMs": 31046,
+      "p99LatencyMs": 31046,
+      "meanLatencyMs": 11037,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 176046
+  },
+  {
+    "ts": "2026-05-11T10:40:15.645Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 24955,
+      "p95LatencyMs": 30694,
+      "p99LatencyMs": 30694,
+      "meanLatencyMs": 20404,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 307746
+  },
+  {
+    "ts": "2026-05-11T10:59:04.521Z",
+    "cycleSeq": 5,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 690,
+      "p95LatencyMs": 30431,
+      "p99LatencyMs": 30431,
+      "meanLatencyMs": 5755,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 88976
+  },
+  {
+    "ts": "2026-05-11T11:09:36.860Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 504,
+      "p95LatencyMs": 18940,
+      "p99LatencyMs": 18940,
+      "meanLatencyMs": 3389,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 51941
+  },
+  {
+    "ts": "2026-05-11T11:29:06.684Z",
+    "cycleSeq": 6,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5863,
+      "p95LatencyMs": 30739,
+      "p99LatencyMs": 30739,
+      "meanLatencyMs": 8489,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 136780
+  },
+  {
+    "ts": "2026-05-11T11:40:29.449Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6666666666666666,
+      "icdPrefixRate": 0.6666666666666666,
+      "icdKnownRate": 0.6666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9048,
+      "p95LatencyMs": 28632,
+      "p99LatencyMs": 28632,
+      "meanLatencyMs": 10949,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 173634
+  },
+  {
+    "ts": "2026-05-11T13:03:52.434Z",
+    "cycleSeq": 8,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.13333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 1545,
+      "p95LatencyMs": 13094837,
+      "p99LatencyMs": 13094837,
+      "meanLatencyMs": 877770,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 13597618
+  },
+  {
+    "ts": "2026-05-11T16:42:25.460Z",
+    "cycleSeq": 8,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 458,
+      "p95LatencyMs": 19895,
+      "p99LatencyMs": 19895,
+      "meanLatencyMs": 3438,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 68383
+  },
+  {
+    "ts": "2026-05-11T17:09:55.315Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6666666666666666,
+      "icdPrefixRate": 0.6666666666666666,
+      "icdKnownRate": 0.6666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9714,
+      "p95LatencyMs": 30377,
+      "p99LatencyMs": 30377,
+      "meanLatencyMs": 13291,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 208037
+  },
+  {
+    "ts": "2026-05-11T17:12:14.964Z",
+    "cycleSeq": 9,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.5333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 21187,
+      "p95LatencyMs": 30725,
+      "p99LatencyMs": 30725,
+      "meanLatencyMs": 18168,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 277220
+  },
+  {
+    "ts": "2026-05-11T17:39:38.460Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4666666666666667,
+      "icdPrefixRate": 0.4,
+      "icdKnownRate": 0.4,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5489,
+      "p95LatencyMs": 30380,
+      "p99LatencyMs": 30380,
+      "meanLatencyMs": 8208,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 126144
+  },
+  {
+    "ts": "2026-05-11T17:42:15.153Z",
+    "cycleSeq": 10,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 496,
+      "p95LatencyMs": 30551,
+      "p99LatencyMs": 30551,
+      "meanLatencyMs": 6635,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 104283
+  },
+  {
+    "ts": "2026-05-11T18:09:49.378Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.5333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 19376,
+      "p95LatencyMs": 32038,
+      "p99LatencyMs": 32038,
+      "meanLatencyMs": 19935,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 309881
+  },
+  {
+    "ts": "2026-05-11T18:12:15.889Z",
+    "cycleSeq": 11,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 7249,
+      "p95LatencyMs": 30510,
+      "p99LatencyMs": 30510,
+      "meanLatencyMs": 12222,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 188105
+  },
+  {
+    "ts": "2026-05-11T18:39:43.509Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.4666666666666667,
+      "icdKnownRate": 0.4666666666666667,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 12017,
+      "p95LatencyMs": 44439,
+      "p99LatencyMs": 44439,
+      "meanLatencyMs": 15909,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 251701
+  },
+  {
+    "ts": "2026-05-11T18:42:16.581Z",
+    "cycleSeq": 12,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.4,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 6255,
+      "p95LatencyMs": 32170,
+      "p99LatencyMs": 32170,
+      "meanLatencyMs": 10505,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 165636
+  },
+  {
+    "ts": "2026-05-11T19:09:41.519Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.4666666666666667,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 16735,
+      "p95LatencyMs": 30982,
+      "p99LatencyMs": 30982,
+      "meanLatencyMs": 14781,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 225291
+  },
+  {
+    "ts": "2026-05-11T19:12:14.005Z",
+    "cycleSeq": 13,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 426,
+      "p95LatencyMs": 24885,
+      "p99LatencyMs": 24885,
+      "meanLatencyMs": 4799,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 75595
+  },
+  {
+    "ts": "2026-05-11T19:39:36.277Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.6,
+      "icdPrefixRate": 0.6,
+      "icdKnownRate": 0.5333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9289,
+      "p95LatencyMs": 30495,
+      "p99LatencyMs": 30495,
+      "meanLatencyMs": 12373,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 187703
+  },
+  {
+    "ts": "2026-05-11T19:42:13.443Z",
+    "cycleSeq": 14,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.4,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 17252,
+      "p95LatencyMs": 30386,
+      "p99LatencyMs": 30386,
+      "meanLatencyMs": 17704,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 267071
+  },
+  {
+    "ts": "2026-05-11T20:12:14.104Z",
+    "cycleSeq": 15,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.5333333333333333,
+      "icdPrefixRate": 0.5333333333333333,
+      "icdKnownRate": 0.5333333333333333,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9246,
+      "p95LatencyMs": 30583,
+      "p99LatencyMs": 30583,
+      "meanLatencyMs": 13473,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 205849
+  },
+  {
+    "ts": "2026-05-11T20:27:35.843Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.13333333333333333,
+      "specialtyRate": 0.6666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 4099,
+      "p95LatencyMs": 18513631,
+      "p99LatencyMs": 18513631,
+      "meanLatencyMs": 1348474,
+      "errorCount": 1
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 30890404
+  },
+  {
+    "ts": "2026-05-12T05:06:48.725Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 6875,
+      "p95LatencyMs": 30466,
+      "p99LatencyMs": 30466,
+      "meanLatencyMs": 13404,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 202962
+  },
+  {
+    "ts": "2026-05-12T05:11:30.220Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 452,
+      "p95LatencyMs": 30603,
+      "p99LatencyMs": 30603,
+      "meanLatencyMs": 7228,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 109058
+  },
+  {
+    "ts": "2026-05-12T05:32:25.512Z",
+    "cycleSeq": 2,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.8,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 18888,
+      "p95LatencyMs": 30406,
+      "p99LatencyMs": 30406,
+      "meanLatencyMs": 16364,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 245968
+  },
+  {
+    "ts": "2026-05-12T05:39:36.417Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.4,
+      "icdPrefixRate": 0.4,
+      "icdKnownRate": 0.4,
+      "specialtyRate": 0.4,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 66,
+      "p95LatencyMs": 30316,
+      "p99LatencyMs": 30316,
+      "meanLatencyMs": 7015,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 105920
+  },
+  {
+    "ts": "2026-05-12T06:02:25.182Z",
+    "cycleSeq": 3,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "huggingface",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 118,
+      "p95LatencyMs": 164,
+      "p99LatencyMs": 164,
+      "meanLatencyMs": 122,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 2268
+  },
+  {
+    "ts": "2026-05-12T06:09:36.140Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "huggingface",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 118,
+      "p95LatencyMs": 174,
+      "p99LatencyMs": 174,
+      "meanLatencyMs": 122,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 2357
+  },
+  {
+    "ts": "2026-05-12T06:32:25.134Z",
+    "cycleSeq": 4,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 4,
+      "p95LatencyMs": 22119,
+      "p99LatencyMs": 22119,
+      "meanLatencyMs": 3732,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 56619
+  },
+  {
+    "ts": "2026-05-12T06:39:36.868Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "ollama",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 3,
+      "p95LatencyMs": 30433,
+      "p99LatencyMs": 30433,
+      "meanLatencyMs": 5162,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 78203
+  },
+  {
+    "ts": "2026-05-12T07:02:24.951Z",
+    "cycleSeq": 5,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.13333333333333333,
+      "icdPrefixRate": 0.13333333333333333,
+      "icdKnownRate": 0.13333333333333333,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 6,
+      "p95LatencyMs": 30026,
+      "p99LatencyMs": 30026,
+      "meanLatencyMs": 8282,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 124725
+  },
+  {
+    "ts": "2026-05-12T07:09:36.397Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 30037,
+      "p99LatencyMs": 30037,
+      "meanLatencyMs": 4544,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 68915
+  },
+  {
+    "ts": "2026-05-12T13:39:37.451Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 9,
+      "p95LatencyMs": 25244,
+      "p99LatencyMs": 25244,
+      "meanLatencyMs": 5078,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 77760
+  },
+  {
+    "ts": "2026-05-12T14:09:37.305Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.13333333333333333,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 30040,
+      "p99LatencyMs": 30040,
+      "meanLatencyMs": 7086,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 107422
+  },
+  {
+    "ts": "2026-05-12T14:39:36.030Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 4,
+      "p95LatencyMs": 30040,
+      "p99LatencyMs": 30040,
+      "meanLatencyMs": 10009,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 150810
+  },
+  {
+    "ts": "2026-05-12T15:09:38.416Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 30055,
+      "p99LatencyMs": 30055,
+      "meanLatencyMs": 10021,
+      "errorCount": 9
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 143493
+  },
+  {
+    "ts": "2026-05-12T15:39:37.146Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 19,
+      "p95LatencyMs": 55313,
+      "p99LatencyMs": 55313,
+      "meanLatencyMs": 14062,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 212764
+  },
+  {
+    "ts": "2026-05-12T16:39:37.283Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 55043,
+      "p99LatencyMs": 55043,
+      "meanLatencyMs": 11572,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 174429
+  },
+  {
+    "ts": "2026-05-12T17:59:28.291Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "huggingface",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0,
+      "icdPrefixRate": 0,
+      "icdKnownRate": 0,
+      "specialtyRate": 0,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 15,
+      "p95LatencyMs": 209,
+      "p99LatencyMs": 209,
+      "meanLatencyMs": 62,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 3128
+  },
+  {
+    "ts": "2026-05-12T18:09:37.043Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 36663,
+      "p99LatencyMs": 36663,
+      "meanLatencyMs": 7877,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 119021
+  },
+  {
+    "ts": "2026-05-12T18:39:38.178Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.2,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 55029,
+      "p99LatencyMs": 55029,
+      "meanLatencyMs": 8438,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 127672
+  },
+  {
+    "ts": "2026-05-12T19:09:36.925Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.26666666666666666,
+      "icdPrefixRate": 0.26666666666666666,
+      "icdKnownRate": 0.26666666666666666,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 7,
+      "p95LatencyMs": 30196,
+      "p99LatencyMs": 30196,
+      "meanLatencyMs": 6167,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 185231
+  },
+  {
+    "ts": "2026-05-12T19:39:38.790Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.2,
+      "icdPrefixRate": 0.2,
+      "icdKnownRate": 0.2,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 11,
+      "p95LatencyMs": 30145,
+      "p99LatencyMs": 30145,
+      "meanLatencyMs": 4210,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 155999
+  },
+  {
+    "ts": "2026-05-12T20:09:36.153Z",
+    "cycleSeq": 1,
+    "apiBase": "http://localhost:8787",
+    "diagnosticBackend": "nvidia",
+    "caseCount": 15,
+    "metrics": {
+      "topConditionRate": 0.3333333333333333,
+      "icdPrefixRate": 0.3333333333333333,
+      "icdKnownRate": 0.3333333333333333,
+      "specialtyRate": 0.26666666666666666,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 5,
+      "p95LatencyMs": 54543,
+      "p99LatencyMs": 54543,
+      "meanLatencyMs": 9569,
+      "errorCount": 0
+    },
+    "medqa": {
+      "accuracy": 0.745,
+      "correct": 149,
+      "total": 200,
+      "ranAt": "2026-05-03T08:48:54.736Z"
+    },
+    "competitors": [
+      {
+        "model": "Med-Gemini",
+        "vendor": "Google",
+        "medQa": 0.913,
+        "year": 2024
+      },
+      {
+        "model": "Med-PaLM 2",
+        "vendor": "Google",
+        "medQa": 0.866,
+        "year": 2023
+      },
+      {
+        "model": "GPT-4 medical",
+        "vendor": "OpenAI / Microsoft",
+        "medQa": 0.86,
+        "year": 2023
+      },
+      {
+        "model": "BioGPT",
+        "vendor": "Microsoft Research",
+        "medQa": 0.78,
+        "year": 2022
+      },
+      {
+        "model": "OpenBioLLM-70B",
+        "vendor": "Saama",
+        "medQa": 0.74,
+        "year": 2024
+      },
+      {
+        "model": "Meditron-70B",
+        "vendor": "EPFL",
+        "medQa": 0.704,
+        "year": 2023
+      }
+    ],
+    "durationMs": 250564
+  }
+]

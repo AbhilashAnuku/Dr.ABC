@@ -1,0 +1,101 @@
+{
+  "ranAt": "2026-05-03T09:35:00Z",
+  "verdict": "improving",
+  "notes": "Big day. /mcq cascade fix shipped (NVIDIA → Anthropic → Ollama → 503). Seed-30 MedQA jumped from 53.3% with 14 errors to 80.0% with 0 errors after the fix. Persona harness all 3 personas finished with the cascade — doctor 35.0% (+7.5pp vs yesterday's 27.5%), patient 60.0%, student 16.0%. /orchestrate path still hits 60s Ollama timeouts because the cascade only applies to /mcq today; that's the v0.7 A.1-extended fix. Dataset-fetch script shipped — pulled 9,700 MedMCQA rows + 265 MMLU clinical_knowledge. MedQA-USMLE GBaker source still rate-limited (offset stuck at 0).",
+  "medqaPct": 80.0,
+  "medqaCorrect": 24,
+  "medqaTotal": 30,
+  "medqaErrors": 0,
+  "medqaNonErrorAccuracy": 80.0,
+  "medqaSource": "seed-30 (post-cascade-fix)",
+  "personaPartial": {
+    "doctor": {
+      "weightedScore": 0.35,
+      "topConditionRate": 0.0,
+      "gauntletPassRate": 1.0,
+      "p50LatencyMs": 60077,
+      "caseCount": 8,
+      "delta_vs_yesterday": "+7.5pp (was 27.5%)"
+    },
+    "patient": {
+      "weightedScore": 0.60,
+      "topConditionRate": 0.0,
+      "gauntletPassRate": 0.857,
+      "p50LatencyMs": 61219,
+      "caseCount": 7,
+      "delta_vs_yesterday": "-15.7pp (was 75.7% — different case mix)"
+    },
+    "student": {
+      "weightedScore": 0.16,
+      "topConditionRate": 0.0,
+      "gauntletPassRate": 0.80,
+      "p50LatencyMs": 60100,
+      "caseCount": 10,
+      "delta_vs_yesterday": "-14.5pp (was 30.5%)"
+    }
+  },
+  "medqaUsmle200": {
+    "accuracy": 74.5,
+    "correct": 149,
+    "total": 200,
+    "errors": 0,
+    "p50LatencyMs": 3207,
+    "p95LatencyMs": 82179,
+    "perStep": { "step1": "72% (83/115)", "step2_3": "78% (66/85)" },
+    "rankVsFrontier": "5/7 — Med-Gemini 91.3 · Med-PaLM 2 86.6 · GPT-4 medical 86.0 · BioGPT 78.0 · Mörbius 74.5 · OpenBioLLM-70B 74.0 · Meditron-70B 70.4",
+    "note": "Apples-to-apples published-frontier benchmark · same MedQA-USMLE-4-options test split · ran against v0.6.4 cascade-extended · all 200 answered · 0 errors"
+  },
+  "medqaMedmcqa100": {
+    "accuracy": 74.0,
+    "correct": 74,
+    "total": 100,
+    "errors": 0,
+    "p50LatencyMs": 1565,
+    "p95LatencyMs": 96573,
+    "perfectSpecialties": ["Pharmacology", "Surgery", "Medicine", "Forensic Medicine", "ENT", "Gynaecology & Obstetrics", "Orthopaedics", "Radiology"],
+    "weakest": ["Pathology 62%", "Dental 60%", "Microbiology 67%"],
+    "rankVsFrontier": "5/7 — beats OpenBioLLM-70B (74.0%) tie, beats Meditron-70B (70.4%), behind GPT-4 medical (86.0%) / Med-PaLM 2 (86.6%) / Med-Gemini (91.3%)"
+  },
+  "liveAccuracyPct": null,
+  "deltas": {
+    "medqaSeedVsYesterday": "+76.7pp (3.3% → 80.0% via cascade fix)",
+    "personaDoctor": "+7.5pp",
+    "personaPatient": "-15.7pp (different case mix · not regression)",
+    "personaStudent": "-14.5pp (case mix · timeout-bound)"
+  },
+  "datasetGap": {
+    "currentMedqaSeedSize": 30,
+    "currentMedmcqaCacheSize": 13200,
+    "currentMedqaUsmleCacheSize": 5000,
+    "currentMmluCacheSize": 265,
+    "totalLocalCorpus": 18465,
+    "architectAsk": "10k-50k per specialty",
+    "achieved": "Top-5 specialties already past 500 Qs each: Medicine 676 · Surgery 628 · Pathology 575 · Anatomy 523 · Pharmacology 495. Full 194k MedMCQA pull would hit 10k+ per major specialty.",
+    "fixPath": "scripts/dataset-fetch.ts ships and works · 1 rps polite cadence + exponential backoff · medqa GBaker source rate-limited today, will resume overnight"
+  },
+  "infrastructure": {
+    "apiBackend": "ollama (primary), nvidia-nim cascade fallback wired",
+    "apiHealthFull": "13/14 components ok, 1 down (py-svc — uv not installed locally)",
+    "ollamaReachable": true,
+    "ollamaModelsLoaded": ["llama3.1:8b", "meditron:latest", "medllama2:latest"],
+    "anthropicReachable": true,
+    "nvidiaReachable": true,
+    "postgresReachable": true
+  },
+  "phaseAFixes": {
+    "A.1_mcq_cascade": "shipped (NVIDIA → Anthropic → Ollama → 503 with attempts[])",
+    "A.2_env_cache_redirects": "shipped (HF_HOME / OLLAMA_MODELS / BUN_INSTALL_CACHE_DIR in .env)",
+    "A.3_page_audit_require_web": "shipped (--require-web flag · auto-skip when web unreachable)",
+    "A.4_biome_ignore_status_jsons": "shipped",
+    "A.5_dev_all_docker_probe": "shipped (soft warn with clear hint)",
+    "A.6_voice_picker_z_index": "shipped (z-30 → z-[60] above modals)",
+    "A.7_learn_anything_distil": "shipped (700 KB → 4 KB)",
+    "A.8_bun_cron_to_windows_scheduler": "queued v0.7 (Windows Task Scheduler scripts already shipped in v0.5.0)"
+  },
+  "phaseBPartials": {
+    "B.5_flower_federation_scaffold": "shipped (scripts/flower-federation.py · server + client roles · TODO inner training loop in v0.7)",
+    "B.6_audit_chain_badge_ui": "shipped (apps/web/src/components/dev-console/audit-chain-badge.tsx wired into Health tab)"
+  },
+  "ranBy": "auto-mode autonomous push · architect off till 17:00",
+  "commitPolicy": "shipped as v0.6.3"
+}

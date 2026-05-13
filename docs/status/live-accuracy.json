@@ -1,0 +1,64 @@
+{
+  "ts": "2026-05-12T20:09:36.153Z",
+  "cycleSeq": 1,
+  "apiBase": "http://localhost:8787",
+  "diagnosticBackend": "nvidia",
+  "caseCount": 15,
+  "metrics": {
+    "topConditionRate": 0.3333333333333333,
+    "icdPrefixRate": 0.3333333333333333,
+    "icdKnownRate": 0.3333333333333333,
+    "specialtyRate": 0.26666666666666666,
+    "gauntletPassRate": 1,
+    "p50LatencyMs": 5,
+    "p95LatencyMs": 54543,
+    "p99LatencyMs": 54543,
+    "meanLatencyMs": 9569,
+    "errorCount": 0
+  },
+  "medqa": {
+    "accuracy": 0.745,
+    "correct": 149,
+    "total": 200,
+    "ranAt": "2026-05-03T08:48:54.736Z"
+  },
+  "competitors": [
+    {
+      "model": "Med-Gemini",
+      "vendor": "Google",
+      "medQa": 0.913,
+      "year": 2024
+    },
+    {
+      "model": "Med-PaLM 2",
+      "vendor": "Google",
+      "medQa": 0.866,
+      "year": 2023
+    },
+    {
+      "model": "GPT-4 medical",
+      "vendor": "OpenAI / Microsoft",
+      "medQa": 0.86,
+      "year": 2023
+    },
+    {
+      "model": "BioGPT",
+      "vendor": "Microsoft Research",
+      "medQa": 0.78,
+      "year": 2022
+    },
+    {
+      "model": "OpenBioLLM-70B",
+      "vendor": "Saama",
+      "medQa": 0.74,
+      "year": 2024
+    },
+    {
+      "model": "Meditron-70B",
+      "vendor": "EPFL",
+      "medQa": 0.704,
+      "year": 2023
+    }
+  ],
+  "durationMs": 250564
+}

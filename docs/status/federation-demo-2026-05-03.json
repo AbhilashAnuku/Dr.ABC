@@ -1,0 +1,64 @@
+{
+  "ranAt": "2026-05-03T05:12:54.908Z",
+  "round": 5,
+  "clinics": [
+    {
+      "id": "clinic-1",
+      "name": "Berlin Charité Cardiology",
+      "focus": "cardiac",
+      "caseCount": 1200,
+      "localAccuracy": 0.7168546234233885,
+      "localMedQA": 0.576707577827129
+    },
+    {
+      "id": "clinic-2",
+      "name": "Munich LMU Pulmonology",
+      "focus": "respiratory",
+      "caseCount": 950,
+      "localAccuracy": 0.6811067931736469,
+      "localMedQA": 0.5673408481164309
+    },
+    {
+      "id": "clinic-3",
+      "name": "Hamburg UKE Neurology",
+      "focus": "neuro",
+      "caseCount": 1100,
+      "localAccuracy": 0.6945962157122654,
+      "localMedQA": 0.5686899985411853
+    }
+  ],
+  "global": {
+    "accuracy": 0.7688716427404685,
+    "medqa": 0.6132559684610671,
+    "diversityBonus": 0.07,
+    "bestSingle": 0.7168546234233885,
+    "avgSingle": 0.6975192107697669
+  },
+  "history": [
+    {
+      "round": 1,
+      "globalAccuracy": 0.7586808103860536,
+      "globalMedQA": 0.5993790089589218
+    },
+    {
+      "round": 2,
+      "globalAccuracy": 0.7596753147495445,
+      "globalMedQA": 0.6059187242031416
+    },
+    {
+      "round": 3,
+      "globalAccuracy": 0.7641535520606855,
+      "globalMedQA": 0.6065636614165302
+    },
+    {
+      "round": 4,
+      "globalAccuracy": 0.7756462949381391,
+      "globalMedQA": 0.6085103312433515
+    },
+    {
+      "round": 5,
+      "globalAccuracy": 0.7688716427404685,
+      "globalMedQA": 0.6132559684610671
+    }
+  ]
+}

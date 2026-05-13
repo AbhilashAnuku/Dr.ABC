@@ -1,0 +1,143 @@
+{
+  "startedAt": "2026-05-05T18:51:46.281Z",
+  "okCount": 10,
+  "totalProbes": 11,
+  "failedProbes": 1,
+  "dataInventory": {
+    "totalFiles": 65626,
+    "totalBytes": 5155442501,
+    "dirs": [
+      {
+        "path": "data/hf-bench",
+        "files": 14,
+        "bytes": 924199908
+      },
+      {
+        "path": "data/kaggle/imaging",
+        "files": 65551,
+        "bytes": 4209812900
+      },
+      {
+        "path": "data/kaggle/tabular",
+        "files": 7,
+        "bytes": 20993559
+      },
+      {
+        "path": "data/isic-sample",
+        "files": 52,
+        "bytes": 436134
+      },
+      {
+        "path": "data/medqa-bench",
+        "files": 1,
+        "bytes": 0
+      },
+      {
+        "path": "data/drugbank-sample",
+        "files": 1,
+        "bytes": 0
+      }
+    ]
+  },
+  "probes": [
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 41,
+      "preview": "{\"name\":\"Mörbius API\",\"version\":\"0.1.0\",\"agents\":[{\"kind\":\"triage\",\"version\":\"0.1.0\"},{\"kind\":\"validator\",\"version\":\"0.1.0\"},{\"kind\":\"research\",\"version\":\"0.1.0\"},{\"kind\":\"library\",\"version\":\"0.1.0\"},"
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/agents",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 39,
+      "preview": "{\"ok\":true,\"ts\":1778007106321,\"diagnosticBackend\":\"ollama\",\"imagingBackend\":\"anthropic\",\"agents\":[{\"kind\":\"triage\",\"version\":\"0.1.0\",\"minConfidence\":0.6},{\"kind\":\"validator\",\"version\":\"0.1.0\",\"minConf"
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/health",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 38,
+      "preview": "{\"ok\":true,\"ts\":1778007106321,\"diagnosticBackend\":\"ollama\",\"imagingBackend\":\"anthropic\",\"activitySink\":\"pgvector\",\"agents\":[\"triage\",\"validator\",\"research\",\"library\",\"profile\",\"diagnostic\",\"imaging\"],"
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/health/full",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 279,
+      "preview": "{\"ts\":1778007106561,\"durationMs\":242,\"summary\":{\"total\":14,\"ok\":13,\"down\":1,\"skipped\":0},\"diagnosticBackend\":\"ollama\",\"imagingBackend\":\"anthropic\",\"components\":[{\"component\":\"anthropic\",\"kind\":\"provid"
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/research/snapshot",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 94,
+      "preview": "{\"ts\":1778007106377,\"files\":{\"personaFile\":\"persona-summary-cascade-extended-2026-05-03.json\",\"medqaFile\":\"medqa-usmle200-cascade-2026-05-03.json\"},\"personaSummary\":{\"ranAt\":\"2026-05-03T09:04:45.941Z\""
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/research/rehearsal",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 18725,
+      "preview": "{\"ts\":1778007124996,\"medqaTrend\":[{\"file\":\"medqa-2026-05-02.json\",\"ranAt\":\"2026-05-02T06:25:32.263Z\",\"accuracy\":0.03333333333333333,\"questionCount\":30,\"answeredCount\":30,\"perSpecialty\":{\"Cardiology\":{"
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/personas/live",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 56,
+      "preview": "{\"live\":true,\"file\":\"persona-summary-2026-05-03.json\",\"snapshot\":{\"ranAt\":\"2026-05-03T09:04:45.941Z\",\"personaCount\":3,\"perPersona\":[{\"id\":\"doctor\",\"name\":\"Dr. Anuj — junior attending, late-shift ER\",\""
+    },
+    {
+      "surface": "api",
+      "method": "GET",
+      "url": "/errors/stats",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 41,
+      "preview": "{\"ts\":1778007106324,\"totalEvents\":0,\"bySource\":{\"validator\":0,\"safety\":0,\"privacy\":0,\"architect\":0,\"follow-up\":0,\"autopilot\":0},\"byDirection\":{\"lift\":0,\"damp\":0,\"replace\":0},\"topPatterns\":[]}"
+    },
+    {
+      "surface": "api",
+      "method": "POST",
+      "url": "/mcq",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 1170,
+      "preview": "{\"picked\":\"C\",\"modelUsed\":\"nvidia:meta/llama-3.3-70b-instruct\",\"raw\":\"C\",\"samples\":1,\"cot\":false,\"ensemble\":false,\"retrieve\":false,\"retrievalUsed\":false,\"votes\":{\"C\":1},\"attempts\":[]}"
+    },
+    {
+      "surface": "api",
+      "method": "POST",
+      "url": "/research/frontier",
+      "ok": false,
+      "status": 0,
+      "latencyMs": 60063,
+      "error": "The operation timed out."
+    },
+    {
+      "surface": "py-svc",
+      "method": "GET",
+      "url": "/health",
+      "ok": true,
+      "status": 200,
+      "latencyMs": 26,
+      "preview": "{\"backend\":\"stub\",\"transformersAvailable\":false,\"loadedPairs\":[],\"supportedPairs\":[\"en->fr\",\"de->en\",\"fr->en\",\"es->en\",\"en->de\",\"en->hi\",\"hi->en\",\"en->es\"]}"
+    }
+  ]
+}

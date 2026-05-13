@@ -1,0 +1,36 @@
+{
+  "ranAt": "2026-05-02T06:25:23.779Z",
+  "personaCount": 3,
+  "perPersona": [
+    {
+      "id": "doctor",
+      "name": "Dr. Anuj — junior attending, late-shift ER",
+      "role": "clinician",
+      "caseCount": 8,
+      "weightedScore": 0.7312500000000001,
+      "topConditionRate": 0.625,
+      "gauntletPassRate": 1,
+      "p50LatencyMs": 10976
+    },
+    {
+      "id": "patient",
+      "name": "Riya — 32-year-old non-clinical user",
+      "role": "consumer",
+      "caseCount": 7,
+      "weightedScore": 0.7571428571428571,
+      "topConditionRate": 0.42857142857142855,
+      "gauntletPassRate": 0.8571428571428571,
+      "p50LatencyMs": 5456
+    },
+    {
+      "id": "student",
+      "name": "Simran — final-year medical student, USMLE Step 2 prep",
+      "role": "learner",
+      "caseCount": 10,
+      "weightedScore": 0.30475,
+      "topConditionRate": 0.2,
+      "gauntletPassRate": 0.8,
+      "p50LatencyMs": 5833
+    }
+  ]
+}

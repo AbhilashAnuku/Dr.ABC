@@ -1,0 +1,230 @@
+{
+  "ranAt": "2026-05-03T04:59:00.462Z",
+  "apiBase": "http://localhost:8787",
+  "webBase": "http://localhost:5173",
+  "passed": 9,
+  "failed": 13,
+  "total": 22,
+  "results": [
+    {
+      "surface": "api",
+      "name": "GET /",
+      "url": "/",
+      "status": 200,
+      "ok": true,
+      "durationMs": 38,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /agents",
+      "url": "/agents",
+      "status": 200,
+      "ok": true,
+      "durationMs": 1,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /health/full",
+      "url": "/health/full",
+      "status": 200,
+      "ok": true,
+      "durationMs": 138,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /research/snapshot",
+      "url": "/research/snapshot",
+      "status": 200,
+      "ok": true,
+      "durationMs": 8,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /personas/live",
+      "url": "/personas/live",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /accuracy/live",
+      "url": "/accuracy/live",
+      "status": 200,
+      "ok": true,
+      "durationMs": 6,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "api",
+      "name": "GET /datasets",
+      "url": "/datasets",
+      "status": 200,
+      "ok": true,
+      "durationMs": 3,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "web",
+      "name": "landing /",
+      "url": "/",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "login /login",
+      "url": "/login",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "signup /signup",
+      "url": "/signup",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "dashboard /app",
+      "url": "/app",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "clinic /app/clinic",
+      "url": "/app/clinic",
+      "status": 0,
+      "ok": false,
+      "durationMs": 0,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "scribe /app/scribe",
+      "url": "/app/scribe",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "imaging /app/imaging",
+      "url": "/app/imaging",
+      "status": 0,
+      "ok": false,
+      "durationMs": 0,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "brain /app/brain",
+      "url": "/app/brain",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "dev console /app/dev-console",
+      "url": "/app/dev-console",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "profile /app/profile",
+      "url": "/app/profile",
+      "status": 0,
+      "ok": false,
+      "durationMs": 0,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "appointments /app/appointments",
+      "url": "/app/appointments",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "api-keys /app/api-keys",
+      "url": "/app/api-keys",
+      "status": 0,
+      "ok": false,
+      "durationMs": 0,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "web",
+      "name": "settings /app/settings",
+      "url": "/app/settings",
+      "status": 0,
+      "ok": false,
+      "durationMs": 1,
+      "assertion": null,
+      "error": "Unable to connect. Is the computer able to access the url?"
+    },
+    {
+      "surface": "flow",
+      "name": "POST /orchestrate (consult flow)",
+      "url": "/orchestrate",
+      "status": 200,
+      "ok": true,
+      "durationMs": 60093,
+      "assertion": null,
+      "error": null
+    },
+    {
+      "surface": "flow",
+      "name": "POST /mcq (multiple-choice)",
+      "url": "/mcq",
+      "status": 200,
+      "ok": true,
+      "durationMs": 399,
+      "assertion": null,
+      "error": null
+    }
+  ]
+}

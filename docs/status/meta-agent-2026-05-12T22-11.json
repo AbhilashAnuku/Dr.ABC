@@ -1,0 +1,112 @@
+{
+  "ranAt": "2026-05-12T22:11:11.210Z",
+  "baselineTopConditionRate": 0.13333333333333333,
+  "candidates": [
+    {
+      "candidateId": "cand_neurology_1778623871210_2765",
+      "specialty": "neurology",
+      "parentSpecialty": "neurology",
+      "missedCaseIds": ["C002"],
+      "missedConditions": ["Migraine without aura"],
+      "missedIcd10s": ["G43.909"],
+      "proposedPrefix": "You are the neurology specialist agent inside Mörbius.\nStay clinical-warm. Lead with the answer in one or two sentences before the reasoning.\nRecent presentations Mörbius was asked to evaluate but missed include: Migraine without aura.\nKeep these ICD-10 anchors in working memory for neurology: G43.909.\nWhen the chief complaint matches one of these patterns, surface it as the leading differential with the matching code. Always honour red-flag pathways. Defer to triage on any acute signal.",
+      "rationale": "Mörbius observed 1 miss(es) in 'neurology' on the latest accuracy snapshot — anchoring the prompt to the missed ICD-10 codes (G43.909) and conditions (Migraine without aura) is expected to lift recall on this specialty.",
+      "expectedAccuracyDelta": 1.5,
+      "generatedAt": "2026-05-12T22:11:11.210Z"
+    },
+    {
+      "candidateId": "cand_general_1778623871210_806",
+      "specialty": "general",
+      "parentSpecialty": "general",
+      "missedCaseIds": [
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C009",
+        "C010",
+        "C012",
+        "C014",
+        "C015"
+      ],
+      "missedConditions": [
+        "Group A strep pharyngitis",
+        "Uncomplicated cystitis",
+        "Acute asthma exacerbation",
+        "Type 2 diabetes with hyperglycaemia",
+        "Essential hypertension stage 2",
+        "Atrial fibrillation new-onset · CHADS-VASc 4",
+        "Acute viral bronchitis",
+        "Primary hypothyroidism",
+        "Acute otitis media",
+        "Non-purulent cellulitis"
+      ],
+      "missedIcd10s": [
+        "J02.0",
+        "N39.0",
+        "J45.901",
+        "E11.65",
+        "I10",
+        "I48.0",
+        "J20.9",
+        "E03.9",
+        "H66.92",
+        "L03.116"
+      ],
+      "proposedPrefix": "You are the general specialist agent inside Mörbius.\nStay clinical-warm. Lead with the answer in one or two sentences before the reasoning.\nRecent presentations Mörbius was asked to evaluate but missed include: Group A strep pharyngitis; Uncomplicated cystitis; Acute asthma exacerbation; Type 2 diabetes with hyperglycaemia; Essential hypertension stage 2; Atrial fibrillation new-onset · CHADS-VASc 4.\nKeep these ICD-10 anchors in working memory for general: J02.0, N39.0, J45.901, E11.65, I10, I48.0.\nWhen the chief complaint matches one of these patterns, surface it as the leading differential with the matching code. Always honour red-flag pathways. Defer to triage on any acute signal.",
+      "rationale": "Mörbius observed 10 miss(es) in 'general' on the latest accuracy snapshot — anchoring the prompt to the missed ICD-10 codes (J02.0, N39.0, J45.901, E11.65, I10, I48.0, J20.9, E03.9, H66.92, L03.116) and conditions (Group A strep pharyngitis, Uncomplicated cystitis, Acute asthma exacerbation…) is expected to lift recall on this specialty.",
+      "expectedAccuracyDelta": 6,
+      "generatedAt": "2026-05-12T22:11:11.210Z"
+    },
+    {
+      "candidateId": "cand_surgery_1778623871210_3098",
+      "specialty": "surgery",
+      "parentSpecialty": "surgery",
+      "missedCaseIds": ["C013"],
+      "missedConditions": ["Acute appendicitis"],
+      "missedIcd10s": ["K35.80"],
+      "proposedPrefix": "You are the surgery specialist agent inside Mörbius.\nStay clinical-warm. Lead with the answer in one or two sentences before the reasoning.\nRecent presentations Mörbius was asked to evaluate but missed include: Acute appendicitis.\nKeep these ICD-10 anchors in working memory for surgery: K35.80.\nWhen the chief complaint matches one of these patterns, surface it as the leading differential with the matching code. Always honour red-flag pathways. Defer to triage on any acute signal.",
+      "rationale": "Mörbius observed 1 miss(es) in 'surgery' on the latest accuracy snapshot — anchoring the prompt to the missed ICD-10 codes (K35.80) and conditions (Acute appendicitis) is expected to lift recall on this specialty.",
+      "expectedAccuracyDelta": 1.5,
+      "generatedAt": "2026-05-12T22:11:11.210Z"
+    }
+  ],
+  "scores": [
+    {
+      "candidateId": "cand_neurology_1778623871210_2765",
+      "coverage": 0.26666666666666666,
+      "specificity": 1,
+      "safety": 1,
+      "anchors": 1,
+      "expectedLift": 0.25,
+      "aggregate": 0.7416666666666667,
+      "verdict": "promote",
+      "reason": "aggregate 0.74 clears 0.65 threshold"
+    },
+    {
+      "candidateId": "cand_general_1778623871210_806",
+      "coverage": 1,
+      "specificity": 1,
+      "safety": 1,
+      "anchors": 0.6,
+      "expectedLift": 1,
+      "aggregate": 0.9,
+      "verdict": "promote",
+      "reason": "aggregate 0.90 clears 0.65 threshold"
+    },
+    {
+      "candidateId": "cand_surgery_1778623871210_3098",
+      "coverage": 0.26666666666666666,
+      "specificity": 1,
+      "safety": 1,
+      "anchors": 1,
+      "expectedLift": 0.25,
+      "aggregate": 0.7416666666666667,
+      "verdict": "promote",
+      "reason": "aggregate 0.74 clears 0.65 threshold"
+    }
+  ],
+  "promotedCount": 3,
+  "retiredCount": 0
+}

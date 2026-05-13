@@ -1,0 +1,43 @@
+{
+  "promotedAt": "2026-05-11T08:43:33.672Z",
+  "sourceSnapshot": "F:\\Dr.ABC Project- K-2472-2200\\Dr.Abc_V5\\docs\\status\\tune-2026-05-11.json",
+  "promotions": [
+    {
+      "specialty": "cardiology",
+      "expectedAccuracyDelta": 3,
+      "rationale": "Reviewed 3 worst exemplars for cardiology. Added 2 diagnosis cue(s): acute st-elevation mi · anterior wall, essential hypertension stage 2. Added 2 ICD anchor(s): I21, I10.",
+      "previousPrefixChars": 469,
+      "promotedPrefixChars": 602
+    },
+    {
+      "specialty": "neurology",
+      "expectedAccuracyDelta": 1.5,
+      "rationale": "Reviewed 1 worst exemplars for neurology. Added 1 ICD anchor(s): G43.",
+      "previousPrefixChars": 494,
+      "promotedPrefixChars": 538
+    },
+    {
+      "specialty": "pulmonology",
+      "expectedAccuracyDelta": 3,
+      "rationale": "Reviewed 2 worst exemplars for pulmonology. Added 2 diagnosis cue(s): acute asthma exacerbation, acute viral bronchitis. Added 2 ICD anchor(s): J45, J20.",
+      "previousPrefixChars": 430,
+      "promotedPrefixChars": 543
+    },
+    {
+      "specialty": "endocrinology",
+      "expectedAccuracyDelta": 3,
+      "rationale": "Reviewed 2 worst exemplars for endocrinology. Added 1 diagnosis cue(s): primary hypothyroidism. Added 2 ICD anchor(s): E11, E03.",
+      "previousPrefixChars": 477,
+      "promotedPrefixChars": 562
+    },
+    {
+      "specialty": "dermatology",
+      "expectedAccuracyDelta": 1.5,
+      "rationale": "Reviewed 1 worst exemplars for dermatology. Added 1 diagnosis cue(s): non-purulent cellulitis. Added 1 ICD anchor(s): L03.",
+      "previousPrefixChars": 449,
+      "promotedPrefixChars": 529
+    }
+  ],
+  "skipped": [],
+  "promptsFile": "F:\\Dr.ABC Project- K-2472-2200\\Dr.Abc_V5\\packages\\agents\\src\\specialists\\prompts.ts"
+}

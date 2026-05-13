@@ -1,0 +1,244 @@
+{
+  "ranAt": "2026-05-12T20:12:00.114Z",
+  "durationMs": 105866,
+  "apiBase": "http://localhost:8787",
+  "questionCount": 15,
+  "metrics": {
+    "accuracy": 0.7333333333333333,
+    "nonErrorAccuracy": 1,
+    "answeredCount": 11,
+    "perSpecialty": {
+      "cardiology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "neurology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "endocrinology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "gynecology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "pulmonology": {
+        "count": 1,
+        "correct": 0,
+        "rate": 0
+      },
+      "infectious-disease": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "gastroenterology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "psychiatry": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "rheumatology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "pediatrics": {
+        "count": 1,
+        "correct": 0,
+        "rate": 0
+      },
+      "surgery": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "dermatology": {
+        "count": 1,
+        "correct": 0,
+        "rate": 0
+      },
+      "nephrology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "hematology": {
+        "count": 1,
+        "correct": 1,
+        "rate": 1
+      },
+      "emergency": {
+        "count": 1,
+        "correct": 0,
+        "rate": 0
+      }
+    },
+    "p50LatencyMs": 7648,
+    "p95LatencyMs": 14298,
+    "meanLatencyMs": 6486,
+    "errorCount": 4
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "specialty": "cardiology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 12953,
+      "error": null
+    },
+    {
+      "id": "q02",
+      "specialty": "neurology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1120,
+      "error": null
+    },
+    {
+      "id": "q03",
+      "specialty": "endocrinology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1207,
+      "error": null
+    },
+    {
+      "id": "q04",
+      "specialty": "gynecology",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 12002,
+      "error": null
+    },
+    {
+      "id": "q05",
+      "specialty": "pulmonology",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": null,
+      "latencyMs": 7818,
+      "error": "MCQ HTTP 500"
+    },
+    {
+      "id": "q06",
+      "specialty": "infectious-disease",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 495,
+      "error": null
+    },
+    {
+      "id": "q07",
+      "specialty": "gastroenterology",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 14298,
+      "error": null
+    },
+    {
+      "id": "q08",
+      "specialty": "psychiatry",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 378,
+      "error": null
+    },
+    {
+      "id": "q09",
+      "specialty": "rheumatology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3611,
+      "error": null
+    },
+    {
+      "id": "q10",
+      "specialty": "pediatrics",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": null,
+      "latencyMs": 7751,
+      "error": "MCQ HTTP 500"
+    },
+    {
+      "id": "q11",
+      "specialty": "surgery",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1061,
+      "error": null
+    },
+    {
+      "id": "q12",
+      "specialty": "dermatology",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": null,
+      "latencyMs": 9332,
+      "error": "MCQ HTTP 500"
+    },
+    {
+      "id": "q13",
+      "specialty": "nephrology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 10158,
+      "error": null
+    },
+    {
+      "id": "q14",
+      "specialty": "hematology",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 7465,
+      "error": null
+    },
+    {
+      "id": "q15",
+      "specialty": "emergency",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": null,
+      "latencyMs": 7648,
+      "error": "MCQ HTTP 500"
+    }
+  ]
+}

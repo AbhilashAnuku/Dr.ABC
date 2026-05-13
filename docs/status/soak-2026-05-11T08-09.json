@@ -1,0 +1,251 @@
+{
+  "ranAt": "2026-05-11T08:09:39.709Z",
+  "durationMs": 30815223,
+  "cycleCount": 9,
+  "interval": 900000,
+  "persona": null,
+  "drift": {
+    "doctor": {
+      "min": 0.525,
+      "max": 0.8625000000000002,
+      "cycles": 9
+    },
+    "patient": {
+      "min": 0.8,
+      "max": 0.8857142857142857,
+      "cycles": 9
+    },
+    "student": {
+      "min": 0.3163750000000001,
+      "max": 0.5292500000000001,
+      "cycles": 9
+    }
+  },
+  "cycles": [
+    {
+      "cycleSeq": 2,
+      "startedAt": "2026-05-11T08:29:32.930Z",
+      "durationMs": 292800,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.69375,
+          "topConditionRate": 0.375,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8285714285714286,
+          "topConditionRate": 0.14285714285714285,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.3923750000000001,
+          "topConditionRate": 0.2,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 3,
+      "startedAt": "2026-05-11T08:50:49.117Z",
+      "durationMs": 376070,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.8625000000000002,
+          "topConditionRate": 0.75,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8285714285714286,
+          "topConditionRate": 0.14285714285714285,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.4372500000000001,
+          "topConditionRate": 0.3,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 4,
+      "startedAt": "2026-05-11T09:11:43.300Z",
+      "durationMs": 354151,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.69375,
+          "topConditionRate": 0.375,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8571428571428572,
+          "topConditionRate": 0.2857142857142857,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.3702500000000001,
+          "topConditionRate": 0.2,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 5,
+      "startedAt": "2026-05-11T10:34:02.010Z",
+      "durationMs": 3843510,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.525,
+          "topConditionRate": 0,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8857142857142857,
+          "topConditionRate": 0.42857142857142855,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.5292500000000001,
+          "topConditionRate": 0.5,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 6,
+      "startedAt": "2026-05-11T10:54:10.342Z",
+      "durationMs": 302939,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.80625,
+          "topConditionRate": 0.625,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8285714285714286,
+          "topConditionRate": 0.14285714285714285,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.3942500000000001,
+          "topConditionRate": 0.2,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 7,
+      "startedAt": "2026-05-11T11:11:12.086Z",
+      "durationMs": 121745,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.69375,
+          "topConditionRate": 0.375,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8,
+          "topConditionRate": 0,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.3725000000000001,
+          "topConditionRate": 0.2,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 8,
+      "startedAt": "2026-05-11T11:28:08.279Z",
+      "durationMs": 116755,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.80625,
+          "topConditionRate": 0.625,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8571428571428572,
+          "topConditionRate": 0.2857142857142857,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.33137500000000003,
+          "topConditionRate": 0.1,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 9,
+      "startedAt": "2026-05-11T11:48:46.690Z",
+      "durationMs": 339323,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.69375,
+          "topConditionRate": 0.375,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8857142857142857,
+          "topConditionRate": 0.42857142857142855,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.5076250000000001,
+          "topConditionRate": 0.5,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    },
+    {
+      "cycleSeq": 10,
+      "startedAt": "2026-05-11T16:43:13.600Z",
+      "durationMs": 13597797,
+      "perPersona": [
+        {
+          "id": "doctor",
+          "weightedScore": 0.525,
+          "topConditionRate": 0,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "patient",
+          "weightedScore": 0.8285714285714286,
+          "topConditionRate": 0.14285714285714285,
+          "gauntletPassRate": 1
+        },
+        {
+          "id": "student",
+          "weightedScore": 0.3163750000000001,
+          "topConditionRate": 0.1,
+          "gauntletPassRate": 0.9
+        }
+      ]
+    }
+  ]
+}

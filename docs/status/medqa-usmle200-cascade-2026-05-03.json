@@ -1,0 +1,2029 @@
+{
+  "ranAt": "2026-05-03T08:48:54.736Z",
+  "durationMs": 4211491,
+  "apiBase": "http://localhost:8787",
+  "questionCount": 200,
+  "metrics": {
+    "accuracy": 0.745,
+    "nonErrorAccuracy": 0.745,
+    "answeredCount": 200,
+    "perSpecialty": {
+      "step1": {
+        "count": 115,
+        "correct": 83,
+        "rate": 0.7217391304347827
+      },
+      "step2&3": {
+        "count": 85,
+        "correct": 66,
+        "rate": 0.7764705882352941
+      }
+    },
+    "p50LatencyMs": 3207,
+    "p95LatencyMs": 82179,
+    "meanLatencyMs": 20425,
+    "errorCount": 0
+  },
+  "questions": [
+    {
+      "id": "medqa-1632",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 1329,
+      "error": null
+    },
+    {
+      "id": "medqa-960",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 61538,
+      "error": null
+    },
+    {
+      "id": "medqa-2139",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 421,
+      "error": null
+    },
+    {
+      "id": "medqa-2341",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 5629,
+      "error": null
+    },
+    {
+      "id": "medqa-373",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 64236,
+      "error": null
+    },
+    {
+      "id": "medqa-84",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 372,
+      "error": null
+    },
+    {
+      "id": "medqa-3254",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 422,
+      "error": null
+    },
+    {
+      "id": "medqa-2967",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 62729,
+      "error": null
+    },
+    {
+      "id": "medqa-1265",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 661,
+      "error": null
+    },
+    {
+      "id": "medqa-4160",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 374,
+      "error": null
+    },
+    {
+      "id": "medqa-3667",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 376,
+      "error": null
+    },
+    {
+      "id": "medqa-4097",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 398,
+      "error": null
+    },
+    {
+      "id": "medqa-3295",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 765,
+      "error": null
+    },
+    {
+      "id": "medqa-1831",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3937,
+      "error": null
+    },
+    {
+      "id": "medqa-987",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 64139,
+      "error": null
+    },
+    {
+      "id": "medqa-1520",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 67601,
+      "error": null
+    },
+    {
+      "id": "medqa-2255",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 19706,
+      "error": null
+    },
+    {
+      "id": "medqa-654",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 71001,
+      "error": null
+    },
+    {
+      "id": "medqa-1797",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 782,
+      "error": null
+    },
+    {
+      "id": "medqa-3721",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 436,
+      "error": null
+    },
+    {
+      "id": "medqa-1138",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 80370,
+      "error": null
+    },
+    {
+      "id": "medqa-2479",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 61483,
+      "error": null
+    },
+    {
+      "id": "medqa-1681",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A",
+      "latencyMs": 10859,
+      "error": null
+    },
+    {
+      "id": "medqa-4637",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 61286,
+      "error": null
+    },
+    {
+      "id": "medqa-723",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 1014,
+      "error": null
+    },
+    {
+      "id": "medqa-1098",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 62000,
+      "error": null
+    },
+    {
+      "id": "medqa-2483",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 21408,
+      "error": null
+    },
+    {
+      "id": "medqa-1453",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 386,
+      "error": null
+    },
+    {
+      "id": "medqa-1482",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 669,
+      "error": null
+    },
+    {
+      "id": "medqa-4598",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 62209,
+      "error": null
+    },
+    {
+      "id": "medqa-3345",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 2555,
+      "error": null
+    },
+    {
+      "id": "medqa-1994",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 61493,
+      "error": null
+    },
+    {
+      "id": "medqa-335",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 485,
+      "error": null
+    },
+    {
+      "id": "medqa-3044",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A",
+      "latencyMs": 390,
+      "error": null
+    },
+    {
+      "id": "medqa-3961",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 489,
+      "error": null
+    },
+    {
+      "id": "medqa-229",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 653,
+      "error": null
+    },
+    {
+      "id": "medqa-4115",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 64969,
+      "error": null
+    },
+    {
+      "id": "medqa-675",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 65230,
+      "error": null
+    },
+    {
+      "id": "medqa-4141",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 460,
+      "error": null
+    },
+    {
+      "id": "medqa-3573",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 11793,
+      "error": null
+    },
+    {
+      "id": "medqa-3221",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3701,
+      "error": null
+    },
+    {
+      "id": "medqa-249",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 30917,
+      "error": null
+    },
+    {
+      "id": "medqa-4044",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 24180,
+      "error": null
+    },
+    {
+      "id": "medqa-1405",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 1140,
+      "error": null
+    },
+    {
+      "id": "medqa-190",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 37519,
+      "error": null
+    },
+    {
+      "id": "medqa-4749",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 6155,
+      "error": null
+    },
+    {
+      "id": "medqa-4551",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 34764,
+      "error": null
+    },
+    {
+      "id": "medqa-3325",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "Marfan syndrome",
+      "latencyMs": 63861,
+      "error": null
+    },
+    {
+      "id": "medqa-3682",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 8934,
+      "error": null
+    },
+    {
+      "id": "medqa-1063",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 43935,
+      "error": null
+    },
+    {
+      "id": "medqa-3945",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 871,
+      "error": null
+    },
+    {
+      "id": "medqa-1622",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "Sickle Cell Disease",
+      "latencyMs": 87202,
+      "error": null
+    },
+    {
+      "id": "medqa-194",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 9188,
+      "error": null
+    },
+    {
+      "id": "medqa-4948",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 986,
+      "error": null
+    },
+    {
+      "id": "medqa-1461",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 69286,
+      "error": null
+    },
+    {
+      "id": "medqa-1184",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 833,
+      "error": null
+    },
+    {
+      "id": "medqa-1350",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 4611,
+      "error": null
+    },
+    {
+      "id": "medqa-3357",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 556,
+      "error": null
+    },
+    {
+      "id": "medqa-3669",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 617,
+      "error": null
+    },
+    {
+      "id": "medqa-4891",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 2270,
+      "error": null
+    },
+    {
+      "id": "medqa-301",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "D",
+      "correct": false,
+      "modelText": "Basal cell carcinoma",
+      "latencyMs": 82179,
+      "error": null
+    },
+    {
+      "id": "medqa-4002",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 64323,
+      "error": null
+    },
+    {
+      "id": "medqa-1320",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 2162,
+      "error": null
+    },
+    {
+      "id": "medqa-2746",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 5982,
+      "error": null
+    },
+    {
+      "id": "medqa-4029",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 900,
+      "error": null
+    },
+    {
+      "id": "medqa-3194",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 61294,
+      "error": null
+    },
+    {
+      "id": "medqa-4220",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 3404,
+      "error": null
+    },
+    {
+      "id": "medqa-1507",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 3125,
+      "error": null
+    },
+    {
+      "id": "medqa-3188",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3016,
+      "error": null
+    },
+    {
+      "id": "medqa-2360",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "Lymphatic filariasis",
+      "latencyMs": 64914,
+      "error": null
+    },
+    {
+      "id": "medqa-4798",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 409,
+      "error": null
+    },
+    {
+      "id": "medqa-14",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 5466,
+      "error": null
+    },
+    {
+      "id": "medqa-3178",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1696,
+      "error": null
+    },
+    {
+      "id": "medqa-2106",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 61615,
+      "error": null
+    },
+    {
+      "id": "medqa-3336",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 12333,
+      "error": null
+    },
+    {
+      "id": "medqa-4227",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 9928,
+      "error": null
+    },
+    {
+      "id": "medqa-2301",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 335,
+      "error": null
+    },
+    {
+      "id": "medqa-2889",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 39154,
+      "error": null
+    },
+    {
+      "id": "medqa-724",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 106773,
+      "error": null
+    },
+    {
+      "id": "medqa-2569",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 15910,
+      "error": null
+    },
+    {
+      "id": "medqa-1887",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 359,
+      "error": null
+    },
+    {
+      "id": "medqa-4803",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 346,
+      "error": null
+    },
+    {
+      "id": "medqa-62",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 40763,
+      "error": null
+    },
+    {
+      "id": "medqa-2542",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 20630,
+      "error": null
+    },
+    {
+      "id": "medqa-2662",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 830,
+      "error": null
+    },
+    {
+      "id": "medqa-2171",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 417,
+      "error": null
+    },
+    {
+      "id": "medqa-925",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 351,
+      "error": null
+    },
+    {
+      "id": "medqa-4323",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 665,
+      "error": null
+    },
+    {
+      "id": "medqa-3740",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 373,
+      "error": null
+    },
+    {
+      "id": "medqa-2297",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 5278,
+      "error": null
+    },
+    {
+      "id": "medqa-3900",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 368,
+      "error": null
+    },
+    {
+      "id": "medqa-1946",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 39259,
+      "error": null
+    },
+    {
+      "id": "medqa-1004",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1274,
+      "error": null
+    },
+    {
+      "id": "medqa-3111",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 374,
+      "error": null
+    },
+    {
+      "id": "medqa-425",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 61595,
+      "error": null
+    },
+    {
+      "id": "medqa-928",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 523,
+      "error": null
+    },
+    {
+      "id": "medqa-3774",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 380,
+      "error": null
+    },
+    {
+      "id": "medqa-4741",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B)",
+      "latencyMs": 405,
+      "error": null
+    },
+    {
+      "id": "medqa-2474",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 47890,
+      "error": null
+    },
+    {
+      "id": "medqa-4835",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Asthma exacerbation",
+      "latencyMs": 79495,
+      "error": null
+    },
+    {
+      "id": "medqa-1939",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 410,
+      "error": null
+    },
+    {
+      "id": "medqa-4883",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 11026,
+      "error": null
+    },
+    {
+      "id": "medqa-2970",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 12683,
+      "error": null
+    },
+    {
+      "id": "medqa-4800",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 45534,
+      "error": null
+    },
+    {
+      "id": "medqa-2567",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 11967,
+      "error": null
+    },
+    {
+      "id": "medqa-1413",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 621,
+      "error": null
+    },
+    {
+      "id": "medqa-1901",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 7690,
+      "error": null
+    },
+    {
+      "id": "medqa-2298",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "Meckel's diverticulum",
+      "latencyMs": 64585,
+      "error": null
+    },
+    {
+      "id": "medqa-4934",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 411,
+      "error": null
+    },
+    {
+      "id": "medqa-4699",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 443,
+      "error": null
+    },
+    {
+      "id": "medqa-167",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "C",
+      "correct": false,
+      "modelText": "C",
+      "latencyMs": 432,
+      "error": null
+    },
+    {
+      "id": "medqa-2590",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 443,
+      "error": null
+    },
+    {
+      "id": "medqa-4695",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 3207,
+      "error": null
+    },
+    {
+      "id": "medqa-3733",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "A",
+      "correct": false,
+      "modelText": "Coronary Artery Disease",
+      "latencyMs": 105972,
+      "error": null
+    },
+    {
+      "id": "medqa-3764",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 2295,
+      "error": null
+    },
+    {
+      "id": "medqa-649",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 1934,
+      "error": null
+    },
+    {
+      "id": "medqa-3795",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A",
+      "latencyMs": 507,
+      "error": null
+    },
+    {
+      "id": "medqa-791",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 41284,
+      "error": null
+    },
+    {
+      "id": "medqa-2731",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1593,
+      "error": null
+    },
+    {
+      "id": "medqa-3827",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 4009,
+      "error": null
+    },
+    {
+      "id": "medqa-365",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 386,
+      "error": null
+    },
+    {
+      "id": "medqa-3525",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 29228,
+      "error": null
+    },
+    {
+      "id": "medqa-1912",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "Rhabdomyolysis due to drug interaction",
+      "latencyMs": 62561,
+      "error": null
+    },
+    {
+      "id": "medqa-1609",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are an artificial intelligence assistant. Read the case and pick exactly one letter.",
+      "latencyMs": 58229,
+      "error": null
+    },
+    {
+      "id": "medqa-4929",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 10501,
+      "error": null
+    },
+    {
+      "id": "medqa-350",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 12309,
+      "error": null
+    },
+    {
+      "id": "medqa-3104",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 90420,
+      "error": null
+    },
+    {
+      "id": "medqa-2974",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 10048,
+      "error": null
+    },
+    {
+      "id": "medqa-370",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 4368,
+      "error": null
+    },
+    {
+      "id": "medqa-109",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 101320,
+      "error": null
+    },
+    {
+      "id": "medqa-585",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 11557,
+      "error": null
+    },
+    {
+      "id": "medqa-2810",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 394,
+      "error": null
+    },
+    {
+      "id": "medqa-3099",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 455,
+      "error": null
+    },
+    {
+      "id": "medqa-3494",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 678,
+      "error": null
+    },
+    {
+      "id": "medqa-677",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 7704,
+      "error": null
+    },
+    {
+      "id": "medqa-332",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1458,
+      "error": null
+    },
+    {
+      "id": "medqa-3405",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 26872,
+      "error": null
+    },
+    {
+      "id": "medqa-3415",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 101356,
+      "error": null
+    },
+    {
+      "id": "medqa-4793",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A",
+      "latencyMs": 481,
+      "error": null
+    },
+    {
+      "id": "medqa-3514",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B)",
+      "latencyMs": 641,
+      "error": null
+    },
+    {
+      "id": "medqa-3805",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Angelman syndrome",
+      "latencyMs": 85419,
+      "error": null
+    },
+    {
+      "id": "medqa-3073",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 683,
+      "error": null
+    },
+    {
+      "id": "medqa-4265",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 4462,
+      "error": null
+    },
+    {
+      "id": "medqa-4294",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 453,
+      "error": null
+    },
+    {
+      "id": "medqa-1855",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 388,
+      "error": null
+    },
+    {
+      "id": "medqa-3588",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "C",
+      "correct": false,
+      "modelText": "C",
+      "latencyMs": 670,
+      "error": null
+    },
+    {
+      "id": "medqa-4968",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 3401,
+      "error": null
+    },
+    {
+      "id": "medqa-388",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 49191,
+      "error": null
+    },
+    {
+      "id": "medqa-4930",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "A",
+      "correct": false,
+      "modelText": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful",
+      "latencyMs": 27621,
+      "error": null
+    },
+    {
+      "id": "medqa-4614",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 4180,
+      "error": null
+    },
+    {
+      "id": "medqa-4511",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 611,
+      "error": null
+    },
+    {
+      "id": "medqa-2574",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 912,
+      "error": null
+    },
+    {
+      "id": "medqa-4170",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 5147,
+      "error": null
+    },
+    {
+      "id": "medqa-3403",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 6745,
+      "error": null
+    },
+    {
+      "id": "medqa-4248",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 11343,
+      "error": null
+    },
+    {
+      "id": "medqa-2135",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 377,
+      "error": null
+    },
+    {
+      "id": "medqa-3258",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "Peptic ulcer disease",
+      "latencyMs": 73395,
+      "error": null
+    },
+    {
+      "id": "medqa-3152",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 409,
+      "error": null
+    },
+    {
+      "id": "medqa-1309",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 602,
+      "error": null
+    },
+    {
+      "id": "medqa-4935",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 61178,
+      "error": null
+    },
+    {
+      "id": "medqa-2256",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 542,
+      "error": null
+    },
+    {
+      "id": "medqa-4418",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 409,
+      "error": null
+    },
+    {
+      "id": "medqa-3022",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 13577,
+      "error": null
+    },
+    {
+      "id": "medqa-389",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": null,
+      "correct": false,
+      "modelText": "Ductal Carcinoma In Situ (DCIS)",
+      "latencyMs": 81160,
+      "error": null
+    },
+    {
+      "id": "medqa-1237",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 395,
+      "error": null
+    },
+    {
+      "id": "medqa-3790",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C)",
+      "latencyMs": 422,
+      "error": null
+    },
+    {
+      "id": "medqa-1641",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 63670,
+      "error": null
+    },
+    {
+      "id": "medqa-2504",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 404,
+      "error": null
+    },
+    {
+      "id": "medqa-138",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 688,
+      "error": null
+    },
+    {
+      "id": "medqa-2213",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 387,
+      "error": null
+    },
+    {
+      "id": "medqa-2072",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 457,
+      "error": null
+    },
+    {
+      "id": "medqa-1648",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 395,
+      "error": null
+    },
+    {
+      "id": "medqa-2394",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 1087,
+      "error": null
+    },
+    {
+      "id": "medqa-80",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "You are a USMLE clinical examiner. Read the case and pick",
+      "latencyMs": 38108,
+      "error": null
+    },
+    {
+      "id": "medqa-4694",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "Intermittent Claudication due to Peripheral Artery Disease",
+      "latencyMs": 67317,
+      "error": null
+    },
+    {
+      "id": "medqa-3453",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 646,
+      "error": null
+    },
+    {
+      "id": "medqa-1707",
+      "specialty": "step2&3",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 1386,
+      "error": null
+    },
+    {
+      "id": "medqa-4165",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 352,
+      "error": null
+    },
+    {
+      "id": "medqa-3364",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "D",
+      "correct": true,
+      "modelText": "D",
+      "latencyMs": 68136,
+      "error": null
+    },
+    {
+      "id": "medqa-2229",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 3348,
+      "error": null
+    },
+    {
+      "id": "medqa-854",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 333,
+      "error": null
+    },
+    {
+      "id": "medqa-2645",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 342,
+      "error": null
+    },
+    {
+      "id": "medqa-3507",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 366,
+      "error": null
+    },
+    {
+      "id": "medqa-3077",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 1960,
+      "error": null
+    },
+    {
+      "id": "medqa-972",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": null,
+      "correct": false,
+      "modelText": "Lyme disease",
+      "latencyMs": 90440,
+      "error": null
+    },
+    {
+      "id": "medqa-1185",
+      "specialty": "step1",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 380,
+      "error": null
+    },
+    {
+      "id": "medqa-739",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 389,
+      "error": null
+    },
+    {
+      "id": "medqa-1727",
+      "specialty": "step2&3",
+      "expected": "A",
+      "picked": null,
+      "correct": false,
+      "modelText": "Transient Tachypnea of the Newborn",
+      "latencyMs": 88489,
+      "error": null
+    },
+    {
+      "id": "medqa-4415",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 2307,
+      "error": null
+    },
+    {
+      "id": "medqa-753",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": "B",
+      "correct": false,
+      "modelText": "B",
+      "latencyMs": 2885,
+      "error": null
+    },
+    {
+      "id": "medqa-2735",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3314,
+      "error": null
+    },
+    {
+      "id": "medqa-2246",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 408,
+      "error": null
+    },
+    {
+      "id": "medqa-187",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 3767,
+      "error": null
+    },
+    {
+      "id": "medqa-1574",
+      "specialty": "step1",
+      "expected": "D",
+      "picked": null,
+      "correct": false,
+      "modelText": "Chronic Heart Failure",
+      "latencyMs": 79761,
+      "error": null
+    },
+    {
+      "id": "medqa-1300",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "D",
+      "correct": false,
+      "modelText": "D",
+      "latencyMs": 334,
+      "error": null
+    },
+    {
+      "id": "medqa-421",
+      "specialty": "step2&3",
+      "expected": "B",
+      "picked": "B",
+      "correct": true,
+      "modelText": "B",
+      "latencyMs": 519,
+      "error": null
+    },
+    {
+      "id": "medqa-1528",
+      "specialty": "step1",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 389,
+      "error": null
+    },
+    {
+      "id": "medqa-3236",
+      "specialty": "step2&3",
+      "expected": "C",
+      "picked": "C",
+      "correct": true,
+      "modelText": "C",
+      "latencyMs": 612,
+      "error": null
+    },
+    {
+      "id": "medqa-1544",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 4395,
+      "error": null
+    },
+    {
+      "id": "medqa-1379",
+      "specialty": "step1",
+      "expected": "A",
+      "picked": "A",
+      "correct": true,
+      "modelText": "A",
+      "latencyMs": 374,
+      "error": null
+    }
+  ]
+}

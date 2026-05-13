@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mörbius · Visual Report · 2026-05-03T05:21</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0a1628;
+      --bg-card: rgba(20, 30, 50, 0.6);
+      --border: rgba(255,255,255,0.08);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --quantum: #38bdf8;
+      --bio: #10b981;
+      --purple: #a855f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      background: linear-gradient(180deg, #050b18 0%, #0a1628 50%, #050b18 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header.hero {
+      padding: 32px 40px;
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      position: sticky; top: 0; z-index: 5;
+      background: rgba(5, 11, 24, 0.85);
+    }
+    header.hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 56px;
+      letter-spacing: -0.02em;
+      margin: 0;
+      background: linear-gradient(135deg, #c4b5fd, #93c5fd, #6ee7b7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header.hero .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    header.hero .stats {
+      display: flex; gap: 16px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid var(--border);
+    }
+    .pill.bio { color: var(--bio); border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.08); }
+    .pill.quantum { color: var(--quantum); border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.08); }
+    .pill.purple { color: var(--purple); border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.08); }
+    section {
+      padding: 32px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    section h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 32px;
+      letter-spacing: -0.01em;
+      margin: 0 0 8px;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 56px; height: 2px;
+      background: linear-gradient(90deg, var(--quantum), var(--bio));
+      margin-top: 8px;
+      border-radius: 999px;
+      opacity: 0.7;
+    }
+    section .desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 24px;
+      max-width: 800px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 16px;
+    }
+    .grid.routes {
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      backdrop-filter: blur(8px);
+    }
+    .card header {
+      display: flex; gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .card iframe {
+      width: 100%;
+      height: 360px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #050b18;
+    }
+    .method {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      padding: 2px 6px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--quantum);
+      border-radius: 4px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .path {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    pre {
+      background: rgba(0,0,0,0.4);
+      padding: 12px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      line-height: 1.5;
+      max-height: 360px;
+      overflow: auto;
+      margin: 0;
+      color: #cbd5e1;
+    }
+    details > summary {
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 8px 0;
+    }
+    .err { color: #f43f5e; font-size: 12px; }
+    a { color: var(--quantum); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .toc { columns: 2; column-gap: 32px; }
+    .toc a { display: block; padding: 4px 0; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Mörbius — visual report</h1>
+    <div class="meta">2026-05-03T05:21:45.846Z · api: http://localhost:8787 · web: http://localhost:5173</div>
+    <div class="stats">
+      <span class="pill quantum">api · 0/8 ok</span>
+      <span class="pill bio">sidecar · 0/3 ok</span>
+      <span class="pill purple">web routes · 10 probed</span>
+    </div>
+  </header>
+
+  <section id="toc">
+    <h2>Table of contents</h2>
+    <p class="desc">Jump to any section. Bundle this report by pressing Ctrl+S in your browser.</p>
+    <div class="toc">
+      <a href="#api">API endpoints (8)</a>
+      <a href="#sidecar">Sidecar (py-svc)</a>
+      <a href="#routes">Web routes (10)</a>
+      <a href="#dev-console">Dev console categories</a>
+      <a href="#manual">Manual test checklist (mirror)</a>
+    </div>
+  </section>
+
+  <section id="api">
+    <h2>API endpoints</h2>
+    <p class="desc">Every probe captures status code, latency, and the response body. Click "Response" to expand. Architect can curl the same endpoints with the request body shown.</p>
+    <div class="grid">
+      
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 138 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/agents</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/datasets</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/health/full</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/research/snapshot</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/personas/live</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">GET</code>
+        <code class="path">/accuracy/live</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="method">POST</code>
+        <code class="path">/mcq</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          ERR · 113 ms
+        </span>
+      </header>
+      <details><summary>Request body</summary><pre>{
+  &quot;question&quot;: &quot;58 yo male · crushing chest pain radiating to left arm · diaphoretic · ECG ST-elevation II/III/aVF. Next?&quot;,
+  &quot;options&quot;: {
+    &quot;A&quot;: &quot;Aspirin + emergent cath&quot;,
+    &quot;B&quot;: &quot;Schedule outpatient echo&quot;,
+    &quot;C&quot;: &quot;Reassure + discharge&quot;,
+    &quot;D&quot;: &quot;CXR + observe&quot;
+  }
+}</pre></details>
+      <details open><summary>Response</summary><pre>null</pre></details>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+    </div>
+  </section>
+
+  <section id="sidecar">
+    <h2>Sidecar · py-svc</h2>
+    <p class="desc">FastAPI sidecar at :8001 — imaging · genomics · NER · translate · quantum routers.</p>
+    <div class="grid">
+      
+    <article class="card">
+      <header>
+        <code class="path">/</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          sidecar root · OFFLINE
+        </span>
+      </header>
+      <pre>null</pre>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="path">/health</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          sidecar /health · OFFLINE
+        </span>
+      </header>
+      <pre>null</pre>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <code class="path">/quantum/health</code>
+        <span class="status" style="background:#f43f5e1a; color:#f43f5e; border-color:#f43f5e55">
+          sidecar /quantum/health · OFFLINE
+        </span>
+      </header>
+      <pre>null</pre>
+      <p class="err">⚠ Unable to connect. Is the computer able to access the url?</p>
+    </article>
+    </div>
+  </section>
+
+  <section id="routes">
+    <h2>Web routes — visual screens</h2>
+    <p class="desc">Live iframe per route. Each one is the actual app rendering against the local dev server. If a frame is blank, that route is failing — open it in a tab to see the error.</p>
+    <div class="grid routes">
+      
+    <article class="card route">
+      <header>
+        <strong>Landing</strong>
+        <code class="path"><a href="http://localhost:5173/" target="_blank" rel="noopener">/</a></code>
+      </header>
+      <iframe src="http://localhost:5173/" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Landing"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Login</strong>
+        <code class="path"><a href="http://localhost:5173/login" target="_blank" rel="noopener">/login</a></code>
+      </header>
+      <iframe src="http://localhost:5173/login" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Login"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Dashboard</strong>
+        <code class="path"><a href="http://localhost:5173/app" target="_blank" rel="noopener">/app</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Dashboard"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Clinic</strong>
+        <code class="path"><a href="http://localhost:5173/app/clinic" target="_blank" rel="noopener">/app/clinic</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/clinic" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Clinic"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Imaging</strong>
+        <code class="path"><a href="http://localhost:5173/app/imaging" target="_blank" rel="noopener">/app/imaging</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/imaging" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Imaging"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Brain</strong>
+        <code class="path"><a href="http://localhost:5173/app/brain" target="_blank" rel="noopener">/app/brain</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/brain" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Brain"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Profile</strong>
+        <code class="path"><a href="http://localhost:5173/app/profile" target="_blank" rel="noopener">/app/profile</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/profile" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Profile"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Settings</strong>
+        <code class="path"><a href="http://localhost:5173/app/settings" target="_blank" rel="noopener">/app/settings</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/settings" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Settings"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>API keys</strong>
+        <code class="path"><a href="http://localhost:5173/app/api-keys" target="_blank" rel="noopener">/app/api-keys</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/api-keys" loading="lazy" sandbox="allow-same-origin allow-scripts" title="API keys"></iframe>
+    </article>
+
+    <article class="card route">
+      <header>
+        <strong>Dev console</strong>
+        <code class="path"><a href="http://localhost:5173/app/dev-console" target="_blank" rel="noopener">/app/dev-console</a></code>
+      </header>
+      <iframe src="http://localhost:5173/app/dev-console" loading="lazy" sandbox="allow-same-origin allow-scripts" title="Dev console"></iframe>
+    </article>
+    </div>
+  </section>
+
+  <section id="dev-console">
+    <h2>Dev console categories</h2>
+    <p class="desc">The four categories that re-organised 11 flat tabs into a story future researchers can extend.</p>
+    <div class="grid">
+      <article class="card">
+        <header><strong>⚡ Live</strong></header>
+        <p>Pipeline · Query lab · Activity tail · Inspect drilldown</p>
+        <a href="http://localhost:5173/app/dev-console" target="_blank">Open →</a>
+      </article>
+      <article class="card">
+        <header><strong>🧠 Research</strong></header>
+        <p>Doctor-brain · Per-agent analysis · Scheduled experiments · Research timeline · Benchmarks</p>
+        <a href="http://localhost:5173/app/dev-console" target="_blank">Open →</a>
+      </article>
+      <article class="card">
+        <header><strong>🩺 Health</strong></header>
+        <p>System probe · Inventory · /health snapshot</p>
+        <a href="http://localhost:5173/app/dev-console" target="_blank">Open →</a>
+      </article>
+      <article class="card">
+        <header><strong>🎚 Tune</strong></header>
+        <p>Env editor · Learning flow · Training corpus</p>
+        <a href="http://localhost:5173/app/dev-console" target="_blank">Open →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="manual">
+    <h2>Manual test checklist · mirror</h2>
+    <p class="desc">Full checklist lives at <a href="../MANUAL-TEST-PLAN.md">docs/MANUAL-TEST-PLAN.md</a> — open it in your editor to tick boxes as you go.</p>
+    <p class="desc">Section anchors:
+      §1 Public surfaces · §2 Authenticated app · §3 Sidecar · §4 Auto smoke · §5 Visual report · §6 Cross-cutting · §7 Pass criteria
+    </p>
+  </section>
+
+  <footer style="padding: 24px 40px; color: var(--text-muted); font-size: 12px; text-align: center;">
+    Generated by <code>scripts/visual-report.ts</code> · Mörbius v0.6 · zero-budget · local-first
+  </footer>
+</body>
+</html>

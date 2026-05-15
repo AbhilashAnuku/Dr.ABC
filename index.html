@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Dr·ABC · powered by Mörbius — a multi-agent medical chat assistant</title>
+<meta name="description" content="Dr·ABC is a multi-agent medical chat assistant. It routes each consult through nine specialist agents over a living medical knowledge graph, with a safety-gated answer for every question. Local-first. MSc Applied AI · SRH University Stuttgart · K-2472-2200." />
+<meta name="author" content="Abhilash Anuku" />
+<meta name="color-scheme" content="dark light" />
+<meta property="og:title" content="Dr·ABC — powered by Mörbius" />
+<meta property="og:description" content="A multi-agent medical chat assistant: nine specialist agents, a living medical knowledge graph, a safety gate on every answer. Local-first." />
+<meta property="og:image" content="./docs/screenshots/01-landing-medical-ai-platform.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --violet: #a78bfa; --violet-2: #c4b5fd;
+    --cyan: #22d3ee; --cyan-2: #67e8f9;
+    --emerald: #34d399; --emerald-2: #10b981; --amber: #fbbf24;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+    --maxw: 1180px; --radius: 20px;
+  }
+  html[data-theme="dark"] {
+    --bg: #050b18; --ink: #ecfeff; --muted: #9fb0c3; --faint: #64748b;
+    --glass: rgba(15,23,42,0.55); --glass-2: rgba(56,189,248,0.05);
+    --border: rgba(103,232,249,0.16); --border-strong: rgba(167,139,250,0.34);
+    --shadow: 0 24px 60px -24px rgba(0,0,0,0.7); --accent: var(--cyan); --accent-2: var(--emerald);
+    --aurora-1: rgba(34,211,238,0.14); --aurora-2: rgba(167,139,250,0.13); --aurora-3: rgba(16,185,129,0.10); --dot: rgba(148,163,184,0.05);
+  }
+  html[data-theme="light"] {
+    --bg: #eef2f9; --ink: #0c1a2e; --muted: #475569; --faint: #7c8aa0;
+    --glass: rgba(255,255,255,0.62); --glass-2: rgba(2,132,199,0.05);
+    --border: rgba(15,23,42,0.10); --border-strong: rgba(124,58,237,0.30);
+    --shadow: 0 24px 60px -28px rgba(30,41,59,0.30); --accent: #0891b2; --accent-2: #059669;
+    --violet: #7c3aed; --violet-2: #6d28d9; --cyan: #0891b2; --cyan-2: #0e7490; --emerald: #059669; --emerald-2: #047857;
+    --aurora-1: rgba(8,145,178,0.10); --aurora-2: rgba(124,58,237,0.10); --aurora-3: rgba(5,150,105,0.08); --dot: rgba(15,23,42,0.04);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); color: var(--ink); background: var(--bg); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: background .4s ease, color .4s ease; }
+  ::selection { background: var(--violet); color: #fff; }
+
+  .aurora { position: fixed; inset: 0; z-index: -2; pointer-events: none; transition: background .4s ease;
+    background: radial-gradient(60% 50% at 50% -10%, var(--aurora-1), transparent 60%), radial-gradient(50% 60% at 100% 8%, var(--aurora-2), transparent 55%), radial-gradient(55% 55% at 0% 32%, var(--aurora-3), transparent 55%), var(--bg); }
+  .aurora::after { content:""; position:absolute; inset:0; background-image: radial-gradient(var(--dot) 1px, transparent 1px); background-size: 34px 34px; mask-image: radial-gradient(ellipse at 50% 0%, #000 35%, transparent 80%); }
+
+  main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 28px); }
+  section { padding: clamp(46px, 7vw, 72px) 0; }
+  .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 8px; }
+  .kicker::before { content:""; width: 22px; height: 1px; background: var(--accent); opacity: .6; }
+  h2.title { font-family: var(--serif); font-weight: 800; font-size: clamp(28px, 5vw, 46px); line-height: 1.05; letter-spacing: -0.02em; margin: 14px 0 10px; }
+  .sub { color: var(--muted); max-width: 720px; font-size: clamp(15px, 2.2vw, 17px); }
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  code { font-family: var(--mono); background: var(--glass-2); color: var(--accent); padding: 1px 6px; border-radius: 5px; font-size: 0.86em; }
+  a { color: var(--accent); text-decoration: none; }
+  .glass { background: var(--glass); border: 1px solid var(--border); backdrop-filter: blur(18px) saturate(1.3); -webkit-backdrop-filter: blur(18px) saturate(1.3); }
+
+  header.topbar { position: sticky; top: 0; z-index: 60; border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .topbar-in { max-width: var(--maxw); margin: 0 auto; padding: 12px clamp(16px,4vw,28px); display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+  .brand { display: flex; align-items: center; gap: 11px; font-weight: 700; letter-spacing: -.01em; white-space: nowrap; }
+  .brand .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 16px var(--emerald); animation: pulse 2.4s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+  .topbar nav { display: flex; gap: 20px; font-size: 14px; margin-left: auto; }
+  .topbar nav a { color: var(--muted); transition: color .2s; } .topbar nav a:hover { color: var(--ink); }
+  .controls { display: flex; align-items: center; gap: 8px; }
+  .iconbtn { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; cursor: pointer; border: 1px solid var(--border); background: var(--glass); color: var(--ink); font-size: 14px; font-family: var(--mono); font-weight: 700; transition: all .2s; }
+  .iconbtn:hover { border-color: var(--border-strong); transform: translateY(-1px); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: 14px; border: 1px solid var(--border-strong); background: color-mix(in srgb, var(--violet) 12%, transparent); color: var(--violet); transition: all .25s; cursor: pointer; white-space: nowrap; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -12px color-mix(in srgb, var(--violet) 60%, transparent); }
+  .btn.primary { background: linear-gradient(135deg, var(--cyan), var(--emerald)); color: #04121a; border: none; }
+
+  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(20px, 4vw, 48px); align-items: center; padding-top: clamp(36px, 6vw, 64px); }
+  .hero .kicker { margin-bottom: 20px; }
+  .hero h1 { font-family: var(--serif); font-weight: 900; letter-spacing: -0.03em; font-size: clamp(40px, 8vw, 92px); line-height: 0.9; }
+  .hero h1 .grad { background: linear-gradient(110deg, var(--cyan-2), var(--violet) 55%, var(--emerald)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .tagline { font-size: clamp(16px, 2.3vw, 21px); font-weight: 500; margin: 16px 0 8px; max-width: 36ch; }
+  .hero .lede { color: var(--muted); font-size: clamp(15px, 2vw, 17px); max-width: 46ch; margin-top: 12px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 22px; font-size: 12.5px; color: var(--faint); font-family: var(--mono); }
+  .meta-row b { color: var(--muted); font-weight: 500; }
+
+  .stage { position: relative; min-height: 340px; aspect-ratio: 1/1; display: grid; place-items: center; }
+  .stage .halo { position: absolute; inset: 10%; border-radius: 50%; pointer-events: none; background: radial-gradient(circle, color-mix(in srgb, var(--emerald) 22%, transparent), transparent 62%); filter: blur(10px); }
+  .stage .badge { position: absolute; bottom: 6%; left: 50%; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--faint); display: flex; gap: 7px; align-items: center; }
+  .stage .badge i { width: 7px; height: 7px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 10px var(--emerald); font-style: normal; animation: pulse 2s infinite; }
+  /* Abstract reasoning-core emblem — pure CSS, no character art */
+  .core { position: relative; width: min(78%, 300px); aspect-ratio: 1/1; display: grid; place-items: center; }
+  .core .ring { position: absolute; inset: 0; border-radius: 50%; border: 1px solid var(--border-strong); }
+  .core .r1 { inset: 0; border-style: dashed; border-color: color-mix(in srgb, var(--cyan) 45%, transparent); animation: spin 20s linear infinite; }
+  .core .r2 { inset: 15%; border-color: color-mix(in srgb, var(--violet) 42%, transparent); animation: spin 28s linear infinite reverse; }
+  .core .r3 { inset: 30%; border-color: color-mix(in srgb, var(--emerald) 40%, transparent); animation: spin 24s linear infinite; }
+  .core .nucleus { width: 30%; aspect-ratio: 1/1; border-radius: 50%; background: radial-gradient(circle at 34% 30%, var(--emerald), color-mix(in srgb, var(--emerald-2) 72%, var(--bg))); box-shadow: 0 0 46px color-mix(in srgb, var(--emerald) 55%, transparent), inset 0 0 14px rgba(4,18,26,0.45); animation: breathe 4.2s ease-in-out infinite; }
+  .core .node { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan-2); box-shadow: 0 0 12px var(--cyan); }
+  .core .node.n1 { top: 3%; left: 50%; }
+  .core .node.n2 { top: 49%; right: 2%; background: var(--violet-2); box-shadow: 0 0 12px var(--violet); }
+  .core .node.n3 { bottom: 5%; left: 31%; background: var(--emerald); box-shadow: 0 0 12px var(--emerald); }
+  .core .node.n4 { top: 21%; left: 11%; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes breathe { 0%,100% { transform: scale(1); opacity: .92; } 50% { transform: scale(1.07); opacity: 1; } }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: clamp(36px, 6vw, 54px); }
+  .stat { padding: 18px 16px; border-radius: 16px; position: relative; overflow: hidden; }
+  .stat::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background: linear-gradient(90deg, var(--cyan), var(--emerald)); opacity:.75; }
+  .stat .v { font-family: var(--mono); font-weight: 700; font-size: clamp(24px, 4vw, 34px); color: var(--emerald-2); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+  .stat .l { font-size: 11.5px; color: var(--muted); margin-top: 5px; text-transform: uppercase; letter-spacing: .8px; line-height: 1.4; }
+  .stat .l span { color: var(--faint); text-transform: none; letter-spacing: 0; }
+  .stats-cap { margin-top: 12px; font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
+
+  .gallery { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 32px; }
+  .shot { border-radius: 16px; overflow: hidden; position: relative; cursor: zoom-in; border: 1px solid var(--border); transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s, border-color .35s; }
+  .shot:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--border-strong); }
+  .shot img { display: block; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/10; }
+  .shot figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 14px 12px; font-size: 13px; color: #ecfeff; background: linear-gradient(0deg, rgba(5,11,24,0.92), transparent); }
+  .shot figcaption b { color: var(--cyan-2); }
+  .shot.w8 { grid-column: span 8; } .shot.w4 { grid-column: span 4; } .shot.w6 { grid-column: span 6; }
+  @media (max-width: 760px){ .shot.w8,.shot.w4,.shot.w6 { grid-column: span 12; } }
+
+  .lightbox { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 4vh 4vw; background: rgba(2,6,16,0.92); backdrop-filter: blur(8px); }
+  .lightbox.open { display: grid; }
+  .lightbox img { max-width: 100%; max-height: 86vh; border-radius: 12px; box-shadow: 0 30px 90px -20px rgba(0,0,0,0.8); object-fit: contain; }
+  .lb-cap { position: absolute; bottom: 3vh; left: 0; right: 0; text-align: center; color: #cbd5e1; font-size: 14px; font-family: var(--mono); padding: 0 12vw; }
+  .lb-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: #fff; cursor: pointer; font-size: 20px; transition: background .2s; }
+  .lb-btn:hover { background: rgba(255,255,255,0.18); } .lb-prev { left: 3vw; } .lb-next { right: 3vw; }
+  .lb-close { position: absolute; top: 3vh; right: 4vw; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: #fff; cursor: pointer; font-size: 22px; }
+  @media (max-width: 640px){ .lb-btn{ width:40px;height:40px } .lb-prev{left:2vw} .lb-next{right:2vw} }
+
+  .card { padding: clamp(20px, 4vw, 30px); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .grid { display: grid; gap: 18px; }
+  .g2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .g3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .step { padding: 16px; border-radius: 14px; border: 1px solid var(--border); background: var(--glass-2); }
+  .step .n { font-family: var(--mono); font-size: 11px; color: var(--violet); letter-spacing: 2px; }
+  .step h4 { font-size: 15px; margin: 6px 0 4px; } .step p { color: var(--muted); font-size: 13px; }
+  .pillar { padding: 20px; border-radius: 16px; }
+  .pillar .ic { font-size: 22px; } .pillar h4 { font-size: 16px; margin: 9px 0 5px; } .pillar p { color: var(--muted); font-size: 13.5px; }
+  .inside { padding: 22px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--glass-2); transition: transform .3s, border-color .3s; }
+  .inside:hover { transform: translateY(-4px); border-color: var(--border-strong); }
+  .inside h3 { font-family: var(--serif); font-size: 20px; font-weight: 700; margin: 0 0 7px; }
+  .inside p { color: var(--muted); font-size: 14.5px; }
+  .inside .where { margin-top: 13px; padding-top: 11px; border-top: 1px dashed var(--border); font-size: 12px; color: var(--emerald-2); }
+  .inside .where code { color: var(--accent); }
+  .bars { display: flex; flex-direction: column; gap: 13px; }
+  .bar-top { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; }
+  .bar-top .val { font-family: var(--mono); color: var(--emerald-2); font-weight: 700; }
+  .track { height: 9px; background: color-mix(in srgb, var(--muted) 22%, transparent); border-radius: 5px; overflow: hidden; margin-top: 6px; }
+  .fill { height: 100%; width: 0; border-radius: 5px; background: linear-gradient(90deg, var(--cyan), var(--emerald)); transition: width 1.2s cubic-bezier(.16,1,.3,1); }
+  .note { color: var(--faint); font-size: 11.5px; font-family: var(--mono); margin-top: 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+  .chip { padding: 8px 13px; border-radius: 999px; font-size: 13px; border: 1px solid var(--border); background: var(--glass-2); transition: all .2s; }
+  .chip:hover { border-color: var(--border-strong); transform: translateY(-2px); } .chip b { color: var(--accent); }
+  .tech { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 11px; }
+  .tech div { padding: 13px 15px; border-radius: 13px; border: 1px solid var(--border); background: var(--glass-2); font-size: 13.5px; }
+  .tech div b { display: block; color: var(--violet); font-size: 10.5px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; font-family: var(--mono); }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 14px; }
+  .linkcard { padding: 20px; border-radius: 16px; transition: all .25s; display: block; }
+  .linkcard:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: var(--shadow); }
+  .linkcard .t { font-weight: 700; color: var(--ink); margin-bottom: 3px; } .linkcard .d { color: var(--muted); font-size: 13px; }
+  footer { border-top: 1px solid var(--border); padding: 38px clamp(16px,4vw,28px) 60px; text-align: center; color: var(--faint); font-size: 13px; }
+  footer .big { font-family: var(--serif); font-size: 22px; color: var(--ink); margin-bottom: 7px; }
+  footer .disc { max-width: 680px; margin: 15px auto 0; font-size: 11.5px; line-height: 1.6; }
+  @media (max-width: 880px){ .hero { grid-template-columns: 1fr; } .stage { order: -1; min-height: 280px; max-width: 340px; margin: 0 auto; } .topbar nav { display: none; } }
+  @media (prefers-reduced-motion: reduce){ *, .reveal { transition: none !important; animation: none !important; } .reveal { opacity:1; transform:none; } html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="dot"></span> Dr·ABC <span style="color:var(--faint);font-weight:400">/ Mörbius</span></div>
+    <nav>
+      <a href="#see" data-i18n="nav_see">See it</a>
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#inside" data-i18n="nav_inside">Inside</a>
+      <a href="#results" data-i18n="nav_results">Results</a>
+      <a href="#stack" data-i18n="nav_stack">Stack</a>
+    </nav>
+    <div class="controls">
+      <button class="iconbtn" id="lang" title="Language" aria-label="Toggle language">EN</button>
+      <button class="iconbtn" id="theme" title="Theme" aria-label="Toggle theme">◐</button>
+      <a class="btn primary" href="https://github.com/AbhilashAnuku/Dr.ABC" target="_blank" rel="noopener" data-i18n="repo">Repository ↗</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <span class="kicker" data-i18n="hero_kicker">MSc Applied Artificial Intelligence · SRH University Stuttgart · K-2472-2200</span>
+      <h1>Dr·ABC<br /><span class="grad">powered by Mörbius.</span></h1>
+      <p class="tagline" data-i18n="hero_tagline">A multi-agent medical chat assistant — nine specialist agents, a living medical knowledge graph, and a safety-gated answer for every question.</p>
+      <p class="lede" data-i18n="hero_lede">Instead of one big model answering everything, Dr·ABC routes each consult through nine single-responsibility agents, grounds them in a typed knowledge graph, and gates every answer. Mörbius is the engine that makes it run.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#see" data-i18n="cta_see">See it in action ↓</a>
+        <a class="btn" href="#how" data-i18n="cta_how">How it works</a>
+      </div>
+      <div class="meta-row">
+        <span><b data-i18n="m_author">Author</b> Abhilash Anuku</span>
+        <span><b data-i18n="m_co">Co-author</b> Simranjot Kaur</span>
+        <span><b>Stack</b> Bun · TypeScript · React 19 · Hono</span>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="halo"></div>
+      <div class="core" aria-hidden="true">
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <span class="ring r3"></span>
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+        <span class="node n4"></span>
+        <span class="nucleus"></span>
+      </div>
+      <div class="badge"><i></i> <span data-i18n="online">Mörbius · online</span></div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat glass"><div class="v">9</div><div class="l" data-i18n="s_agents">Specialist agents<br /><span>one shared contract</span></div></div>
+    <div class="stat glass"><div class="v" data-count="88">0</div><div class="l" data-i18n="s_kg">Knowledge-graph nodes<br /><span>grows nightly</span></div></div>
+    <div class="stat glass"><div class="v" data-count="74.5" data-suffix="%">0%</div><div class="l" data-i18n="s_medqa">MedQA-USMLE-200<br /><span>cascade ensemble</span></div></div>
+    <div class="stat glass"><div class="v" data-count="620">0</div><div class="l" data-i18n="s_tests">Automated tests<br /><span>across 43 files</span></div></div>
+    <div class="stat glass"><div class="v">$0</div><div class="l" data-i18n="s_infra">Infra cost<br /><span>local-first</span></div></div>
+  </div>
+  <p class="stats-cap" data-i18n="stats_cap">Numbers from reproducible local runs (docs/status/) on small benchmark samples — a measure of direction, not clinical accuracy.</p>
+
+  <section id="see">
+    <span class="kicker" data-i18n="see_k">See it</span>
+    <h2 class="title reveal" data-i18n="see_t">The product, screen by screen.</h2>
+    <p class="sub reveal" data-i18n="see_s">A React 19 single-page app with a bioluminescent medical-noir interface. Tap any screen to view it full-size.</p>
+    <div class="gallery" id="gallery">
+      <figure class="shot w8 reveal"><img loading="lazy" src="./docs/screenshots/03-clinic-consultation-active.png" alt="Consultation screen" /><figcaption><b>Consultation</b> — <span data-i18n="cap_consult">chart, differential, prescription, sign-off in one room.</span></figcaption></figure>
+      <figure class="shot w4 reveal"><img loading="lazy" src="./docs/screenshots/01-landing-medical-ai-platform.png" alt="Landing screen" /><figcaption><b>Landing</b> — <span data-i18n="cap_landing">Mörbius greets you.</span></figcaption></figure>
+      <figure class="shot w4 reveal"><img loading="lazy" src="./docs/screenshots/05-imaging-skin-analysis.png" alt="Imaging screen" /><figcaption><b>Imaging</b> — <span data-i18n="cap_imaging">dermatology / X-ray with overlays.</span></figcaption></figure>
+      <figure class="shot w4 reveal"><img loading="lazy" src="./docs/screenshots/09-neural-core-knowledge-mesh.png" alt="Knowledge core screen" /><figcaption><b>Knowledge core</b> — <span data-i18n="cap_kg">the medical graph, live.</span></figcaption></figure>
+      <figure class="shot w4 reveal"><img loading="lazy" src="./docs/screenshots/10-agents-room-specialists.png" alt="Agents room screen" /><figcaption><b>Agents room</b> — <span data-i18n="cap_agents">the specialists, visualised.</span></figcaption></figure>
+      <figure class="shot w6 reveal"><img loading="lazy" src="./docs/screenshots/02-dashboard-live-overview.png" alt="Dashboard screen" /><figcaption><b>Dashboard</b> — <span data-i18n="cap_dash">a live overview.</span></figcaption></figure>
+      <figure class="shot w6 reveal"><img loading="lazy" src="./docs/screenshots/11-dev-console-system-health.png" alt="Developer console screen" /><figcaption><b>Dev console</b> — <span data-i18n="cap_dev">system, model & pipeline health.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="how">
+    <span class="kicker" data-i18n="how_k">How it works</span>
+    <h2 class="title reveal" data-i18n="how_t">One question, five brains, one safe answer.</h2>
+    <p class="sub reveal" data-i18n="how_s">A consult flows through a fixed pipeline. Each stage is a real subsystem in the repo.</p>
+    <div class="card glass reveal" style="margin-top:28px">
+      <div class="flow">
+        <div class="step"><div class="n">01 · ASK</div><h4 data-i18n="f1t">Intent + routing</h4><p data-i18n="f1d">An intent classifier routes the consult to the right specialists.</p></div>
+        <div class="step"><div class="n">02 · RETRIEVE</div><h4 data-i18n="f2t">RAG grounding</h4><p data-i18n="f2d">A Library agent pulls evidence from a pgvector corpus.</p></div>
+        <div class="step"><div class="n">03 · REASON</div><h4 data-i18n="f3t">9 specialist agents</h4><p data-i18n="f3d">Diagnostic, imaging, knowledge-graph and others reason in parallel.</p></div>
+        <div class="step"><div class="n">04 · GATE</div><h4 data-i18n="f4t">Secure Pass</h4><p data-i18n="f4d">A Validator gate today; Safety & Privacy gates scaffolded next.</p></div>
+        <div class="step"><div class="n">05 · LEARN</div><h4 data-i18n="f5t">Self-correction</h4><p data-i18n="f5d">Each gate failure becomes a bounded residual on the next answer.</p></div>
+      </div>
+    </div>
+    <div class="grid g3" style="margin-top:22px">
+      <div class="pillar glass reveal"><div class="ic">📚</div><h4 data-i18n="p1t">Retrieval (RAG)</h4><p data-i18n="p1d">pgvector retriever with a BM25 fallback over a medical corpus.</p></div>
+      <div class="pillar glass reveal"><div class="ic">🧩</div><h4 data-i18n="p2t">Agentic reasoning</h4><p data-i18n="p2d">Nine agents on one typed BaseAgent contract.</p></div>
+      <div class="pillar glass reveal"><div class="ic">🕸️</div><h4 data-i18n="p3t">Knowledge graph</h4><p data-i18n="p3d">Typed medical graph, 88 nodes, spreading activation.</p></div>
+      <div class="pillar glass reveal"><div class="ic">🧠</div><h4 data-i18n="p4t">Memory</h4><p data-i18n="p4d">Per-user IndexedDB with a Postgres mirror.</p></div>
+      <div class="pillar glass reveal"><div class="ic">♻️</div><h4 data-i18n="p5t">Self-learning</h4><p data-i18n="p5d">Boosting journal + a meta-agent that proposes tunes.</p></div>
+      <div class="pillar glass reveal" style="border-color:var(--border-strong)"><div class="ic">🛡️</div><h4 data-i18n="p6t">Secure Pass</h4><p data-i18n="p6d">Validator gate live; crisis language routes to a real helpline.</p></div>
+    </div>
+    <div class="card glass reveal" style="margin-top:22px">
+      <span class="kicker" data-i18n="agents_k">The nine agents</span>
+      <div class="chips" style="margin-top:14px">
+        <span class="chip"><b>Diagnostic</b> + ICD-10</span><span class="chip"><b>Imaging</b> MONAI · YOLO11</span>
+        <span class="chip"><b>Library</b> RAG</span><span class="chip"><b>Profile</b></span><span class="chip"><b>Knowledge-graph</b></span>
+        <span class="chip"><b>Boosting</b></span><span class="chip"><b>Tone</b></span><span class="chip"><b>Research</b></span><span class="chip"><b>Meta-agent</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside">
+    <span class="kicker" data-i18n="in_k">Inside the build</span>
+    <h2 class="title reveal" data-i18n="in_t">What's under the hood — and where to find it.</h2>
+    <p class="sub reveal" data-i18n="in_s">Six engineering ideas, each pointing at the exact place it lives in the codebase.</p>
+    <div class="grid g2" style="margin-top:30px">
+      <div class="inside reveal"><h3 data-i18n="i1t">Multi-agent orchestration</h3><p data-i18n="i1d">Nine specialist agents share one typed contract behind a streaming orchestrator and an intent classifier.</p><div class="where">in the code: <code>packages/morbius-core</code> · <code>packages/agents</code></div></div>
+      <div class="inside reveal"><h3 data-i18n="i2t">Retrieval-augmented generation</h3><p data-i18n="i2d">A pgvector retriever with a BM25 fallback grounds every answer in medical literature.</p><div class="where">in the code: PgVectorRetriever · Qdrant</div></div>
+      <div class="inside reveal"><h3 data-i18n="i3t">Medical knowledge graph</h3><p data-i18n="i3d">88 nodes / 84 edges, built by a diff-aware extract → build → cluster → activation pipeline.</p><div class="where">in the code: <code>packages/agents/src/knowledge-graph</code></div></div>
+      <div class="inside reveal"><h3 data-i18n="i4t">Model evaluation</h3><p data-i18n="i4d">Reproducible harnesses score the cascade ensemble: 74.5% MedQA, 74.0% MedMCQA.</p><div class="where">in the code: <code>scripts/medqa-harness.ts</code></div></div>
+      <div class="inside reveal"><h3 data-i18n="i5t">Self-correcting learning</h3><p data-i18n="i5d">Boosting-inspired error correction turns each gate failure into a bounded, time-decayed residual.</p><div class="where">in the code: <code>packages/agents/src/boosting</code></div></div>
+      <div class="inside reveal"><h3 data-i18n="i6t">Production engineering</h3><p data-i18n="i6d">620 tests, Biome-clean, a safety pipeline, CI checks and a multi-cloud free-tier deploy.</p><div class="where">in the code: GitHub Actions · Fly.io · Vercel</div></div>
+    </div>
+  </section>
+
+  <section id="results">
+    <span class="kicker" data-i18n="r_k">Results</span>
+    <h2 class="title reveal" data-i18n="r_t">How it performs.</h2>
+    <p class="sub reveal" data-i18n="r_s">The cascade routes Ollama → NVIDIA NIM → HuggingFace → Anthropic and keeps the first non-empty differential. Numbers from local benchmark runs.</p>
+    <div class="grid g2" style="margin-top:30px">
+      <div class="card glass reveal">
+        <h3 style="font-family:var(--serif);font-size:21px;margin-bottom:14px" data-i18n="r_acc">Accuracy</h3>
+        <div class="bars">
+          <div><div class="bar-top"><span>MedQA-USMLE-200 · cascade</span><span class="val">74.5%</span></div><div class="track"><div class="fill" data-w="74.5"></div></div></div>
+          <div><div class="bar-top"><span>MedMCQA-100 · cascade</span><span class="val">74.0%</span></div><div class="track"><div class="fill" data-w="74"></div></div></div>
+          <div><div class="bar-top"><span data-i18n="r_secure">15-case Secure-Pass cohort</span><span class="val">100%</span></div><div class="track"><div class="fill" data-w="100"></div></div></div>
+        </div>
+        <p class="note" data-i18n="r_acc_n">Benchmark samples, not clinical validation.</p>
+      </div>
+      <div class="card glass reveal">
+        <h3 style="font-family:var(--serif);font-size:21px;margin-bottom:14px" data-i18n="r_eng">Engineering</h3>
+        <div class="grid g2" style="gap:12px">
+          <div class="stat glass"><div class="v">620</div><div class="l" data-i18n="r_e1">tests · 615 pass standalone</div></div>
+          <div class="stat glass"><div class="v">8</div><div class="l" data-i18n="r_e2">workspaces · Bun monorepo</div></div>
+          <div class="stat glass"><div class="v">88</div><div class="l">KG nodes · 84 edges</div></div>
+          <div class="stat glass"><div class="v">$0</div><div class="l" data-i18n="r_e4">infra cost / month</div></div>
+        </div>
+        <p class="note" data-i18n="r_eng_n">TypeScript strict · Biome-clean. 5 diagnostic tests need a local Ollama (local-first).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <span class="kicker" data-i18n="st_k">Tools & tech</span>
+    <h2 class="title reveal" data-i18n="st_t">A deliberate, local-first stack.</h2>
+    <div class="tech reveal" style="margin-top:26px">
+      <div><b>Runtime</b>Bun 1.3</div><div><b>Language</b>TypeScript strict</div><div><b>API</b>Hono · SSE</div>
+      <div><b>Frontend</b>React 19 + Vite 6</div><div><b>Style</b>Tailwind v4</div><div><b>ORM</b>Drizzle · FHIR R4</div>
+      <div><b>Database</b>Postgres + pgvector</div><div><b>Vector</b>Qdrant</div><div><b>Queue</b>Redis Streams</div>
+      <div><b>Local LLM</b>Ollama · Llama 3.x</div><div><b>Cloud LLM</b>NVIDIA NIM · HF · Anthropic</div><div><b>Imaging</b>MONAI · YOLO11</div>
+      <div><b>3D / AR</b>Three.js · WebXR</div><div><b>Auth</b>argon2id · OAuth</div><div><b>Observability</b>OpenTelemetry</div>
+      <div><b>Deploy</b>Fly.io · Vercel · Netlify</div>
+    </div>
+  </section>
+
+  <section id="links">
+    <span class="kicker" data-i18n="go_k">Go deeper</span>
+    <h2 class="title reveal" data-i18n="go_t">Explore the project.</h2>
+    <div class="links reveal" style="margin-top:26px">
+      <a class="linkcard glass" href="https://github.com/AbhilashAnuku/Dr.ABC" target="_blank" rel="noopener"><div class="t">Repository ↗</div><div class="d" data-i18n="go_repo">The full platform — Bun monorepo, 8 workspaces.</div></a>
+      <a class="linkcard glass" href="https://github.com/AbhilashAnuku/Dr.ABC/tree/main/packages/morbius-core" target="_blank" rel="noopener"><div class="t">Mörbius engine ↗</div><div class="d" data-i18n="go_engine">Orchestrator, agents, knowledge graph.</div></a>
+      <a class="linkcard glass" href="https://github.com/AbhilashAnuku/Dr.ABC/tree/main/packages/agents/src/knowledge-graph" target="_blank" rel="noopener"><div class="t">Knowledge graph ↗</div><div class="d" data-i18n="go_kg">Extract, cluster, spreading activation.</div></a>
+      <a class="linkcard glass" href="https://github.com/AbhilashAnuku/Dr.ABC#readme" target="_blank" rel="noopener"><div class="t">README ↗</div><div class="d" data-i18n="go_readme">Run it locally — bun install && bun run dev.</div></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="big">Dr·ABC · powered by Mörbius</div>
+  <div data-i18n="foot_by">Built by <b style="color:var(--violet)">Abhilash Anuku</b> · with Simranjot Kaur · MSc Applied Artificial Intelligence · SRH University Stuttgart · K-2472-2200</div>
+  <p class="disc" data-i18n="foot_disc">An educational engineering project — not a medical device and not for clinical use. All clinical cases are fictional; no real patient data is used. Crisis language inside Mörbius routes to a real helpline (Samaritans 116 123 · 988 US · 112 EU).</p>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+  /* THEME */
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('theme');
+    var saved = localStorage.getItem('drabc-theme');
+    root.setAttribute('data-theme', saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+    function icon() { btn.textContent = root.getAttribute('data-theme') === 'dark' ? '☀' : '☾'; }
+    icon();
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next); localStorage.setItem('drabc-theme', next); icon();
+    });
+  })();
+
+  /* i18n EN/DE */
+  (function () {
+    var de = {
+      nav_see:'Ansehen', nav_how:'Funktionsweise', nav_inside:'Im Inneren', nav_results:'Ergebnisse', nav_stack:'Technik', repo:'Repository ↗',
+      hero_kicker:'MSc Angewandte Künstliche Intelligenz · SRH Hochschule Stuttgart · K-2472-2200',
+      hero_tagline:'Ein Multi-Agenten-Assistent für medizinische Gespräche — neun spezialisierte Agenten, ein lebendiger medizinischer Wissensgraph und eine sicherheitsgeprüfte Antwort auf jede Frage.',
+      hero_lede:'Statt eines einzigen großen Modells leitet Dr·ABC jede Konsultation durch neun Agenten mit je einer Aufgabe, verankert sie in einem typisierten Wissensgraphen und prüft jede Antwort. Mörbius ist die Engine dahinter.',
+      cta_see:'In Aktion ansehen ↓', cta_how:'Funktionsweise', m_author:'Autor', m_co:'Co-Autorin', online:'Mörbius · online',
+      s_agents:'Spezialisierte Agenten<br /><span>ein gemeinsamer Vertrag</span>', s_kg:'Wissensgraph-Knoten<br /><span>wächst nächtlich</span>',
+      s_medqa:'MedQA-USMLE-200<br /><span>Kaskaden-Ensemble</span>', s_tests:'Automatische Tests<br /><span>in 43 Dateien</span>', s_infra:'Infrastruktur<br /><span>lokal zuerst</span>',
+      stats_cap:'Zahlen aus reproduzierbaren lokalen Läufen (docs/status/) auf kleinen Benchmark-Stichproben — eine Richtungsangabe, keine klinische Genauigkeit.',
+      see_k:'Ansehen', see_t:'Das Produkt, Bildschirm für Bildschirm.', see_s:'Eine React-19-Single-Page-App im bioluminescent medical-noir-Stil. Auf einen Screen tippen, um ihn in voller Größe zu sehen.',
+      cap_consult:'Akte, Differenzial, Rezept und Freigabe in einem Raum.', cap_landing:'Mörbius begrüßt dich.', cap_imaging:'Dermatologie / Röntgen mit Overlays.',
+      cap_kg:'der medizinische Graph, live.', cap_agents:'die Spezialisten, visualisiert.', cap_dash:'eine Live-Übersicht.', cap_dev:'System-, Modell- und Pipeline-Status.',
+      how_k:'Funktionsweise', how_t:'Eine Frage, fünf Gehirne, eine sichere Antwort.', how_s:'Eine Konsultation durchläuft eine feste Pipeline. Jede Stufe ist ein echtes Subsystem im Repo.',
+      f1t:'Absicht + Routing', f1d:'Ein Intent-Classifier leitet die Konsultation an die richtigen Spezialisten.',
+      f2t:'RAG-Grounding', f2d:'Ein Library-Agent holt Belege aus einem pgvector-Korpus.',
+      f3t:'9 Spezial-Agenten', f3d:'Diagnose, Bildgebung, Wissensgraph u.a. denken parallel.',
+      f4t:'Secure Pass', f4d:'Validator-Gate heute; Safety- & Privacy-Gates als Nächstes.',
+      f5t:'Selbstkorrektur', f5d:'Jeder Gate-Fehler wird zu einem begrenzten Residuum für die nächste Antwort.',
+      p1t:'Retrieval (RAG)', p1d:'pgvector-Retriever mit BM25-Fallback über einem medizinischen Korpus.',
+      p2t:'Agentisches Denken', p2d:'Neun Agenten auf einem typisierten BaseAgent-Vertrag.',
+      p3t:'Wissensgraph', p3d:'Typisierter medizinischer Graph, 88 Knoten, Spreading Activation.',
+      p4t:'Gedächtnis', p4d:'Pro Nutzer IndexedDB mit Postgres-Spiegel.',
+      p5t:'Selbstlernen', p5d:'Boosting-Journal + Meta-Agent, der Tunings vorschlägt.',
+      p6t:'Secure Pass', p6d:'Validator-Gate aktiv; Krisensprache wird an eine echte Hotline geleitet.',
+      agents_k:'Die neun Agenten',
+      in_k:'Im Inneren', in_t:'Was unter der Haube steckt — und wo man es findet.', in_s:'Sechs Engineering-Ideen, jede mit dem genauen Ort im Code.',
+      i1t:'Multi-Agenten-Orchestrierung', i1d:'Neun Agenten teilen einen typisierten Vertrag hinter einem Streaming-Orchestrator und Intent-Classifier.',
+      i2t:'Retrieval-Augmented Generation', i2d:'Ein pgvector-Retriever mit BM25-Fallback verankert jede Antwort in medizinischer Literatur.',
+      i3t:'Medizinischer Wissensgraph', i3d:'88 Knoten / 84 Kanten, gebaut durch eine diff-bewusste extract → build → cluster → activation-Pipeline.',
+      i4t:'Modell-Evaluierung', i4d:'Reproduzierbare Harnesses bewerten das Kaskaden-Ensemble: 74,5% MedQA, 74,0% MedMCQA.',
+      i5t:'Selbstkorrigierendes Lernen', i5d:'Boosting-inspirierte Fehlerkorrektur macht jeden Gate-Fehler zu einem begrenzten, zeitlich abklingenden Residuum.',
+      i6t:'Produktions-Engineering', i6d:'620 Tests, Biome-sauber, eine Safety-Pipeline, CI-Checks und ein Multi-Cloud-Free-Tier-Deploy.',
+      r_k:'Ergebnisse', r_t:'Wie es abschneidet.', r_s:'Die Kaskade leitet Ollama → NVIDIA NIM → HuggingFace → Anthropic und behält das erste nicht-leere Differenzial. Zahlen aus lokalen Benchmark-Läufen.',
+      r_acc:'Genauigkeit', r_secure:'15-Fälle Secure-Pass-Kohorte', r_acc_n:'Benchmark-Stichproben, keine klinische Validierung.',
+      r_eng:'Engineering', r_e1:'Tests · 615 bestehen eigenständig', r_e2:'Workspaces · Bun-Monorepo', r_e4:'Infrastrukturkosten / Monat',
+      r_eng_n:'TypeScript strict · Biome-sauber. 5 Diagnose-Tests brauchen ein lokales Ollama (lokal zuerst).',
+      st_k:'Werkzeuge & Technik', st_t:'Ein bewusster, lokal-erst-Stack.',
+      go_k:'Tiefer eintauchen', go_t:'Erkunde das Projekt.',
+      go_repo:'Die volle Plattform — Bun-Monorepo, 8 Workspaces.', go_engine:'Orchestrator, Agenten, Wissensgraph.', go_kg:'Extract, Cluster, Spreading Activation.', go_readme:'Lokal ausführen — bun install && bun run dev.',
+      foot_by:'Erstellt von <b style="color:var(--violet)">Abhilash Anuku</b> · mit Simranjot Kaur · MSc Angewandte Künstliche Intelligenz · SRH Hochschule Stuttgart · K-2472-2200',
+      foot_disc:'Ein Bildungs- und Engineering-Projekt — kein Medizinprodukt und nicht für den klinischen Einsatz. Alle klinischen Fälle sind fiktiv; es werden keine echten Patientendaten verwendet. Krisensprache in Mörbius wird an eine echte Hotline geleitet (Telefonseelsorge 0800 111 0 111 · 112).'
+    };
+    var en = {}, btn = document.getElementById('lang');
+    var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));
+    nodes.forEach(function (n) { en[n.getAttribute('data-i18n')] = n.innerHTML; });
+    function apply(lang) {
+      var dict = lang === 'de' ? de : en;
+      nodes.forEach(function (n) { var k = n.getAttribute('data-i18n'); if (dict[k] != null) n.innerHTML = dict[k]; });
+      document.documentElement.lang = lang; btn.textContent = lang === 'de' ? 'DE' : 'EN'; localStorage.setItem('drabc-lang', lang);
+    }
+    apply(localStorage.getItem('drabc-lang') || 'en');
+    btn.addEventListener('click', function () { apply(document.documentElement.lang === 'de' ? 'en' : 'de'); });
+  })();
+
+  /* reveal + count + bars */
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revObs = new IntersectionObserver(function (es, o) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { revObs.observe(el); });
+    function countUp(el) {
+      var t = parseFloat(el.getAttribute('data-count')), sfx = el.getAttribute('data-suffix') || '', dec = el.getAttribute('data-count').indexOf('.') > -1 ? 1 : 0;
+      if (reduce) { el.textContent = t.toFixed(dec) + sfx; return; }
+      var start = null;
+      function step(ts) { if (start === null) start = ts; var p = Math.min((ts - start) / 1400, 1);
+        el.textContent = (t * (1 - Math.pow(1 - p, 3))).toFixed(dec) + sfx; if (p < 1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    var io2 = new IntersectionObserver(function (es, o) {
+      es.forEach(function (e) { if (!e.isIntersecting) return;
+        if (e.target.hasAttribute('data-count')) countUp(e.target);
+        if (e.target.classList.contains('fill')) e.target.style.width = e.target.getAttribute('data-w') + '%';
+        o.unobserve(e.target); });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count], .fill').forEach(function (el) { io2.observe(el); });
+  })();
+
+  /* lightbox */
+  (function () {
+    var figs = Array.prototype.slice.call(document.querySelectorAll('#gallery .shot'));
+    var lb = document.getElementById('lightbox'), img = document.getElementById('lbImg'), cap = document.getElementById('lbCap'), i = 0;
+    function show(n) { i = (n + figs.length) % figs.length; var im = figs[i].querySelector('img'); img.src = im.src; img.alt = im.alt; cap.textContent = figs[i].querySelector('figcaption').textContent.trim(); }
+    function open(n) { show(n); lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); }
+    function close() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); img.src = ''; }
+    figs.forEach(function (f, n) { f.addEventListener('click', function () { open(n); }); });
+    document.getElementById('lbClose').addEventListener('click', close);
+    document.getElementById('lbPrev').addEventListener('click', function (e) { e.stopPropagation(); show(i - 1); });
+    document.getElementById('lbNext').addEventListener('click', function (e) { e.stopPropagation(); show(i + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) { if (!lb.classList.contains('open')) return; if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') show(i - 1); else if (e.key === 'ArrowRight') show(i + 1); });
+  })();
+
+</script>
+</body>
+</html>
